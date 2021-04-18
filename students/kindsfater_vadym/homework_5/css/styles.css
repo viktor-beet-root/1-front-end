@@ -1,0 +1,42 @@
+.container {
+    max-width: 785px;
+    margin: 0 auto;
+}
+body {
+    margin-right: 0px;
+}
+p {
+    font-size: 18px;
+}
+footer {
+    font-size: 20px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    margin-left: 123px;
+    margin-right: 126px;
+}
+header {
+    background: #a52a2a;
+    margin-left: 123px;
+    margin-right: 126px;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+.images > img {
+    border: 4px dashed black;
+}
+.images {
+    text-align: center;
+}
+.strong, .strong_blue {
+    font-weight: 600;
+}
+.strong_blue, .blue {
+    color: #0000ff;
+}
+.strong_blue {
+    font-style: italic;
+}
