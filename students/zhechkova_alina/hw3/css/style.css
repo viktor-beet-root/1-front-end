@@ -2,6 +2,9 @@
     max-width: 785px;
     margin: 0 auto;
 }
+body {
+    margin-right: 0px;
+}
 p {
     font-size: 18px;
 }
@@ -10,16 +13,16 @@ footer {
     background-color: #000;
     color: white;
     text-align: center;
-    max-width: 785px;
-    margin: 0 auto;
+}
+header {
+    background: #a52a2a;
 }
 h1 {
     color: white;
     text-align: center;
-    background: #a52a2a;
 }
 .images > img {
-    border: 2px dashed black;
+    border: 4px dashed black;
 }
 .images {
     text-align: center;
