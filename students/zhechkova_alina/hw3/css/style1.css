@@ -24,7 +24,7 @@ a > img:not(.link) {
     height: 113px;
 }
 figure > a {
-    padding:22px 40px 22px 45px;
+    margin:22px 40px 22px 45px;
     text-decoration: none;
     color: white;
 }
