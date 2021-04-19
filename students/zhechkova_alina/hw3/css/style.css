@@ -14,12 +14,10 @@ footer {
     color: white;
     text-align: center;
 }
-header {
-    background: #a52a2a;
-}
-h1 {
+.header {
     color: white;
     text-align: center;
+    background: #a52a2a;
 }
 .images > img {
     border: 4px dashed black;
