@@ -1,0 +1,88 @@
+header {
+    background: #a52a2a;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+
+
+.header {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #a52a2a;
+}
+
+.sunset {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.main__text {
+    max-width: 760px;
+    margin: 0 auto;
+
+}
+
+.main__text1 {
+    font-size: 18px;
+}
+
+.italic__blue {
+    font-style: italic;
+    color: #0000ff;
+}
+
+.cars {
+    max-width: 450px;
+    margin: 0 auto;
+
+}
+
+
+.yellow__car {
+    border: 3px dashed black;
+}
+
+
+.white__car {
+    border: 3px dashed black;
+}
+
+.blue__car {
+    border: 3px dashed black;
+}
+
+.silver__car {
+    border: 3px dashed black;
+}
+
+.red__car {
+    border: 3px dashed black;
+}
+
+.main__text2 {
+    max-width: 760px;
+    margin: 0 auto;
+}
+.text2 {
+    font-size: 18px; 
+}
+
+.blue__text {
+    color: #0000ff;
+}
+
+footer {
+    background:#000000;
+}
+.footer__text {
+    max-width: 760px;
+    margin:0 auto;
+    background: #000000;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+}
