@@ -39,8 +39,6 @@ label:hover {
 form label:nth-child(odd){
     background-color: #88839e;
 }
-form {
-}
 form label:nth-child(even){
     background-color: #7a7593;
 }
