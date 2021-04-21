@@ -16,6 +16,9 @@ header h1 {
     line-height: 30px;
     padding: 25px 0;
 }
+main .container{
+    margin: 0 auto;
+}
 h1 span {
     font-weight: 500;
     font-size: 18px;
@@ -70,7 +73,7 @@ label {
 input[type="checkbox"]{
     display: none;
 }
-label:before {
+label::before {
     content: " ";
     display: inline-block;
     margin-right: 15px;
@@ -79,7 +82,7 @@ label:before {
     background: #e1e1e1;
     border: 1px solid #a8a8a8;
 }
-input:checked +label:before {
+input:checked +label::before {
     content: "\2713";
     color: #434343;
     font-size: 28px;
@@ -87,22 +90,22 @@ input:checked +label:before {
     display: inline-block;
     text-align: center;
 }
-label[for="pickle"]:after {
+label[for="pickle"]::after {
     content: '(for the next lessons about CSS)';
 }
-label[for="apple"]:after {
+label[for="apple"]::after {
     content: '(for more CSS manipulations)';
 }
-label[for="orange"]:after {
+label[for="orange"]::after {
     content: '(because they are awesome)';
 }
-label[for="plate"]:after {
+label[for="plate"]::after {
     content: '(hm... they always disappear)';
 }
-label[for="sake"]:after {
+label[for="sake"]::after {
     content: '(for my friends)';
 }
-label:after {
+label::after {
     color: #b9c6d6;
     font-size: 13px;
     font-family: sans-serif;
