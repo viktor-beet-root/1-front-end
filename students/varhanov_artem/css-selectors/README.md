@@ -14,4 +14,4 @@ alt="ALT-ТЕКСТ ИЗОБРАЖЕНИЯ" width="240" height="180" border="10"
 * :before и :after
 * :nth-child
 
-[ https://artemvarhanov.github.io/1-front-end/students/varhanov_artem/css-selectors/index.html ]
+[cсылка на проэкт](https://artemvarhanov.github.io/1-front-end/students/varhanov_artem/css-selectors/index.html)
