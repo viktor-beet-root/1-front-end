@@ -1,0 +1,42 @@
+.container {
+    max-width: 785px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 17px;
+    text-align: center;
+    align-items: center;
+
+}
+
+body {
+    margin-right: 0px;
+}
+.eius {
+    color:blue;
+}
+
+.lorem {
+    color:blue;
+}
+
+header {
+    background-color: brown;
+    text-align: center;
+    color: white;
+}
+
+.sunset {
+    text-align: center;
+}
+
+.cars {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
