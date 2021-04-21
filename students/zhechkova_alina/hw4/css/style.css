@@ -1,14 +1,17 @@
-*{
+* {
     transition: all .1s ease-in;
     margin: 0;
 }
+
 body {
     border: 23px solid white;
 }
+
 .container {
     max-width: 1237px;
     margin: 0 auto;
 }
+
 header h1 {
     font-family: 'Trebuchet MS';
     color: #eb7e7f;
@@ -16,15 +19,18 @@ header h1 {
     line-height: 30px;
     padding: 25px 0;
 }
-main .container{
+
+main .container {
     margin: 0 auto;
     max-width: 800px;
     padding: 40px 20px;
 }
+
 h1 span {
     font-weight: 500;
     font-size: 18px;
 }
+
 footer {
     background-color: #3b3f45;
     font-family: 'Trebuchet MS';
@@ -33,34 +39,43 @@ footer {
     line-height: 30px;
     padding: 25px 0;
 }
+
 footer a {
     color: #eb7e7f
 }
+
 header {
     background-color: #4a4f56;
     margin-bottom: 0;
 }
+
 main {
     background-color: #3b3f45;
 }
+
 label:hover {
     background-color: #625e77;
     border-top: 4px solid #fff;
     border-bottom: 4px solid #fff;
 }
-form label:nth-child(odd){
+
+form label:nth-child(odd) {
     background-color: #88839e;
 }
-form label:nth-child(even){
+
+form label:nth-child(even) {
     background-color: #7a7593;
 }
-[type="checkbox"]:checked +label{
+
+[type="checkbox"]:checked+label {
     text-decoration: line-through;
     opacity: 50%;
 }
-[type="checkbox"]:active +label{
+
+[type="checkbox"]:active+label {
     background: orange;
 }
+
 label {
     display: inline-block;
     padding: 15px 0px 15px 17px;
@@ -68,9 +83,11 @@ label {
     color: #fff;
     font-family: Arial;
 }
-input[type="checkbox"]{
+
+input[type="checkbox"] {
     display: none;
 }
+
 label::before {
     content: " ";
     display: inline-block;
@@ -79,41 +96,50 @@ label::before {
     height: 24px;
     background: #e1e1e1;
     border: 1px solid #a8a8a8;
+    vertical-align: -5px;
 }
-input:checked +label::before {
+
+input:checked+label::before {
     content: "\2713";
     color: #434343;
     font-size: 28px;
     font-weight: 900;
     display: inline-block;
-    text-align: center;
+    vertical-align: -5px;
 }
+
 label[for="pickle"]::after {
     content: '(for the next lessons about CSS)';
 }
+
 label[for="apple"]::after {
     content: '(for more CSS manipulations)';
 }
+
 label[for="orange"]::after {
     content: '(because they are awesome)';
 }
+
 label[for="plate"]::after {
     content: '(hm... they always disappear)';
 }
+
 label[for="sake"]::after {
     content: '(for my friends)';
 }
+
 label::after {
     color: #b9c6d6;
     font-size: 13px;
     font-family: sans-serif;
     padding-left: 10px;
 }
+
 .btn {
     background-color: #4a4f56;
-    color:#eb7e7f;
+    color: #eb7e7f;
     border: none;
     padding: 24px 0;
     width: 800px;
-    margin-top:40px;
+    margin-top: 40px;
 }
