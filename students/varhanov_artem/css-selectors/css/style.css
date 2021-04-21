@@ -99,10 +99,10 @@ h1,h3{
 	vertical-align: middle;
 
 }
-.list .ba-description:before {
+.list .description:before {
 	content: '(';
 }
 
-.list .ba-description:after {
+.list .description:after {
 	content: ')';
 }
