@@ -1,10 +1,6 @@
- * {
+* {
     padding: 0; 
-	margin: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	transition: all 0.1s ease-in;
+    margin: 0;
 }
 
 body {
@@ -13,12 +9,12 @@ body {
 	color: #F9F9F9;
 }
 
-.container{
+.container {
 	margin: 0 auto;
 	max-width: 800px;
 	padding: 40px 20px;
-
 }
+
 .header,
 .footer {
 	text-align: center;
@@ -33,7 +29,7 @@ body {
     margin: 50px auto; 
 }
 
-h1,.lid{
+h1, .lid {
 	color: #EB7E7F;
 	font-weight: bold;
 }
@@ -44,58 +40,54 @@ h1,.lid{
 	color: #fff;
     max-width: 800px;
     margin: 0 auto;
-
 }
+
 .list li {
-	font-size: 25px;
-	background: #88839E;
+    font-size: 25px;
+    background: #88839E;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
 
 }
-.list li:nth-child(even){
-	background-color:#7A7593;
-
+.list li:nth-child(even) {
+    background-color:#7A7593;
 }
-.list li:hover{
-	background:#5F6073 ;
 
-	/* outline:0.1px solid #fff; */
+.list li:hover {
+    background:#5F6073 ;
     border-top: 3px solid #fff;
     border-bottom: 3px solid #fff;
-
 }
+
 .list li:active {
-	background:#EB7E7F;
-
+    background:#EB7E7F;
 }
-.list [type="checkbox"]{
-	width: 20px;
-	height: 20px;
 
+.list [type="checkbox"]{
+    width: 20px;
+    height: 20px;
 }
 
 .list [type="checkbox"]:checked + span {
-	text-decoration: line-through;
-	color: #a3a0b5;
-
+    text-decoration: line-through;
+    color: #a3a0b5;
 }
 
 .list label{
-	display: block;
-	padding: 15px;
-	cursor: pointer;
-
+    display: block;
+    padding: 15px;
+    cursor: pointer;
 }
+
 .description {
-	font-size: 15px;
-	vertical-align: middle;
-
+    font-size: 15px;
+    vertical-align: middle;
 }
+
 .list .description:before {
-	content: '(';
+    content: '(';
 }
 
 .list .description:after {
-	content: ')';
+    content: ')';
 }
