@@ -18,6 +18,8 @@ header h1 {
 }
 main .container{
     margin: 0 auto;
+    max-width: 800px;
+    padding: 40px 20px;
 }
 h1 span {
     font-weight: 500;
@@ -40,10 +42,6 @@ header {
 }
 main {
     background-color: #3b3f45;
-}
-main .container {
-    padding-top: 40px;
-    padding-bottom: 80px;
 }
 label:hover {
     background-color: #625e77;
