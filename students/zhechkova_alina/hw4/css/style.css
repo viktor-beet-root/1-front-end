@@ -20,6 +20,17 @@ h1 span {
     font-weight: 500;
     font-size: 18px;
 }
+footer {
+    background-color: #3b3f45;
+    font-family: 'Trebuchet MS';
+    color: #eb7e7f;
+    text-align: center;
+    line-height: 30px;
+    padding: 25px 0;
+}
+footer a {
+    color: #eb7e7f
+}
 header {
     background-color: #4a4f56;
     margin-bottom: 0;
@@ -29,7 +40,7 @@ main {
 }
 main .container {
     padding-top: 40px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 label:hover {
     background-color: #625e77;
