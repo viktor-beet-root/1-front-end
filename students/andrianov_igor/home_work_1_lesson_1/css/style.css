@@ -1,0 +1,10 @@
+.h1 {
+   text-align: center;
+}
+.link{
+    text-align: right;
+}
+.rightpic {
+    float: right; /* Выравнивание по правому краю */
+    margin: 0 0 5px 5px; /* Отступы вокруг фотографии */
+   }
