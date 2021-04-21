@@ -5,11 +5,6 @@ header {
 h1 {
     text-align: center;
     color: white;
-}
-
-
-
-.header {
     max-width: 760px;
     margin: 0 auto;
     background: #a52a2a;
@@ -38,51 +33,33 @@ h1 {
 .cars {
     max-width: 450px;
     margin: 0 auto;
-
 }
 
-
-.yellow__car {
-    border: 3px dashed black;
-}
-
-
-.white__car {
-    border: 3px dashed black;
-}
-
-.blue__car {
-    border: 3px dashed black;
-}
-
-.silver__car {
-    border: 3px dashed black;
-}
-
-.red__car {
-    border: 3px dashed black;
+.all__cars {
+    border: 3px dashed black; 
 }
 
 .main__text2 {
     max-width: 760px;
     margin: 0 auto;
 }
-.text2 {
-    font-size: 18px; 
-}
 
-.blue__text {
-    color: #0000ff;
+.text2 {
+    font-size: 18px;
+}
+.link_lorem {
+    text-decoration: none;
 }
 
 footer {
-    background:#000000;
+    background: #000000;
 }
+
 .footer__text {
     max-width: 760px;
-    margin:0 auto;
+    margin: 0 auto;
     background: #000000;
     text-align: center;
-    color:white;
+    color: white;
     font-size: 20px;
 }
