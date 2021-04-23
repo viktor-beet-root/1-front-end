@@ -1,37 +1,37 @@
-body{
+body {
+    margin: auto;
+    max-width: 780px;
     font-size: 18px;
 }
 
 .container {
-    margin: 0 auto;
     max-width: 760px;
 }
 
-h1{
+h1 {
     text-align: center;
     background-color: #A52A2A;
     color: white;
     font-weight: bolder;
 }
 
-.car{
+.car {
     border-style: dashed;
 }
 
-#ad{
+#ad {
     font-style: italic;
     font-weight: bolder;
     color: #1B31FF;
 }
 
-a{
+a {
     text-decoration-line: none;
 }
 
-footer{
+footer {
     background-color: black;
     text-align: center;
     color: white;
     font-size: 20px;
 }
-
