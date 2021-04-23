@@ -5,9 +5,36 @@ body {
 p {
     font-size: 18px;
 }
-.main_link {
+.gradient {
+    background-color: #9a0909;
+    width: 430px;
+    height: 17px;
     text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
+
+.gradient::after,
+.gradient::before {
+    content: "";
+    display: block;
+    width: 430px;
+    height: 1px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+.head_link {
+    text-decoration: none;
+    color: white;
+}
+
 /*pictures*/
 .pictures {
     height: 270px;
@@ -65,10 +92,29 @@ p {
     margin-top: 0;
     margin-bottom: 10px;
     background-color: #bdbdbd;
+    display: block;
 }
 .link {
     color: #e95b0e;
 }
+
+.bottom_border {
+    margin-top: 1px;
+}
+
+:nth-child(-n + 3).bottom_border {
+    content: "";
+    border-bottom: 1px solid;
+    border-color: white;
+}
+
+:nth-child(-n + 3).bottom_border::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid;
+    border-color: #9a9a9a;
+}
+
 /*footer*/
 .footer {
     height: 25px;
