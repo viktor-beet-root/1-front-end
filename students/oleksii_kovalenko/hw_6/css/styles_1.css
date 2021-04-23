@@ -1,0 +1,67 @@
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/*Main container*/
+
+.small_box {
+    width: 33.333%;
+    float: left;
+    text-align: center;
+    padding: 0;
+    margin-top: 160px;
+}
+
+.big {
+    color: black;
+    font-size: 24px;
+    font-family: "Raleway";
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+}
+
+.small {
+    color: black;
+    font-size: 14px;
+    font-family: "Raleway";
+    line-height: 1.714;
+}
+
+/*Circle*/
+
+.circle {
+    top: 53px;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    border: 1px solid;
+    line-height: 82px;
+    margin: auto;
+    border-color: rgb(18, 117, 185);
+    background-color: #1275b9;
+}
+
+/*Hover*/
+
+:hover.circle {
+    background-color: white;
+}
+
+.circle .hover_img {
+    display: none;
+}
+
+.circle:hover .img {
+    display: none;
+}
+
+.circle:hover .hover_img {
+    display: block;
+    float: left;
+    margin-top: 19px;
+    margin-left: 19px;
+    margin-right: -31px;
+    text-align: center;
+}
