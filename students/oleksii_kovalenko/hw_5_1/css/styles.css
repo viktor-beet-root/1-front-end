@@ -10,7 +10,6 @@
     padding-top: 22px;
 }
 .main {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 768px;
@@ -19,6 +18,12 @@
 .text {
     font-size: 18px;
 }
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
 /*pictures*/
 .cars {
     text-align: center;
