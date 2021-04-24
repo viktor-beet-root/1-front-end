@@ -1,4 +1,5 @@
-* {padding: 0;
+* {
+	padding: 0;
 	margin: 0;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -30,7 +31,7 @@ body {
 	padding: 20px 0;
 	color: #eb7e7f;
 }
-h1,h3{
+h1{
 	color: #EB7E7F;
 	font-weight: bold;
 }
