@@ -1,0 +1,143 @@
+/*fonts*/
+@font-face {
+    font-family: "weather";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/weathericons-regular-webfont.ttf"),
+        url("../fonts/weathericons-regular-webfont.eot"),
+        url("../fonts/weathericons-regular-webfont.woff") format("woff"),
+        url("../fonts/weathericons-regular-webfont.woff2"),
+        url("../fonts/weathericons-regular-webfont.svg") format("svg");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #2b81ac;
+}
+
+header{
+    padding-top: 35px;
+    padding-left: 270px;
+}
+
+h2{
+    padding-top: 40px;
+}
+
+body {
+    font-family: "weather";
+    background-color: #3399cc;
+    margin: 25px;
+}
+
+.container {
+    max-width: 970px;
+    width: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+:hover.container {
+    opacity: 0.6;
+}
+
+:focus li{
+    opacity: 1;
+}
+
+.cities {
+    list-style: none;
+    font-family: "weather";
+    text-align: center;
+    font-size: 0;
+}
+
+.cities li {
+    padding-top: 35px;
+    display: inline-block;
+    font-size: 32px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.lisbon {
+    height: 148px;
+    background-color: #3399cc;
+    outline: 6px solid white;
+    width: 50%;
+}
+
+.paris {
+    height: 148px;
+    background-color: #33cccc;
+    outline: 6px solid white;
+    width: 25%;
+}
+
+.belgrade {
+    height: 148px;
+    background-color: #996699;
+    outline: 6px solid white;
+    width: 25%;
+}
+.moscow {
+    height: 148px;
+    background-color: #c24747;
+    outline: 6px solid white;
+    width: 25%;
+}
+
+.tel_aviv {
+    height: 148px;
+    background-color: #e2674a;
+    outline: 6px solid white;
+    width: 25%;
+}
+
+.cair {
+    height: 148px;
+    background-color: #ffcc66;
+    outline: 6px solid white;
+    width: 25%;
+}
+.new_york {
+    height: 148px;
+    background-color: #99cc99;
+    outline: 6px solid white;
+    width: 25%;
+}
+.new_delphi {
+    height: 148px;
+    background-color: #669999;
+    outline: 6px solid white;
+    width: 25%;
+}
+
+.san_francisco {
+    height: 148px;
+    background-color: #cc6699;
+    outline: 6px solid white;
+    width: 50%;
+}
+.tokyo {
+    height: 148px;
+    background-color: #339966;
+    outline: 6px solid white;
+    width: 25%;
+}
+
+.sydney {
+    height: 148px;
+    background-color: #666699;
+    outline: 6px solid white;
+    width: 100%;
+}
+
+footer {
+    padding-top: 35px;
+    padding-left: 270px;
+}
