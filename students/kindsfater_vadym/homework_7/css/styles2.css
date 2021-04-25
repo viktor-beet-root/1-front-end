@@ -1,4 +1,17 @@
-* {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -17,13 +30,13 @@
     background-color: #3399CC;
     color: #F9F9F9;
   }
-  .ba-header,
-  .ba-footer {
+  .header,
+  .footer {
     padding: 30px 0;
     color: #ffffff;
   }
-  .ba-header .wi,
-  .ba-footer .wi {
+  .header .wi,
+  .footer .wi {
     vertical-align: middle;
   }
   h1,
@@ -40,12 +53,12 @@
     font-size: 24px;
     font-weight: 400;
   }
-  .ba-container {
+  .container {
     margin: 0 auto;
     max-width: 1024px;
     padding: 0 20px;
   }
-  .ba-cities {
+  .cities {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -53,10 +66,10 @@
     padding: 3px;
     background: #FFF;
   }
-  .ba-cities:hover > li {
+  .cities:hover > li {
     opacity: .6;
   }
-  .ba-cities li {
+  .cities li {
     background: #7a7593;
     border: 0 solid #fff;
     text-align: center;
@@ -66,68 +79,68 @@
     font-size: 26px;
     width: 25%;
   }
-  .ba-cities li.ba-span-2 {
+  .cities li.span-2 {
     width: 50%;
   }
-  .ba-cities li:hover {
+  .cities li:hover {
     opacity: 1;
   }
-  .ba-cities li:active {
+  .cities li:active {
     background: #ffffff;
   }
-  .ba-cities li:first-child {
+  .cities li:first-child {
     width: 50%;
   }
-  .ba-cities li:last-child {
+  .cities li:last-child {
     width: 100%;
   }
-  .ba-cities li .ba-city-name {
+  .cities li .city-name {
     font-weight: normal;
     font-size: 26px;
     margin-bottom: 15px;
   }
-  .ba-cities li .ba-temperatue:after {
+  .cities li .temperatue:after {
     content: "°C";
   }
-  .ba-cities li .ba-temperatue,
-  .ba-cities li .wi {
+  .cities li .temperatue,
+  .cities li .wi {
     display: inline-block;
     vertical-align: middle;
     color: rgba(255, 255, 255, 0.7);
   }
-  .ba-cities li .wi {
+  .cities li .wi {
     font-size: 40px;
   }
-  .ba-cities li:nth-child(1) {
+  .cities li:nth-child(1) {
     background: #3399CC;
   }
-  .ba-cities li:nth-child(2) {
+  .cities li:nth-child(2) {
     background: #33CCCC;
   }
-  .ba-cities li:nth-child(3) {
+  .cities li:nth-child(3) {
     background: #996699;
   }
-  .ba-cities li:nth-child(4) {
+  .cities li:nth-child(4) {
     background: #C24747;
   }
-  .ba-cities li:nth-child(5) {
+  .cities li:nth-child(5) {
     background: #e2674a;
   }
-  .ba-cities li:nth-child(6) {
+  .cities li:nth-child(6) {
     background: #FFCC66;
   }
-  .ba-cities li:nth-child(7) {
+  .cities li:nth-child(7) {
     background: #99CC99;
   }
-  .ba-cities li:nth-child(8) {
+  .cities li:nth-child(8) {
     background: #669999;
   }
-  .ba-cities .ba-san-francisco {
+  .cities .san-francisco {
     background: #CC6699;
   }
-  .ba-cities .ba-tokyo {
+  .cities .tokyo {
     background: #339966;
   }
-  .ba-cities .ba-sydney {
+  .cities .sydney {
     background: #666699;
   }
