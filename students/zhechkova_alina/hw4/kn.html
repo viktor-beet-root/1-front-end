@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 550px;
+            margin: 0 auto;
+        }
+
+        ul li {
+            width: 25%;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        ul li>div {
+            background-color: green;
+        }
+
+        ul {
+            list-style-type: none;
+            background-color: red;
+        }
+
+        ul::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li>
+                <div>text</div>
+            </li>
+            <li>
+                <div>text</div>
+            </li>
+            <li>
+                <div>text</div>
+            </li>
+            <li>
+                <div>text</div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
