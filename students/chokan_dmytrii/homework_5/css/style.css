@@ -1,10 +1,10 @@
 body {
-    margin: auto;
-    max-width: 780px;
+    margin: 0 auto;
     font-size: 18px;
 }
 
 .container {
+    margin: 0 auto;
     max-width: 760px;
 }
 
@@ -17,6 +17,10 @@ h1 {
 
 .car {
     border-style: dashed;
+}
+
+#cars {
+    text-align: center;
 }
 
 #ad {
