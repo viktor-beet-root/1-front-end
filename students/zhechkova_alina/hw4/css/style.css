@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 140px 0;
+}
+
+h2::before {
+    content: 'Who we are';
+    display: block;
+    font-size: 12px;
+    color: #898f99;
+    padding-bottom: 34px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    color: #0ec8cb;
+    font-size: 48px;
+    padding-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'PT Sans', sans-serif;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #999;
+    font-weight: 400;
+}
+
+.first {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 105px;
+    width: 500px;
+}
+
+h2,
+h3,
+h2::before {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    width: 25%;
+    float: left;
+}
+
+.list {
+    background-color: #f7f7f7;
+    box-shadow:
+        2px 0 0 0 #ececec,
+        0 2px 0 0 #ececec,
+        2px 2px 0 0 #ececec,
+        2px 0 0 0 #ececec inset,
+        0 2px 0 0 #ececec inset;
+    height: 418px;
+}
+
+.list p {
+    width: 178px;
+}
+
+svg {
+    height: 64px;
+    margin: 50px 0;
+}
+
+.list {
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+}
+
+h3,
+p {
+    overflow: auto;
+}
+
+h3:not(li:nth-child(2) h3) {
+    padding-bottom: 50px;
+}
+
+li:nth-child(2) h3 {
+    padding-bottom: 24px;
+}
+
+li p {
+    font-size: 14px;
+}
+
+ul::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.list:hover {
+    background-color: #0ec8cb;
+    color: white;
+}
+
+.list:hover p {
+    color: white;
+}
+
+.list:hover svg {
+    fill: white;
+}
