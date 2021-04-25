@@ -1,4 +1,4 @@
-https://ice-xo.github.io/For_Git_Hub_Pages/home_work_4_lesson_6/
+https://ice-xo.github.io/1-front-end/students/andrianov_igor/home_work_4_lesson_6/
 
 2) Написать стили для CSS shopping list:
 
