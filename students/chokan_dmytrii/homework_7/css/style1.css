@@ -45,8 +45,8 @@ header p {
     width: calc(25% - 2px);
     float: left;
     font-size: 14px;
-    padding: 50px, 15px;
-    border: 1px solid #ededed9a;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .sections h2 {
@@ -64,5 +64,6 @@ div p {
 }
 
 svg {
-    padding: 40px;
+    display: block;
+    margin: 0 auto 25px;
 }
