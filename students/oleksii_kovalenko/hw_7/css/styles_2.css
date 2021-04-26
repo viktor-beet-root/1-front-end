@@ -15,21 +15,35 @@
     padding: 0;
 }
 
+*{
+    transition: all .1s ease-in;
+}
+
 html {
     background-color: #2b81ac;
 }
 
 header{
+    max-width: 970px;
+    width: auto;
+    margin: 0 auto;
     padding-top: 35px;
-    padding-left: 270px;
+    padding-bottom: 40px;
+    color: white;
+    font-family: "weather";
 }
 
-h2{
-    padding-top: 40px;
+li>p{
+    opacity: 0.6;
+}
+
+li>p>span{
+    vertical-align: super;
+    font-size: 60%;
 }
 
 body {
-    font-family: "weather";
+    font-family: 'Lucida Sans Unicode','Lucida Grande','sans-serif';
     background-color: #3399cc;
     margin: 25px;
 }
@@ -56,6 +70,10 @@ body {
     box-sizing: border-box;
 }
 
+.cities>li>i{
+    display:block;
+}
+
 .cities:hover>li{
     opacity: 0.6;
 }
@@ -65,79 +83,83 @@ body {
 }
 
 .lisbon {
-    height: 148px;
+    height: 154px;
     background-color: #3399cc;
-    outline: 6px solid white;
+    border: 6px solid white;
     width: 50%;
 }
 
 .paris {
-    height: 148px;
+    height: 154px;
     background-color: #33cccc;
-    outline: 6px solid white;
+    border: 6px solid white;
     width: 25%;
 }
 
 .belgrade {
-    height: 148px;
+    height: 154px;
     background-color: #996699;
-    outline: 6px solid white;
+    border: 6px solid white;
     width: 25%;
 }
 .moscow {
     height: 148px;
     background-color: #c24747;
-    outline: 6px solid white;
+    border: 6px solid white;
     width: 25%;
 }
 
 .tel_aviv {
     height: 148px;
     background-color: #e2674a;
-    outline: 6px solid white;
+    border: 6px solid white;
     width: 25%;
 }
 
 .cair {
     height: 148px;
     background-color: #ffcc66;
-    outline: 6px solid white;
+    border: 6px solid white;
     width: 25%;
 }
 .new_york {
     height: 148px;
     background-color: #99cc99;
-    outline: 6px solid white;
+    border: 6px solid white;
     width: 25%;
 }
 .new_delphi {
     height: 148px;
     background-color: #669999;
-    outline: 6px solid white;
+    border: 6px solid white;
     width: 25%;
 }
 
 .san_francisco {
     height: 148px;
     background-color: #cc6699;
-    outline: 6px solid white;
+    border: 6px solid white;
     width: 50%;
 }
 .tokyo {
     height: 148px;
     background-color: #339966;
-    outline: 6px solid white;
+    border: 6px solid white;
     width: 25%;
 }
 
 .sydney {
     height: 148px;
     background-color: #666699;
-    outline: 6px solid white;
+    border: 6px solid white;
     width: 100%;
 }
 
 footer {
+    margin: 0 auto;
     padding-top: 35px;
-    padding-left: 270px;
+    padding-bottom: 120px;
+    max-width: 970px;
+    width: auto;
+    color: white;
 }
