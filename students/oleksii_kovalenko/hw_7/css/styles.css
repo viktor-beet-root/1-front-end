@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+
+
 .container {
     max-width: 940px;
     width: 100%;
@@ -23,6 +25,7 @@
 
 h2 {
     padding-top: 140px;
+    font-family: 'PT Sans';
 }
 
 .head_text {
@@ -54,6 +57,8 @@ li:not(:first-child) {
 
 h3 {
     padding-top: 60px;
+    font-family:"Montserrat" ;
+    font-weight: 700;
 }
 
 .box::after {
@@ -85,6 +90,8 @@ li p {
     padding-left: 30px;
     padding-right: 30px;
     color: #999999;
+    font-family:"Montserrat" ;
+    font-weight: 400;
 }
 
 .last_li {
@@ -98,3 +105,4 @@ li p {
 .glasses {
     padding-top: 15px;
 }
+
