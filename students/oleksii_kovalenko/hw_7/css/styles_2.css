@@ -41,14 +41,6 @@ body {
     box-sizing: border-box;
 }
 
-:hover.container {
-    opacity: 0.6;
-}
-
-:focus li{
-    opacity: 1;
-}
-
 .cities {
     list-style: none;
     font-family: "weather";
@@ -62,6 +54,14 @@ body {
     font-size: 32px;
     color: white;
     box-sizing: border-box;
+}
+
+.cities:hover>li{
+    opacity: 0.6;
+}
+
+.cities li:hover{
+    opacity: 1;
 }
 
 .lisbon {
