@@ -45,10 +45,11 @@ main {
 }
 
 li {
-    line-height: 4em;
+    line-height: 3.4em;
     list-style: none;
     margin: 0;
     background-color: #88839e;
+    box-sizing: border-box;
 }
 
 ul {
@@ -72,6 +73,7 @@ ul {
 
 label {
     display: block;
+    height: 55px;
 }
 
 input[type="checkbox"]:checked + .label-text {
