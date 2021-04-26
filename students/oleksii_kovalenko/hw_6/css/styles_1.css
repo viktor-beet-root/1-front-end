@@ -11,6 +11,7 @@
     text-align: center;
     padding: 0;
     margin-top: 160px;
+    display: block;
 }
 
 .big {
@@ -37,31 +38,19 @@
     width: 65px;
     border-radius: 50%;
     border: 1px solid;
-    line-height: 82px;
+    line-height: 80px;
     margin: auto;
     border-color: rgb(18, 117, 185);
     background-color: #1275b9;
+    display: block;
 }
 
 /*Hover*/
 
-:hover.circle {
+.small_box:hover .circle {
     background-color: white;
 }
 
-.circle .hover_img {
-    display: none;
-}
-
-.circle:hover .img {
-    display: none;
-}
-
-.circle:hover .hover_img {
-    display: block;
-    float: left;
-    margin-top: 19px;
-    margin-left: 19px;
-    margin-right: -31px;
-    text-align: center;
+div :hover svg * {
+    fill: #1275b9;
 }
