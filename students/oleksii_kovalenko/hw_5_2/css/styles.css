@@ -37,8 +37,7 @@ p {
 
 /*pictures*/
 .pictures {
-    height: 270px;
-    width: 100%;
+    overflow: auto;
     background-color: black;
 }
 .pic_name {
