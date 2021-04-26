@@ -1,0 +1,54 @@
+* {
+    padding: 0px;
+    margin: 0px auto;
+}
+
+h1 {
+    text-align: center;
+    background-color: brown;
+    color: white;
+}
+
+
+.sunset1 {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.text1 {
+    font-size: 18px;
+    font-family: Palatino, URW Palladio L, serif;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.blue1 {
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.blue2 {
+    color: blue;
+}
+
+.cars {
+    text-align: center;
+}
+
+.cars1 {
+    border-style: dashed;
+}
+
+.container1 {
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
