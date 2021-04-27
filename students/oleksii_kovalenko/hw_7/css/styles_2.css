@@ -13,15 +13,14 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-*{
     transition: all .1s ease-in;
 }
 
 html {
     background-color: #2b81ac;
 }
+
+/*header*/
 
 header{
     max-width: 970px;
@@ -30,24 +29,16 @@ header{
     padding-top: 35px;
     padding-bottom: 40px;
     color: white;
-    font-family: "weather";
-}
-
-li>p{
-    opacity: 0.6;
-}
-
-li>p>span{
-    vertical-align: super;
-    font-size: 60%;
-}
-
-body {
     font-family: 'Lucida Sans Unicode','Lucida Grande','sans-serif';
+    font-size: 19px;
+}
+
+body {  
     background-color: #3399cc;
     margin: 25px;
 }
 
+/*content*/
 .container {
     max-width: 970px;
     width: auto;
@@ -60,14 +51,18 @@ body {
     font-family: "weather";
     text-align: center;
     font-size: 0;
+    border: 3px solid white;
 }
 
 .cities li {
     padding-top: 35px;
+    padding-bottom: 30px;
     display: inline-block;
-    font-size: 32px;
+    font-size: 25px;
     color: white;
     box-sizing: border-box;
+    border: 3px solid white;
+    font-family: 'Lucida Sans Unicode','Lucida Grande','sans-serif';
 }
 
 .cities>li>i{
@@ -82,84 +77,78 @@ body {
     opacity: 1;
 }
 
-.lisbon {
-    height: 154px;
+i{
+    font-family: "weather";
+}
+
+li>p{
+    opacity: 0.6;
+}
+
+li>p>span{
+    vertical-align: super;
+    font-size: 60%;
+}
+
+li:nth-child(1){
     background-color: #3399cc;
-    border: 6px solid white;
     width: 50%;
 }
 
-.paris {
-    height: 154px;
+li:nth-child(2){
     background-color: #33cccc;
-    border: 6px solid white;
     width: 25%;
 }
-
-.belgrade {
-    height: 154px;
+li:nth-child(3){
     background-color: #996699;
-    border: 6px solid white;
     width: 25%;
 }
-.moscow {
-    height: 148px;
+li:nth-child(4){
     background-color: #c24747;
-    border: 6px solid white;
     width: 25%;
 }
 
-.tel_aviv {
-    height: 148px;
+li:nth-child(5){
     background-color: #e2674a;
-    border: 6px solid white;
     width: 25%;
 }
-
-.cair {
-    height: 148px;
+li:nth-child(6){
     background-color: #ffcc66;
-    border: 6px solid white;
-    width: 25%;
-}
-.new_york {
-    height: 148px;
-    background-color: #99cc99;
-    border: 6px solid white;
-    width: 25%;
-}
-.new_delphi {
-    height: 148px;
-    background-color: #669999;
-    border: 6px solid white;
     width: 25%;
 }
 
-.san_francisco {
-    height: 148px;
+li:nth-child(7){
+    background-color: #99cc99;
+    width: 25%;
+}
+
+li:nth-child(8){
+    background-color: #669999;
+    width: 25%;
+}
+
+li:nth-child(9){
     background-color: #cc6699;
-    border: 6px solid white;
     width: 50%;
 }
-.tokyo {
-    height: 148px;
+li:nth-child(10){
     background-color: #339966;
-    border: 6px solid white;
     width: 25%;
 }
-
-.sydney {
-    height: 148px;
+li:nth-child(11){
     background-color: #666699;
-    border: 6px solid white;
     width: 100%;
 }
+
+/*footer*/
 
 footer {
     margin: 0 auto;
     padding-top: 35px;
-    padding-bottom: 120px;
+    padding-bottom: 108px;
     max-width: 970px;
     width: auto;
     color: white;
+    font-family: 'Lucida Sans Unicode','Lucida Grande','sans-serif';
+    font-size: 18px;
 }
