@@ -9,6 +9,7 @@
     padding-top: 140px;
     /* padding-bottom: 138px; */
 }
+
 .conreiner-title {
     text-align: center;
 }
@@ -70,9 +71,9 @@ li p {
 }
 
 li {
-     border: 1px solid #ececec;
-background-color: #f7f7f7;
-margin-bottom: 138px;
+    border: 1px solid #ececec;
+    background-color: #f7f7f7;
+    margin-bottom: 138px;
 }
 
  li:hover {
@@ -80,11 +81,11 @@ margin-bottom: 138px;
     border: 1px solid #0ec8cb;
 } 
 
-/* I'm not sure if this selector should have been written together */
+
 .svg svg {
     fill: #1b1b1b;
 }
-
+/* I'm not sure if this selector should have been written together */
  li:hover .svg svg,
  li:hover h3, 
  li:hover p {
