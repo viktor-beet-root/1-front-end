@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body {
+    padding: 24px;
+}
+
 .container {
     max-width: 990px;
     margin: 0 auto;
@@ -12,7 +16,45 @@
 
 body {
     background-color: #3399cc;
-    border: 24px solid #2b81ac;
+}
+
+#top,
+#right,
+#bottom,
+#left {
+    position: fixed;
+    background-color: #2b81ac;
+    z-index: 1;
+}
+
+#top,
+#bottom {
+    height: 24px;
+    left: 0;
+    right: 0;
+}
+
+#top {
+    top: 0;
+}
+
+#bottom {
+    bottom: 0;
+}
+
+#left,
+#right {
+    top: 0;
+    bottom: 0;
+    width: 24px;
+}
+
+#left {
+    left: 0;
+}
+
+#right {
+    right: 0;
 }
 
 p,
@@ -44,6 +86,7 @@ h1 i {
 .list li {
     display: inline-block;
     font-size: 14px;
+    box-sizing: border-box;
 }
 
 .lisbon {
@@ -114,18 +157,29 @@ ul {
     background-color: #666699;
 }
 
+
 li div,
 ul li div {
     padding: 35px 0;
     text-align: center;
-    box-shadow:
+
+    /*    box-shadow:
         6px 0 0 0 #fff,
         0 6px 0 0 #fff,
         6px 6px 0 0 #fff,
         6px 0 0 0 #fff inset,
         0 6px 0 0 #fff inset;
+}}
+*/
 }
 
+li {
+    border: 3px solid white;
+}
+
+ul {
+    border: 3px solid white;
+}
 
 h2 {
     color: white;
