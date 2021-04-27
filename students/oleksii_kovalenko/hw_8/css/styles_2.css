@@ -20,11 +20,17 @@ header {
     margin: 100px auto 50px;
     text-align: center;
     color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
 }
 
 h1 {
     margin-bottom: 30px;
     font-size: 70px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 75px;
 }
 
 
@@ -42,23 +48,34 @@ h1 {
 
 .info {
     position: absolute;
-    top: 75%;
-    left: 10%;
+    top: 69%;
+    left: 4%;
     color:  white;
+    padding-left: 10px;
+    padding-right: 25px;
 }
 
 .info>h5{
     padding-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .info>p{
     padding-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
 }
 
 .data>p {
     text-align: center;
     font-size: 20px;
     color: gba(0, 0, 0, .7);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
 }
 
 .lable{
@@ -140,4 +157,7 @@ main {
     text-decoration: none;
     color: white;
     padding-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
 }
