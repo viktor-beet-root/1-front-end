@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding-top: 140px;
+    /* padding-bottom: 138px; */
+}
+.conreiner-title {
+    text-align: center;
+}
+
+.conreiner-title p:first-child {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #898f99;
+    margin-bottom: 35px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    color: #0ec8cb;
+    letter-spacing: 4.8px;
+    font-weight: 400;
+    margin-bottom: 44px;
+}
+
+.conreiner-title p:last-child {
+    font-family: "PT Sans";
+    font-size: 18px;
+    color: #999999;
+    max-width: 505px;
+    margin: 0 auto 107px;
+}
+
+.box {
+    list-style-type:none;
+}
+
+.box li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 62px 33px 94px;
+    box-sizing: border-box;
+}
+
+h3 {
+    color: #1b1b1b;
+    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+    height: 48px;
+    overflow: hidden;
+    margin-bottom: 31px;
+}
+
+li p {
+    font-size: 14px;
+    color: #777777;
+    font-family: "PT Sans";
+}
+
+.svg {
+    height: 65px;
+    margin-bottom: 43px;
+}
+
+li {
+     border: 1px solid #ececec;
+background-color: #f7f7f7;
+margin-bottom: 138px;
+}
+
+ li:hover {
+    background-color: #0ec8cb;
+    border: 1px solid #0ec8cb;
+} 
+
+/* I'm not sure if this selector should have been written together */
+.svg svg {
+    fill: #1b1b1b;
+}
+
+ li:hover .svg svg,
+ li:hover h3, 
+ li:hover p {
+    fill: #ffffff;
+    color:  #ffffff;;
+} 
+
