@@ -1,6 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
 /*header*/
 .header {
-    height: 37px;
     color: white;
     text-align: center;
     background-color: #a52a2a;
