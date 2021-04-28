@@ -74,6 +74,7 @@ body {
 .modalopen:hover {
     opacity: 75%;
     transition: opacity .5s ease-in-out;
+    transform: scale3d(2%);
 }
 
 .close_btn label {
