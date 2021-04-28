@@ -1,0 +1,81 @@
+header>p,h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+.p1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #898f99;
+    padding-top: 140px;
+    margin-bottom: 34px;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    color: #0ec8cb;
+    font-style: lighter;
+    margin-bottom: 42px;
+}
+.p2 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    color: #999999;
+    margin-bottom: 100px;
+}
+.conteiner {
+    width: 940px;
+    margin: 0 auto;
+}
+.cards {
+    box-sizing: content-box;
+    width: 173px;
+    margin: 0px;
+    float: left;
+    padding: 50px 30px;
+    border: #ececec solid 1px; 
+    background-color: #f7f7f7;
+    text-align: center justify;
+    list-style-type: none; 
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    color: #777777; 
+}
+  
+.cards h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    height: 36pt;
+    height: 40px;
+    margin-bottom: 40px;
+    color: black;
+    text-align: center;
+}
+.cards li {
+    margin-bottom: 80px;
+}
+
+.cards:hover,
+.cards:hover>li,
+.cards:hover>h2 {
+    background-color: #0ec8cb;
+    color: white;
+    fill: #fff;}
+div svg {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center justify;
+    
+    
+}
+main {
+    margin-bottom: 80px;
+}
+.conteiner:after {
+    content: "";
+    display: block;
+    margin-bottom: 138px;
+    clear: both;
+}
