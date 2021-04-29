@@ -126,7 +126,7 @@ body {
 }
 
 .media .fa-twitter {
-    transition: transform .3s ease-in-out .8s;
+    transition: transform .3s ease-in-out .2s;
 }
 
 .media .fa-facebook-f {
@@ -134,7 +134,7 @@ body {
 }
 
 .media .fa-google-plus-g {
-    transition: transform .3s linear .2s;
+    transition: transform .3s linear .8s;
 }
 
 .modal:hover .media .fa-twitter,
