@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+
+    background-color: #b07cf7;
+    padding-top:100px ;
+    padding-bottom: 120px;
+
+}
+
+
+ 
+.blog {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.img {
+    display: inline-block;
+    margin-bottom: 90px;
+    
+}
+.blog-day{
+    float: left;
+    
+}
+img {
+    max-height: 370px;
+       
+}
+h2 {
+    font-size: 90px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.blog-header p {
+    max-width: 563px;
+    font-size: 17px;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+
+}
+h3 {
+    font-size: 20px;
+    color: #fff;
+    max-width: 328px;
+    font-weight: 700; 
+}
+
+.blog-day p {
+font-size: 13px;
+font-weight: 300;
+font-family: "Raleway - Light";
+color: #fff;
+}
+
+.day div:first-child {
+    font-size: 32px;
+    color: #fff;
+    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.day div:last-child {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 900;
+    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+}
+
+.day {
+border-radius: 5px;
+background-color: #262626;
+opacity: 0.5;
+width: 60px;
+height: 60px;
+text-align: center;
+position: relative;
+top: 88px;
+left: 32px;
+
+}
+
+button {
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    width: 200px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+    background-color: #f72b3b;
+    font-family: Raleway;
+    padding: 20px;
+}
+.button {
+    text-align: center;
+}
+
+[src="css/img/img_lime.jpeg"],
+[src="css/img/img_peas.jpeg"] {
+        margin-right: 30px
+}
+
