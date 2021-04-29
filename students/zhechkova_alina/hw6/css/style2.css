@@ -11,3 +11,103 @@ body {
     max-width: 1170px;
     margin: 0 auto;
 }
+
+.main .container {
+    text-align: center;
+    padding: 80px 0 110px 0;
+}
+
+.header {
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    line-height: 70px;
+    margin-bottom: 34px;
+}
+
+.header::after {
+    content: '';
+    display: block;
+    max-width: 45px;
+    height: 4px;
+    margin: 0 auto;
+    background-color: #dddbdb;
+}
+
+.content {
+    width: 570px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.first,
+.second,
+.third,
+.fourth {
+    display: inline-block;
+}
+
+.first,
+.second,
+.third {
+    padding-right: 30px;
+}
+
+.position {
+    white-space: nowrap;
+    margin-top: 53px;
+}
+
+.modal {
+    position: relative;
+}
+
+.media {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #18b5dc;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+.modal:hover .media {
+    opacity: 1;
+}
+
+.modal img {
+    display: block;
+}
+
+.name {
+    text-align-last: left;
+    padding-top: 20px;
+}
+
+.name span {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.modal .fab {
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    fill: white;
+    display: inline-block;
+    transform: translateY(120px);
+    background-color: #5ecbe7;
+    width: 50px;
+    padding: 10px 0;
+}
+
+.modal .fab {
+    margin-right: 2px;
+}
