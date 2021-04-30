@@ -1,17 +1,11 @@
-@font-face {
-    font-family: "MyriadProRegular";
-    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
-    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
-        url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
-        url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-
 * {
     margin: 0;
     padding: 0;
-    font-family: "MyriadProRegular";
+}
+
+body {
+    padding-bottom: 140px;
+    padding-top: 140px;
 }
 
 header {
@@ -19,13 +13,26 @@ header {
     text-align: center;
     text-transform: uppercase;
     color: #00C9CC;
-    padding: 80px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-header p {
+header p:first-child {
     color: #9A9A9A;
-    padding: 30px;
+    font-weight: bold;
+    font-size: small;
+    margin-bottom: 35px;
+    letter-spacing: 4px;
+}
+
+header h1 {
+    margin-bottom: 45px;
+    letter-spacing: 2px;
+}
+
+header p:last-child {
+    color: #9A9A9A;
     line-height: 150%;
+    margin-bottom: 105px;
 }
 
 .sections {
@@ -34,31 +41,40 @@ header p {
     max-height: 420px;
 }
 
-.sections div::after {
+.sections li::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.sections div {
+ul li {
+    font-family: 'PT Sans', sans-serif;
+    list-style-type: none;
     text-align: center;
     width: calc(25% - 2px);
     float: left;
+    background-color: #F7F7F7;
     font-size: 14px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 55px;
+    padding-bottom: 100px;
+    border-top: 1px solid #EDEDED;
+    border-left: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
 }
 
-.sections h2 {
+li:last-child {
+    border-right: 1px solid #EDEDED;
+}
+
+ul h2 {
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     overflow: hidden;
     height: 45px;
     padding-bottom: 20px;
 }
 
-div p {
-    display: block;
-    color: #797979;
+li p {
     padding: 25px;
     padding-bottom: 40px;
 }
@@ -66,4 +82,16 @@ div p {
 svg {
     display: block;
     margin: 0 auto 25px;
+}
+
+li svg path {
+    fill: inherit;
+    stroke: inherit;
+    stroke-width: inherit;
+}
+
+li:hover {
+    background-color: #00C9CC;
+    color: white;
+    fill: white;
 }
