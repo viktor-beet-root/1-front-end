@@ -4,10 +4,11 @@
 
 body {
     margin: 0 auto;
-    font-family: \'Trebuchet MS\', Trebuchet, Arial, sans-serif;
+    font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
     font-size: 20px;
     background-color: #3B3F45;
-    border: 20px solid #fff
+    border: 15px solid #fff;
+    height: 100%
 }
 
 .container {
@@ -19,8 +20,8 @@ header {
     background-color: #4A4F56;
     color: #EB7E7F;
     text-align: center;
-    padding: 30px;
-    line-height: 70%;
+    padding: 15px;
+    line-height: 65%;
 }
 
 main {
@@ -33,14 +34,14 @@ footer {
     text-align: center;
     color: #EB7E7F;
     background-color: #4A4F56;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 100px solid #3B3F45;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 80px solid #3B3F45;
 }
 
 label {
     background-color: #88839E;
-    line-height: 250%;
+    line-height: 200%;
     vertical-align: middle;
     display: inline-block;
     width: 100%;
