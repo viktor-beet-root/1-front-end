@@ -1,82 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>CSS Weather Forecast</title>
+	<meta charset="UTF-8">
+	<title>CSS-weather-forecast</title>
 	<meta name="keywords" content="">
 	<meta name="description" content="">
-	<meta charset="UTF-8">
-	<link rel="icon" type="image/png" href="./img/favicon.png">
-	<link rel="stylesheet" href="css/styles2.css">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/styles2.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.5/css/weather-icons.min.css">
 </head>
-<body>
-	<div class="container">
-		<header class="header">
-			<h1>CSS Weather Forecast <span class="wi wi-sunrise"></span></h1>
-		</header>
-		<main>
-			<ul class="cities">
-				<li class="city">
-					<h3 class="city-name">Lisbon</h3>
-					<div class="temperatue">21</div>
-					<span class="wi wi-day-sunny"></span>
-				</li>
-				<li class="city">
-					<h3 class="city-name">Paris</h3>
-					<div class="temperatue">11</div>
-					<span class="wi wi-night-sleet"></span>
-				</li>
-				<li class="city">
-					<h3 class="city-name">Belgrade</h3>
-					<div class="temperatue">15</div>
-					<span class="wi wi-day-cloudy"></span>
-				</li>
-				<li class="city moscow">
-					<h3 class="city-name">Moscow</h3>
-					<div class="temperatue">21</div>
-					<span class="wi wi-day-cloudy-high"></span>
-				</li>
-				<li class="city tel-aviv">
-					<h3 class="city-name">Tel Aviv</h3>
-					<div class="temperatue">32</div>
-					<span class="wi wi-hot"></span>
-				</li><li class="city cair">
-					<h3 class="city-name">Cair</h3>
-					<div class="temperatue">21</div>
-					<span class="wi wi-day-sunny"></span>
-				</li>
-				<li class="city new-york">
-					<h3 class="city-name">New York</h3>
-					<div class="temperatue">17</div>
-					<span class="wi wi-day-sleet-storm"></span>
-				</li>
-				<li class="city">
-					<h3 class="city-name new-delhi">New Delhi</h3>
-					<div class="temperatue">17</div>
-					<span class="wi wi-rain-wind"></span>
-				</li>
-				<li class="city span-2 san-francisco">
-					<h3 class="city-name">San Francisco</h3>
-					<div class="temperatue">15</div>
-					<span class="wi wi-day-sunny-overcast"></span>
-				</li>
-				<li class="city ba-tokyo">
-					<h3 class="city-name">Tokyo</h3>
-					<div class="temperatue">8</div>
-					<span class="wi wi-night-clear"></span>
-				</li>
-				<li class="city sydney">
-					<h3 class="city-name">Sydney</h3>
-					<div class="temperatue">25</div>
-					<span class="wi wi-night-partly-cloudy"></span>
-				</li>
-			</ul>
-		</main>
 
-		<footer class="footer">
+<body>
+	<section class="sect">
+	<div class="container">
+		<h1>CSS Weather forecast</h1>
+		<i class="wi wi-sunrise"></i>
+		<ul class="list">
+			<li class="city city-medium city-blue">Lisbon
+				<span>21&deg;C
+					<i class="wi wi-day-sunny"></i>
+				</span>
+			</li>
+			<li class="city city-small city-lightblue">Paris
+				<span>11&deg;C
+					<i class="wi wi-night-hail"></i>
+				</span>
+			</li>
+			<li class="city city-small city-purple">Belgrade
+				<span>15&deg;C
+					<i class="wi wi-day-cloudy"></i>
+				</span>
+			</li>
+			<li class="city city-small city-red">Moscow
+				<span>21&deg;C
+					<i class="wi wi-day-cloudy-high"></i>
+				</span>
+			</li>
+			<li class="city city-small city-orange">Tel Aviv
+				<span>32&deg;C
+					<i class="wi wi-hot"></i>
+				</span>
+			</li>
+			<li class="city city-small city-yellow">Cair
+				<span>21&deg;C
+					<i class="wi wi-day-sunny"></i>
+				</span>
+			</li>
+			<li class="city city-small city-lightgreen">New York
+				<span>17&deg;C
+					<i class="wi wi-day-sleet-storm"></i>
+				</span>
+			</li>
+			<li class="city city-small city-grayblue">New Delhi
+				<span>17&deg;C
+					<i class="wi wi-rain-wind"></i>
+				</span>
+			</li>
+			<li class="city city-medium city-pink">San Francisco
+				<span>15&deg;C
+					<i class="wi wi-day-sunny-overcast"></i>
+				</span>
+			</li>
+			<li class="city city-small city-green">Tokyo
+				<span>8&deg;C
+					<i class="wi wi-night-clear"></i>
+				</span>
+			</li>
+			<li class="city city-large city-violet">Sydney
+				<span>25&deg;C
+					<i class="wi wi-night-cloudy"></i>
+				</span>
+			</li>
+		</ul>
+		<footer>
 			<p>Have a nice day and don't forget umbrella if you are in New Delhi now!</p>
 		</footer>
 	</div>
-
+</section>
 </body>
+
 </html>
