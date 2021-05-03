@@ -5,34 +5,40 @@
 }
 
 body {
-    font-family: 'Raleway',Arial, Helvetica, sans-serif;
-
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
     background-color: #b07cf7;
-    padding-top:100px ;
+    padding-top: 100px;
     padding-bottom: 120px;
-
 }
 
 
- 
+
 .blog {
     max-width: 1170px;
     margin: 0 auto;
 }
 
 .img {
-    display: inline-block;
-    margin-bottom: 90px;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
 }
-.blog-day{
+
+.blog-header {
+    margin-bottom: 47px;
+}
+
+.blog-day {
     float: left;
-    
 }
+
 img {
     max-height: 370px;
-       
+    height: 100%;
+    object-fit: cover;
 }
+
 h2 {
     font-size: 90px;
     text-align: center;
@@ -46,47 +52,47 @@ h2 {
     text-align: center;
     margin: auto;
     color: #fff;
-
 }
+
 h3 {
     font-size: 20px;
     color: #fff;
     max-width: 328px;
-    font-weight: 700; 
+    font-weight: 700;
+    margin-bottom: 25px;
 }
 
 .blog-day p {
-font-size: 13px;
-font-weight: 300;
-font-family: "Raleway - Light";
-color: #fff;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: "Raleway - Light";
+    color: #fff;
 }
 
-.day div:first-child {
+.day-day div:first-child {
     font-size: 32px;
     color: #fff;
-    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
 
-.day div:last-child {
+.day-day div:last-child {
     color: #fff;
     font-size: 21px;
     font-weight: 900;
-    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
-.day {
-border-radius: 5px;
-background-color: #262626;
-opacity: 0.5;
-width: 60px;
-height: 60px;
-text-align: center;
-position: relative;
-top: 88px;
-left: 32px;
-
+.day-day {
+    border-radius: 5px;
+    background-color: #262626;
+    opacity: 0.5;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    left: 30px;
 }
 
 button {
@@ -99,12 +105,51 @@ button {
     font-family: Raleway;
     padding: 20px;
 }
+
 .button {
     text-align: center;
 }
 
-[src="css/img/img_lime.jpeg"],
-[src="css/img/img_peas.jpeg"] {
-        margin-right: 30px
+.blog-day {
+    height: 310px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
+.day-day {
+    position: absolute;
+}
+
+.description {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    transform: translateY(166px);
+    transition: transform 0.5s ease-in-out; 
+    z-index: 1;
+}
+
+ .blog-day:hover .description {
+    transform: translateY(0);
+} 
+
+ .blog-day::after {
+    width: 370px;
+    height: 151px;
+    content: ''; 
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(166px); 
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.0) 100%);
+
+}
+
+.blog-day:hover::after {
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+}
