@@ -3,44 +3,44 @@
     padding: 0;
 }
 
-html {
+body {
     background-color: #b07cf7;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
 }
 
-
-section {
+.main {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-
 }
 
-header {
-    width: 570px;
-    margin: 100px auto 50px;
-    text-align: center;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 17px;
-}
-
-h1 {
+h2 {
+    margin-top: 100px;
     margin-bottom: 30px;
     font-size: 70px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 75px;
+    text-align: center;
+    color: white;
 }
 
+.head_text {
+    padding: 0 321px 0 312px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+    line-height: 1.4;
+}
 
 .data {
     height: 60px;
     width: 60px;
     border: 1px  rgba(38, 38, 38, .7);
     border-radius: 5px;
-    top:8%;
-    left:10%;
+    top:30px;
+    left:30px;
     position: absolute;
     color: white;
     background-color: rgba(38, 38, 38, .7);
@@ -48,11 +48,11 @@ h1 {
 
 .info {
     position: absolute;
-    top: 69%;
-    left: 4%;
     color:  white;
+    top: 213px;
     padding-left: 10px;
     padding-right: 25px;
+    display: block;
 }
 
 .info>h5{
@@ -69,17 +69,23 @@ h1 {
     font-size: 13px;
 }
 
-.data>p {
+.month {
     text-align: center;
-    font-size: 20px;
     color: white;
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 21px;
 }
 
-.lable{
-    width: 370px;
+.day {
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.blog_item {
     padding-left: 15px;
     padding-right: 15px;
     position: relative;
@@ -93,7 +99,7 @@ img {
     
 }
 
-.main {
+.blog_list {
     display: flex;
     justify-content: center
 }
