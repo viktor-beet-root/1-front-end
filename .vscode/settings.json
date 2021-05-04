@@ -1,3 +1,9 @@
 {
-    "liveServer.settings.port": 5502
+    "liveServer.settings.port": 5502,
+    "search.exclude": {
+        ".vscode": true
+    },
+    "files.exclude": {
+        "*.json": true
+    }
 }
