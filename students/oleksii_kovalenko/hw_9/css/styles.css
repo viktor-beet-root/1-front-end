@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: no-repeat url("../img/blur.jpg") ;
+    background-size: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.main h2 {
+    margin-bottom: 50px;
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.head_text {
+    padding: 0px 230px ;
+    margin: 0px 350px 50px 350px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 1500px;
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container_form {
+    max-width: 600px;
+    width: auto;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.detail {
+    margin-left: 15px;
+    padding-left: 70px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.detail p:not(:first-child ){
+    padding-top: 23px;
+}
+
+.detail a {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+
+/*form*/
+
+.form_item input,textarea {
+    width: 500px;
+    display: block;
+    line-height: 50px;
+    background: rgba(0, 196, 196, .4);
+    margin-bottom: 15px;
+    padding-left: 15px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+input::placeholder {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+textarea::placeholder {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+label {
+    position: relative;
+}
+
+input:focus {
+    border-left: 5px solid #355b82;
+}
+
+textarea:focus {
+    border-left: 5px solid #355b82;
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    background-color: #262626;
+    bottom:0;
+    position:absolute;
+    text-align: center;
+    color: #b9b9b9;
+}
+
+footer p {
+    display: inline-block;
+    padding: 40px;
+}
+
+.red {
+    color: #f12b55;
+}
+
+.pacifico {
+    font-family: 'Pacifico', cursive;
+}
