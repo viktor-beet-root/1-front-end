@@ -175,17 +175,17 @@ transform: perspective(600px) rotateY(0deg);
     transition: transform 0.5s ease-in-out;
 }
 
-.back:hover .fa-google-plus-g {
+.type:hover .fa-google-plus-g {
     transform: translateX(0);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1.2s ease-in-out;
 }
 
-.back:hover .fa-twitter {
+.type:hover .fa-twitter {
     transform: translateX(0);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1.2s ease-in-out;
 }
 
-.back:hover .fa-facebook-f {
+.type:hover .fa-facebook-f {
     transform: translateY(0);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1.2s ease-in-out;
 }
