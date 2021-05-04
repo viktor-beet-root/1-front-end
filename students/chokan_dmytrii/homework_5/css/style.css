@@ -1,0 +1,46 @@
+body {
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+h1 {
+    text-align: center;
+    background-color: #A52A2A;
+    color: white;
+    font-weight: bolder;
+}
+
+.car {
+    border-style: dashed;
+}
+
+#cars {
+    text-align: center;
+}
+
+#ad {
+    font-style: italic;
+    font-weight: bolder;
+    color: #1B31FF;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+header,
+footer {
+    width: 100%;
+}
