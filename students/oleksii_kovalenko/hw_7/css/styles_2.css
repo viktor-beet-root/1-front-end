@@ -4,20 +4,19 @@
     font-weight: normal;
     font-style: normal;
     src: url("../fonts/weathericons-regular-webfont.ttf"),
-        url("../fonts/weathericons-regular-webfont.eot"),
-        url("../fonts/weathericons-regular-webfont.woff") format("woff"),
-        url("../fonts/weathericons-regular-webfont.woff2"),
         url("../fonts/weathericons-regular-webfont.svg") format("svg");
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     transition: all .1s ease-in;
 }
 
-html {
+body {
     background-color: #2b81ac;
+    margin: 25px;
 }
 
 /*header*/
@@ -33,17 +32,11 @@ header{
     font-size: 19px;
 }
 
-body {  
-    background-color: #3399cc;
-    margin: 25px;
-}
-
 /*content*/
 .container {
     max-width: 970px;
     width: auto;
     margin: 0 auto;
-    box-sizing: border-box;
 }
 
 .cities {
@@ -77,7 +70,7 @@ body {
     opacity: 1;
 }
 
-i{
+i {
     font-family: "weather";
 }
 
@@ -85,57 +78,57 @@ li>p{
     opacity: 0.6;
 }
 
-li>p>span{
-    vertical-align: super;
-    font-size: 60%;
-}
-
-li:nth-child(1){
+.lisbon {
     background-color: #3399cc;
     width: 50%;
 }
 
-li:nth-child(2){
+.pais {
     background-color: #33cccc;
     width: 25%;
 }
-li:nth-child(3){
+
+.belgrade {
     background-color: #996699;
     width: 25%;
 }
-li:nth-child(4){
+
+.moscov {
     background-color: #c24747;
     width: 25%;
 }
 
-li:nth-child(5){
+.tel_aviv {
     background-color: #e2674a;
     width: 25%;
 }
-li:nth-child(6){
+
+.cair {
     background-color: #ffcc66;
     width: 25%;
 }
 
-li:nth-child(7){
+.new_york {
     background-color: #99cc99;
     width: 25%;
 }
 
-li:nth-child(8){
+.new_delphi {
     background-color: #669999;
     width: 25%;
 }
 
-li:nth-child(9){
+.san_francisco {
     background-color: #cc6699;
     width: 50%;
 }
-li:nth-child(10){
+
+.tokyo {
     background-color: #339966;
     width: 25%;
 }
-li:nth-child(11){
+
+.sydney {
     background-color: #666699;
     width: 100%;
 }
