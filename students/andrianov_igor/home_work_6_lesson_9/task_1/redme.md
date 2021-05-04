@@ -1,10 +1,7 @@
 https://ice-xo.github.io/1-front-end/students/andrianov_igor/home_work_6_lesson_9/task_1/
 
-Домашнее задание:
+1. Сверстать секцию blog из cahee.psd:
 
-1) namaste_green.psd:
+https://ice-xo.github.io/1-front-end/students/andrianov_igor/home_work_6_lesson_9/task_2/
 
-Link to file
-https://lms.beetroot.academy:3005/bafile/1b0eb2e9-f134-46c9-915e-629d914347aa.psd?bearer=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkFuZHJpYW5vdiBJaG9yIiwidXNlciI6eyJpZCI6ImNrbWJ5c3NjYjRtNmIwNzI0cGQ4ZmdoNnAiLCJ1c2VyTmFtZSI6IkFuZHJpYW5vdiBJaG9yIiwiZW1haWwiOiJpY2VxdWl6ZUBnbWFpbC5jb20iLCJhY3RpdmF0ZWQiOnRydWUsImlzR2RwciI6dHJ1ZSwidGVybU9mVXNlIjp0cnVlLCJyb2xlcyI6WyJST0xFX1NUVURFTlQiXSwiYXZhdGFyIjoiNDY5NjhjODctOTU4Mi00MTg1LWI2NWMtZmNiYjRiOWYwZjE5LmpwZWciLCJwcm9maWxlIjp7ImF2YXRhciI6eyJwYXRoIjoiNDY5NjhjODctOTU4Mi00MTg1LWI2NWMtZmNiYjRiOWYwZjE5LmpwZWcifX0sImNpdHkiOnsiaWQiOiJjanhxZm11cDkwMDB1MDgzNmNhNGVzMGE4IiwibmFtZSI6ItCa0YDQtdC80LXQvdGH0YPQuiJ9fSwiaWF0IjoxNjE5MjkwMjcxLCJleHAiOjE2MTk4OTUwNzF9.gvtF08_I4c8r6-N8RDBPBTecVo8yA5pzfQb-bfl8u-k
-
-при наведении на колонку она должна менять цвет фона и цвет текста
+2. Сделать hover-эффект, используя новые свойства для макета 10_hw/Homepage_default.psd:
