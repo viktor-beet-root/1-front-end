@@ -51,8 +51,8 @@ input[type="radio"] {
 }
 
 
-#signup:checked~form .log,
-#login:checked~form .sign {
+#signup:checked~.log,
+#login:checked~.sign {
     display: block;
 }
 
