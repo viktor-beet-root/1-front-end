@@ -19,7 +19,6 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    /*display: none;*/
     visibility: hidden;
     pointer-events: none;
     opacity: 0;
