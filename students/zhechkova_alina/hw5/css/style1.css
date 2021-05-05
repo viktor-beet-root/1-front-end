@@ -57,10 +57,10 @@ body {
     right: 0;
 }
 
-p,
-i,
-h1,
-h2 {
+.task1 p,
+.task1 i,
+.task1 h1,
+.task1 h2 {
     font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
 }
 
@@ -73,12 +73,12 @@ h1 {
     color: white;
 }
 
-i {
+.task1 i {
     font-size: 27px;
     margin-top: -10px;
 }
 
-h1 i {
+.task1 h1 i {
     font-size: 30px;
     opacity: 1;
 }
@@ -112,7 +112,7 @@ h1 i {
     width: 100%;
 }
 
-ul {
+.list {
     font-size: 0;
 }
 
@@ -162,23 +162,22 @@ li div,
 ul li div {
     padding: 35px 0;
     text-align: center;
-
-    /*    box-shadow:
-        6px 0 0 0 #fff,
-        0 6px 0 0 #fff,
-        6px 6px 0 0 #fff,
-        6px 0 0 0 #fff inset,
-        0 6px 0 0 #fff inset;
-}}
-*/
 }
 
-li {
-    border: 3px solid white;
+.list li {
+    border-right: 6px solid white;
+    border-top: 6px solid white;
 }
 
-ul {
-    border: 3px solid white;
+.list li:nth-child(1),
+.list li:nth-child(4),
+.list li:nth-child(8),
+.list li:nth-child(11) {
+    border-left: 6px solid white;
+}
+
+.list li:last-child {
+    border-bottom: 6px solid white;
 }
 
 h2 {

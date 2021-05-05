@@ -9,8 +9,7 @@
     padding: 140px 0;
 }
 
-h2::before {
-    content: 'Who we are';
+.who-we-are {
     display: block;
     font-size: 12px;
     color: #898f99;
@@ -19,7 +18,7 @@ h2::before {
     font-weight: 700;
 }
 
-h2 {
+.task1 h2 {
     color: #0ec8cb;
     font-size: 48px;
     padding-bottom: 25px;
@@ -27,7 +26,7 @@ h2 {
     font-weight: 400;
 }
 
-p {
+.task1 p {
     font-family: 'PT Sans', sans-serif;
     margin: 0 auto;
     font-size: 18px;
@@ -42,34 +41,38 @@ p {
     width: 500px;
 }
 
-h2,
-h3,
-h2::before {
+.task1 h2,
+.task1 h3,
+.task1 h2::before {
     text-align: center;
     text-transform: uppercase;
 }
 
-ul {
+.box {
     list-style-type: none;
 }
 
-ul li {
+.box li {
     width: 25%;
     float: left;
 }
 
 .list {
     background-color: #f7f7f7;
-    box-shadow:
-        2px 0 0 0 #ececec,
-        0 2px 0 0 #ececec,
-        2px 2px 0 0 #ececec,
-        2px 0 0 0 #ececec inset,
-        0 2px 0 0 #ececec inset;
     height: 418px;
 }
 
-.list p {
+.list {
+    border-bottom: 2px solid #ececec;
+    border-top: 2px solid #ececec;
+    border-right: 2px solid #ececec;
+}
+
+.box li:first-child .list {
+    border-left: 2px solid #ececec;
+}
+
+.box p {
     width: 178px;
 }
 
@@ -122,4 +125,10 @@ ul::after {
 
 .list:hover svg {
     fill: white;
+}
+
+.box li:nth-of-type(2) h3 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
