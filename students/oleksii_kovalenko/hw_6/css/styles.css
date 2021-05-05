@@ -6,7 +6,6 @@
 }
 
 body {
-    width: 100%;
     font-family: Trebuchet, Arial, sans-serif;
     background: #3b3f45;
     margin: 0 auto;
@@ -20,13 +19,8 @@ header {
     color: #eb7e7f;
 }
 
-h1 {
-    margin: 0;
-}
-
 p {
-    font-size: 0.7cm;
-    margin: 0;
+    font-size: 15px;
     line-height: 20px;
 }
 
@@ -40,7 +34,6 @@ main {
 li {
     line-height: 3.4em;
     list-style: none;
-    margin: 0;
     background-color: #88839e;
 }
 
