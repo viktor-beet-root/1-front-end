@@ -11,7 +11,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 100px 15px;
+    padding: 81px 15px;
     box-sizing: border-box;
 }
 
@@ -32,7 +32,8 @@ body {
     max-width: 570px;
     width: 100%;
     margin: 0 auto;
-    padding-bottom: 33px;
+    padding-bottom: 44px;
+    line-height: 1.5;
 }
 
 img {
@@ -66,7 +67,7 @@ img {
 
 .task1 h2 {
     font-size: 90px;
-    padding-bottom: 27px;
+    padding-bottom: 23px;
 }
 
 .person-list {
