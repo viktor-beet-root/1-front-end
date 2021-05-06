@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: #fdde7e;
+}
+
+body {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.container {
+    padding: 48px 0;
+    height: 100vh;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.cost {
+    font-family: 'Miso Bold', Arial, Helvetica, sans-serif;
+    display: block;
+    margin: 0 auto;
+    font-size: 70px;
+    letter-spacing: -5px;
+    color: #02995b;
+}
+
+.title {
+    font-family: 'Miso';
+    font-weight: normal;
+    font-size: 56px;
+    margin-bottom: 17px;
+}
+
+.description {
+    font-size: 20px;
+    width: 162px;
+    margin: 0 auto;
+}
+
+.item {
+    background-color: #fff;
+    flex-basis: 360px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0px 0px 7px -1px rgba(34, 60, 80, 0.2);
+
+}
+
+.item-flex-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 502px;
+    align-items: center;
+}
+
+.gold {
+    align-self: stretch;
+}
+
+.item:not(.gold) {
+    padding: 35px 0;
+}
+
+.gold {
+    padding: 46px 0 50px;
+}
+
+.item:not(.gold) .cost {
+    margin-bottom: 5px;
+}
+
+.gold .cost {
+    margin-bottom: 28px;
+}
+
+.item:not(.gold) img {
+    margin-bottom: 30px;
+}
+
+.gold .title {
+    margin-bottom: 26px;
+}
+
+.gold img {
+    margin-bottom: 25px;
+}
