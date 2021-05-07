@@ -42,8 +42,8 @@ section {
     list-style-type: none;
     display: inline-block;
     box-sizing: border-box;
-    width: calc(25% - 3px);
-    border-right: 30px solid transparent;
+    width: calc(25%-30px);
+    margin-right: 30px;
 }
 
 li img {
@@ -57,7 +57,7 @@ li p {
 }
 
 .container li:last-child {
-    border-right: 0;
+    margin-right: 0;
 }
 
 .eff {
