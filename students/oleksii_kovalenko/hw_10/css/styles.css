@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e2e7ec;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    max-width: 1180px;
+    margin: 82px auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-agound;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.card1 {
+    width: 740px;
+    height: 100%;
+    margin: 10px;
+    display: block;
+    position: relative;
+}
+
+.text_on_picture .title {
+    padding-right: 154px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.text_on_picture .data {
+    padding-left: 23px;
+    color: #9c9890;
+}
+
+.card1 .autor {
+    display: none;
+}
+
+.card {
+    width: 360px;
+    margin: 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card p {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.data {
+    font-size: 13px;
+    margin-bottom: 19px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 22px;
+    padding-bottom: 51px;
+    flex-grow: 1;
+}
+
+.autor {
+    padding-left: 29px;
+}
+
+.card img {
+    margin-bottom: 21px;
+}
+
+.first {
+    margin-bottom: 0;
+}
+
+.text_on_picture {
+    position: absolute;
+    top: 402px;
+    left: 40px;
+}
+
+.card1::before {
+    content: "";
+    display: block;
+    background-image: linear-gradient(to top, black 0%, transparent 100%);
+    background-size: cover;
+    background-position: center;
+    width: 740px;
+    height: 50%;
+    position: absolute;
+    top: 267px;
+}
