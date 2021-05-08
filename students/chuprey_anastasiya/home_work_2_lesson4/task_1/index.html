@@ -5,11 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Список покупок</title>
 </head>
 
 <body>
+    <header>
+        <h2>Що потрібно купити:</h2>
+        <p>Заплановані стави:стейк,салат</p>
+    </header>
+    <main>
+        <h1>Продукти</h1>
+        <section>
+            <h3>Овочі:</h3>
+            <form action="#">
+                <ul>
+                    <li> <label><input type="checkbox" name="Pepper">Перець</label></li>
+                    <li> <label><input type="checkbox" name="Carrots">Морква</label></li>
+                    <li> <label><input type="checkbox" name="Cucumbers">Огірки</label></li>
+                    <li> <label><input type="checkbox" name="Salad">Салат</label></li>
+                </ul>
+            </form>
+        </section>
+        <section>
+            <h3>Фрукти:</h3>
+            <form action="#">
+                <ul>
+                    <li> <label><input type="checkbox" name="Apples">Яблука</label></li>
+                    <li> <label><input type="checkbox" name="Grape">Виноград</label></li>
+                    <li> <label><input type="checkbox" name="Bananas">Банани</label></li>
+                </ul>
+            </form>
+        </section>
+        <section>
+            <h3>Мясо та молочні продукти:</h3>
+            <form action="#">
+                <ol>
+                    <li>
+                        <input type="checkbox" id="product1" name="product" value="Milk">
+                        <label for="product1">Молоко</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="product2" name="product2" value="Butter">
+                        <label for="product2">Масло</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="product3" name="product3" value="beef">
+                        <label for="product3">Говядина</label>
+                    </li>
+                </ol>
+            </form>
+        </section>
 
+    </main>
 </body>
 
 </html>
