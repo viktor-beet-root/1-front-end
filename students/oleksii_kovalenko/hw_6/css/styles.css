@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,8 +6,13 @@
 }
 
 body {
-    font-family: Trebuchet, Arial, sans-serif;
     background: #3b3f45;
+    font-family: Trebuchet, Arial, sans-serif;
+    border: 25px solid white;
+}
+
+.container {
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -19,34 +24,47 @@ header {
     color: #eb7e7f;
 }
 
-p {
-    font-size: 15px;
-    line-height: 20px;
+header h1 {
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 25px;
+    padding-bottom: 25px;
 }
 
 /*Main*/
 
 main {
-    background-color: #3b3f45;
-    margin: 40px auto;
+    background: #3b3f45;
 }
 
 li {
-    line-height: 3.4em;
+    font-size: 24px;
+    line-height: 1.4;
     list-style: none;
     background-color: #88839e;
 }
 
 ul {
-    padding: 15px;
+    padding: 35px;
 }
 
 .label-text {
     color: white;
 }
 
+.text-in-brackets {
+    color: #a3a0b5;
+    font-size: 17px;
+}
+
 label {
     display: block;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 input[type="checkbox"]:checked + .label-text {
@@ -54,24 +72,19 @@ input[type="checkbox"]:checked + .label-text {
     color: #a3a0b5;
 }
 
-:hover.even {
-    background-color: #625e77;
-    border-top: 3px solid white;
-    border-bottom: 3px solid white;
+.list li:nth-of-type(2n) {
+    background: #7a7593;
 }
 
-:hover.odd {
-    background-color: #625e77;
-    border-top: 3px solid white;
-    border-bottom: 3px solid white;
+.list li {
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
 }
 
-.odd {
-    background-color: #88839e;
-}
-
-.even {
-    background-color: #7a7593;
+.list li:hover {
+    background: #625e77;
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
 }
 
 li > :active {
@@ -81,12 +94,13 @@ li > :active {
 /*Footer*/
 
 footer {
-    margin: 40px auto;
+    margin: 0 auto;
+    margin-bottom: 183px;
+    width: 740px;
     background-color: #4a4f56;
     text-align: center;
     color: #eb7e7f;
-}
-
-footer p {
-    padding-top: 24px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 25px;
 }
