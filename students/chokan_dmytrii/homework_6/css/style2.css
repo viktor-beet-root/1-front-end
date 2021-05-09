@@ -4,11 +4,14 @@
 
 body {
     margin: 0 auto;
+    box-sizing: border-box;
+    min-height: 100vh;
     font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
     font-size: 20px;
     background-color: #3B3F45;
+    height: 100%;
     border: 15px solid #fff;
-    height: 100%
+    overflow: hidden;
 }
 
 .container {
