@@ -1,39 +1,60 @@
-.container {
-    max-width: 1170px;
-    margin: 0 auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/*Main container*/
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url("../fonts/ProximaNova-Regular.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-.small_box {
-    width: 33.333%;
-    float: left;
-    text-align: center;
-    padding: 0;
-    margin-top: 160px;
-    display: block;
+@font-face {
+    font-family: 'Proxima Nova Light';
+    src: url("../fonts/ProximaNova-Light.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+.main {
+    max-width: 964px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.container li {
+    padding:  35px 10px;
+    list-style: none;
 }
 
 .big {
     color: black;
-    font-size: 24px;
-    font-family: "Raleway";
+    font-size: 14px;
+    font-family: 'Proxima Nova Regular',Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    line-height: 1;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .small {
-    color: black;
+    color:#9d9d9d;
     font-size: 14px;
-    font-family: "Raleway";
-    line-height: 1.714;
+    line-height: 1.4;
+    font-family: 'Proxima Nova Light',Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0 35px 0 35px;
 }
 
 /*Circle*/
 
 .circle {
-    top: 53px;
     height: 65px;
     width: 65px;
     border-radius: 50%;
@@ -43,14 +64,23 @@
     border-color: rgb(18, 117, 185);
     background-color: #1275b9;
     display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.circle path {
+    fill-rule: evenodd;
+    fill: rgb(255, 255, 255);
 }
 
 /*Hover*/
 
-.small_box:hover .circle {
+.circle:hover {
     background-color: white;
 }
 
-div :hover svg * {
+.circle:hover path{
     fill: #1275b9;
 }
