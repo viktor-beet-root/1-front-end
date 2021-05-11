@@ -67,6 +67,8 @@ body {
 .list {
     list-style-type: none;
     margin-top: 36px;
+    background-color: #fff;
+    border: 3px solid white;
 }
 
 h1 {
@@ -91,10 +93,15 @@ h1 {
 
 .lisbon {
     width: 50%;
+    background-color: #3399cc;
 }
 
 .sanfrancisco {
     width: 50%;
+}
+
+.block {
+    border: 3px solid white;
 }
 
 .paris,
@@ -157,28 +164,12 @@ h1 {
     background-color: #666699;
 }
 
-
 li div,
 ul li div {
     padding: 35px 0;
     text-align: center;
 }
 
-.list li {
-    border-right: 6px solid white;
-    border-top: 6px solid white;
-}
-
-.list li:nth-child(1),
-.list li:nth-child(4),
-.list li:nth-child(8),
-.list li:nth-child(11) {
-    border-left: 6px solid white;
-}
-
-.list li:last-child {
-    border-bottom: 6px solid white;
-}
 
 h2 {
     color: white;
