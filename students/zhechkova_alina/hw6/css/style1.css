@@ -15,18 +15,24 @@ body {
     box-sizing: border-box;
 }
 
-.task1 h2,
-.task1 p:not(.date) {
+.blog h2,
+.blog p:not(.date) {
     color: white;
     text-align: center;
 }
 
-.task1 h2,
+.blog h2 {
+    font-size: 90px;
+    padding-bottom: 23px;
+
+}
+
+.blog h2,
 .date {
     font-weight: 700;
 }
 
-.task1 p:not(.date) {
+.blog p:not(.date) {
     font-weight: 300;
     font-size: 17px;
     max-width: 570px;
