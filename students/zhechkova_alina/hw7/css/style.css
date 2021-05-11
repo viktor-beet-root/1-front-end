@@ -64,15 +64,15 @@ address {
     display: inline-block;
 }
 
+
 .contact_form {
-    display: inline-block;
     font-size: 0;
 }
 
 .info {
-    transform: translateY(-290px);
-    text-align-last: left;
-    padding-left: 166px;
+    text-align: left;
+    vertical-align: top;
+    margin-left: 85px;
 }
 
 .info address,

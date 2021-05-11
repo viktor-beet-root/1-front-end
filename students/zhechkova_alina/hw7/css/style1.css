@@ -86,7 +86,8 @@ form label:not([type="checkbox"]+span) span {
     border-bottom: 2px solid #e66a64;
 }
 
-form input[type="text"] {
+form input[type="text"],
+form input[type="password"] {
     border: none;
     border: 1px solid #9b85c7;
     background: rgba(0, 0, 0, 0);
@@ -96,12 +97,7 @@ form input[type="text"] {
     box-sizing: border-box;
     padding: 0 20px;
     font-size: 16px;
-    font-weight: 400;
     margin-bottom: 10px;
-}
-
-form input[type="text"]:focus {
-    outline: none;
 }
 
 form a {
