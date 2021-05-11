@@ -91,11 +91,18 @@ img {
     position: absolute;
     z-index: 1;
     left: 0;
+
+}
+
+.title a {
     color: white;
     font-weight: 700;
+    text-decoration: none;
 }
 
 .date {
+    color: white;
+    font-weight: 700;
     top: 0;
     font-size: 32px;
     margin: 31px;
