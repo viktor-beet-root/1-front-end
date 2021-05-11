@@ -59,34 +59,34 @@ body {
     align-items: center;
 }
 
-.gold {
+.item:hover {
     align-self: stretch;
 }
 
-.item:not(.gold) {
+.item {
     padding: 35px 0;
 }
 
-.gold {
+.item:hover {
     padding: 46px 0 50px;
 }
 
-.item:not(.gold) .cost {
+.item .cost {
     margin-bottom: 5px;
 }
 
-.gold .cost {
+.item:hover .cost {
     margin-bottom: 28px;
 }
 
-.item:not(.gold) img {
+.item img {
     margin-bottom: 30px;
 }
 
-.gold .title {
+.item:hover .title {
     margin-bottom: 26px;
 }
 
-.gold img {
+.item:hover img {
     margin-bottom: 25px;
 }
