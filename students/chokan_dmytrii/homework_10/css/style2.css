@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 50px 0;
+}
+
+.section {
+    padding: 50px 0;
+    max-width: 400px;
+    margin: 0 auto;
+    background-image: url(../img/background2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.section__container {
+    max-width: 262px;
+    margin: 0 auto;
+}
+
+.section__link {
+    color: white;
+    text-decoration: none;
+}
+
+.page__navigation {}
+
+.navigation {}
+
+.navigation__container {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.navigation__link-checked {
+    padding-right: 25px;
+}
+
+.navigation__link-checked::after {
+    display: block;
+    content: '';
+    background-color: #E66A64;
+    height: 2px;
+    flex-basis: 33.33333%;
+    position: relative;
+    top: 4px;
+}
+
+.navigation__link-not-checked {
+    color: #E8D1F4;
+    flex-basis: 33.33333%;
+}
+
+.section__form {}
+
+.form {}
+
+.form__part {}
+
+.form__part-label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.form__part-input {
+    width: 100%;
+    line-height: 24px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: 2px solid #9D85C7;
+}
+
+.form__checkbox {
+    margin-bottom: 40px;
+}
+
+.form__checkbox-label {
+    font-size: 13px;
+}
+
+.form__checkbox-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: none;
+    pointer-events: none;
+    left: -1000px;
+}
+
+.form__checkbox-input+.checkbox-span {
+    position: relative;
+    padding-left: 25px;
+}
+
+.checkbox-input {
+    margin-right: 6px;
+}
+
+.form__checkbox-input+.checkbox-span::before,
+.form__checkbox-input+.checkbox-span::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form__checkbox-input+.checkbox-span::before {
+    height: 16px;
+    width: 16px;
+    background-color: #23AE92;
+}
+
+.form__checkbox-input+.checkbox-span::after {
+    width: 3px;
+    height: 7px;
+    border-right: 2.5px solid white;
+    border-bottom: 2.5px solid white;
+    left: 5px;
+    top: 3px;
+    transform: rotate(45deg) scale(0);
+    transition: transform .5s ease;
+}
+
+.form__checkbox-input:checked+.checkbox-span::after {
+    transform: rotate(45deg) scale(1);
+}
+
+
+.form__submit {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    padding: 12px 0;
+    margin: 0 auto 30px;
+    background-color: #23AE92;
+    border: 1px solid #23AE92;
+}
+
+.section__footer {}
+
+.footer {
+    font-weight: 300;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__part {}

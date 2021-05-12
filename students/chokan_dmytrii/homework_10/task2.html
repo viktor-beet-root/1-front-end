@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body class="page">
+    <section class="page__section section">
+        <div class="section__container">
+            <nav class="page__navigation navigation">
+                <div class="navigation__container">
+                    <a class="section__link navigation__link navigation__link-checked" href="#">Sign in</a>
+                    <a class="section__link navigation__link navigation__link-not-checked" href="#">Join us</a>
+                </div>
+            </nav>
+            <form action="#" method="get" class="section__form form">
+                <div class="form__part">
+                    <label for="username" class="form__part-label">Username</label>
+                    <input type="text" name="username" class="form__part-input">
+                </div>
+                <div class="form__part">
+                    <label for="password" class="form__part-label">Password</label>
+                    <input type="text" name="password" class="form__part-input">
+                </div>
+                <div class="form__checkbox checkbox">
+                    <label for="keep_signed" class="form__checkbox-label">
+                        <input type="checkbox" name="keep_signed" class="form__checkbox-input checkbox-input"><span
+                            class="checkbox-span">Keep me signed in</span>
+                    </label>
+                </div>
+                <button type="submit" class="form__submit">Sign in</button>
+            </form>
+            <div class="section__footer footer">
+                <a href="#" class="section__link footer__part">Forgot password</a>
+                <a href="#" class="section__link footer__part">Create an account</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
