@@ -54,10 +54,6 @@ body {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-weight: 300;
     background-color: #262626;
-    /* height: 866px; */
-    /* background-image: url(../img/img.jpg);
-    background-size: cover; */
-
 }
 
 textarea {
@@ -65,27 +61,17 @@ textarea {
 }
 
 .img-conteiner {
-    /* height: 100%;
-    width: 100%;     */
-    /* margin: 0 auto; */
     background-image: url(../img/img.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     flex: 1 0 auto;
     height: 866px;
-    /* height: 100vh; */
-    /* height: 866px; */
-    /* align-self: center; */
-    /* justify-content: center;
-    align-items: center; */
 }
 
 .conteiner {
     max-width: 1200px;
     margin: 0 auto;
-    /* flex: 1 0 auto; */
-
 }
 
 .contact {
@@ -97,7 +83,6 @@ textarea {
     text-align: center;
     color: #262626;
     margin-bottom: 62px;
-
 }
 
 .contact-text {
@@ -111,11 +96,8 @@ textarea {
     color: #262626;
 }
 
-
 .content {
     display: flex;
-
-
 }
 
 .content__form-wrapper {
@@ -128,19 +110,11 @@ textarea {
     margin-bottom: 15px;
 }
 
-/* 
-.content__contacts input {
-    display: inline-block;
-    margin-bottom: 15px;
-} */
-
 .content__form {
-
     flex: 0 0 500px;
     padding-right: 166px;
     box-sizing: border-box;
 }
-
 .content__contacts {
     flex: 0 0 500px;
 }
@@ -197,14 +171,12 @@ textarea {
     padding-top: 33px;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-weight: 300;
-    /* line-height: 25px; */
 }
 
 .content__contacts address {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-style: normal;
-
 }
 
 .content__contacts h3 {
@@ -228,27 +200,7 @@ textarea {
     letter-spacing: 1px;
 }
 
-
-
-
-/* .content__input {
-    display: block;
-    background-color: #00c4c4;
-    opacity: 0.5;
-    line-height: 33.3px;
-    width: 495px;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
-    padding: 20px;
-    color: white;
-    font-size: 15px;
-    border: none;
-    border-left: 5px solid rgba(53, 91, 130, 0);
-} */
-
-
 .footer {
-    /* max-width: 1200px;
-    margin: 0 auto; */
     flex-shrink: 0;
     display: flex;
     height: 90px;
@@ -256,16 +208,11 @@ textarea {
     color: #b9b9b9;
     width: 1170px;
     margin: 0 auto;
-
 }
 
 .footer div {
-    /* display: flex; */
     width: 33.33333%;
     box-sizing: border-box;
-    /* padding: 0px 0px 0px 0px; */
-    /* justify-content: center; */
-    /* text-align: center; */
 }
 
 .footer__company {
