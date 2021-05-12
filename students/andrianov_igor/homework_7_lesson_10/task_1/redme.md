@@ -1,4 +1,4 @@
-https://ice-xo.github.io/For_Git_Hub_Pages/homework_7_lesson_10/task_1/
+https://ice-xo.github.io/1-front-end/students/andrianov_igor/homework_7_lesson_10/task_1/
 
 Домашнее задание:
 
