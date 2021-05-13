@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "MuseoSansRounded-100";
+    src: url("../fonts/MuseoSansRounded-100.ttf") format("truetype");
+  }
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    background: url(../images/main\ bg.jpg) center/cover no-repeat;
+    font-family: "MuseoSansRounded-100",Arial, Helvetica, sans-serif;
+}
+
+.main {
+    padding-top: 110px;
+}
+.container {
+    max-width: 686px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+.product-card {
+    background: #111a28;
+    border-radius: 10px;
+}
+
+.product-card {
+    display: flex;
+    justify-content: center;
+}
+
+.product-card__slider {
+    padding-left: 35px;
+}
+
+.product-card__slider-item {
+    padding-top: 125px;
+    padding-bottom: 30px;
+
+}
+
+.product-card__slider-image {
+    max-width:100%;
+    height:auto;
+}
+
+
+.product-card__slider-navigation {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.product-card__slider-navigation-item {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;;
+    cursor: pointer;
+}
+
+.color-blue {
+    background: #1f273f;
+    border: 2px #7b8088 solid;
+}
+
+.color-white {
+    background: white;
+}
+
+.color-red {
+ background: #ed3333;
+
+}
+
+.color-cian {
+    background: #29e3ea;
+}
+
+.product-card__link {
+    font-size: 24px;
+    color: #adafb3;
+    text-decoration: none;
+}
+
+.product-card__description {
+    font-size: 14px;
+    color: #49505a;
+}
+
+.product-card__info {
+    padding-top: 63px;
+    padding-left: 146px;
+    padding-right: 22px;
+
+}
+
+.rating__list {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-items: center;
+}
+
+.product-card__description {
+    padding-bottom: 24px;
+}
+
+.product-card__size-wrapper {
+    padding-bottom: 30px;
+}
+
+.rating {
+    padding-bottom: 30px;
+}
+
+.product-card__slider-navigation {
+    padding-bottom: 30px;
+}
+
+.rating__item {
+    width: 9px;
+    height: 9px;
+    margin-right: 4px;
+    background-image: url(../images/star.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.rating__item_active {
+    background-image: url(../images/star-active.svg);
+}
+
+
+.product-card__size-list {
+    background: transparent;
+    color: #797d84;
+    font-size: 14px;
+    font-family: "MuseoSansRounded-100",Arial, Helvetica, sans-serif;
+}
+
+.product-card__qty-list {
+    background: transparent;
+    color: #797d84;
+    font-size: 14px;
+    font-family: "MuseoSansRounded-100",Arial, Helvetica, sans-serif;
+
+}
+
+.button {
+    width: 170px;
+    height: 40px;
+    background: #202835;
+    border: 1px solid #4f5560;
+    color: #80848b;
+    font-size: 14px;
+    font-family: "MuseoSansRounded-100",Arial, Helvetica, sans-serif;
+}
