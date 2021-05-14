@@ -1,0 +1,29 @@
+@import url(//db.onlinewebfonts.com/c/cf2e520b1f09b1054a329a50e225ac01?family=Museo+Sans+Rounded+100);
+
+@font-face {
+    font-family: $default-font;
+    src: url("//db.onlinewebfonts.com/t/cf2e520b1f09b1054a329a50e225ac01.eot");
+    src: url("//db.onlinewebfonts.com/t/cf2e520b1f09b1054a329a50e225ac01.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/cf2e520b1f09b1054a329a50e225ac01.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/cf2e520b1f09b1054a329a50e225ac01.woff") format("woff"), url("//db.onlinewebfonts.com/t/cf2e520b1f09b1054a329a50e225ac01.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/cf2e520b1f09b1054a329a50e225ac01.svg#Museo Sans Rounded 100") format("svg");
+}
+
+.page {
+    font-family: $default-font;
+}
+
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 22px 50px 20px 21px;
+    box-sizing: border-box;
+    background: $bg-color;
+    border-radius: 13px;
+    box-shadow: 0px 0px 17px 0px rgba(34, 60, 80, 0.48);
+}
+
+.nike-section {
+    margin: 0 (-$default-gap);
+    padding: $default-gap;
+    background-image: url(../image/main_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

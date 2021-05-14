@@ -1,0 +1,119 @@
+.container {
+    max-width: $container-width;
+}
+
+.nike-section__logo {
+    height: 37px;
+    margin-bottom: 12px;
+}
+
+.card-item {
+    display: flex;
+}
+
+.card-item__info {
+    margin-left: 75px;
+}
+
+.btn-submit {
+    width: 100%;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.item-info__title {
+    color: $title-color;
+    font-size: $title-size;
+}
+
+.item-info__subtitle {
+    color: $subtitle-color;
+    font-size: $subtitle-size;
+    line-height: 34px;
+}
+
+.rating__star {
+    margin-right: -3px;
+    margin-bottom: 20px;
+}
+
+.form__size,
+.form__qty {
+    font-family: $default-font;
+    border: 1px solid $border-color;
+    background-color: $bg-color;
+    color: #a9aaad;
+    padding: 0 11px;
+    height: 30px;
+    font-size: $subtitle-size;
+    text-align: center;
+    margin-bottom: 29px;
+}
+
+.btn-submit {
+    background-color: $bg-btn;
+    color: #a9aaad;
+    border: $border-btn;
+    padding: $padding-btn;
+}
+
+.form__button-submit {
+    margin-bottom: 50px;
+}
+
+.item-card__slider-navigation-item {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.nike-card__image {
+    margin-bottom: 65px;
+    width: 338px;
+}
+
+.nike-card__slider-navigation {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+}
+
+.nike-card__nav-custom::after {
+    content: '';
+    display: inline-block;
+    height: 9px;
+    width: 9px;
+    border-radius: 7px;
+}
+
+.item-card__slider-navigation-item:checked+.nike-card__nav-custom::after {
+    border: 2px solid rgba(255, 255, 255, .46);
+}
+
+.nike-card {
+    padding: 50px 0 0 13px;
+}
+
+.nike-card__nav-custom_darkblue::after {
+    background-color: #1f273f;
+}
+
+.nike-card__nav-custom_white::after {
+    background-color: #fff;
+}
+
+.nike-card__nav-custom_red::after {
+    background-color: #ed3333;
+}
+
+.nike-card__nav-custom_blue::after {
+    background-color: #29e3ea;
+}
