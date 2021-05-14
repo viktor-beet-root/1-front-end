@@ -1,0 +1,106 @@
+.team-section__container {
+    text-align: center;
+}
+
+.team__subtitle {
+    font-size: $subtitle-size;
+    line-height: 24px;
+    color: #898f8f;
+    font-family: $default-font;
+    font-weight: $default-font-weight;
+}
+
+.team__title {
+    font-size: $title-size;
+    line-height: 66px;
+    color: $title-color;
+    font-family: $title-font;
+    font-weight: $title-font-weight;
+    margin-bottom: 34px;
+}
+
+.info {
+    display: flex;
+}
+
+.info__image-section,
+.content {
+    padding: 74px 70px;
+    width: 50%;
+    height: 560px;
+}
+
+.content {
+    border-left: 1px solid $border-color;
+    box-sizing: border-box;
+}
+
+.content__title {
+    font-family: $title-font;
+    font-weight: $title-font-weight;
+    color: #666666;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.content__title::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 1px;
+    background: $border-color;
+    margin-top: 30px;
+}
+
+.content__subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.media__link {
+    border: 2px solid #cdcdcd;
+    color: #cccccc;
+    border-radius: 50%;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+}
+
+.content__media {
+    margin-bottom: 23px;
+}
+
+.content__text {
+    font-size: $content-size;
+    font-weight: $default-font-weight;
+    line-height: 24px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.content__text::after {
+    display: block;
+    margin: 24px auto 0;
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: $border-color;
+
+}
+
+.content__text::before {
+    display: block;
+    margin: 0 auto;
+    content: '';
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    top: 141px;
+    left: 200px;
+}
