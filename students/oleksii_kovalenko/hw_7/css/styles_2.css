@@ -1,0 +1,148 @@
+/*fonts*/
+@font-face {
+    font-family: "weather";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/weathericons-regular-webfont.ttf"),
+        url("../fonts/weathericons-regular-webfont.svg") format("svg");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+
+body {
+    font-family: 'Lucida Sans Unicode','Lucida Grande','sans-serif';
+    background-color: #2b81ac;
+    margin: 25px;
+}
+
+/*header*/
+
+.header {
+    max-width: 970px;
+    width: auto;
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    color: white;
+    font-size: 19px;
+}
+
+/*content*/
+.container {
+    max-width: 970px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.cities {
+    list-style: none;
+    font-family: "weather";
+    text-align: center;
+    font-size: 0;
+}
+
+.cities li {
+    padding-top: 35px;
+    padding-bottom: 30px;
+    display: inline-block;
+    font-size: 25px;
+    color: white;
+    border: 3px solid white;
+    outline: 3px solid white;
+}
+
+.cities>li>i{
+    display:block;
+}
+
+.cities:hover>li{
+    opacity: 0.6;
+}
+
+.cities li:hover{
+    opacity: 1;
+}
+
+li:hover p{
+    opacity: 1;
+}
+
+i {
+    font-family: "weather";
+}
+
+.tem{
+    opacity: 0.6;
+}
+
+.lisbon {
+    background-color: #3399cc;
+    width: 50%;
+}
+
+.pais {
+    background-color: #33cccc;
+    width: 25%;
+}
+
+.belgrade {
+    background-color: #996699;
+    width: 25%;
+}
+
+.moscov {
+    background-color: #c24747;
+    width: 25%;
+}
+
+.tel_aviv {
+    background-color: #e2674a;
+    width: 25%;
+}
+
+.cair {
+    background-color: #ffcc66;
+    width: 25%;
+}
+
+.new_york {
+    background-color: #99cc99;
+    width: 25%;
+}
+
+.new_delphi {
+    background-color: #669999;
+    width: 25%;
+}
+
+.san_francisco {
+    background-color: #cc6699;
+    width: 50%;
+}
+
+.tokyo {
+    background-color: #339966;
+    width: 25%;
+}
+
+.sydney {
+    background-color: #666699;
+    width: 100%;
+}
+
+/*footer*/
+
+.footer {
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 108px;
+    max-width: 970px;
+    width: auto;
+    color: white;
+    font-size: 18px;
+}
