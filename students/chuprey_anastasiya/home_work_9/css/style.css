@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 105px 0 115px 0;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    color: #3c3c3c;
+}
+
+.ho-we-are_title {
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 33px;
+    position: relative;
+}
+
+.ho-we-are_title::after {
+    content: '';
+    display: block;
+    width: 45px;
+    height: 4px;
+    background: #dddbdb;
+    margin: 20px auto 0 auto;
+}
+
+.ho-we-are_text {
+    max-width: 570px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 auto;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 57px;
+}
+
+.who-we-are_list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    overflow: hidden;
+    position: relative;
+    width: 270px;
+    height: 270px;
+    perspective: 4000px;
+    margin-bottom: 20px;
+}
+
+.front-foto {
+    background-color: #dddddd;
+    opacity: 0.9;
+}
+
+.front-foto, .back-social {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+
+.back-social {
+    background-color: #18b4dc;
+    transform: rotateY(180deg)
+}
+
+.card:hover .front-foto {
+    transform: rotateY(180deg);
+}
+
+.card:hover .back-social {
+    transform: rotateY(360deg);
+}
+
+.fab {
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    padding: 7px;
+    background-color: #5ecbe7;
+    width: 40px;
+    box-sizing: border-box;
+    margin-right: 4px;
+    transform: translateX(-10000%);
+    overflow: hidden;
+    transition: translateX 1s ease-in-out;
+}
+
+.card:hover .fa-twitter, .card:hover .fa-facebook-f, .card:hover .fa-google-plus-g {
+    display: inline-block;
+    transform: translateX(0%);
+}
+
+.card:hover .fa-twitter {
+    transition: 1.4s;
+}
+
+.card:hover .fa-facebook-f {
+    transition: 1.3s;
+}
+
+.card:hover .fa-google-plus-g {
+    transition: 1.1s;
+}
+
+.name {
+    font-size: 18px;
+    line-height: 18px;
+    color: #282528;
+    font-weight: 700;
+}
+
+.proffesion {
+    font-size: 14px;
+    font-weight: 30px;
+    color: #646464;
+    display: block;
+}
