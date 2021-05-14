@@ -16,6 +16,14 @@
 
 <body class="page">
     <section class="page__team team-section">
+        <div class="team-section__swiper-navigation swiper-navigation">
+            <a href="#" class="swiper-navigation__btn swiper-navigation__btn_left"><span
+                    class="swiper-navigation__span"></span>
+            </a>
+            <a href="#" class="swiper-navigation__btn swiper-navigation__btn_right"><span
+                    class="swiper-navigation__span"></span>
+            </a>
+        </div>
         <div class="team team-section__container">
             <h3 class="team__subtitle">
                 THE GENIUSES BEHIND OUR WORK
@@ -23,14 +31,14 @@
             <h2 class="team__title">
                 OUR TEAM
             </h2>
-            <div class="team__divider">
-                <span class="step size-12">
-                    <i class="icon ion-bonfire"></i>
-                </span>
+            <div class="team__divider divider">
+                <img src="image/bonfire.png" alt="bonfire" class="divider__image">
             </div>
             <div class="team__info info">
                 <div class="info__image-section">
-                    <img src="image/worker.png" alt="boy" class="info__image">
+                    <div class="info__image-wrapper">
+                        <img src="image/worker.png" alt="boy" class="info__image">
+                    </div>
                 </div>
                 <div class="info__content content">
                     <h3 class="content__title">
@@ -46,15 +54,24 @@
                         <a href="#" class="media__link"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                     <p class="content__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus dui sit amet ligula
-                        efficitur, sit amet lacinia massa dictum. Etiam accumsan felis a nunc facilisis, ut euismod
-                        lacus placerat. Praesent rutrum eget massa a convallis. Nam vitae augue malesuada, accumsan
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus dui sit amet
+                        ligula
+                        efficitur, sit amet lacinia massa dictum. Etiam accumsan felis a nunc facilisis, ut
+                        euismod
+                        lacus placerat. Praesent rutrum eget massa a convallis. Nam vitae augue malesuada,
+                        accumsan
                         mauris ut, consectetur.
                     </p>
                     <button class="content__btn">
                         VIEW PROFILE
                     </button>
                 </div>
+            </div>
+            <div class="team__check form">
+                <label><input type="radio" name="page" class="form__radio"><span class="form__span"></span></label>
+                <label><input checked type="radio" name="page" class="form__radio"><span
+                        class="form__span"></span></label>
+                <label><input type="radio" name="page" class="form__radio"><span class="form__span"></span></label>
             </div>
         </div>
     </section>
