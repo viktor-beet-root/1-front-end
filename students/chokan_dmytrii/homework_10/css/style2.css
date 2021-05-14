@@ -80,6 +80,19 @@
     border: 2px solid #9D85C7;
 }
 
+.form__part-input:focus {
+    border: 2px solid #9D85C7;
+    outline: none;
+}
+
+.form__part-input:-webkit-autofill,
+.form__part-input:-webkit-autofill:hover,
+.form__part-input:-webkit-autofill:focus {
+    border: 2px solid #9D85C7;
+    -webkit-text-fill-color: white;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
 .form__checkbox {
     margin-bottom: 40px;
 }
@@ -93,7 +106,6 @@
     width: 1px;
     height: 1px;
     border: none;
-    pointer-events: none;
     left: -1000px;
 }
 
@@ -158,4 +170,11 @@
     justify-content: space-between;
 }
 
-.footer__part {}
+.footer__part::after {
+    display: block;
+    content: '';
+    background-color: #5242b6;
+    height: 1px;
+    position: relative;
+    top: 4px;
+}
