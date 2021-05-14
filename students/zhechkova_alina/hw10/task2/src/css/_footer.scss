@@ -1,0 +1,35 @@
+.page {
+
+    &__footer {
+        padding: 29px 0;
+        background-color: #262626;
+        color: #b9b9b9;
+    }
+}
+
+.footer {
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        font-family: 'Pacifico', cursive;
+        font-weight: 400;
+        color: #b9b9b9;
+        text-decoration: none;
+        font-size: 25px;
+    }
+
+    &__maker_color {
+        color: #ff2b58;
+        font-weight: 700;
+    }
+
+    &__maker,
+    &__copyright {
+        font-size: 16px;
+        line-height: 35px;
+    }
+}
