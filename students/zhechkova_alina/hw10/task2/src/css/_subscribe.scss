@@ -1,0 +1,63 @@
+.subscribe {
+    background-image: url(../image/bg_subscribe.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    // .subscribe__container
+
+    &__container {
+        padding: 150px 0 165px;
+
+    }
+
+    // .subscribe__content
+
+    &__content {
+        width: 50%;
+    }
+
+    // .subscribe__title
+
+    &__title {
+        @include title-style;
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    // .subscribe__text
+
+    &__text {
+        @include p-style;
+        margin-bottom: 25px;
+    }
+
+    // .subscribe__form
+
+    &__form {
+        width: 66.666666%;
+    }
+
+    // .subscribe__input-email
+
+    &__input-email {
+        font-family: $default-font;
+        background-color: $white;
+        border-radius: 0;
+        border: 1px solid $mineshaft;
+        font-size: 15px;
+        padding: 15px;
+        width: 73%;
+        margin-right: 30px;
+    }
+
+    // .subscribe__btn
+
+    &__btn {
+        @include btn;
+        display: inline-block;
+        padding: 13px 36.5px 13px 18px;
+        background-color: #96b92c;
+        color: $white;
+    }
+}
+
+.container {}

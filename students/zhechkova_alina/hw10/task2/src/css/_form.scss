@@ -4,18 +4,16 @@
     &__form {
         background-image: url(../image/bg.jpg);
         background-repeat: no-repeat;
+        background-size: cover;
         text-align: center;
         padding: 98px 0 117px 0;
     }
 
-    &__footer {}
 }
 
 .form {
-
     &__title {
-        font-weight: 700;
-        font-size: 90px;
+        @include title-style;
         line-height: 25 px;
         margin-bottom: 18px;
     }
