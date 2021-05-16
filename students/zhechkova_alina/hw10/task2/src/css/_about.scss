@@ -1,0 +1,43 @@
+.about-us {
+    box-sizing: border-box;
+    // .about-us__container
+    background-color: #00afaf;
+
+    &__container {
+        display: flex;
+        padding: 95px 0 70px;
+        align-items: center;
+    }
+
+    &__title {
+        color: $white;
+        @include title-style;
+        margin-bottom: 10px;
+    }
+
+    &__content {
+        width: 50%;
+        margin-left: 9%;
+        margin-top: -8%;
+    }
+
+    &__image {}
+
+    // .about-us__content
+    img {
+        display: block;
+        margin-top: -5%;
+        width: 580px;
+    }
+
+    &__text {
+        @include p-style;
+        color: $white;
+
+        &:first-of-type {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.container {}

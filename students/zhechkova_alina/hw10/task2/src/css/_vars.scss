@@ -24,3 +24,15 @@ $border-color: #a9aaad;
 $bg-btn:#202835;
 $border-btn:1px solid #4f5560;
 $padding-btn:12px 0;
+
+/*grid mixin*/
+$breack-points: ("xl": 1200px,
+    "lg": 992px,
+    "md": 768px,
+    "sm": 576px);
+
+/*colors*/
+$black:#000;
+$white:#fff;
+$mineshaft:#262626;
+$ss:#00afaf;
