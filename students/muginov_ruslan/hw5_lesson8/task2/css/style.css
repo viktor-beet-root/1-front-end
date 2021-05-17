@@ -1,0 +1,109 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	height: 100%;
+	background-color: #39c;
+	border: 10px solid #2b81ac;
+}
+.header{
+    max-width: 980px;
+	padding: 0;
+	margin: 0 auto;
+	color: #fff;
+	font-family:  'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+.container{
+	max-width: 980px;
+	padding: 0;
+	margin: 0 auto;
+	color: #fff;
+	font-family:  'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+.header h2{
+	display: inline-block;
+
+}
+h2+.wi{
+	font-size: 30px;
+	padding-left: 5px;
+}
+ul li{
+	font-size: 0px;
+}
+
+.list{
+	padding: 0;
+	border: 3px solid;
+	font-size: 0px;
+	background: #fff;
+}
+.city{
+	list-style: none;
+	display: inline-block;
+	font-size: 20px;
+	text-align: center;
+	padding: 16px 0;
+	border: 3px solid #fff;
+	transition: all .1s ease-in;
+}
+
+.wi{
+	font-size: 25px;
+}
+
+.city50{
+	width: 50%;
+}
+
+.city25{
+	width: 25%;
+}
+
+.city100{
+	width: 100%;
+}
+
+.city span{
+	display: block;
+	margin-top: 15px;
+	color: rgba(255, 255, 255, 0.9);
+} 
+.blue{
+	background-color: #3399cc;
+}
+
+.lightblue{
+	background-color: #33cccc;
+}
+.purple{
+	background-color: #996699;
+}
+.red{
+	background-color: #c24747;
+}
+.orange{
+	background-color: #e2674a;
+}
+.yellow{
+	background-color: #ffcc66;
+}
+.lightgreen{
+	background-color: #99cc99;
+}
+.grayblue{
+	background-color: #669999;
+}
+.pink{
+	background-color: #cc6699;
+}
+.green{
+	background-color: #396;
+}
+.violet{
+	background-color: #669;
+}
+ul:hover li:not(:hover) {
+	opacity: 0.8;
+}
