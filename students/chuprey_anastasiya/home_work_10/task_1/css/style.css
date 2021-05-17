@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    color: #262626;
+    line-height: 25px;
+    font-size: 17px;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+.max-container {
+    background-image: url(../img/img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 100px 15px 120px 15px;
+    margin: 0 auto;
+}
+
+.tittle {
+    text-align: center;
+    font-size: 90px;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+.text {
+    width: 370px;
+    margin: 0 auto;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.gruops {
+    display: block;
+}
+
+.user-contacts {
+    display: inline-block;
+}
+
+.contacts-form {
+    margin-bottom: 15px;
+}
+
+.contacts-form input, .contacts-form textarea {
+    background-color: #00c4c4;
+    opacity: 0.5;
+    line-height: 33.3px;
+    width: 500px;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    padding: 20px;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-left: 5px solid rgba(53, 91, 130, 0);
+}
+
+.contacts-form textarea {
+    height: 250px;
+}
+
+.contacts-form input:focus, .contacts-form textarea:focus {
+    opacity: 0.9;
+    border-left: 5px solid rgba(53, 91, 130, 1);
+    outline: none;
+}
+
+.conpany-conacts {
+    display: inline-block;
+    margin-left: 170px;
+    vertical-align: top;
+}
+
+.conpany-conacts h3 {
+    font-weight: 700;
+}
+
+.conpany-conacts h3:nth-of-type(2), .conpany-conacts h3:nth-of-type(3) {
+    margin-top: 13px;
+}
+
+.conpany-conacts a {
+    text-decoration: none;
+    color: #262626;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+    z-index: 10;
+}
+
+::-moz-placeholder {
+    color: white;
+}
+
+:-ms-input-placeholder {
+    color: white;
+}
+
+:-moz-placeholder {
+    color: white;
+}
+
+.footer {
+    background-color: #262626;
+    padding: 35px 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p {
+    font-size: 16px;
+    color: #b9b9b9;
+    font-weight: 300;
+    display: block;
+}
+
+.smaller_p {
+    font-size: 15px;
+}
+
+.smaller_p span {
+    color: #ff2b58;
+    font-weight: bold;
+}
