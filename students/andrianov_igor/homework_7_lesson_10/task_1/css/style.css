@@ -74,7 +74,6 @@ textarea {
 
 .contact {
     padding-top: 120.5px;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 90px;
     line-height: 25px;
@@ -113,6 +112,7 @@ textarea {
     padding-right: 166px;
     box-sizing: border-box;
 }
+
 .content__contacts {
     flex: 0 0 500px;
 }
@@ -227,7 +227,6 @@ textarea {
 }
 
 .footer__who-made {
-    font-family: Raleway;
     font-weight: 300;
     font-size: 15px;
     line-height: 25px;
