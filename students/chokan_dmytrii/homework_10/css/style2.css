@@ -23,9 +23,24 @@
     color: white;
 }
 
+.section::after {
+    content: '';
+    display: block;
+    height: 10px;
+    width: 340px;
+    margin: 0 auto;
+    box-shadow: 0 65px 25px 4px black;
+}
+
 .section__container {
     max-width: 262px;
     margin: 0 auto;
+}
+
+.section__shadow {
+    margin: 0 auto;
+    height: 10px;
+    width: 320px;
 }
 
 .section__link {
