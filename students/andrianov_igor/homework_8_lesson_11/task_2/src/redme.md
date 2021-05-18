@@ -1,4 +1,4 @@
-https://ice-xo.github.io/For_Git_Hub_Pages/homework_8_lesson_11/task_2/
+https://ice-xo.github.io/1-front-end/students/andrianov_igor/homework_8_lesson_11/task_2/build/
 
 Домашнее задание:
 
