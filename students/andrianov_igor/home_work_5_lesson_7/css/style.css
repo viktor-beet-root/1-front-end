@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #fff;
+    height: 100vh;
+    font-family: 'Montserrat', 'PT Sans', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.conteiner {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 141px 0px 138px 0px;
+}
+
+.conteiner .first-text {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #898f99;
+    font-weight: bold;
+    margin-bottom: 16px;
+    letter-spacing: 0.3em;
+    word-spacing: 3px;
+    position: relative;
+    left: 415px;
+    top: -5px;
+    display: inline-block;
+    width: 200px;
+}
+
+.title-text {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #0ec8cb;
+    text-align: center;
+    margin-bottom: 28px;
+    letter-spacing: 0.1em;
+    word-spacing: -6px;
+    box-sizing: border-box;
+}
+
+.second-text {
+    display: inline-block;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #adadad;
+    margin-bottom: 95px;
+    letter-spacing: 1.6px;
+    word-spacing: -2px;
+    line-height: 30px;
+    box-sizing: border-box;
+    position: relative;
+    left: 214px;
+    top: -3px;
+    max-width: 590px;
+    font-weight: normal;
+}
+
+.center {
+    display: inline-block;
+    font-size: 0;
+}
+
+.cards {
+    display: inline-block;
+    width: 25%;
+    margin: 0;
+    font-size: 18px;
+    padding: 0;
+    background-color: #f7f7f7;
+    border: 1px solid #ececec;
+    box-sizing: border-box;
+}
+
+svg{
+    position: relative;
+    height: 71px;
+    margin-bottom: 27px;
+    padding-top: 56px;
+    left: 84px;
+    fill: #1b1b1b;
+}
+
+.cbth {
+    height: 50px;
+    font-size: 21px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: #1b1b1b;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card-text {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #777777;
+    padding: 22px 19px;
+    padding-bottom: 80px;
+    text-align: center;
+    line-height: 22px;
+}
+
+.cards:hover {
+    background-color: #0ec8cb;
+    border: 1px solid #0ec8cb;
+}
+
+.cards:hover,
+.cards:hover h3,
+.cards:hover .card-text,
+.cards:hover svg {
+    fill: #fff;
+    color: #ffffff;
+}
