@@ -10,12 +10,14 @@ Arial,
 Helvetica,
 sans-serif;
 $default-font-weight: 500;
-
+$default-font-path:'../fonts/raleway-v19-latin-ext_latin_cyrillic-ext';
 /*secondary font*/
 $font-secondary:'Open Sans',
 sans-serif;
 $font-secondary-weight:700;
+$secondary-font-path:'../fonts/roboto-v27-latin';
 
+$icon-font-path:'../fonts/ionicons.';
 /*style for title*/
 $title-color: #ffcc00;
 $title-size: 60px;
