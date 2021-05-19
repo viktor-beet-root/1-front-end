@@ -15,9 +15,11 @@ body {
 }
 
 body {
+    border: 24px solid #2b81ac;
+    min-height: 800px;
+    height: 100vh;
     background-color: #3399cc;
 }
-
 
 .task1 p,
 .task1 i,
