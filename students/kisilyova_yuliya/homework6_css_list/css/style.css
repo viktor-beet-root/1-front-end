@@ -1,0 +1,119 @@
+* {
+    transition: all .1s ease-in;
+    padding: 0px;
+    margin: 0px auto;
+    
+
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background: #374040;
+    border-style: solid;
+    border-color: white;
+    border-width: 13px;
+    box-sizing: border-box;
+}
+
+header { 
+    background-color: #424a4a;
+    color: #db9087;
+    text-align: center;
+    height: 120px;
+    line-height: 2em;
+}
+header>div {
+    text-align: center;
+}
+
+header>p {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+main {
+    margin-left: 30%;
+    margin-right: 30%;
+    color: white;
+}
+
+form>div {
+    font-size: 16px;
+    text-indent: 1em;
+    line-height: 3;
+}
+
+label>small {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+label>small::before{
+    content: "(";
+    color: rgba(255, 255, 255, 0.5);
+}
+label>small::after{
+    content: ")";
+    color: rgba(255, 255, 255, 0.5);
+}
+form>div:nth-child(odd) {
+    display: block;
+    background-color: #777197;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+form>div:nth-child(even) {
+    display: block;
+    background-color: #88839E;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+form>div:hover {
+    background-color: #6b648a;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+}
+.check-option {
+    -webkit-appearance: none;
+    position: absolute;}
+
+input[type="checkbox"]+label::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    border: solid 2px grey; 
+    background-color: white;
+    margin-right: 1em;
+    vertical-align: middle;
+}
+input[type="checkbox"]:checked + label::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        margin-right: 1em;
+        background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='check' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' class='svg-inline--fa fa-check fa-w-16 fa-3x'%3E%3Cpath fill='currentColor' d='M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z' class=''%3E%3C/path%3E%3C/svg%3E");
+        background-size: 16px 16px;
+        vertical-align: middle;
+}
+input[type="checkbox"]:checked + label {
+    text-decoration-line: line-through;
+}
+
+form>div:active {
+    background-color: rgb(209, 125, 91);
+}
+footer {
+    background-color: #424a4a;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 60px;
+    color: #db9087;
+    text-align: center;
+    font-size: 20px;
+}
