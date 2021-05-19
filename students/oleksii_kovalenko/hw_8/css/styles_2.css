@@ -19,7 +19,6 @@ body {
     margin-top: 130px;
     margin-bottom: 24px;
     font-size: 90px;
-    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     text-align: center;
     color: white;
@@ -58,14 +57,12 @@ body {
 
 .info>h5{
     padding-bottom: 20px;
-    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 20px;
 }
 
 .info>p{
     padding-bottom: 20px;
-    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 13px;
 }
@@ -73,7 +70,6 @@ body {
 .month {
     text-align: center;
     color: white;
-    font-family: 'Raleway', sans-serif;
     font-weight: 900;
     font-size: 21px;
     line-height: 1;
@@ -83,7 +79,6 @@ body {
     text-align: center;
     font-size: 32px;
     color: white;
-    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     line-height: 1;
 }
@@ -162,7 +157,6 @@ img {
     text-decoration: none;
     color: white;
     padding-top: 16px;
-    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 20px;
 }
