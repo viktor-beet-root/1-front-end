@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.who-we-are .container {
+    text-align: center;
+    padding: 80px 0 110px 0;
+}
+
+.header {
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    line-height: 70px;
+    margin-bottom: 34px;
+}
+
+.header::after {
+    content: '';
+    display: block;
+    max-width: 45px;
+    height: 4px;
+    margin: 0 auto;
+    background-color: #dddbdb;
+}
+
+.content {
+    width: 570px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.person-item {
+    display: inline-block;
+}
+
+.person-item:not(:nth-of-type(4)) {
+    padding-right: 30px;
+}
+
+.person-list {
+    white-space: nowrap;
+    margin-top: 53px;
+}
+
+.display {
+    position: relative;
+}
+
+.media {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #18b5dc;
+    opacity: 0;
+    overflow: hidden;
+    transform: rotate(0deg);
+    transition: all 600ms;
+}
+
+.display:hover .media {
+    opacity: 1;
+    transform: rotate(180deg);
+}
+
+
+.display img {
+    display: block;
+}
+
+.name {
+    text-align-last: left;
+    padding-top: 20px;
+}
+
+.name span {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.media .fab {
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    fill: white;
+    background-color: #5ecbe7;
+    width: 50px;
+    padding: 10px 0;
+    margin-right: 2px;
+}
+
+.media .fa-twitter,
+.media .fa-facebook-f,
+.media .fa-google-plus-g {
+    transform: translateY(-100px) rotate(-180deg);
+}
+
+.media .fa-twitter {
+    transition: transform .3s ease-in-out .2s;
+}
+
+.media .fa-facebook-f {
+    transition: transform .3s ease-in-out .5s;
+}
+
+.media .fa-google-plus-g {
+    transition: transform .3s linear .8s;
+}
+
+.display:hover .media .fa-twitter,
+.display:hover .media .fa-facebook-f,
+.display:hover .media .fa-google-plus-g {
+    transform: translate(0, 120px) rotate(180deg);
+}
