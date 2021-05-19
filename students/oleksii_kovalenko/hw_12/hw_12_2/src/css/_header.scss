@@ -1,0 +1,42 @@
+.header{
+    position: absolute;
+    top: 25px;
+    left: 340px;
+}
+
+.logo {
+    font-size: 50px;
+}
+
+.navigation{
+    padding-left: 334px;
+}
+
+.navigation__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu__item {
+    padding-top: 13px;
+
+}
+
+.menu__link {
+    font-size: 16px;
+    text-decoration: none;
+    color: #343434;
+    padding-right: 40px;
+}
+
+.menu__item_active::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    height: 3px;
+    width: 50px;
+    top: 33px;
+    background-color: #ff6033;
+}

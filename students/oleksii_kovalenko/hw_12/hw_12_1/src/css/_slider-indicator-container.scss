@@ -1,0 +1,34 @@
+.slider-indicator-container {
+    margin: 0 auto;
+    padding-top: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.slider-indicator {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.slider-indicator__circle{
+    border-radius: 50%;
+    background-color: rgb(255, 204, 0);
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+
+}
+
+
+.slider-indicator__circle_activ {
+    border-width: 1px;
+    border-color: rgb(255, 204, 0);
+    border-style: solid;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+  }
+  
+  
