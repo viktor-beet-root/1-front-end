@@ -1,21 +1,18 @@
 .subscribe {
-    background-image: url(../image/bg_subscribe.jpg);
-    background-repeat: no-repeat;
-    background-position: right;
-    // .subscribe__container
+
+
 
     &__container {
+        background-image: url(../image/bg_subscribe.jpg);
+        background-repeat: no-repeat;
         padding: 150px 0 165px;
-
+        background-position: right;
     }
 
-    // .subscribe__content
 
     &__content {
         width: 50%;
     }
-
-    // .subscribe__title
 
     &__title {
         @include title-style;
@@ -23,20 +20,14 @@
         margin-bottom: 15px;
     }
 
-    // .subscribe__text
-
     &__text {
         @include p-style;
         margin-bottom: 25px;
     }
 
-    // .subscribe__form
-
     &__form {
         width: 66.666666%;
     }
-
-    // .subscribe__input-email
 
     &__input-email {
         font-family: $default-font;
@@ -49,8 +40,6 @@
         margin-right: 30px;
     }
 
-    // .subscribe__btn
-
     &__btn {
         @include btn;
         display: inline-block;
@@ -59,5 +48,3 @@
         color: $white;
     }
 }
-
-.container {}
