@@ -3,7 +3,7 @@
 
     &__blog-food {
         background-color: #b07cf7;
-        padding: 81px 15px;
+        padding: 89px 15px 118px;
     }
 }
 
@@ -18,7 +18,7 @@
     &__title {
         color: white;
         text-align: center;
-        padding-bottom: 23px;
+        padding-bottom: 32px;
         @include title-style;
     }
 
