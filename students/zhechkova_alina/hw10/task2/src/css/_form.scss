@@ -6,7 +6,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         text-align: center;
-        padding: 98px 0 117px 0;
+        padding: 90px 0 123px 0;
     }
 
 }
@@ -14,8 +14,8 @@
 .form {
     &__title {
         @include title-style;
-        line-height: 25 px;
-        margin-bottom: 18px;
+
+        margin-bottom: 30px;
     }
 
     // .form__content
@@ -26,14 +26,15 @@
         max-width: 370px;
         margin: 0 auto;
         margin-bottom: 37px;
+        line-height: 25px;
     }
 }
 
-.submit-form__container {
-    display: inline-block;
-}
-
 .submit-form {
+    display: flex;
+
+    justify-content: space-between;
+
     &__input {
         margin-bottom: 15px;
         display: block;
@@ -83,6 +84,8 @@
     text-align: left;
     vertical-align: top;
     margin-left: 85px;
+    margin-right: 185px;
+    line-height: 1.25;
 
     &__title {
         font-weight: 700;
