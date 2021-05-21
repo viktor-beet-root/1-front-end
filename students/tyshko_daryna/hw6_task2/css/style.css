@@ -1,0 +1,128 @@
+* {
+    transition: all .1s ease-in;
+    padding: 0;
+    margin: 0;
+    font-family: "Trebuchet MS", Trebuchet, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* *:before,
+*:after {
+    box-sizing: border-box;
+}*/
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background: black;
+    padding: 65px;
+}
+
+.container {
+    width: 1195px;
+    margin: 0 auto;
+    border: 20px solid #fff;
+    background: rgba(59, 63, 69, 255);
+}
+
+header {
+    display: block;
+    padding: 20px;
+    background: rgba(74, 79, 86, 255);
+    color: #e87b79;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+
+}
+
+main {
+    width: 800px;
+    margin: auto;
+}
+
+li:nth-child(odd) {
+    background: #88839e;
+    color: #dedede;
+}
+
+li:nth-child(even) {
+    background: #7a7593;
+    color: #dedede;
+}
+
+input {
+    margin-left: 15px;
+}
+
+ul.list li {
+    font-size: 20px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+ul.list li:hover {
+    background-color: #625e77;
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+}
+
+ul.list li:visited {
+    text-decoration: line-through;
+}
+
+ul.list li:focus,
+ul.list li:active {
+    background-color: #eb7e7f;
+}
+
+label {
+    width: 100%;
+    display: inline-block;
+    padding: 17px;
+}
+
+footer {
+    background: #4a4f56;
+    color: #e87b79;
+    text-align: center;
+    font-size: 25px;
+    width: 800px;
+    padding: 25px;
+    margin: auto;
+    margin-top: 41px;
+    margin-bottom: 100px;
+}
+
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+input:checked~span {
+    text-decoration: line-through;
+}
+
+input:checked+span,
+input:checked+.text>small {
+    text-decoration: line-through;
+    color: #a3a0b5;
+}
+
+small {
+    color: #cdcbd4;
+}
+
+small::before {
+    content: '(';
+}
+
+small::after {
+    content: ')';
+}
