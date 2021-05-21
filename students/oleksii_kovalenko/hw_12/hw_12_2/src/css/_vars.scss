@@ -2,7 +2,9 @@ $alto: #ddd;
 $green: green;
 $chambray:#3b5998;
 $color-white: white;
+$color-black: #000;
 $grey: #bababa;
+$orange: #ff6033;
 
 $input-border-color: $grey;
 $default-border-radius: 5px;
@@ -17,9 +19,11 @@ $default-gap: 15px;
 $body-bg-color: $green;
 $border-color: $alto;
 
-$font-default-name: 'Roboto Condensed';
+$font-folder-path: '../fonts/';
+$folder-image: '../image/';
+
+$font-default-name: 'Raleway';
 $font-secondary-name: 'Roboto';
-$font-secondary-path: '../fonts/roboto-v20-latin-300';
 
 $follback: Arial,
 Helvetica,
@@ -31,6 +35,8 @@ $font-secondary: $font-secondary-name,
 $follback;
 
 $default-font-size: 12px;
+$default-color-text: $color-black;
+
 
 $breack-points: ("xl": 1200px,
     "lg": 992px,

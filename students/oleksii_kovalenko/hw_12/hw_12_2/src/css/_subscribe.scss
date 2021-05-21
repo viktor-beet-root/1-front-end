@@ -5,6 +5,15 @@
     height: 500px;
 }
 
+.subscribe__form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe__form-group {
+    flex-grow: 1;
+}
+
 .subscribe__title {
     font-size: 40px;
     padding-top: 150px;
@@ -23,4 +32,6 @@
     color: white;
     font-size: 20px;
     cursor: pointer;
+    margin-left: 30px;
 }
+

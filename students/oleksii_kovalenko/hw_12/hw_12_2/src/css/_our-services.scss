@@ -32,18 +32,19 @@
     display: inline-flex;
     align-items: center;
     justify-content: space-around;
+    position: relative;
     
 }
 
 .link__title {
     font-size: 20px;
     color: #262626;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
-.link__svg {
-    border-left: 1px solid #9d9d9d;
-    display: inline-block;
-}
 
 .our-services__background {
     background: url(../image/our-services.png) ;
@@ -52,4 +53,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.link__title::after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100px;
+    width: 1px;
+    top: 0px;
+    left: 300px;
+    background-color: #9d9d9d;
 }

@@ -22,3 +22,11 @@
 [class^="col-"] {
     padding: $default-gap;
 }
+
+.row_relative {
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+}
