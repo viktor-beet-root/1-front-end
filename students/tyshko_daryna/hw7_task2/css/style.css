@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "weather";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/weathericons-regular-webfont.ttf"),
+        url("../fonts/weathericons-regular-webfont.svg") format("svg");
+}
+
+@font-face {
+    font-family: "Lucida Grande";
+    src: url("../fonts/lucida-grande/lucida-grande.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/lucida-grande/lucida-grande.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/lucida-grande/lucida-grande.otf") format("opentype"),
+        /* Open Type Font */
+        url("../fonts/lucida-grande/lucida-grande.svg") format("svg"),
+        /* Legacy iOS */
+        url("../fonts/lucida-grande/lucida-grande.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/lucida-grande/lucida-grande.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/lucida-grande/lucida-grande.woff2") format("woff2");
+    /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #3399cc;
+    font-family: "Lucida Grande", sans-serif;
+}
+
+.container {
+    background-color: #3399cc;
+    border: 27px solid #2b81ac;
+}
+
+.css-weather-forecast {
+    padding-top: 30px;
+    padding-bottom: 140px;
+    color: white;
+    max-width: 970px;
+    width: auto;
+    margin: 0 auto;
+}
+
+h2 {
+    max-width: 970px;
+    width: auto;
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    color: white;
+    font-size: 19px;
+}
+
+.list-city {
+    max-width: 983px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0;
+    border: 3px solid white;
+    background-color: white;
+    list-style: none;
+    font-family: "weather";
+    text-align: center;
+    font-size: 0;
+}
+
+.list-city li {
+    display: inline-block;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    border: 3px solid white;
+    color: white;
+    font-size: 25px;
+    width: 25%;
+    font-family: "Lucida Grande", sans-serif;
+}
+
+i {
+    font-family: "weather";
+}
+
+.list-city>li>i {
+    display: block;
+}
+
+.list-city p,
+.list-city i {
+    opacity: 80%;
+    color: white;
+    font-size: 18px;
+}
+
+.list-city:hover>li {
+    opacity: .6;
+}
+
+.list-city>li:hover {
+    opacity: 1;
+}
+
+li:hover p {
+    opacity: 1;
+}
+
+.tem {
+    padding-top: 10px;
+}
+
+.footer {
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    max-width: 970px;
+    width: auto;
+    color: white;
+    font-size: 18px;
+}
+
+.list-city li:nth-child(1) {
+    width: 50%;
+    background-color: #3399cc;
+}
+
+.list-city li:nth-child(9) {
+    width: 50%;
+    background-color: #cc6699;
+}
+
+.list-city li:last-child {
+    width: 100%;
+    background-color: #666699;
+}
+
+.list-city li:nth-child(2) {
+    background-color: #33cccc;
+}
+
+.list-city li:nth-child(3) {
+    background-color: #996699;
+
+}
+
+.list-city li:nth-child(4) {
+    background-color: #c24747;
+}
+
+.list-city li:nth-child(5) {
+    background-color: #e2674a;
+}
+
+.list-city li:nth-child(6) {
+    background-color: #ffcc66;
+}
+
+.list-city li:nth-child(7) {
+    background-color: #99cc99;
+}
+
+.list-city li:nth-child(8) {
+    background-color: #669999;
+}
+
+.list-city li:nth-child(10) {
+    background-color: #339966;
+}
