@@ -1,31 +1,17 @@
 .page {
-
-    // .page__header
-
     &__header {}
 }
 
 .header {
-
-    // .header__container
     background-color: #f9f8fb;
 
+
     &__container {
-        background-image: url(../image/bg_header.jpg);
-        background-repeat: no-repeat;
-        background-position: right center;
-    }
-
-    // .header__menu
-
-    &__menu {
-        max-height: 20vh;
+        height: 147px;
         display: flex;
         align-items: center;
         padding: 71px 0;
     }
-
-    // .header__logo
 
     &__logo {
         font-family: 'Pacifico', cursive;
@@ -34,9 +20,6 @@
         text-decoration: none;
         font-size: 50px;
     }
-
-    // .header__navigation
-
 
     &__navigation {
         font-family: $default-font;
@@ -47,74 +30,29 @@
         padding-left: 39px;
     }
 
-    // .header__first-screen
-
-    &__first-screen {}
 }
 
 .main-navigation {
 
-    // .main-navigation__list
-
     &__list {
-        justify-content: space-between;
+        justify-content: flex-end;
         display: flex;
         align-items: flex-end;
         line-height: 1.6;
     }
 
-    // .main-navigation__item
-
     &__item {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+
         &_active {
             border-top: 3px solid #ff6033;
         }
     }
 
-
-    // .main-navigation__item_active
-
-
     &__link {
         color: $mineshaft;
         text-decoration: none;
-    }
-}
-
-// .main-navigation__lin
-
-.first-screen {
-
-    // .first-screen__container
-
-    &__container {
-        min-height: 80vh;
-        margin: auto 0;
-        color: $mineshaft;
-        padding-top: 18%;
-    }
-
-    // .first-screen__title
-
-    &__title {
-        font-size: 60px;
-        font-weight: 900;
-        margin-bottom: 21px;
-    }
-
-    // .first-screen__content
-
-    &__content {
-        @include p-style;
-        margin-bottom: 27px;
-    }
-
-    // .first-screen__btn
-
-    &__btn {
-        @include btn;
-        padding: 17px 22px;
-        background-color: #ff6033;
-        color: white;
     }
 }
