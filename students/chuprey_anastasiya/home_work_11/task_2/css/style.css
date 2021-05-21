@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Hans Kendrick V4";
+    src: url("//db.onlinewebfonts.com/t/640850c0965fa5449af39df95c9970de.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/640850c0965fa5449af39df95c9970de.woff") format("woff")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Hans Kendrick V4", Arial, Helvetica, sans-serif;
+}
