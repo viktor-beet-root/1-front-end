@@ -6,12 +6,22 @@
         display: flex;
         padding: 95px 0 100px;
         align-items: center;
+
+        @include media('xl') {
+            flex-direction: column;
+            justify-content: space-between;
+        }
     }
 
     &__title {
         color: $white;
         @include title-style;
         margin-bottom: 10px;
+
+        @include media('md') {
+            font-size: 40px;
+            text-align: center;
+        }
     }
 
     &__content {
@@ -24,6 +34,12 @@
         display: block;
         margin: -5% 6%;
         width: 567px;
+
+        @include media('xl') {
+            margin: 0 auto;
+            width: 80%;
+            margin-bottom: 50px;
+        }
     }
 
     &__text {

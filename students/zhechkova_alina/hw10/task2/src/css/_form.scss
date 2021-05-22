@@ -16,6 +16,10 @@
         @include title-style;
 
         margin-bottom: 30px;
+
+        @include media('sm') {
+            font-size: 50px;
+        }
     }
 
     &__content {
@@ -47,6 +51,14 @@
         font-family: $default-font;
         transition: border-left .3s ease,
             background-color .3s ease;
+
+        @include media('lg') {
+            margin: 0 auto 15px;
+        }
+
+        @include media('sm') {
+            width: 100%;
+        }
     }
 
     &__textarea {
@@ -64,8 +76,19 @@
         resize: none;
         font-family: $default-font;
         font-weight: 500;
+
+        @include media('lg') {
+            margin: 0 auto;
+        }
+
+        @include media('sm') {
+            width: 100%;
+        }
     }
 
+    @include media('lg') {
+        flex-direction: column;
+    }
 }
 
 .submit-form__input:focus,
@@ -101,6 +124,10 @@
         font-size: 20px;
         text-decoration: none;
         color: #262626;
+    }
+
+    @include media('lg') {
+        margin: 10px auto 0;
     }
 }
 

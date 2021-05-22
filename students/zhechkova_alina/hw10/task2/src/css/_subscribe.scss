@@ -7,6 +7,10 @@
         background-repeat: no-repeat;
         padding: 150px 0 165px;
         background-position: right;
+
+        @include media('md') {
+            background-image: none;
+        }
     }
 
 
