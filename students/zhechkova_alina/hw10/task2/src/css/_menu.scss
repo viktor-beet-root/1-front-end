@@ -7,6 +7,10 @@ $menu-default-border:1px solid $default-menu-color;
 
 .header__container {
     position: relative;
+
+    @include media('sm') {
+        padding-right: 30px;
+    }
 }
 
 .menu {
