@@ -14,26 +14,46 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page">
+<body class="page menu-open">
     <header class="page__header header">
         <div class="header__container container">
-            <p class="col-3 header__logo"> <a href="#" class="header__logo">Cahee</a></p>
-            <nav class="header__navigation main-navigation col-9">
-                <ul class="main-navigation__list">
-                    <li class="main-navigation__item main-navigation__item_active">
-                        <a href="" class="main-navigation__link">Home</a></li>
-                    <li class="main-navigation__item">
-                        <a href="" class="main-navigation__link">About</a></li>
-                    <li class="main-navigation__item">
-                        <a href="" class="main-navigation__link">Services</a></li>
-                    <li class="main-navigation__item">
-                        <a href="" class="main-navigation__link">Gallery</a></li>
-                    <li class="main-navigation__item">
-                        <a href="" class="main-navigation__link">Blog</a></li>
-                    <li class="main-navigation__item">
-                        <a href="" class="main-navigation__link">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="col-3 col-md-10">
+                <p class="header__logo"> <a href="#" class="header__logo">Cahee</a></p>
+            </div>
+            <div class="col-9 col-md-2">
+                <nav class="header__navigation menu">
+                    <input type="checkbox" id="burgerMenuBtn" class="menu__input">
+                    <label for="burgerMenuBtn" class="menu__burger-btn burger-btn">
+                        <span class="burger-btn__line"></span>
+                    </label>
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item_active">
+                            <a href="" class="menu__link">Home</a></li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">About</a></li>
+                        <li class="menu__item">
+                            <input type="checkbox" id="subMenuBtn" class="menu__sub-menu-btn-input">
+                            <a href="" class="menu__link">Services<label for="subMenuBtn" class="menu__sub-menu-btn">
+                                </label>
+                            </a>
+                            <ul class="menu__sub-menu sub-menu">
+                                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Online Shopping</a></li>
+                                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Quality Product</a></li>
+                                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Domestiv & International
+                                        Delivery
+                                    </a></li>
+                                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Well Organized</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Gallery</a></li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Blog</a></li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main class="page__main">
