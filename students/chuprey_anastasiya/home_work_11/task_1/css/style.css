@@ -16,11 +16,99 @@
     font-family: 'Miso Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Miso Bold'), url('miso-bold.woff') format('woff');
+    src: local('Miso Bold'), url('../fonts/miso-bold.woff') format('woff');
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.page {
+    background-color: #fdde7e;
+}
+
+.page__block {
+    font-family: 'Miso Light';
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+}
+
+.block {
+    height: 100vh;
+}
+
+.block__cup-of-coffee-list {
+    margin: 0 auto;
+}
+
+.cup-of-coffee-list {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    padding: 50px 15px;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.cup-of-coffee-list__coffee-card {}
+
+.coffee-card {
+    width: calc(33.333333% - 30px);
+    background-color: white;
+    padding: 50px 100px 46px;
+    border-radius: 6px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3)
+}
+
+.coffee-card__price {
+    font-size: 70px;
+    letter-spacing: 2px;
+    color: #02995b;
+    font-weight: 700;
+    font-family: 'Miso Bold';
+    margin-bottom: 23px;
+}
+
+.coffee-card__smoke {
+    margin-bottom: 3px;
+    padding-right: 10px;
+}
+
+.coffee-card__cup {
+    position: relative;
+    margin-bottom: 38px;
+}
+
+.coffee-card__been {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-27px, -50%);
+}
+
+.coffee-card__name {
+    font-size: 56px;
+    color: #333333;
+    font-family: "Miso";
+    margin-bottom: 38px;
+}
+
+.coffee-card__proposition {
+    color: #656565;
+}
+
+.coffee-card_gold {
+    padding-top: 80px;
+}
+
+.coffee-card_gold>.coffee-card__price {
+    margin-bottom: 44px;
+}
+
+.coffee-card_gold>.coffee-card__cup {
+    margin-bottom: 43px;
 }
