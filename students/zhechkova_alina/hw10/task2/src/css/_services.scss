@@ -18,10 +18,24 @@
         padding-left: 105px;
         padding-bottom: 13px;
 
+        @include media('xl') {
+            padding: 0 50px;
+        }
+
         @include media('md') {
-            padding-left: 15px;
+            padding: 0 15px;
             background-position: 400px 120px;
             background-size: 300px;
+        }
+
+        @include media('lg') {
+            background-size: 400px;
+            background-position: 450px 30px;
+        }
+
+        @include media('sm') {
+            background-size: 200px;
+            background-position: 250px 100px;
         }
     }
 
@@ -33,6 +47,12 @@
         @include media('md') {
             font-size: 60px;
             margin-left: 100px;
+
+        }
+
+        @include media('sm') {
+            margin-left: 20px;
+            font-size: 40px;
         }
     }
 
@@ -64,16 +84,28 @@
 
         &:not(:nth-child(3)) {
             padding: 40px 0;
+
+            @include media('lg') {
+                padding: 29px 0;
+            }
         }
 
         &:nth-child(3) {
             padding: 20px 0 30px;
             line-height: 1.2;
+
+            @include media('lg') {
+                padding: 12px 0 23px;
+            }
         }
 
         &:first-child .services-list__title::after,
         &:nth-child(2) .services-list__title::after {
             top: -203%;
+
+            @include media('lg') {
+                top: -170%;
+            }
         }
 
         &:first-child .services-list__title::after {
@@ -87,11 +119,20 @@
         &:nth-child(3) .services-list__title::after {
             top: -44%;
             left: 98%;
+
+            @include media('lg') {
+                top: -29%;
+                left: 100%;
+            }
         }
 
         &:nth-child(4) .services-list__title::after {
             top: -200%;
             left: 148%;
+
+            @include media('lg') {
+                top: -171%;
+            }
         }
 
         &:hover {
@@ -116,6 +157,18 @@
             height: 100px;
             width: 1px;
             background-color: #9d9d9d;
+
+            @include media('lg') {
+                height: 75px;
+            }
+
+            @include media('sm') {
+                display: none;
+            }
+        }
+
+        @include media('lg') {
+            font-size: 17px;
         }
     }
 
@@ -123,6 +176,14 @@
         box-sizing: border-box;
         width: 100px;
         position: relative;
+
+        @include media('lg') {
+            width: 80px;
+        }
+
+        @include media('sm') {
+            display: none;
+        }
     }
 
     &__image {
@@ -130,5 +191,9 @@
         @include position-center;
         display: block;
         width: 50px;
+
+        @include media('lg') {
+            width: 30px;
+        }
     }
 }

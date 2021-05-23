@@ -8,7 +8,16 @@
         padding: 150px 0 165px;
         background-position: right;
 
-        @include media('md') {
+        @include media('lg') {
+            background-size: 400px;
+            padding-left: 15px;
+        }
+
+        @include media('lg') {
+            background-size: 300px;
+        }
+
+        @include media('sm') {
             background-image: none;
         }
     }
@@ -16,6 +25,10 @@
 
     &__content {
         width: 50%;
+
+        @include media('sm') {
+            width: 100%;
+        }
     }
 
     &__title {
@@ -42,6 +55,14 @@
         padding: 15px;
         width: 73%;
         margin-right: 30px;
+
+        @include media('lg') {
+            margin-bottom: 10px;
+        }
+
+        @include media('sm') {
+            width: 100%;
+        }
     }
 
     &__btn {
