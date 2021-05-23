@@ -1,3 +1,36 @@
+@font-face {
+    font-family: 'Miso';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Miso'), url('../fonts/miso.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Miso Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Miso Light'), url('../fonts/miso-light.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Miso Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Miso Bold'), url('../fonts/miso-bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+        url('../fonts/lato-v17-latin-300.woff2') format('woff2'),
+        url('../fonts/lato-v17-latin-300.woff') format('woff');
+
+}
+
 * {
     padding: 0;
     margin: 0;

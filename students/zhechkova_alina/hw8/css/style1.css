@@ -66,6 +66,10 @@ body {
     width: 50px;
 }
 
+.blog-item:nth-of-type(2) .blog__content {
+    padding-bottom: 10px;
+}
+
 .blog__title {
     font-size: 22px;
     font-weight: 700;
