@@ -11,6 +11,47 @@
     display: flex;
 }
 
+.form {
+
+    &__size,
+    &__qty {
+        font-family: $font-default;
+        border: 1px solid $border-color;
+        background-color: $bg-color;
+        color: #a9aaad;
+        padding: 0px 26px 0 16px;
+        height: 30px;
+        font-size: $subtitle-size;
+        text-align: center;
+        margin-bottom: 29px;
+        appearance: none;
+        background-color: transparent;
+    }
+
+    &__select-item {
+        display: inline-block;
+        position: relative;
+        padding-right: 10px;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            height: 8px;
+            width: 8px;
+            border: 1px solid $border-color;
+            top: 13%;
+            right: 20px;
+            text-align: center;
+            transform: rotate(45deg);
+            color: white;
+            border-top: none;
+            border-left: none;
+        }
+    }
+}
+
+
 .card-item__info {
     margin-left: 75px;
 }
@@ -42,19 +83,6 @@
     margin-bottom: 20px;
 }
 
-.form__size,
-.form__qty {
-    font-family: $default-font;
-    border: 1px solid $border-color;
-    background-color: $bg-color;
-    color: #a9aaad;
-    padding: 0 11px;
-    height: 30px;
-    font-size: $subtitle-size;
-    text-align: center;
-    margin-bottom: 29px;
-}
-
 .btn-submit {
     background-color: $bg-btn;
     color: #a9aaad;
@@ -74,25 +102,7 @@
     clip: rect(0, 0, 0, 0);
 }
 
-.nike-card__image {
-    margin-bottom: 65px;
-    width: 338px;
-}
 
-.nike-card__slider-navigation {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    width: 70px;
-}
-
-.nike-card__nav-custom::after {
-    content: '';
-    display: inline-block;
-    height: 9px;
-    width: 9px;
-    border-radius: 7px;
-}
 
 .item-card__slider-navigation-item:checked+.nike-card__nav-custom::after {
     border: 2px solid rgba(255, 255, 255, .46);
@@ -100,20 +110,42 @@
 
 .nike-card {
     padding: 50px 0 0 13px;
-}
 
-.nike-card__nav-custom_darkblue::after {
-    background-color: #1f273f;
-}
+    &__image {
+        margin-bottom: 65px;
+        width: 338px;
+    }
 
-.nike-card__nav-custom_white::after {
-    background-color: #fff;
-}
+    &__slider-navigation {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        width: 70px;
+    }
 
-.nike-card__nav-custom_red::after {
-    background-color: #ed3333;
-}
+    &__nav-custom {
+        &_darkblue::after {
+            background-color: #1f273f;
+        }
 
-.nike-card__nav-custom_blue::after {
-    background-color: #29e3ea;
+        &_white::after {
+            background-color: #fff;
+        }
+
+        &_red::after {
+            background-color: #ed3333;
+        }
+
+        &_blue::after {
+            background-color: #29e3ea;
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            height: 9px;
+            width: 9px;
+            border-radius: 7px;
+        }
+    }
 }
