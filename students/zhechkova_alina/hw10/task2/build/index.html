@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page menu-open">
+<body class="page">
     <header class="page__header header">
         <div class="header__container container">
             <div class="col-3 col-md-10">
@@ -23,7 +23,7 @@
             <div class="col-9 col-md-2">
                 <nav class="header__navigation menu">
                     <input type="checkbox" id="burgerMenuBtn" class="menu__input">
-                    <label for="burgerMenuBtn" class="menu__burger-btn burger-btn">
+                    <label for="burgerMenuBtn" class="menu__burger-btn burger-btn" id="burgerMenuBtnItem">
                         <span class="burger-btn__line"></span>
                     </label>
                     <ul class="menu__list">
@@ -258,5 +258,11 @@
     </footer>
 
 </body>
+<script>
+    let btn = document.querySelector('#burgerMenuBtnItem');
+    btn.addEventListener('click', function () {
+        document.documentElement.classList.toggle('menu-open');
+    })
+</script>
 
 </html>
