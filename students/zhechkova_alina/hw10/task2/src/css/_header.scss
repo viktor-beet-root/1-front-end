@@ -22,37 +22,7 @@
     }
 
     &__navigation {
-        font-family: $default-font;
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 16px;
-        align-items: center;
-        padding-left: 39px;
+        margin-left: 39px;
     }
 
-}
-
-.main-navigation {
-
-    &__list {
-        justify-content: flex-end;
-        display: flex;
-        align-items: flex-end;
-        line-height: 1.6;
-    }
-
-    &__item {
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
-
-        &_active {
-            border-top: 3px solid #ff6033;
-        }
-    }
-
-    &__link {
-        color: $mineshaft;
-        text-decoration: none;
-    }
 }
