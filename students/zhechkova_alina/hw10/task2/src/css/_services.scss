@@ -17,12 +17,23 @@
         display: flex;
         padding-left: 105px;
         padding-bottom: 13px;
+
+        @include media('md') {
+            padding-left: 15px;
+            background-position: 400px 120px;
+            background-size: 300px;
+        }
     }
 
     &__title {
         color: $white;
         @include title-style;
         margin-left: 134px;
+
+        @include media('md') {
+            font-size: 60px;
+            margin-left: 100px;
+        }
     }
 
     &__title-wrapper {
