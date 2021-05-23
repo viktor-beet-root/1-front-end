@@ -3,10 +3,6 @@
     margin: 0;
 }
 
-body {
-    padding: 24px;
-}
-
 .container {
     max-width: 990px;
     margin: 0 auto;
@@ -19,6 +15,7 @@ body {
     min-height: 800px;
     height: 100vh;
     background-color: #3399cc;
+    padding: 24px;
 }
 
 .task1 p,
@@ -35,7 +32,7 @@ body {
     border: 3px solid white;
 }
 
-h1 {
+.title {
     color: white;
 }
 
@@ -87,40 +84,39 @@ h1 {
     font-size: 0;
 }
 
-.paris div {
+.paris .block {
     background-color: #33cccc;
 }
 
-
-.belgrade div {
+.belgrade .block {
     background-color: #996699;
 }
 
-.moscow div {
+.moscow .block {
     background-color: #cc3333;
 }
 
-.telaviv div {
+.telaviv .block {
     background-color: #e2674a;
 }
 
-.cair div {
+.cair .block {
     background-color: #ffcc66;
 }
 
-.newyork div {
+.newyork .block {
     background-color: #99cc99;
 }
 
-.newdelhi div {
+.newdelhi .block {
     background-color: #669999;
 }
 
-.sanfrancisco div {
+.sanfrancisco .block {
     background-color: #cc6699;
 }
 
-.tokyo div {
+.tokyo .block {
     background-color: #339966;
 }
 
@@ -128,8 +124,8 @@ h1 {
     background-color: #666699;
 }
 
-li div,
-ul li div {
+.city .block,
+.list .city .block {
     padding: 35px 0;
     text-align: center;
 }
@@ -141,18 +137,18 @@ ul li div {
     padding-bottom: 15px;
 }
 
-div p,
-div i {
+.block p,
+.block i {
     opacity: 80%;
-    color: white;
+    color: rgb(167, 167, 167);
     font-size: 18px;
 }
 
-.list:hover>li {
+.list:hover>.city {
     opacity: .6;
 }
 
-.list li:hover {
+.list .city:hover {
     opacity: 1;
 }
 

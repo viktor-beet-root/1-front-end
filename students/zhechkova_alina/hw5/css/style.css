@@ -82,7 +82,7 @@
     overflow: auto;
 }
 
-svg {
+.list svg {
     height: 64px;
     margin: 50px 0 44px;
 }
