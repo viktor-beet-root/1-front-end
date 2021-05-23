@@ -5,10 +5,15 @@ $default-gap:110px 0;
 $bg-color:#111a28;
 
 /*fonts*/
-$default-font:"Museo Sans Rounded 100",
-Arial,
+$font-default-name:"Museo Sans Rounded 100";
+$font-folder-path: '../fonts/';
+
+$follback: Arial,
 Helvetica,
 sans-serif;
+$font-default: $font-default-name,
+$follback;
+
 
 /*style for title*/
 $title-color: #e1e1e1;
