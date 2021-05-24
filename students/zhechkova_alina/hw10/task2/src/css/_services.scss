@@ -24,18 +24,12 @@
 
         @include media('md') {
             padding: 0 15px;
-            background-position: 400px 120px;
-            background-size: 300px;
+            background: none;
         }
 
         @include media('lg') {
             background-size: 400px;
             background-position: 450px 30px;
-        }
-
-        @include media('sm') {
-            background-size: 200px;
-            background-position: 250px 100px;
         }
     }
 
@@ -77,6 +71,7 @@
         display: flex;
         background-color: $white;
         box-shadow: 0px 0px 9px 0px rgba(34, 60, 80, 0.2);
+        position: relative;
 
         &:not(:last-child) {
             margin-bottom: 20px;
@@ -99,45 +94,24 @@
             }
         }
 
-        &:first-child .services-list__title::after,
-        &:nth-child(2) .services-list__title::after {
-            top: -203%;
-
-            @include media('lg') {
-                top: -170%;
-            }
-        }
-
-        &:first-child .services-list__title::after {
-            left: 140%;
-        }
-
-        &:nth-child(2) .services-list__title::after {
-            left: 146%;
-        }
-
-        &:nth-child(3) .services-list__title::after {
-            top: -44%;
-            left: 98%;
-
-            @include media('lg') {
-                top: -29%;
-                left: 100%;
-            }
-        }
-
-        &:nth-child(4) .services-list__title::after {
-            top: -200%;
-            left: 148%;
-
-            @include media('lg') {
-                top: -171%;
-            }
-        }
-
         &:hover {
             box-shadow: 0px 0px 12px 2px rgba(34, 60, 80, 0.33);
 
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            height: 100%;
+            left: 75%;
+            width: 1px;
+            top: 0;
+            background-color: #9d9d9d;
+
+            @include media('sm') {
+                display: none;
+            }
         }
     }
 
@@ -149,23 +123,6 @@
         max-width: 300px;
         text-align: center;
         position: relative;
-
-        &::after {
-            content: '';
-            position: absolute;
-            display: inline-block;
-            height: 100px;
-            width: 1px;
-            background-color: #9d9d9d;
-
-            @include media('lg') {
-                height: 75px;
-            }
-
-            @include media('sm') {
-                display: none;
-            }
-        }
 
         @include media('lg') {
             font-size: 17px;
