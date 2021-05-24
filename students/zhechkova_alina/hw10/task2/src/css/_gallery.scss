@@ -43,7 +43,7 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin: 0 -15px 35px;
+        margin: 0 -15px 50px;
 
         @include media('lg') {
             .row__col:first-child {

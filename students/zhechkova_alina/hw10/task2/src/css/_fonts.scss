@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('#{$secondary-font-path}-regular.woff2') format('woff2'),
+    url('#{$secondary-font-path}-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+    url('#{$default-font-path}-300.woff2') format('woff2'),
+    url('#{$default-font-path}-300.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+    url('#{$default-font-path}-700.woff2') format('woff2'),
+    url('#{$default-font-path}-700.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+    url('#{$default-font-path}-900.woff2') format('woff2'),
+    url('#{$default-font-path}-900.woff') format('woff')
+}
