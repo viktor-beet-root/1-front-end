@@ -166,6 +166,8 @@ $menu-default-border:1px solid $default-menu-color;
             &:checked {
                 &~.menu__sub-menu {
                     height: 171px;
+                    border-top: $menu-default-border;
+                    border-bottom: $menu-default-border;
                 }
 
                 &+.menu__list .menu__sub-menu-btn {
@@ -202,6 +204,7 @@ $menu-default-border:1px solid $default-menu-color;
 
 .sub-menu {
     background-color: #f9f8fb;
+    border: $menu-default-border;
 
     &__link {
         text-decoration: none;
@@ -216,6 +219,11 @@ $menu-default-border:1px solid $default-menu-color;
         right: 0;
         left: 0;
         background-color: #fff;
+    }
+
+    @media screen and (max-width:768px) {
+        border-top: none;
+        border-bottom: none;
     }
 }
 
