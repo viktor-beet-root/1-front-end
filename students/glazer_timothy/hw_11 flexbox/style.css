@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Miso';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Miso'), url('miso.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Miso Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Miso Light'), url('miso-light.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Miso Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Miso Bold'), url('miso-bold.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.card {
+    background-color: #fdde7e;
+}
+
+.container {
+    height: 100vh;
+    padding: 48px 0;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.price {
+    font-family: 'Miso Bold', Arial, Helvetica, sans-serif;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 18px;
+    font-size: 70px;
+    color: #02995b;
+}
+.bronze {
+    border: 1px solid transparent;
+    background-color: #fff;
+    padding: 42px 104px;
+    box-shadow: 0px 0px 7px -1px rgba(34, 60, 80, 0.2);
+}
+
+.gold {
+    border: 1px solid transparent;
+    background-color: #fff;
+    padding: 72px 104px;
+    box-shadow: 0px 0px 7px -1px rgba(34, 60, 80, 0.2);
+}
+
+.silver {
+    border: 1px solid transparent;
+    background-color: #fff;
+    padding: 42px 104px; 
+    box-shadow: 0px 0px 7px -1px rgba(34, 60, 80, 0.2); 
+}
+
+.cup {
+    font-family: 'Miso';  
+    font-weight: normal;
+    font-size: 56px;
+    margin-bottom: 17px;
+    margin-top: 33px;
+}
+
+.desc {
+    font-family: 'Miso Light', Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    font-size: 23px;
+    width: 162px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 502px;
+    align-items: center;
+    flex-basis: 360px;
+    border-radius: 3px;
+    text-align: center;
+}
