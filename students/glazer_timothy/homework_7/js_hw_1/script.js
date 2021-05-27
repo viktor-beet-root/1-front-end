@@ -52,4 +52,3 @@ const twomonths = (desposit * 2);
 const answer3 = (twomonths * 0.05);
 console.log(answer3);
 
-
