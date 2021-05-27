@@ -12,14 +12,14 @@
     background-repeat: no-repeat;
 }
 
-@mixin fonts($font-family, $font-path, $font-weight: 400, $font-style: normal) {
+@mixin fonts($font-family, $font-name, $font-weight: 400, $font-style: normal) {
     @font-face {
         font-family: $font-family;
         font-style: $font-style;
         font-weight: $font-weight;
         src: local(''),
-        url('#{$font-path}.woff2') format('woff2'),
-        url('#{$font-path}.woff') format('woff');
+        url('#{$font-folder-path}#{$font-name}.woff2') format('woff2'),
+        url('#{$font-folder-path}#{$font-name}.woff') format('woff');
     }
 }
 
@@ -51,4 +51,24 @@
     @media screen and (max-width: map-get($breack-points, $point)) {
         @content;
     }
+}
+
+@mixin btn {
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.4)
+}
+
+@mixin p-style {
+    font-size: 17px;
+    line-height: 27px;
+}
+
+@mixin title-style {
+    font-size: 90px;
+    font-weight: 700;
 }

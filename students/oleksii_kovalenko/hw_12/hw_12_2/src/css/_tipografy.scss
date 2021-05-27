@@ -5,6 +5,7 @@
     font-size: $default-font-size;
     line-height: 1.4;
     min-height: 100vh;
+    color: $default-color-text;
 }
 
 .container {
@@ -17,6 +18,11 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 (-$default-gap);
+
+        @include media('md') {
+        justify-content: center;
+        align-items: center;
+        }
 }
 
 [class^="col-"] {

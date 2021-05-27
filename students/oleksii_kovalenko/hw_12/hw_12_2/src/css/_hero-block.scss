@@ -2,38 +2,49 @@
     background: url(../image/main.png) ;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     height: 100vh;
     margin: 0 auto;
+
+    &__wraper {
+        padding-top: 27.5%;
+
+        @include media ('md') {
+            padding-top: 38.5%;
+        }
+    }
+
+
+    &__content_title{
+        font-size: 60px;
+        margin-bottom: 7px;
+    }
+
+    &__content_text{
+        font-size: 17px;
+        margin-bottom: 35px;
+    }
+
+    &__content_button {
+        font-size: 20px;
+        color: white;
+        background: #ff6033;
+        border: none;
+        width: 200px;
+        height: 55px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.4);
+    }
 }
 
-.hero-block__content {
-    width: 385px;
-    padding-top: 325px;
-}
-
-.hero-block__content_title{
-    font-size: 60px;
-    margin-bottom: 35px;
-}
-
-.hero-block__content_text{
-    font-size: 17px;
-    margin-bottom: 35px;
-}
-
-.hero-block__content_button {
-    font-size: 20px;
-    color: white;
-    background: #ff6033;
-    border: none;
-    width: 200px;
-    height: 55px;
-    cursor: pointer;
-}
 
 .scroll-to {
     position: absolute;
     top: 95%;
     left: 50%;
     transform: translateX(-50%);
+
+    @include media ('md') {
+        top: 90%;
+    }
 }
