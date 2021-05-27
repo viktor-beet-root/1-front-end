@@ -40,6 +40,11 @@ background-size: cover;
 
     &__wrapper {
         padding-right: 80px;
+       
+        @media screen and (max-width:992px) {
+            padding: 0;
+            
+        }
     }
 
     // .contact-form__input
@@ -93,6 +98,11 @@ background-size: cover;
 
     &__contact {
         padding-left: 74px;
+        
+        @media screen and (max-width:992px) {
+            padding: 0;
+            
+        }
     }
 }
 .container {
