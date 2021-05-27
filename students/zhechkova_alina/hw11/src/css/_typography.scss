@@ -1,0 +1,19 @@
+@include grid();
+
+.page {
+    font-family: $default-font;
+    @include bg-cover('../image/bg.jpg');
+    min-height: 100vh;
+}
+
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: $default-gap;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 (-$default-gap);
+}
