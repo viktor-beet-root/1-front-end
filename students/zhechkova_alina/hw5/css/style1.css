@@ -18,10 +18,9 @@ body {
     padding: 24px;
 }
 
-.task1 p,
-.task1 i,
-.task1 h1,
-.task1 h2 {
+.weather p,
+.weather h1,
+.weather h2 {
     font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
 }
 
@@ -36,12 +35,12 @@ body {
     color: white;
 }
 
-.task1 i {
+.weather i {
     font-size: 27px;
     margin-top: -10px;
 }
 
-.task1 h1 i {
+.weather h1 i {
     font-size: 30px;
     opacity: 1;
 }
@@ -139,8 +138,7 @@ body {
 
 .block p,
 .block i {
-    opacity: 80%;
-    color: rgb(167, 167, 167);
+    color: rgba(255, 255, 255, 0.5);
     font-size: 18px;
 }
 
