@@ -4,7 +4,11 @@
 }
 
 body {
-    border: 23px solid white;
+    border: 23px solid #fff;
+    height: 100vh;
+    min-height: 800px;
+    background: #3b3f45;
+    box-sizing: border-box;
 }
 
 .container {
@@ -32,7 +36,6 @@ h1 span {
 }
 
 footer {
-    background-color: #3b3f45;
     font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
     color: #eb7e7f;
     text-align: center;
@@ -59,11 +62,11 @@ label:hover {
     border-bottom: 4px solid #fff;
 }
 
-form label:nth-child(odd) {
+form label:nth-of-type(2n+1) {
     background-color: #88839e;
 }
 
-form label:nth-child(even) {
+form label:nth-of-type(2n) {
     background-color: #7a7593;
 }
 
@@ -77,12 +80,13 @@ form label:nth-child(even) {
 }
 
 label {
-    display: inline-block;
+    display: block;
     padding: 15px 0px 15px 17px;
-    width: 780px;
+    width: 772px;
     color: #fff;
     font-family: Arial;
-
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
 }
 
 input[type="checkbox"] {
@@ -106,27 +110,15 @@ input:checked+label::before {
     display: inline-block;
 }
 
-label[for="pickle"]::after {
-    content: '(for the next lessons about CSS)';
+.form small::before {
+    content: '(';
 }
 
-label[for="apple"]::after {
-    content: '(for more CSS manipulations)';
+.form small::after {
+    content: ')';
 }
 
-label[for="orange"]::after {
-    content: '(because they are awesome)';
-}
-
-label[for="plate"]::after {
-    content: '(hm... they always disappear)';
-}
-
-label[for="sake"]::after {
-    content: '(for my friends)';
-}
-
-label::after {
+.form small {
     color: #b9c6d6;
     font-size: 13px;
     font-family: sans-serif;
