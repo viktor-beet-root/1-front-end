@@ -1,0 +1,137 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    background: #f6f6f6;
+}
+
+.about-us {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 96.5px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 33.93px;
+    letter-spacing: 0.16em;
+    line-height: 40.72px;
+    text-align: center;
+    color: #3c3c3c;
+    margin-bottom: 33px;
+}
+
+.text-about {
+    max-width: 570px;
+    margin: 0 auto;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #3c3c3c;
+    margin-bottom: 57px;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 45px;
+    height: 4px;
+    background: #dddbdb;
+    margin: 15px auto;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.card-one,
+.card-two,
+.card-three,
+.card-four {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.card-one,
+.card-two,
+.card-three {
+    margin-right: 28px;
+}
+
+.modalwindow {
+    position: relative;
+}
+
+.social {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #00AED9;
+    opacity: 0;
+    overflow: hidden;
+    transform: rotate(-270deg);
+    transition: .9s;
+}
+
+.social:hover {
+    opacity: 1;
+    transform: rotate(-360deg);
+}
+
+.fab {
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    background: #5ecbe7;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    padding-top: 6px;
+    box-sizing: border-box;
+
+}
+
+.modalwindow:hover .fab {
+    transform: translate(60px, 120px);
+    transition: 0.9s ease-in-out 0.4s;
+    transform: rotate(360deg) translate(70px, 120px) skew(0deg, 0deg);
+}
+
+.fa-twitter {
+    transform: translate(60px, 340px);
+}
+
+.fa-facebook-f {
+    transform: translate(60px, -280px);
+}
+
+.fa-google-plus-g {
+    transform: translate(60px, 280px);
+}
+
+.name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+    color: #646464;
+    padding-top: 16px;
+}
+
+.profession {
+    display: block;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    color: #646464;
+}
