@@ -23,7 +23,7 @@ console.log(area);
 const km = +prompt('Введите расстояние между городами А и Б');
 const time = +prompt('За сколько часов вы хотите добраться из города А в город Б')
 const speed = km / time;
-const messsageSpeed = 'Необходимая скорость: ' + speed + 'км/час.';
+const messsageSpeed = 'Необходимая скорость: ' + speed + ' км/час.';
 console.log(messsageSpeed);
 
 // 6)   Реализуйте конвертор валют. Пользователь вводит доллары, программа переводит в евро. Курс валюты храните в константе.
@@ -34,7 +34,7 @@ console.log(eur);
 
 // 7)   Пользователь указывает объем флешки в Гб. Программа должна посчитать сколько файлов размером в 820 Мб помещается на флешку.
 const gb = +prompt('Введите объем флешки в ГБ');
-const mb = (gb * 1000) / 820;
+const mb = (gb * 1024) / 820;
 const messageMb = 'В вашей флешке столько файлов размером в 820 Мб помещается: ' + mb;
 console.log(messageMb);
 
@@ -50,10 +50,11 @@ console.log(messageBuy, messageRemain);
 
 // 9)   Запросите у пользователя трехзначное число и выведите его задом наперед. Для решения задачи вам понадобится оператор % (остаток от деления).
 const number = +prompt('Введите трехзначное число');
-const reverse1 = number % 10;
-const reverse2 = (number % 100 - number % 10) / 10;
+const reverse1 = (number % 10)*100;
+const reverse2 = (number % 100 - number % 10) ;
 const reverse3 = ~~(number / 100);
-console.log(reverse1,reverse2, reverse3);
+const messageReverse = reverse1 + reverse2 + reverse3;
+console.log(messageReverse);
 
 // 10) Пользователь вводит сумму вклада в банк на 2 месяца, с процентной ставкой депозита 5% годовых. Вывести сумму начисленных процентов.
 const depositSum = +prompt('Введите сумма вклада на 2 месяца');
