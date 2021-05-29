@@ -1,0 +1,36 @@
+$breack-points: (
+    "xl": 1200px,
+    "lg": 992px,
+    "md": 768px,
+    "sm": 576px,
+);
+
+$alto: #ddd;
+$green: green;
+$chambray: #3b5998;
+$facebook-color: $chambray;
+$color-white: white;
+
+$color-purple-heart: #862ec0;
+$box-shadow-color: $color-purple-heart;
+
+$jungle-green: #2ec06c;
+$btn-green: $jungle-green;
+
+$grey: #bababa;
+$input-border-color: $grey;
+$default-border: 1px solid $input-border-color;
+$default-border-radius: 5px;
+
+$container-widht: 960px;
+$default-gap: 10px;
+
+$body-bg-color: $green;
+$border-color: $alto;
+
+$btn-widht: 40px;
+
+$font-default-name: "Roboto Condensed";
+$font-secondary-name: "Roboto";
+$font-secondary-path: "../fonts/roboto-v27-latin-300";
+$font-default-size: 14px;

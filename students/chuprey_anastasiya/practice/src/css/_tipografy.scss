@@ -1,0 +1,32 @@
+@include grid();
+
+.page {
+    font-family: $font-secondary-name;
+    line-height: 1.4;
+    @include bg-cover("../image/g-2.jpeg");
+    min-height: 100vh;
+}
+
+.container {
+    max-width: $container-widht;
+    margin: 0 auto;
+    padding: 0 $default-gap;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 (-$default-gap);
+    padding: $default-gap;
+}
+
+.col {
+    padding: $default-gap;
+}
+
+[class^="col-"] {
+    padding: $default-gap;
+}
+
+:focus {
+    box-shadow: 0 0 10px $box-shadow-color;
+}
