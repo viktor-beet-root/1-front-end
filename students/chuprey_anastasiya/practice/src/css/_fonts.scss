@@ -1,8 +1,8 @@
-@include fonts ($font-secondary-name, $font-secondary-path, 300,);
+@include fonts($font-primary-name, "raleway-v19-latin-300", 300);
 
-@include fonts($font-secondary-name, '../fonts/roboto-v27-latin-regular');
- 
-@include fonts ($font-secondary-name, '../fonts/roboto-v27-latin-700', 700,);
+@include fonts($font-primary-name, "raleway-v19-latin-regular");
 
-@include fonts ($font-default-name, '../fonts/roboto-condensed-v19-latin-regular',)
+@include fonts($font-primary-name, "raleway-v19-latin-700", 700);
 
+@include fonts($font-primary-name, "raleway-v19-latin-900", 900);
+/* raleway-900 - latin */

@@ -5,32 +5,35 @@ $breack-points: (
     "sm": 576px,
 );
 
-$alto: #ddd;
-$green: green;
-$chambray: #3b5998;
-$facebook-color: $chambray;
-$color-white: white;
+$color-white: #fff;
+$color-black: #000000;
+$color-outrageous-orange: #ff5f33;
+$color-bondi-blue: #02b1b1;
+$color-malibu: #70beff;
+$color-bright-sun: #ffe92f;
+$color-horizon: #5585a1;
+$color-atlantis: #95b92b;
+$color-heliotrope: #b07bf7;
+$color-red-orange: #f72a3b;
+$color-mine-shaft: #252525;
+$color-amaranth: #f02b55;
 
-$color-purple-heart: #862ec0;
-$box-shadow-color: $color-purple-heart;
-
-$jungle-green: #2ec06c;
-$btn-green: $jungle-green;
-
-$grey: #bababa;
-$input-border-color: $grey;
+$input-border-color: grey;
 $default-border: 1px solid $input-border-color;
 $default-border-radius: 5px;
 
-$container-widht: 960px;
-$default-gap: 10px;
+$container-widht: 1200px;
+$default-gap: 15px;
 
-$body-bg-color: $green;
-$border-color: $alto;
+$body-bg-color: grey;
+$border-color: grey;
 
-$btn-widht: 40px;
+$btn-widht: 200px;
 
-$font-default-name: "Roboto Condensed";
-$font-secondary-name: "Roboto";
-$font-secondary-path: "../fonts/roboto-v27-latin-300";
-$font-default-size: 14px;
+$font-primary-name: "Raleway";
+$font-folder-path: "../fonts/";
+$font-reserve: Arial, Helvetica, sans-serif;
+$default-color-text: $color-mine-shaft;
+
+$font-default-size: 17px;
+$font-default-wight: 300px;
