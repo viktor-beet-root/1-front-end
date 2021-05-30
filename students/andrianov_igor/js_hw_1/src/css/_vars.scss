@@ -1,0 +1,96 @@
+//Colors
+$alto: #ddd;
+$green: green;
+$chambray:#3b5998;
+$color-white: white;
+$color-black: #000;
+$grey: #bababa;
+$orange: #ff6033;
+$mine-shaft:#262626;
+$bondi-blue:#00B2B2;
+$malibu: #70BFFF;
+$grey:grey;
+$silver-chalice:#9D9D9D;
+$whisper:#F9F8FB;
+$bright-sun:#FFE92F;
+$cornflower-blue:#5585a2;
+$atlantis:#96B92C;
+$heliotrope:#B07CF7;
+$red-orange:#F72B3B;
+$silver:#B9B9B9;
+$amaranth:#F12B55;
+
+
+
+$input-border-color: $grey;
+
+$default-border-radius: 5px;
+
+$facebook-color: $chambray;
+
+$default-border: 1px solid $input-border-color;
+
+$container-width: 1200px;
+$default-gap: 15px;
+
+$body-bg-color: $green;
+$border-color: $alto;
+
+//Project Color
+
+//header
+$header-logo-color: $mine-shaft;
+//section-about-us
+$color-section-about-us:$bondi-blue;
+//section-our
+$color-section-our-services:$malibu;
+//header
+$color-header-bg:$whisper;
+//gallery
+$color-section-gallery:$bright-sun;
+$color-section-gallery-title:$mine-shaft;
+$color-section-gallery-button:$cornflower-blue;
+//subscribe
+$color-section-subscribe-title:$mine-shaft;
+$color-section-subscribe-sub-title:$mine-shaft;
+$color-section-subscribe-to-us-title-and-subtitle:$mine-shaft;
+$color-section-subscribe-to-button-bg:$atlantis;
+//blog
+$color-section-blog-bg:$heliotrope;
+$color-section-blog-header-title-and-subtitle:$color-white;
+$color-section-blog-button-bg:$red-orange;
+//contact
+$color-section-contact-header-title-and-subtitle:$mine-shaft;
+$color-section-contact-info-block:$mine-shaft;
+// footer
+$color-footer-not-love:$silver;
+$color-footer-love:$amaranth;
+
+
+
+//Fonts
+
+$font-folder-path: '../fonts/';
+$folder-image: '../image/';
+
+$font-default-name: 'Raleway';
+$font-secondary-name: 'Roboto';
+$font-for-logo-and-footer: 'Pacifico';
+
+$follback: Arial,
+Helvetica,
+sans-serif;
+
+$font-dafault: $font-default-name,
+$follback;
+$font-secondary: $font-secondary-name,
+$follback;
+
+$default-font-size: 12px;
+$default-color-text: $color-black;
+
+
+$breack-points: ("xl": 1200px,
+    "lg": 992px,
+    "md": 768px,
+    "sm": 576px);
