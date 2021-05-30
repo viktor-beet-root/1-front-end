@@ -9,9 +9,13 @@
 
 .footer {
 
-    &__container {
-        display: flex;
-        justify-content: space-between;
+    &__container {}
+
+    &__row {
+        @include media('md') {
+            flex-direction: column;
+            text-align-last: left;
+        }
     }
 
     &__logo {
@@ -20,6 +24,7 @@
         color: #b9b9b9;
         text-decoration: none;
         font-size: 25px;
+        text-align: center;
     }
 
     &__maker_color {
@@ -31,5 +36,9 @@
     &__copyright {
         font-size: 16px;
         line-height: 35px;
+    }
+
+    &__maker {
+        text-align: right;
     }
 }
