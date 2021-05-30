@@ -14,7 +14,6 @@
         background-position: 708px 0;
         background-size: contain;
         background-repeat: no-repeat;
-        display: flex;
         padding-left: 105px;
         padding-bottom: 13px;
 
@@ -28,25 +27,24 @@
         }
 
         @include media('lg') {
-            background-size: 400px;
-            background-position: 450px 30px;
+            background-image: none;
+        }
+    }
+
+    &__row {
+        @include media('lg') {
+            flex-direction: column-reverse;
         }
     }
 
     &__title {
         color: $white;
         @include title-style;
-        margin-left: 134px;
+        margin-left: 78px;
 
-        @include media('md') {
+        @include media('lg') {
+            margin: 0 auto;
             font-size: 60px;
-            margin-left: 100px;
-
-        }
-
-        @include media('sm') {
-            margin-left: 20px;
-            font-size: 40px;
         }
     }
 
@@ -55,8 +53,13 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @include media('lg') {
+            margin: 0 auto;
+        }
     }
 }
+
 
 .services-list {
     margin: 0 auto;
@@ -72,6 +75,7 @@
         background-color: $white;
         box-shadow: 0px 0px 9px 0px rgba(34, 60, 80, 0.2);
         position: relative;
+        width: 89%;
 
         &:not(:last-child) {
             margin-bottom: 20px;
@@ -81,16 +85,17 @@
             padding: 40px 0;
 
             @include media('lg') {
-                padding: 29px 0;
+                padding: 41px 0 42px;
             }
         }
+
 
         &:nth-child(3) {
             padding: 20px 0 30px;
             line-height: 1.2;
 
             @include media('lg') {
-                padding: 12px 0 23px;
+                padding: 40px 0;
             }
         }
 
@@ -109,9 +114,22 @@
             top: 0;
             background-color: #9d9d9d;
 
+            @include media('lg') {
+                left: 86%;
+            }
+
+            @include media('md') {
+                left: 82%;
+            }
+
             @include media('sm') {
                 display: none;
             }
+        }
+
+        @include media('lg') {
+            width: 80%;
+            margin: 0 auto;
         }
     }
 
@@ -133,10 +151,6 @@
         box-sizing: border-box;
         width: 100px;
         position: relative;
-
-        @include media('lg') {
-            width: 80px;
-        }
 
         @include media('sm') {
             display: none;
