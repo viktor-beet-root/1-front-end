@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+
+<body>
+    <section class="form_section">
+        <div class="container">
+            <div class="wrapper">
+                <input type="radio" id="signup" name="choose" checked>
+                <label for="signup">Sign Up</label>
+                <input type="radio" id="login" name="choose">
+                <label for="login">Log in</label>
+                <form class="sign" action="#">
+                    <label class="name"><span>Username</span><input type="text" name="name"></label>
+                    <label class="password"><span>Password</span><input type="password" name="password"></label>
+                    <div class="div"><label for="keepme"><input type="checkbox" value="keep" id="keepme" class="keep">
+                            <span>Keep me
+                                signed in</span></label></div>
+                    <button type="submit">Sign in</button>
+                    <a href="#">Forgot password</a>
+                    <a href="#" id="create">Create an account</a>
+                </form>
+                <form class="log" action="#">
+                    <label class="name"><span>Name</span><input type="text" name="name"></label>
+                    <label class="surname"><span>Surname</span><input type="text" name="surname"></label>
+                    <label class="password"><span>Password</span><input type="password" name="password"></label>
+                    <label class="confirm"> <span>Confirm your password</span><input type="password"
+                            name="confirm"></label>
+                    <div><label for="keep"><input type="checkbox" value="keep" id="keep" class="keep">
+                            <span>Keep me
+                                signed in</span></label></div>
+                    <div class="div"><label for="agree"><input type="checkbox" value="agree" id="agree" class="agree">
+                            <span>I agree to <a href="#">Terms of
+                                    Service</a> and <a href="#">Privacy Police</a></span> </label></div>
+                    <button type="submit">Log in</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
