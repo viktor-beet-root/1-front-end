@@ -18,7 +18,22 @@
 // console.log(age);
 // const las = confirm("а вы уверены?");
 // console.log(las);
-const number = +prompt("ведите  число");
-const lastNumber = number * number;
-console.log(lastNumber);
-alert ("hello");
+// const number = +prompt("ведите  число");
+// const lastNumber = number * number;
+// console.log(lastNumber);
+// alert ("hello");
+// const number = +prompt("ведите  число");
+// const lastNumber = number * number;
+// console.log(lastNumber);
+// const ml = 0.621371;
+// const km = +prompt("ведите  число");
+// const km_ml =km * ml;
+// console.log(km_ml);
+
+// const square = +prompt("side of a square");
+// const squareArea = square ** 2;
+// console.log(squareArea);
+
+// const square = +prompt("side of a square");
+// const squareArea = square * square;
+// console.log(squareArea);
