@@ -1,5 +1,5 @@
 .our-services {
-    background-color: #70bfff;
+    background-color: $Malibu;
     min-height: 790px;
 
     &__background {
@@ -27,7 +27,7 @@
 
     &__title {
         font-size: 90px;
-        color: white;
+        color: $color-white;
         padding-left: 25px;
         padding-top: 45px;
         position: absolute;
@@ -35,9 +35,6 @@
         @include media('md') {
             font-size: 69px;
         }
-    }
-
-    &__content-img {
     }
 
     &__wrapper{
@@ -74,7 +71,7 @@
 .list {
 
     &__item {
-        background-color: white;
+        background-color: $color-white;
         margin-bottom: 20px;
         box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.4);
             &:hover {
