@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.1s ease-in;
+}
+
+body {
+    background: #3b3f45;
+    font-family: Trebuchet, Arial, sans-serif;
+    border: 25px solid white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*Header*/
+
+header {
+    background-color: #4a4f56;
+    text-align: center;
+    color: #eb7e7f;
+}
+
+header h1 {
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+
+/*Main*/
+
+main {
+    background: #3b3f45;
+}
+
+li {
+    font-size: 24px;
+    line-height: 1.4;
+    list-style: none;
+    background-color: #88839e;
+}
+
+ul {
+    padding: 35px;
+}
+
+.label-text {
+    color: white;
+}
+
+.text-in-brackets {
+    color: #a3a0b5;
+    font-size: 17px;
+}
+
+label {
+    display: block;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+input[type="checkbox"]:checked + .label-text {
+    text-decoration: line-through;
+    color: #a3a0b5;
+}
+
+.list li:nth-of-type(2n) {
+    background: #7a7593;
+}
+
+.list li {
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+.list li:hover {
+    background: #625e77;
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+}
+
+li > :active {
+    background-color: #eb7e7f;
+}
+
+/*Footer*/
+
+footer {
+    margin: 0 auto;
+    margin-bottom: 183px;
+    width: 740px;
+    background-color: #4a4f56;
+    text-align: center;
+    color: #eb7e7f;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 25px;
+}

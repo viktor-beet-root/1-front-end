@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 990px;
+    margin: 0 auto;
+    padding-top: 33px;
+    padding-bottom: 139px;
+}
+
+body {
+    border: 24px solid #2b81ac;
+    min-height: 800px;
+    height: 100vh;
+    background-color: #3399cc;
+    padding: 24px;
+}
+
+.weather p,
+.weather h1,
+.weather h2 {
+    font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+}
+
+.list {
+    list-style-type: none;
+    margin-top: 36px;
+    background-color: #fff;
+    border: 3px solid white;
+}
+
+.title {
+    color: white;
+}
+
+.weather i {
+    font-size: 27px;
+    margin-top: -10px;
+}
+
+.weather h1 i {
+    font-size: 30px;
+    opacity: 1;
+}
+
+.list li {
+    display: inline-block;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.lisbon {
+    width: 50%;
+    background-color: #3399cc;
+}
+
+.sanfrancisco {
+    width: 50%;
+}
+
+.block {
+    border: 3px solid white;
+}
+
+.paris,
+.belgrade,
+.moscow,
+.telaviv,
+.cair,
+.newyork,
+.newdelhi,
+.tokyo {
+    width: 25%;
+}
+
+.sydney {
+    width: 100%;
+}
+
+.list {
+    font-size: 0;
+}
+
+.paris .block {
+    background-color: #33cccc;
+}
+
+.belgrade .block {
+    background-color: #996699;
+}
+
+.moscow .block {
+    background-color: #cc3333;
+}
+
+.telaviv .block {
+    background-color: #e2674a;
+}
+
+.cair .block {
+    background-color: #ffcc66;
+}
+
+.newyork .block {
+    background-color: #99cc99;
+}
+
+.newdelhi .block {
+    background-color: #669999;
+}
+
+.sanfrancisco .block {
+    background-color: #cc6699;
+}
+
+.tokyo .block {
+    background-color: #339966;
+}
+
+.sydney {
+    background-color: #666699;
+}
+
+.city .block,
+.list .city .block {
+    padding: 35px 0;
+    text-align: center;
+}
+
+
+.block h2 {
+    color: white;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.block p,
+.block i {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+}
+
+.list:hover>.city {
+    opacity: .6;
+}
+
+.list .city:hover {
+    opacity: 1;
+}
+
+.footer {
+    padding-top: 42px;
+    opacity: 1;
+
+}

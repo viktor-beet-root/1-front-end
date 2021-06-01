@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    height: 493px;
+    width: 100%;
+    margin: 180px auto;
+    background-image: url("../img/bridge.jpg");
+    background-size: cover;
+    position: relative;
+    box-shadow:  0px 14px 28px rgba(52, 74, 92,.25), 0 30px 10px rgba(52,74,92, .22)
+}
+
+.top {
+    padding-top: 50px;
+    margin-bottom: 60px;
+}
+
+.top a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+
+.sig {
+    padding-left: 70px;
+}
+
+.sig a::after {
+    content: "";
+    width: 62px;
+    height: 2px;
+    background-color: #e66a64;
+    position: relative;
+    display: block;
+}
+
+.joy {
+    padding-left: 25px;
+}
+
+.joy a::after {
+    content: "";
+    width: 62px;
+    height: 2px;
+    background-color: #e66a64;
+    position: relative;
+    display: block;
+    visibility: hidden;
+}
+
+:hover.joy a::after {
+    visibility: visible;
+}
+
+/*sign in*/
+
+.form-inside input[type="submit"] {
+    width: 262px;
+    background: #23ae92;
+    margin: 0 auto 32px;
+    border: none;
+}
+
+.bottom a {
+    color: white;
+    opacity: .5;
+}
+
+a {
+    display: inline-block;
+}
+
+.forgot {
+    padding-left: 70px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+.greate {
+    padding-left: 33px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+.form-inside label {
+    display: block;
+    padding-left: 70px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color:  white;
+    font-size: 16px;
+}
+
+.form-inside input {
+    display: block;
+    width: 261px;
+    padding: 0 15px;
+    margin: 10px auto 18px;
+    line-height: 40px;
+    color: white;
+    font-size: 16px;
+    background: transparent;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    border:  2px solid #9481c5;
+    outline: none;
+}
+
+label[for="checkbox"] {
+    margin-left: 69px;
+    padding-bottom: 40px;
+}
+
+/*checkbox*/
+
+input[type="checkbox"]:checked, 
+input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="checkbox"]:checked + label, 
+input[type="checkbox"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ff030300;
+    background-color: #9b12da;
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 2px;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after{
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after {
+    left: 3px;
+    top: 4px;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid #ff1e00;
+    border-bottom: 4px solid #ff0000;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+input[type="checkbox"]:not(:checked) + label:after{
+    opacity: 0;
+}
+    
+input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+} 
