@@ -152,7 +152,7 @@ let circleInSquare;
 
 // Квадрат поместится в круге, если диаметр окружности меньше или равен стороне квадрата.
 
-if (diameter < (squareP / 4)) {
+if (diameter <= (squareP / 4)) {
     circleInSquare = 'Круг поместится в квадрат';
 } else if (circleW < 0 || squareP < 0 || Number.isNaN(circleW) || Number.isNaN(squareP)) {
     circleInSquare = 'Некорректные данные';
