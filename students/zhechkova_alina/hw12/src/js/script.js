@@ -224,7 +224,7 @@ if (day === 31 && month !== 12) {
         nextDate = 'Некорректные данные';
     }
 
-}   else if (Number.isNaN(day) || Number.isNaN(month) || Number.isNaN(year) || day > 31 || month > 12 || day < 0 || month < 0 || year < 0 || day === 0 || month === 0 || year === 0) {
+}   else if (Number.isNaN(day) || Number.isNaN(month) || Number.isNaN(year) || day > 31 || month > 12 || day <= 0 || month <= 0 || year <= 0) {
         nextDate = 'Некорректные данные';
 }   else {
     newDay = day + 1;
