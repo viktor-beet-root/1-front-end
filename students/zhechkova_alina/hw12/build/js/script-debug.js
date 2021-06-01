@@ -154,7 +154,7 @@ var squareP = +prompt('Введите периметр квадрата');
 var diameter = circleW / Math.PI;
 var circleInSquare; // Квадрат поместится в круге, если диаметр окружности меньше или равен стороне квадрата.
 
-if (diameter < squareP / 4) {
+if (diameter <= squareP / 4) {
   circleInSquare = 'Круг поместится в квадрат';
 } else if (circleW < 0 || squareP < 0 || Number.isNaN(circleW) || Number.isNaN(squareP)) {
   circleInSquare = 'Некорректные данные';
@@ -218,7 +218,7 @@ if (day === 31 && month !== 12) {
   } else if (day === 29) {
     nextDate = 'Некорректные данные';
   }
-} else if (Number.isNaN(day) || Number.isNaN(month) || Number.isNaN(year) || day > 31 || month > 12 || day < 0 || month < 0 || year < 0 || day === 0 || month === 0 || year === 0) {
+} else if (Number.isNaN(day) || Number.isNaN(month) || Number.isNaN(year) || day > 31 || month > 12 || day <= 0 || month <= 0 || year <= 0) {
   nextDate = 'Некорректные данные';
 } else {
   newDay = day + 1;
