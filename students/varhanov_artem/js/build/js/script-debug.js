@@ -1,18 +1,5 @@
 "use strict";
 
-// const number = +prompt("ведите  число");
-// const lastNumber = number * number;
-// console.log(lastNumber);
-// const ml = 0.621371;
-// const km = +prompt("ведите  число");
-// const km_ml =km * ml;
-// console.log(km_ml);
-// const square = +prompt("side of a square");
-// const squareArea = square ** 2;
-// console.log(squareArea);
-// const square = +prompt("side of a square");
-// const squareArea = square * square;
-// console.log(squareArea);
 // 1)   Запросите у пользователя его имя и выведите в ответ: «Привет, его имя!».
 var hello = "Привет, ";
 var hame = prompt("Введите Ваше имя");
