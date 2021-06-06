@@ -1,0 +1,72 @@
+.page {
+
+    // .page__feedback
+
+    &__feedback {}
+}
+
+.feedback {
+    @include bg-cover('../image/feedback-bg.jpg');
+    // .feedback__container
+
+    &__container {
+        padding: 114px 0 200px;
+    }
+
+    // .feedback__title
+
+    &__title {
+        font-family: $secondary-font;
+        font-size: 36px;
+        color: #fff;
+        margin-bottom: 82px;
+        text-align: center;
+    }
+
+    &__block {
+        display: flex;
+        background-color: #333333;
+    }
+}
+
+.container {}
+
+.block {
+    &__img {
+        display: block;
+    }
+
+    // .block__content
+
+    &__content {
+        padding: 50px 50px 70px;
+    }
+
+    // .block__name
+
+    &__name {
+        text-transform: uppercase;
+        font-size: 20px;
+        color: #fefefe;
+        margin-bottom: 45px;
+    }
+
+    // .block__text
+
+    &__text {
+        font-size: 16px;
+        color: #e8e8e8;
+        line-height: 26px;
+
+        text-indent: 30px;
+        margin-top: 0;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            background-image: url('../image/quote-left-solid.svg');
+        }
+    }
+}

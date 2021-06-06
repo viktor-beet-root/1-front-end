@@ -1,0 +1,69 @@
+.page {
+
+    // .page__travel
+
+    &__travel {}
+}
+
+.travel {
+    @include bg-cover('../image/travel-bg1.jpg');
+
+    &:last-of-type {
+        @include bg-cover('../image/travel-bg2.jpg')
+    }
+
+
+    // .travel__container
+
+    &__container {
+        padding: 221px 0 96px;
+
+        &_flex-end {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    // .travel__content
+
+    &__content {
+        max-width: 541px;
+        width: 100%;
+        padding: 46px 30px 50px 24px;
+        background-color: rgba(35, 35, 35, .9);
+    }
+
+    &__subtitle {
+        color: $content-color;
+        font-size: 20px;
+        letter-spacing: .75px;
+        margin-bottom: 27px;
+        display: block;
+    }
+
+    &__title {
+        color: #fefefe;
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+
+    // .travel__text
+
+    &__text {
+        font-size: 16px;
+        color: #e8e8e8;
+        margin-bottom: 40px;
+        line-height: 26px;
+    }
+
+    // .travel__btn
+
+    &__btn {
+        padding: 0 60px;
+    }
+}
+
+.container {}
+
+.btn {}

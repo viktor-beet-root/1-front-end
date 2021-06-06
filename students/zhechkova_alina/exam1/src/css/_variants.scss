@@ -1,0 +1,36 @@
+.variants {
+    background-color: #333;
+
+    &__container {
+        padding: 83px 0 93px;
+    }
+
+
+    &__svg-wrapper {
+        margin-bottom: 23px;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__svg {
+        height: 59px;
+        width: 59px;
+        fill: #5474fd;
+
+        &:hover {
+            fill: #ff6363;
+        }
+    }
+
+    &__title {
+        color: $content-color;
+        font-size: 36px;
+        font-family: $secondary-font;
+    }
+
+    &__item {
+        text-align: center;
+    }
+}
