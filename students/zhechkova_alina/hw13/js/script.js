@@ -46,17 +46,19 @@ while (i++ < number) {
     if (number % i === 0) console.log(i);
 }
 
+*/
 
 // Определить количество цифр в введенном числе.
 let num1 = +prompt('Введите число');
-i = 0;
-let r;
-while (i < 10) {
+let i = 0;
+let r = num1;
+while (r > 0) {
     i++;
-    r = ~~(num1 / 10);
-    if (r === 0) console.log(i);
+    r = Math.floor(num1 / 10);
 }
+console.log(i);
 
+/*
 // Запросить у пользователя 10 чисел и подсчитать, сколько он ввел положительных, отрицательных и нулей .При этом также посчитать, сколько четных и нечетных. Вывести статистику на экран.
 
 let tenNum;
@@ -142,11 +144,15 @@ console.log(multiply);
              .В зависимости от того, что указал пользователь, уменьшаете диапазон.Начальный диапазон от 0 до 100,
              поделили пополам и получили 50. Если пользователь указал, что его число > 50,
              то изменили диапазон на от 51 до 100. И так до тех пор, пока пользователь не выберет == N. 
-        let border = 100;
-        let expected;
-        const numGuess = +prompt(`Загадайте число от 0 до ${border}`);
-        do {
-            expected = prompt(`Ваше число > ${border / 2}, < ${border / 2} или = ${border / 2}`)
-        } while (numGuess !== expected)
-        
+
+
+let border = 100;
+let i = 2;
+const numGuess = +prompt(`Загадайте число от 0 до ${border}`)
+let expected = prompt(`Ваше число \n 1) < ${border / i}, \n 2) > ${border / i} \n или 3) = ${border / i}`);
+let result = '';
+while (i < 16) {
+    i += 2;
+}
+alert(result);
 */
