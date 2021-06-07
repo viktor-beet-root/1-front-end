@@ -1,4 +1,4 @@
-// Запросить у пользователя его возраст и определить, кем он является: ребенком (0–12), подростком (12–18), взрослым (18-60) или пенсионером (60– ...).
+/*// Запросить у пользователя его возраст и определить, кем он является: ребенком (0–12), подростком (12–18), взрослым (18-60) или пенсионером (60– ...).
 const userAge = +prompt('Введите свой возраст');
 let userAgeMessage = null;
 
@@ -80,7 +80,7 @@ console.log(numSame);
 
 const yearToCheck = +prompt('Введите год');
 let yearVisokosny;
-if (yearToCheck % 400 === 0 || yearToCheck % 4 === 0 && (yearToCheck % 100) !== 0) {
+if (yearToCheck % 400 === 0 || yearToCheck % 4 === 0 && yearToCheck % 100 !== 0) {
     yearVisokosny = 'Высокосный год'
 }  else if (Number.isNaN(yearToCheck)) {
     yearVisokosny = 'Некорректные данные, введите число';
@@ -170,27 +170,27 @@ if (diameter <= sideQ) {
 }
 console.log(circleInSquare);
 
-
 // Задать пользователю 3 вопроса, в каждом вопросе по 3 варианта ответа. За каждый правильный ответ начисляется 2 балла. После вопросов выведите пользователю количество набранных баллов.
-const question1 = prompt('Какой тип данных хранится в переменной user Age? var userAge = "32": а) floating point number; б) integer; в) string (Выберите букву с верным ответом)');
-const question2 = prompt('Какая из команд выводит на экран окно с сообщением и приостанавливает выполнение скрипта, пока пользователь не нажмёт «ОК»? а) document.write(); б) alert(); в) console.log (Выберите букву с верным ответом)');
-const question3 = prompt('Для чего используется оператор "&&"? а) для умножения; б) оператор И,возвращает true, если оба аргумента истинны, а иначе – false; в) означает тип данных (Выберите букву с верным ответом)');
-let answerCheck;
+const question1 = prompt('Какой тип данных хранится в переменной user Age? var userAge = "32": \n а) floating point number; \n б) integer; \n в) string (Выберите букву с верным ответом)');
+const question2 = prompt('Какая из команд выводит на экран окно с сообщением и приостанавливает выполнение скрипта, пока пользователь не нажмёт «ОК»? \n а) document.write(); \n б) alert(); \n в) console.log (Выберите букву с верным ответом)');
+const question3 = prompt('Для чего используется оператор "&&"? \n а) для умножения; \n б) оператор И,возвращает true, если оба аргумента истинны, а иначе – false; \n в) означает тип данных (Выберите букву с верным ответом)');
+let answerCheck = 0;
 
-if (question1.toLowerCase () === 'в' &&  question2.toLowerCase () === 'б' && question3.toLowerCase () === 'б') {
-    answerCheck = 6;
-} else if ((question1.toLowerCase () === 'в' && question2.toLowerCase () === 'б') || (question1.toLowerCase () === 'в' &&  question3.toLowerCase () === 'б') || (question2.toLowerCase () === 'б' && question3.toLowerCase () === 'б'))  {
-    answerCheck = 4;
-} else if (question1.toLowerCase () === 'в' || question2.toLowerCase () === 'б' || question3.toLowerCase () === 'б') {
-    answerCheck = 2;
-} else {
-    answerCheck = 0;
-}
+if (question1.toLowerCase () === 'в') {
+    answerCheck += 2;
+} 
+if (question2.toLowerCase () === 'б')  {
+    answerCheck += 2;
+} 
+if (question3.toLowerCase () === 'б') {
+    answerCheck += 2;
+} 
 
 const messageQuestion = 'У вас ' + answerCheck + ' баллов.';
 console.log(messageQuestion);
 
 // Запросить дату (день, месяц, год) и вывести следующую за ней дату. Учтите возможность перехода на следующий месяц, год, а также високосный год.
+*/
 
 const day = +prompt ('Введите день');
 const month = +prompt ('Введите месяц');
@@ -199,44 +199,42 @@ let nextDate;
 let newDay;
 let newMonth;
 let newYear;
-
-if (day === 31) { 
-    if (month !== 12 || month !== 4 || month !== 6 || month !== 9 || month !== 9) {
+if (day === 31 && month !== 12) {
     newDay = 1;
     newMonth = month + 1;
-    nextDate = 'Следующий день: ' + newDay + '.' + newMonth + '.' + year;
-    } else {
+    nextDate = 'Следующий день: ' + newDay + '.' + newMonth + '.' + year; 
+    if (month === 4 || month === 6 || month === 9 || month === 11 || month > 12) {
         nextDate = 'Некорректные данные';
     }
 }   else if (month === 12) {
-    newDay = Number(1);
-    newMonth = Number(1);
+    newDay = 1;
+    newMonth = 1;
     newYear = year + 1;
     nextDate = 'Следующий день: ' + newDay + '.' + newMonth + '.' + newYear;
 
 }  else if (day === 30 && (month === 4 || month === 6 || month === 9 || month === 11))  {
-    newDay = Number(1);
+    newDay = 1;
     newMonth = month + 1;
     nextDate = 'Следующий день: ' + newDay + '.' + newMonth + '.' + year;
 
 }   else if (month === 2) {
 
     if (day === 28 && year % 4 != 0 || year % 100 == 0 && year % 400 != 0) {
-        newDay = Number(1);
+        newDay = 1;
         newMonth = month + 1;
         nextDate = 'Следующий день: ' + newDay + '.' + newMonth + '.' + year;
     } else if (day === 28){
         newDay = day + 1;
         nextDate = 'Следующий день: ' + newDay + '.' + month + '.' + year;
     } else if (day === 29 && year % 4 === 0 || year % 100 === 1 && year % 400 === 0) {
-    newDay = Number(1);
+    newDay = 1;
     newMonth = month + 1;
     nextDate = 'Следующий день: ' + newDay + '.' + newMonth + '.' + year;
     } else if (day === 29) {
         nextDate = 'Некорректные данные';
     }
 
-}   else if (Number.isNaN(day) || Number.isNaN(month) || Number.isNaN(year) || day > 31 || month > 12 || day <= 0 || month <= 0 || year <= 0) {
+}   else if (Number.isNaN(day) || Number.isNaN(month) || Number.isNaN(year) || day > 31 || day <= 0 || month <= 0 || year < 0) {
         nextDate = 'Некорректные данные';
 }   else {
     newDay = day + 1;
