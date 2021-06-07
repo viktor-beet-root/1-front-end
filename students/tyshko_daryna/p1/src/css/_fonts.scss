@@ -1,0 +1,11 @@
+@include fonts($font-default-name, "josefin-sans-v17-latin-300", 300);
+
+@include fonts($font-default-name, "josefin-sans-v17-latin-regular");
+
+@include fonts($font-default-name, "josefin-sans-v17-latin-700", 700);
+
+@include fonts($font-secondary-name, "aleo-v4-latin-300", 300);
+
+@include fonts($font-secondary-name, "aleo-v4-latin-regular");
+
+@include fonts($font-secondary-name, "aleo-v4-latin-700", 700);
