@@ -1,0 +1,122 @@
+.hero-block {
+    @include bg-cover("../image/choose_us_bg.png");
+    padding-top: 75px;
+    line-height: 26px;
+    padding-bottom: 115px;
+    &__container {
+    }
+
+    // .hero-block__title
+
+    // &__title {
+    //     padding-top: 80px;
+    //     color: $color-white;
+    //     font-size: 36px;
+    //     font-family: $font-secondary-name;
+    //     margin-bottom: 50px;
+    // }
+
+    // // .hero-block__text1
+
+    // &__text {
+    //     font-size: 16px;
+    //     letter-spacing: 2px;
+    //     color: $color-mercury;
+    //     margin-bottom: 50px;
+    //     width: 100%;
+    //     max-width: 590px;
+
+    //     &_margin {
+    //         margin-bottom: 30px;
+    //     }
+    // }
+
+    // &__button {
+    // }
+
+    // .hero-block__image-wrapper
+
+    &__image-wrapper {
+    }
+}
+.container {
+}
+.row {
+}
+.col-6 {
+}
+.button {
+    // .button__link
+
+    &__link {
+    }
+}
+.image-wrapper {
+    margin-bottom: 5px;
+
+    // .image-wrapper_right
+
+    // .image-wrapper__picture
+
+    &__picture {
+        display: block;
+        max-width: 100%;
+        padding-right: 120px;
+        padding-left: 65px;
+
+        &_right {
+            padding-left: 190px;
+            padding-right: 0px;
+        }
+    }
+}
+// vdfvkldkfvmkdf;v;dfmv
+
+.col-6 {
+}
+.hero-block {
+    // .hero-block__choose-us
+
+    &__choose-us {
+    }
+}
+.choose-us {
+    width: 100%;
+    max-width: 590px;
+
+    // .choose-us__title
+
+    &__title {
+        padding-top: 80px;
+        color: $color-white;
+        font-size: 36px;
+        font-family: $font-secondary-name;
+        margin-bottom: 50px;
+    }
+
+    // .choose-us__text
+
+    &__text {
+        font-size: 16px;
+        letter-spacing: 2px;
+        color: $color-mercury;
+        margin-bottom: 50px;
+        width: 100%;
+        max-width: 590px;
+
+        &_margin {
+            margin-bottom: 30px;
+        }
+    }
+
+    // .choose-us__button
+
+    &__button {
+    }
+}
+.button {
+    // .button__link
+
+    &__link {
+    }
+}

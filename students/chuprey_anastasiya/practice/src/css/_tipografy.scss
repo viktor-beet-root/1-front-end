@@ -46,6 +46,11 @@
     z-index: 20;
     overflow: hidden;
 
+    &__link {
+        color: white;
+        text-decoration: none;
+    }
+
     &__text {
         z-index: 30;
     }
