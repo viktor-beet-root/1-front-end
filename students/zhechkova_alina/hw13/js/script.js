@@ -28,35 +28,36 @@ while(startDiap <= endDiap) {
 }
 console.log(sum);
 
-// Запросить 2 числа и найти только наибольший общий делитель
-
-let firstNum = +prompt('Первое число');
-let secondNum = +prompt('Второе число');
-let i = 0;
-
-while (i++ < firstNum || i++ < secondNum) {
-    if (firstNum % i === 0 && secondNum % i === 0) console.log(i);
-}
-
 //    Запросить у пользователя число и вывести все делители этого числа.
 let number = +prompt('Введите число');
-i = 0;
+let i = 0;
 let delitel;
 while (i++ < number) {
     if (number % i === 0) console.log(i);
 }
 
+// Запросить 2 числа и найти только наибольший общий делитель
+
+let firstNum = +prompt('Первое число');
+let secondNum = +prompt('Второе число');
+let i = 0;
+let maxDelitel = 0;
+while (i++ < firstNum || i++ < secondNum) { console.log(i)
+    if (firstNum % i === 0 && secondNum % i === 0) maxDelitel = i;
+}
+console.log(maxDelitel)
 */
 
 // Определить количество цифр в введенном числе.
-let num1 = +prompt('Введите число');
-let i = 0;
-let r = num1;
+const num1 = +prompt('Введите число');
+let i = 1;
+let r = Math.floor(num1 / 10);
 while (r > 0) {
     i++;
-    r = Math.floor(num1 / 10);
+    r = Math.floor(r / 10);
 }
 console.log(i);
+
 
 /*
 // Запросить у пользователя 10 чисел и подсчитать, сколько он ввел положительных, отрицательных и нулей .При этом также посчитать, сколько четных и нечетных. Вывести статистику на экран.
