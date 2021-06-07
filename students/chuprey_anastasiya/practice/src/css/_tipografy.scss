@@ -5,12 +5,15 @@
     line-height: 1.6;
     min-height: 100vh;
     color: $default-color-text;
+    background-color: $color-white;
+    padding: 15px;
 }
 
 .container {
     max-width: $container-widht;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 $default-gap;
+    padding: $default-gap;
 }
 .row {
     display: flex;
@@ -25,4 +28,43 @@
 
 [class^="col-"] {
     padding: $default-gap;
+}
+.button {
+    max-width: 224px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 25px 20px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+    background-color: $dodger-blue;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: none;
+    font-family: $font-secondary-name;
+    position: relative;
+    z-index: 20;
+    overflow: hidden;
+
+    &__text {
+        z-index: 30;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 300px;
+        height: 100px;
+        background-color: $dodger-blue2;
+        top: 0;
+        left: -135%;
+        z-index: -10;
+        position: absolute;
+        transform: skew(50deg);
+        transition: 0.7s ease-in-out;
+    }
+    &:hover::after {
+        transform: skew(0);
+        left: -70%;
+    }
 }

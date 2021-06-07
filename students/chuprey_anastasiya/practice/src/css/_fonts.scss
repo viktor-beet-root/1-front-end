@@ -1,8 +1,11 @@
-@include fonts($font-primary-name, "raleway-v19-latin-300", 300);
+@include fonts($font-primary-name, "josefin-sans-v17-latin-300", 300);
 
-@include fonts($font-primary-name, "raleway-v19-latin-regular");
+@include fonts($font-primary-name, "josefin-sans-v17-latin-regular");
 
-@include fonts($font-primary-name, "raleway-v19-latin-700", 700);
+@include fonts($font-primary-name, "josefin-sans-v17-latin-700", 700);
 
-@include fonts($font-primary-name, "raleway-v19-latin-900", 900);
-/* raleway-900 - latin */
+@include fonts($font-secondary-name, "aleo-v4-latin-300", 300);
+
+@include fonts($font-secondary-name, "aleo-v4-latin-regular");
+
+@include fonts($font-secondary-name, "aleo-v4-latin-700", 700);
