@@ -422,8 +422,46 @@
         max-width: 650px;
         text-align: center;
     }
-
 }
+
+
+@media screen and (max-width:378px) {
+    .header__title-text strong {
+        font-size: 40px;
+    }
+
+    .header__search-input {
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+        line-height: 53px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .header__search-button {
+        width: 100%;
+    }
+
+    .header__search-form {
+        margin-bottom: 20px;
+    }
+
+    .header__input-burger-btn:checked~.header__burger-btn {
+        position: fixed;
+        /* height: 138%; */
+        /* transform: translate(19%); */
+        z-index: 1;
+        transform: translateY(-795px);
+        left: 5.5%;
+    }
+
+    .header__burger-btn {
+        left: 5.5%;
+    }
+}
+
+
+
 
 @media screen and (max-width:320px) {
     .header__title-text strong {
@@ -457,5 +495,55 @@
 
     .header__burger-btn {
         left: 5.5%;
+    }
+}
+
+
+@media screen and (max-width:378px) {
+
+    .header__input-burger-btn:checked~.header__burger-btn {
+        transform: translateY(-770px);
+        left: 5.5%;
+    }
+}
+
+@media screen and (max-width:377px) {
+
+    .header__input-burger-btn:checked~.header__burger-btn {
+        transform: translateY(-770px);
+        left: 5.5%;
+    }
+}
+
+@media screen and (max-width:376px) {
+
+    .header__input-burger-btn:checked~.header__burger-btn {
+        transform: translateY(-770px);
+        left: 5.5%;
+    }
+}
+
+@media screen and (max-width:376px) {
+
+    .header__input-burger-btn:checked~.header__burger-btn {
+        transform: translateY(-796px);
+        left: 5.5%;
+    }
+}
+
+@media screen and (max-width:570px) {
+
+    .header__input-burger-btn:checked~.header__burger-btn {
+
+        left: 4%;
+        position: fixed;
+        /* height: 138%; */
+        /* transform: translate(19%); */
+        z-index: 1;
+        /* -webkit-transform: translateY(-771px); */
+        /* transform: translateY(-771px); */
+        top: 17px;
+        left: 64px;
+        transform: translate(-116%);
     }
 }
