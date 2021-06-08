@@ -1,0 +1,73 @@
+.overlay-window-symu {
+    display: none;
+    background-color: rgba($color-black, 0.85);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    &__window {
+        background-color: $color-white;
+        position: absolute;
+        width: 100%;
+        @include position-center;
+    }
+
+
+    &_active {
+        display: block;
+    }
+}
+
+.symu-info {
+    max-width: $container-width;
+    width: 100%;
+    border-radius: 5px;
+    padding: 240px 0 90px;
+    text-align: center;
+
+    &__title {
+        font-size: 50px;
+        letter-spacing: 2.2px;
+        color: $window-red;
+    }
+
+
+    &__paragraph {
+        font-size: 22px;
+        letter-spacing: 1px;
+        color: $window-text-grey;
+        margin-bottom: 60px;
+    }
+
+
+    &__link {
+        text-decoration: none;
+        font-size: 24px;
+        letter-spacing: 2.5px;
+        color: $color-white;
+        display: inline-block;
+        padding: 20px 60px;
+        background-color: $window-red;
+        border-radius: 5px;
+    }
+
+    &__img {
+        margin: 0 auto;
+        display: block;
+        width: 190px;
+    }
+
+    &__img-wrapper {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 70px 87px;
+        background-color: $color-white;
+        border-radius: 180px;
+        box-shadow: 0 5px 25px $window-text-grey;
+    }
+
+}
