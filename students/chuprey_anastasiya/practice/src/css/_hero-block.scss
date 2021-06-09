@@ -60,13 +60,14 @@
 
     &__picture {
         display: block;
-        max-width: 100%;
-        padding-right: 120px;
-        padding-left: 65px;
+        max-width: 350px;
+        width: 100%;
+        margin-right: 120px;
+        margin-left: 65px;
 
         &_right {
-            padding-left: 190px;
-            padding-right: 0px;
+            margin-left: 190px;
+            margin-right: 0px;
         }
     }
 }
@@ -81,9 +82,6 @@
     }
 }
 .choose-us {
-    width: 100%;
-    max-width: 590px;
-
     // .choose-us__title
 
     &__title {
@@ -92,17 +90,16 @@
         font-size: 36px;
         font-family: $font-secondary-name;
         margin-bottom: 50px;
+        font-weight: 400;
     }
 
     // .choose-us__text
 
     &__text {
         font-size: 16px;
-        letter-spacing: 2px;
+
         color: $color-mercury;
         margin-bottom: 50px;
-        width: 100%;
-        max-width: 590px;
 
         &_margin {
             margin-bottom: 30px;

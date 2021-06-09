@@ -110,18 +110,59 @@
 
     // .search-form-wrapper__button
 
-    &__button {
-        width: 160px;
+    .btn {
         border: 2px solid $color-white;
-    }
-}
-.button {
-    // .button__text
+        max-width: 150px;
+        width: 100%;
+        display: inline-block;
+        text-decoration: none;
+        padding: 20px 25px 20px 25px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-white;
+        background-color: $dodger-blue;
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-family: $font-secondary-name;
+        position: relative;
+        z-index: 20;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
 
-    &__text {
-        padding-right: 10px;
+        &__text {
+            z-index: 30;
+            padding-right: 10px;
+        }
+
+        &__icon {
+            fill: $color-white;
+            &:hover {
+                fill: $color-tangaroa;
+            }
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 300px;
+            height: 100px;
+            background-color: $dodger-blue2;
+            top: 0;
+            left: -135%;
+            z-index: -10;
+            position: absolute;
+            transform: skew(50deg);
+            transition: 0.7s ease-in-out;
+        }
+
+        &:hover::after {
+            transform: skew(0);
+            left: -70%;
+        }
     }
 }
+
 .scroll-down {
     padding-bottom: 15px;
     position: relative;

@@ -4,9 +4,9 @@
     font-family: $font-primary-name, $font-reserve;
     line-height: 1.6;
     min-height: 100vh;
-    color: $default-color-text;
+    color: $color-mercury;
     background-color: $color-white;
-    padding: 15px;
+    padding: $default-gap;
 }
 
 .container {
@@ -19,18 +19,18 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 (-$default-gap);
-    padding: $default-gap;
 }
 
-.col {
-    padding: $default-gap;
-}
+// .col {
+//     padding: $default-gap;
+// }
 
 [class^="col-"] {
     padding: $default-gap;
 }
 .button {
     max-width: 224px;
+    width: 100%;
     display: inline-block;
     text-decoration: none;
     padding: 20px 25px 20px 25px;
@@ -40,7 +40,6 @@
     background-color: $dodger-blue;
     font-size: 14px;
     letter-spacing: 1px;
-    border: none;
     font-family: $font-secondary-name;
     position: relative;
     z-index: 20;
@@ -51,10 +50,6 @@
         text-decoration: none;
     }
 
-    &__text {
-        z-index: 30;
-    }
-
     &::after {
         content: "";
         display: block;
@@ -62,14 +57,13 @@
         height: 100px;
         background-color: $dodger-blue2;
         top: 0;
-        left: -135%;
+        left: -87%;
         z-index: -10;
         position: absolute;
         transform: skew(50deg);
         transition: 0.7s ease-in-out;
     }
     &:hover::after {
-        transform: skew(0);
-        left: -70%;
+        left: 0;
     }
 }

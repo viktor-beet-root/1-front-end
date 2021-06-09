@@ -1,6 +1,7 @@
 @mixin grid($count: 12) {
     @for $i from 1 through $count {
         $width: 100% / 12 * $i;
+
         .col-#{$i} {
             max-width: $width;
             width: 100%;
@@ -11,6 +12,7 @@
         @media screen and (max-width: $breack-point-value) {
             @for $i from 1 through $count {
                 $width: 100% / 12 * $i;
+
                 .col-#{$breack-point}-#{$i} {
                     max-width: $width;
                     width: 100%;
@@ -50,15 +52,15 @@
     }
 }
 
-@mixin title-white {
-    font-size: 90px;
-    line-height: 27px;
-    color: $color-white;
-    font-weight: 700;
-}
-@mixin title-black {
-    font-size: 60px;
-    line-height: 27px;
-    color: $color-black;
-    font-weight: 900;
-}
+// @mixin title-white {
+//     font-size: 90px;
+//     line-height: 27px;
+//     color: $color-white;
+//     font-weight: 700;
+// }
+// @mixin title-black {
+//     font-size: 60px;
+//     line-height: 27px;
+//     color: $color-black;
+//     font-weight: 900;
+// }

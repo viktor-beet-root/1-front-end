@@ -1,0 +1,102 @@
+.instruction {
+    background-color: $color-mine-shaft;
+    padding-top: 55px;
+    padding-bottom: 75px;
+    position: relative;
+    // .instruction__container
+
+    &__container {
+    }
+
+    // .instruction__circle
+
+    // &__circle {
+    //     position: absolute;
+    //     width: 400px;
+    //     height: 60px;
+    //     overflow: hidden;
+    //     left: 308px;
+    //     top: 35px;
+
+    //     &::after {
+    //         content: "";
+    //         position: absolute;
+    //         display: block;
+    //         width: 400px;
+    //         height: 290px;
+    //         border: 1px dashed red;
+    //         border-radius: 50%;
+    //     }
+    //     &_second {
+    //         left: 680px;
+    //         top: 35px;
+    //     }
+    // }
+
+    &__circle {
+        position: absolute;
+        max-width: 380px;
+        width: 100%;
+        height: 55px;
+        overflow: hidden;
+        transform: translate(45%, -30%);
+        // left: 26%;
+        // top: 10%;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            max-width: 400px;
+            width: 100%;
+            height: 290px;
+            border-top: 1px dashed $color-dove-gray;
+            border-radius: 50%;
+        }
+
+        &_second {
+            transform: translate(145%, -30%);
+            // left: 50%;
+            // top: 10%;
+        }
+    }
+
+    // .instruction__steps-box
+
+    &__steps-box {
+    }
+}
+.container {
+}
+.row {
+}
+.steps-box {
+    // .steps-box__step-item
+
+    &__step-item {
+    }
+}
+.col-4 {
+}
+.step-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__icon {
+        max-height: 61px;
+        margin-bottom: 20px;
+    }
+
+    &__svg:hover {
+        background-color: red;
+    }
+
+    &__title {
+        font-size: 36px;
+        color: $color-mercury;
+        font-weight: 300;
+        font-family: $font-secondary-name;
+    }
+}
