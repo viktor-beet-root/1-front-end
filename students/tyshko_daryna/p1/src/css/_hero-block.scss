@@ -1,0 +1,78 @@
+.hero-block {
+    @include bg-cover("../image/choose_us_bg.png");
+    padding-top: 75px;
+    line-height: 26px;
+    padding-bottom: 115px;
+
+    &__container {}
+
+    // .hero-block__choose-us
+
+    &__choose-us {}
+}
+
+.container {}
+
+.row {}
+
+.col-6 {}
+
+.choose-us {
+    padding: -15px;
+
+    &__title {
+        padding-top: 80px;
+        font-size: 36px;
+        font-family: $font-secondary-name;
+        color: $color-white;
+        padding-bottom: 50px;
+        font-weight: 400;
+    }
+
+    &__text {
+        font-size: 16px;
+        font-family: $font-default-name;
+        letter-spacing: 1px;
+        margin-bottom: 50px;
+        color: $mercury;
+        min-width: 590px;
+        width: 100%;
+
+        &_margin {
+            margin-bottom: 30px;
+        }
+    }
+
+    // .choose-us__button
+
+    &__button {}
+
+    // .choose-us__image-wrapper
+
+    &__image-wrapper {}
+}
+
+.button {
+
+    // .button__link
+
+    &__link {}
+}
+
+.image-wrapper {
+
+    margin-bottom: 5px;
+
+    &__picture {
+        display: block;
+        max-width: 350px;
+        width: 100%;
+        margin-left: 65px;
+        margin-right: 120px;
+
+        &_right {
+            margin-left: 190px;
+            margin-right: 0px;
+        }
+    }
+}

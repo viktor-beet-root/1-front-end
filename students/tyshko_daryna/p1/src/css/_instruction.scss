@@ -1,0 +1,84 @@
+.instruction {
+    background-color: $mine-shaft;
+    padding-top: 55px;
+    padding-bottom: 75px;
+    position: relative;
+
+
+    &_container {}
+
+
+    // .instruction__circle
+
+    &__circle {
+        position: absolute;
+        width: 380px;
+        height: 55px;
+        overflow: hidden;
+        left: 26%;
+        top: 10%;
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 400px;
+            height: 290px;
+            border-top: 1px dashed red;
+            border-radius: 50%;
+        }
+
+        &_second {
+            left: 50%;
+            top: 10%;
+        }
+    }
+
+
+
+    // .instruction__steps-box
+
+    &__steps-box {}
+}
+
+.container {}
+
+.row {}
+
+.steps-box {
+
+    // .steps-box__step-item
+
+    &__step-item {}
+}
+
+.col-4 {}
+
+.step-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    // .step-item__icon
+
+    &__icon {
+        margin-bottom: 20px;
+        max-height: 61px;
+    }
+
+    &__svg:hover {
+        border-radius: 50%;
+        box-shadow: 0 0 5px white;
+    }
+
+
+
+    &__title {
+        font-size: 36px;
+        font-family: $font-secondary-name;
+        color: $mercury;
+        font-weight: 300;
+    }
+}

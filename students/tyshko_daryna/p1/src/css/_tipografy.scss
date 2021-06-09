@@ -29,6 +29,8 @@
 .button {
     display: inline-block;
     text-decoration: none;
+    max-width: 224px;
+    width: 100%;
     padding: 25px 35px 25px 30px;
     text-align: center;
     text-transform: uppercase;
@@ -41,6 +43,11 @@
     position: relative;
     z-index: 20;
     overflow: hidden;
+
+    &__link {
+        color: $color-white;
+        text-decoration: none;
+    }
 
     &__text {
         z-index: 3;
@@ -55,15 +62,13 @@
         overflow: hidden;
         position: absolute;
         top: 0;
-        left: -135%;
+        left: -82%;
         z-index: -10;
         transform: skew(50deg);
         transition: 0.5s ease-in-out;
     }
 
     &:hover::after {
-        transform: skew(0);
-        left: -70%;
-        // transition: 0.5s ease-in-out;
+        left: 0;
     }
 }
