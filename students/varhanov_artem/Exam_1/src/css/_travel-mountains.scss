@@ -1,0 +1,59 @@
+
+.travel-mountains {
+    background-image: url(../image/bg_spain_2.jpeg);
+    padding-top: 229px;
+    padding-bottom: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (max-width:576px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    &__row {
+    }
+
+ 
+
+    &__col {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+ 
+
+    &__spain {
+    }
+}
+.container {
+}
+.row {
+}
+.col-12 {
+}
+.spain {
+
+
+    &__span {
+    }
+
+
+
+    &__titel {
+    }
+
+
+
+    &__text {
+    }
+}
+.spain-form {
+
+
+    &_botton {
+    }
+}
+.button-btn {
+}

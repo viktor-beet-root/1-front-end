@@ -1,0 +1,69 @@
+.footer {
+    background-color: #232323;
+    padding: 120px 0 54px;
+
+
+    &__content {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 24px;
+        text-transform: uppercase;
+        line-height: 26px;
+        color: $title-color;
+        font-family: $font-josefin;
+        font-weight: 400;
+        letter-spacing: 3.36px;
+        margin-bottom: 5px;
+    }
+
+
+    &__sub-titel {
+        font-size: 16px;
+        line-height: 26px;
+        color: $title-color;
+        font-family: $font-josefin;
+        font-weight: 400;
+        letter-spacing: 1.2px;
+        margin-bottom: 25px;
+    }
+
+
+    &__social-links {
+        max-width: 185px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    &__inline--fa {
+        fill: #e8e8e8;
+        width: 20px;
+        height: 20px;
+
+        &:hover {
+            fill: #5474fd;
+        }
+    }
+}
+
+.container {}
+
+.fa-facebook-f {}
+
+.fa-w-10 {}
+
+.fa-twitter {}
+
+.fa-w-16 {}
+
+.fa-linkedin-in {}
+
+.fa-w-14 {}
+
+.fa-youtube {}
+
+.fa-w-18 {}
+
+.fa-pinterest {}
