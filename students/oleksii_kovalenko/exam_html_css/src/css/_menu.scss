@@ -1,10 +1,9 @@
 .menu {
     background-color: $menuBackground;
     padding: 12px 0;
-
-    @include media ('md') {
-        position: relative;
-    }
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 
     &__container {
         display: flex;
@@ -42,6 +41,10 @@
             border-bottom: 1px solid $black;
             text-align: center;
             padding: 5px 0;
+
+            &:hover {
+                border-left: 5px solid $dodger-blue;
+            }
         }
     }
 
