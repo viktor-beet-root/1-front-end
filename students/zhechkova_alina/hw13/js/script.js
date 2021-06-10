@@ -1,28 +1,24 @@
 
-/*// Первая задача
-const num = +prompt('Введите число');
-let i = 0;
+// Первая задача
+let num;
+do {
+    num = prompt('Введите число');
+} while (Number.isNaN(+num) || num === undefined || num === null)
 let string = '';
-while (i++ < num) {
+for (let i = 0; i < num; i++) {
     string = string + '#';
     console.log(string)
 }
 
-// Вторая задача
-const num2 = +prompt('Введите число');
-let string2 = '';
-for (let j = num2 - 1; j > 0; j--) {
-    string2 = ' ' + string2;
-    for (let i = 0; i < num2; j++) {
-        string2 = string2 + '#';
-    }
-    console.log(string2)
-}
-
 // Подсчитать сумму всех чисел в заданном пользователем диапазоне.
 
-let startDiap = +prompt('Начало диапазона');
-let endDiap = +prompt('Конец диапазона');
+let startDiap;
+let endDiap;
+do {
+    startDiap = prompt('Начало диапазона');
+    endDiap = prompt('Конец диапазона');
+} while (Number.isNaN(+startDiap) || startDiap === undefined || startDiap === null || Number.isNaN(+endDiap) || endDiap === undefined || endDiap === null);
+
 let sum = 0;
 while(startDiap <= endDiap) {
     sum = sum + startDiap++;
@@ -30,7 +26,10 @@ while(startDiap <= endDiap) {
 console.log(sum);
 
 //    Запросить у пользователя число и вывести все делители этого числа.
-let number = +prompt('Введите число');
+let number;
+do {
+    number = prompt('Введите число');
+} while (Number.isNaN(+number) || number === undefined || number === null)
 let i = 0;
 let delitel;
 while (i++ < number) {
@@ -40,14 +39,18 @@ while (i++ < number) {
 
 // Запросить 2 числа и найти только наибольший общий делитель
 
-let firstNum = +prompt('Первое число');
-let secondNum = +prompt('Второе число');
-let i = 0;
+let firstNum;
+let secondNum;
+do {
+    firstNum = prompt('Первое число');
+    secondNum = prompt('Второе число');
+} while (Number.isNaN(+firstNum) || firstNum === undefined || firstNum === null || Number.isNaN(+secondNum) || secondNum === undefined || secondNum === null)
+
+i = 0;
 let minNumber = firstNum < secondNum ? firstNum : secondNum;
 let maxNumber = firstNum > secondNum ? firstNum : secondNum;
 let maxDelitel = 0;
 while (i++ < minNumber) {
-    console.log(i)
     if (maxNumber % minNumber === 0) {
         maxDelitel = minNumber;
         break;
@@ -57,14 +60,18 @@ while (i++ < minNumber) {
 console.log(maxDelitel);
 
 // Определить количество цифр в введенном числе.
-const num1 = +prompt('Введите число');
- i = 1;
+let num1;
+do {
+    num1 = prompt('Введите число');
+} while (Number.isNaN(+num1) || num1 === undefined || num1 === null)
+i = 1;
 let r = Math.floor(num1 / 10);
 while (r > 0) {
     i++;
     r = Math.floor(r / 10);
 }
-console.log(i);
+let resultNumAmout = `В данном числе ${i} цифр`
+console.log(resultNumAmout);
 
 
 // Запросить у пользователя 10 чисел и подсчитать, сколько он ввел положительных, отрицательных и нулей .При этом также посчитать, сколько четных и нечетных. Вывести статистику на экран.
@@ -115,8 +122,12 @@ do {
 
 
 // Запросить у пользователя число и на сколько цифр его сдвинуть.Сдвинуть цифры числа и вывести результат(если число 123456 сдвинуть на 2 цифры, то получится 345612).
-let num3 = +prompt('Введите число');
-let numChange = +prompt('На сколько цифр сдвинуть?');
+let num3;
+let numChange;
+do {
+    num3 = prompt('Введите число');
+    numChange = prompt('На сколько цифр сдвинуть?');
+} while (Number.isNaN(+num3) || num3 === undefined || num3 === null || Number.isNaN(+numChange) || numChange === undefined || numChange === null)
 let long = 1;
 let amountRegist = Math.floor(num3 / 10);
 let numLast = 0;
@@ -138,7 +149,7 @@ console.log(num3)
 // Зациклить вывод дней недели таким образом: «День недели.Хотите увидеть следующий день ? »и так до тех пор, пока пользователь нажимает OK. 
 let days = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
 let confirmQue;
-let i = 0;
+i = 0;
 let result;
 do {
     result = days[i++];
@@ -162,35 +173,4 @@ for (let i = 2; i < 10; i++) {
 }
 console.log(multiply);
 
-
-/*  Игра« Угадай число».Предложить пользователю загадать число от 0 до 100 и отгадать его следующим способом:
-             каждую итерацию цикла делите диапазон чисел пополам,
-             записываете результат в N и спрашиваете у пользователя« Ваше число > N, < N или == N ? »
-             .В зависимости от того, что указал пользователь, уменьшаете диапазон.Начальный диапазон от 0 до 100,
-             поделили пополам и получили 50. Если пользователь указал, что его число > 50,
-             то изменили диапазон на от 51 до 100. И так до тех пор, пока пользователь не выберет == N. 
-*/
-let startDiap = 0;
-let finishDiap = 100;
-const numGuess = +prompt(`Загадайте число от 0 до 100`);
-let result = 0;
-let i = 0;
-let ask;
-let expected;
-while (i < 10) {
-    i+=2;
-    ask = (startDiap + finishDiap) / i;
-    expected = prompt(`1) > ${ask} \n2) < ${ask} \n3) == ${ask}`)
-    if (expected === '3)') {
-        result = ask;
-        break;
-    }
-    if (expected === '1)') {
-        startDiap = finishDiap / 2;
-    }
-    if (expected === '2)') {
-        finishDiap = finishDiap / 2;
-    }
-}
-
-alert(result);
+// Последнее задание не сделала пока что, если сделаю, добавлю в следующие дз))))))
