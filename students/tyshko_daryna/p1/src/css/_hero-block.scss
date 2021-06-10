@@ -2,7 +2,7 @@
     @include bg-cover("../image/choose_us_bg.png");
     padding-top: 75px;
     line-height: 26px;
-    padding-bottom: 115px;
+    padding-bottom: 90px;
 
     &__container {}
 
@@ -21,25 +21,21 @@
     padding: -15px;
 
     &__title {
-        padding-top: 80px;
+        padding-top: 90px;
         font-size: 36px;
         font-family: $font-secondary-name;
         color: $color-white;
-        padding-bottom: 50px;
+        margin-bottom: 60px;
         font-weight: 400;
     }
 
     &__text {
         font-size: 16px;
-        font-family: $font-default-name;
-        letter-spacing: 1px;
-        margin-bottom: 50px;
+        margin-bottom: 43px;
         color: $mercury;
-        min-width: 590px;
-        width: 100%;
 
         &_margin {
-            margin-bottom: 30px;
+            margin-bottom: 27px;
         }
     }
 

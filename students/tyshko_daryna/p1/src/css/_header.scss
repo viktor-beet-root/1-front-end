@@ -6,6 +6,7 @@
 
     &__container {
         padding-top: 278px;
+        padding-bottom: 115px;
     }
 
     &__head {
@@ -25,14 +26,14 @@
     padding: 10px;
 
     &__title-text {
-        margin-bottom: 17px;
+        margin-bottom: 12px;
         // font-weight: 400; // 
     }
 
     &__title-text-strong {
         font-size: 48px;
-        letter-spacing: 5px;
-        font-weight: 700;
+        letter-spacing: 3px;
+        font-weight: 400;
         text-transform: uppercase;
 
     }
@@ -40,7 +41,8 @@
     &__title {
         font-size: 22px;
         letter-spacing: 7px;
-        margin-bottom: 53px;
+        margin-bottom: 46px;
+        font-weight: 400;
     }
 
     &__scroll-down {
@@ -50,17 +52,17 @@
 
 .search-form-wrapper {
     display: flex;
-    max-width: 650px;
+    max-width: 660px;
     width: 100%;
-    padding-bottom: 120px;
+    padding-bottom: 115px;
 
     &__input {
-        width: calc(100% - 160px);
+        width: calc(100% - 150px);
         outline: none;
         border: none;
         color: $dodger-blue2;
-        font-size: 14px;
-        padding-left: 20px;
+        font-size: 12px;
+        padding-left: 30px;
 
         &:focus,
         &:active {
@@ -69,7 +71,7 @@
 
         &::-webkit-input-placeholder {
             text-align: center;
-            font-size: 14px;
+            font-size: 12px;
             letter-spacing: 3px;
             color: $dusty-gray;
         }
@@ -82,7 +84,7 @@
         border: 2px solid $color-white;
         display: inline-block;
         text-decoration: none;
-        padding: 20px 25px 20px 25px;
+        padding: 20px 20px 15px 25px;
         text-align: center;
         text-transform: uppercase;
         background-color: $dodger-blue;
@@ -98,7 +100,7 @@
 
         &__text {
             z-index: 30;
-            padding-right: 10px;
+            padding-right: 20px;
         }
 
         &__icon {
@@ -132,7 +134,7 @@
 }
 
 .scroll-down {
-    padding-bottom: 15px;
+    margin-bottom: 15px;
     position: relative;
 
     &::after {
@@ -164,6 +166,8 @@
 .nav {
     background-color: $dodger-blue;
     display: flex;
+    padding-top: 15px;
+    padding-bottom: 10px;
 
     &__container {
         display: flex;
