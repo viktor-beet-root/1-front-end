@@ -1,0 +1,119 @@
+.menu {
+    background-color: $menuBackground;
+    padding: 12px 0;
+
+    @include media ('md') {
+        position: relative;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list {
+        display: flex;
+
+        @include media ('md') {
+            display: block;
+            visibility: hidden;
+            pointer-events: none;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            background-color: $white;
+            transform: translateX(-100%);
+            transition: all 0.5s ease-in-out;
+        }
+    }
+
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 40px;
+
+            @include media ('md') {
+                border-bottom: 1px solid $black;
+                margin: 0;
+            }
+        }
+
+        @include media ('md') {
+            border-bottom: 1px solid $black;
+            text-align: center;
+            padding: 5px 0;
+        }
+    }
+
+    &__link {
+        font-family: $font-second-name;
+        color: $white;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-top: 7px;
+        display: block;
+
+        @include media ('md') {
+            color: $dodger-blue;
+        }
+
+    }
+}
+
+.logo {
+
+    &__link {
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $font-default-name;
+        font-weight: 700;
+        font-size: 24px;
+    }
+}
+
+.menu-input {
+    @include hidden;
+
+    &:checked {
+        & ~ .menu-burger-btn::before {
+            transform: translateY(10px) rotate(135deg);
+        }
+
+        & ~ .menu-burger-btn::after {
+            transform: translateY(-10px) rotate(-135deg);
+        }
+
+        & ~ .menu-burger-btn span {
+            transform: scale(0);
+        }
+
+        & ~ .menu__list {
+            visibility: visible;
+            pointer-events: all;
+            transform: translateX(0);
+        }
+    }
+}
+
+.menu-burger-btn {
+    display: none;
+    width: 30px;
+
+    &::before,
+    &::after,
+    span {
+        background: $white;
+        content: "";
+        display: block;
+        height: 3px;
+        border-radius: 3px;
+        margin: 7px 0;
+        transition: 0.5s;
+    }
+
+    @include media ('md') {
+        display: block;
+    }
+}

@@ -1,0 +1,132 @@
+.header {
+    &__blok {
+        background-image: url(../image/header_bg.jpg);
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-size: cover;
+        padding-top: 250px;
+    }
+
+    &__title {
+        text-align: center;
+        font-family: $font-default-name;
+        line-height: $default-line-height;
+        font-weight: 700;
+        font-size: 48px;
+
+    }
+
+    &__safe {
+        text-align: center;
+        font-family: $font-default-name;
+        line-height: $default-line-height;
+        font-weight: 400;
+        font-size: 22px;
+    }
+
+    &__scroll {
+        margin-top: 70px;
+        text-align: center;
+    }
+}
+
+.search {
+    &__wrapper {
+        max-width: 650px;
+        margin: 0 auto;
+        display: flex;
+
+        @include media ('md') {
+            flex-direction: column;
+        }
+    }
+
+    &__input {
+        width: calc(100% -150px);
+        flex-grow: 1;
+        border: none;
+        height: 60px;
+        text-align: center;
+    }
+
+    &__button_search {
+        border: 2px solid $white;
+        text-transform: uppercase;
+        color: $white;
+        font-size: 14px;
+        font-family: $font-second-name;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 145px;
+        cursor: pointer;
+        background: rgb(73, 107, 254);
+        background: linear-gradient(
+            34deg,
+            rgba(73, 107, 254, 1) 0%,
+            rgba(73, 107, 254, 1) 75%,
+            rgba(84, 116, 253, 1) 35%,
+            rgba(84, 116, 253, 1) 100%
+        );
+
+        background-size: 350% 100%;
+        background-position: 100%;
+        transition: background-position .5s ease;
+
+        @include media ('md') {
+            margin: 30px auto;
+            height: 56px;
+        }
+
+        @include media ('sm') {
+            justify-content: center;
+            margin: 30px auto;
+            height: 56px;
+            width: 100%;
+        }
+    }
+
+}
+
+.search__button_search:hover {
+    background-position: 0 100%;
+}
+
+
+.button {
+
+    &__img {
+
+        @include media ('sm') {
+            margin-left: 20px;
+        }
+    } 
+
+}
+
+.scroll {
+    &__item {
+        text-decoration: none;
+        display: inline-block;
+        &::after {
+            width: 12px;
+            height: 12px;
+            content: "";
+            display: block;
+            border-left: 2px solid $white;
+            border-bottom: 2px solid $white;
+            transform: rotate(-45deg);
+            margin: 0 auto;
+
+        }
+    }
+
+    &__text {
+        color: $white;
+        font-size: 14px;
+        font-family: $font-default-name;
+        line-height: $default-line-height;
+        font-weight: 400;
+    }
+}
+

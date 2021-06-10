@@ -1,0 +1,58 @@
+.chooseUs {
+    background-image: url(../image/town.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+    
+
+    &__row {
+        flex-wrap: nowrap;
+
+            @include media("md") {
+                flex-direction: column;
+                text-align: center;
+            }
+    }
+
+    &__title {
+        font-size: 36px;
+        font-family: $font-second-name;
+        font-weight: 400;
+        padding-bottom: 60px;
+        padding-top: 80px;
+    }
+
+    &__buttom {
+        padding-top: 40px;
+
+        @include media ('md') {
+            margin: auto;
+        }
+    }
+
+    &__img-wrapper {
+        @include media ('md') {
+            margin-top: 30px;
+        }
+    }
+
+    &__img {
+        max-width: 350px;
+        width: 100%;
+        height: auto;
+        padding-bottom: 5px;
+        display: block;
+
+        &_left {
+            margin-left: 125px;
+        }
+
+        @include media("lg") {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+.text_up {
+    padding-bottom: 40px;
+}

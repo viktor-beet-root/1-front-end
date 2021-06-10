@@ -1,0 +1,60 @@
+.tourist {
+    background-image: url(../image/cave.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $doveGray;
+    padding: 120px 0 200px;
+    &__title {
+        padding-bottom: 100px;
+        text-align: center;
+        font-size: 36px;
+        font-family: $font-second-name;
+        font-weight: 400;
+
+        @include media ("md") {
+            text-align: center;
+        }
+    }
+
+    &__item {
+        display: flex;
+
+        @include media ("md") {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: auto;
+
+    }
+
+    &__meseg-wrapper {
+        width: 100%;
+        padding: 48px 58px;
+        background-color: #333333;
+    }
+
+    &__item-title {
+        font-size: 20px;
+        padding-bottom: 30px;
+        text-transform: uppercase;
+    }
+
+    &__quote {
+        position: relative;
+        &::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background-image: url(../image/quote-left.svg);
+            vertical-align: 15px;
+            margin-right: 5px;
+
+        }
+    }
+}

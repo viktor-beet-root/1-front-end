@@ -1,0 +1,35 @@
+.footer {
+    background-color: $mine-shaft;
+    &__wrapper {
+        padding: 90px 0 30px 0;
+    }
+}
+
+.fotet-title {
+    text-align: center;
+}
+
+.logo {
+    &__link {
+        font-size: 24px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+    }
+}
+
+.social {
+    display: flex;
+    max-width: 170px;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    &__svg {
+        width: 16px;
+        color: $white;
+        &:hover {
+            color: $indigoCraiola;
+        }
+    }
+}
