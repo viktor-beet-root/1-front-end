@@ -151,10 +151,6 @@
         box-sizing: border-box;
         width: 100px;
         position: relative;
-
-        @include media('sm') {
-            display: none;
-        }
     }
 
     &__image {

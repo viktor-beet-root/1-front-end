@@ -18,6 +18,10 @@
         text-align: center;
         padding-bottom: 32px;
         @include title-style;
+
+        @include media('md') {
+            font-size: 50px;
+        }
     }
 
     &__content {

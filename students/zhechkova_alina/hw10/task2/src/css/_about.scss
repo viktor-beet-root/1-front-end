@@ -11,6 +11,10 @@
             flex-direction: column-reverse;
             justify-content: space-between;
         }
+
+        @include media('md') {
+            padding-top: 70px;
+        }
     }
 
     &__title {
@@ -19,7 +23,7 @@
         margin-bottom: 10px;
 
         @include media('md') {
-            font-size: 40px;
+            font-size: 50px;
             text-align: center;
         }
     }
@@ -28,6 +32,7 @@
         width: 50%;
         margin-left: 10%;
         margin-top: -4%;
+
         @include media('md') {
             width: 80%;
         }

@@ -10,11 +10,7 @@
 
 .gallery {
 
-    // .gallery__container
-
     &__container {}
-
-    // .gallery__intro
 
     &__intro {
         text-align: center;
@@ -39,13 +35,11 @@
         color: $black;
     }
 
-    // .gallery__image-row
-
     &__image-row {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin: 0 -15px 50px;
+        margin: 0 -15px 30px;
 
         @include media('lg') {
             .row__col:first-child {
