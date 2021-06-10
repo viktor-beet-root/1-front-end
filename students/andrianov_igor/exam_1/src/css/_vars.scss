@@ -6,6 +6,7 @@ $window-red: #de2e45;
 $window-text-grey: #b9bcd1;
 $mercury:#E1E1E1;
 $abbey:#999;
+$mine-shaft:#232323;
 
 $input-border-color: $grey;
 $default-border-radius: 5px;
@@ -33,10 +34,19 @@ $color-overlay-menu-window:$color-white;
 $color-overlay-menu:$color-black;
 $color-language-deafult:$grey;
 
+//section travel color
+$color-title-travel:$mercury;
+$color-sub-title-travel:$color-white;
+$color-text-title-travel:$mercury;
+$color-btn-bg-travel:$dodger-blue;
+$color-btn-text-travel:$color-white;
+$color-bg-col-travel:$mine-shaft;
+
 //section about_us color
 $color-section-about-us-bg:$color-white;
 $color-section-about-us-title:$dodger-blue;
 $color-section-about-us-sub-title:$grey;
+
 
 
 $font-folder-path: '../fonts/';

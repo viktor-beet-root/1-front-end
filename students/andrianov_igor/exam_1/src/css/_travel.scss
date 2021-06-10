@@ -1,0 +1,189 @@
+.travel {
+
+    &_bg-one {
+        background-image: url(../image/section-group-1-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &_bg-two {
+        background-image: url(../image/section-group-2-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__container {}
+
+    &__row {}
+
+    &__row_position {
+        margin-top: 214px;
+        margin-bottom: 85px;
+    }
+
+    &__col {
+        max-width: 540px;
+        height: 371px;
+        opacity: 0.9;
+        background-color: $color-bg-col-travel;
+    }
+
+    &__title {
+
+        font-size: 20px;
+        font-family: $font-default-name;
+        font-weight: 400;
+        color: $color-title-travel;
+        padding: 39px 0px 0px 30px;
+    }
+
+    &__subtitle {
+        font-size: 18.5px;
+        font-family: $font-default-name;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $color-sub-title-travel;
+        padding: 8px 0px 0px 30px;
+    }
+
+    &__text {
+        font-size: 16px;
+        font-family: $font-default-name;
+        color: rgb(232, 232, 232);
+        line-height: 1.625;
+        padding: 8px 0px 0px 30px;
+        font-size: 13.8px;
+        color: $color-text-title-travel;
+        line-height: 26px;
+        padding: 11px 0px 0px 30px;
+    }
+
+    &__btn {
+        padding: 42px 0px 0px 30px;
+    }
+
+    &__btn-text {
+        display: block;
+        font-size: 18px;
+        font-family: $font-second-name;
+        text-transform: uppercase;
+        color: $color-btn-text-travel;
+        text-decoration: none;
+        width: 225px;
+        height: 60px;
+        background: $color-btn-bg-travel;
+        text-align: center;
+        padding: 13px;
+        background: linear-gradient(47deg, #496bfe 0%, #496bfe 79%, #5474fd 35%, #5474fd 100%);
+        background-size: 340% 100%;
+        background-position: 100%;
+        transition: background-position .5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+
+        &:hover {
+            background-position: 0 100%;
+        }
+    }
+
+    &:nth-of-type(even)>.travel__container>.travel__row_position {
+        // margin-top: 214px;
+        // margin-bottom: 85px;
+        justify-content: flex-end;
+    }
+
+}
+
+
+
+@media screen and (max-width:576px) {
+    .travel {
+        &__row_position {
+            justify-content: center;
+        }
+
+        &:nth-of-type(even)>.travel__container>.travel__row_position {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .travel {
+        &__row_position {
+            justify-content: center;
+        }
+
+        &:nth-of-type(even)>.travel__container>.travel__row_position {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width:350px) {
+    .travel {
+        &__row_position {
+            justify-content: center;
+            max-width: 320px;
+            // width: 100%;
+            box-sizing: border-box;
+        }
+
+        &:nth-of-type(even)>.travel__container>.travel__row_position {
+            justify-content: center;
+            max-width: 320px;
+            // width: 100%;
+            box-sizing: border-box;
+        }
+
+        &__btn {
+            padding: 20px 0px 0px 30px;
+        }
+    }
+
+}
+
+
+@media screen and (max-width:450px) {
+    .travel {
+        &__btn {
+            padding: 20px 0px 0px 30px;
+        }
+    }
+}
+
+
+
+
+
+// .travel:nth-of-type(even)>.travel__container>.travel__row_position {
+//     // margin-top: 214px;
+//     // margin-bottom: 85px;
+//     justify-content: flex-end;
+// }
+
+
+
+// 
+// .travel:nth-of-type(2n+1)>.travel__container>.travel__row {
+//     // margin-top: 214px;
+//     // margin-bottom: 85px;
+//     justify-content: flex-end;
+// }
+
+
+
+// .travel {
+
+//     &_bg-one {}
+
+//     &__container {
+
+//         &_position:nth-of-type(2n+1) {
+//             justify-content: flex-end;
+//         }
+//     }
+
+//     &__row {
+
+//         &_position {}
+//     }
+// }
