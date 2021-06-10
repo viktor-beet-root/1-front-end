@@ -1,0 +1,148 @@
+
+.nike-section__logo {
+    height: 37px;
+    margin-bottom: 12px;
+}
+
+.card-item {
+    display: flex;
+}
+
+.form {
+
+    &__size,
+    &__qty {
+        font-family: $font-default;
+        border: 1px solid $border-color;
+        background-color: $bg-color;
+        color: #a9aaad;
+        padding: 0px 26px 0 16px;
+        height: 30px;
+        font-size: $subtitle-size;
+        text-align: center;
+        margin-bottom: 29px;
+        appearance: none;
+        background-color: transparent;
+    }
+
+    &__select-item {
+        display: inline-block;
+        position: relative;
+        padding-right: 10px;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            height: 8px;
+            width: 8px;
+            border: 1px solid $border-color;
+            top: 13%;
+            right: 20px;
+            text-align: center;
+            transform: rotate(45deg);
+            color: white;
+            border-top: none;
+            border-left: none;
+        }
+    }
+}
+
+
+.card-item__info {
+    margin-left: 75px;
+}
+
+.btn-submit {
+    width: 100%;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.item-info__title {
+    color: $title-color;
+    font-size: $title-size;
+}
+
+.item-info__subtitle {
+    color: $subtitle-color;
+    font-size: $subtitle-size;
+    line-height: 34px;
+}
+
+.rating__star {
+    margin-right: -3px;
+    margin-bottom: 20px;
+}
+
+.btn-submit {
+    background-color: $bg-btn;
+    color: #a9aaad;
+    border: $border-btn;
+    padding: $padding-btn;
+}
+
+.form__button-submit {
+    margin-bottom: 50px;
+}
+
+.item-card__slider-navigation-item {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+
+
+.item-card__slider-navigation-item:checked+.nike-card__nav-custom::after {
+    border: 2px solid rgba(255, 255, 255, .46);
+}
+
+.nike-card {
+    padding: 50px 0 0 13px;
+
+    &__image {
+        margin-bottom: 65px;
+        width: 338px;
+    }
+
+    &__slider-navigation {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        width: 70px;
+    }
+
+    &__nav-custom {
+        &_darkblue::after {
+            background-color: #1f273f;
+        }
+
+        &_white::after {
+            background-color: #fff;
+        }
+
+        &_red::after {
+            background-color: #ed3333;
+        }
+
+        &_blue::after {
+            background-color: #29e3ea;
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            height: 9px;
+            width: 9px;
+            border-radius: 7px;
+        }
+    }
+}

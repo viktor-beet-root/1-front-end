@@ -1,0 +1,22 @@
+.page {
+    font-family: $font-default;
+}
+
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 22px 50px 20px 21px;
+    box-sizing: border-box;
+    background: $bg-color;
+    border-radius: 13px;
+    box-shadow: 0px 0px 17px 0px rgba(34, 60, 80, 0.48);
+}
+
+.nike-section {
+    margin: 0 (-$default-gap);
+    padding: $default-gap;
+    background-image: url(../image/main_bg.png);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}

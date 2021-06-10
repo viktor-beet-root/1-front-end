@@ -1,0 +1,32 @@
+/*container*/
+$container-width: 680px;
+$default-gap:110px 0;
+
+$bg-color:#111a28;
+
+/*fonts*/
+$font-default-name:"Museo Sans Rounded 100";
+$font-folder-path: '../fonts/';
+
+$follback: Arial,
+Helvetica,
+sans-serif;
+$font-default: $font-default-name,
+$follback;
+
+
+/*style for title*/
+$title-color: #e1e1e1;
+$title-size: 24px;
+
+/*style for subtitle*/
+$subtitle-color:#64686f;
+$subtitle-size:14px;
+
+/*style for border*/
+$border-color: #a9aaad;
+
+/*style for button*/
+$bg-btn:#202835;
+$border-btn:1px solid #4f5560;
+$padding-btn:12px 0;
