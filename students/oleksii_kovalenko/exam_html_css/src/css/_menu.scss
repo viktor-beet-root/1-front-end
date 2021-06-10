@@ -1,13 +1,12 @@
+
 .menu {
     background-color: $menuBackground;
     padding: 12px 0;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
 
     &__container {
         display: flex;
         justify-content: space-between;
+        position: relative;
     }
     &__list {
         display: flex;
@@ -19,7 +18,7 @@
             position: absolute;
             left: 0;
             right: 0;
-            top: 100%;
+            top: -249%;
             background-color: $white;
             transform: translateX(-100%);
             transition: all 0.5s ease-in-out;
