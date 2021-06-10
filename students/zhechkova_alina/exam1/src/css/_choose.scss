@@ -26,6 +26,9 @@
         color: $subtitle-color;
         margin-bottom: 60px;
 
+        @media screen and (max-width:992px) {
+            text-align: center;
+        }
     }
 
 
@@ -44,6 +47,8 @@
 
         @media screen and (max-width:992px) {
             width: 80%;
+            margin: 0 auto;
+
         }
     }
 
@@ -52,9 +57,7 @@
 
         padding: 0 44px;
 
-        @media screen and (max-width:992px) {
-            margin-bottom: 20px;
-        }
+
 
         &::after {
             width: 100px;
@@ -63,6 +66,12 @@
 
         &:hover::after {
             width: 400px;
+        }
+
+        @media screen and (max-width:992px) {
+            margin: 0 auto;
+            margin-bottom: 20px;
+            width: 60%;
         }
     }
 
@@ -89,7 +98,7 @@
         }
 
         @media screen and (max-width:992px) {
-            margin: 0 auto;
+            width: 100%;
         }
     }
 
@@ -100,6 +109,7 @@
 
         @media screen and (max-width:992px) {
             margin-top: 0;
+            align-items: center;
         }
     }
 }
