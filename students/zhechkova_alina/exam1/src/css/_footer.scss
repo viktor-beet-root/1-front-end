@@ -10,16 +10,21 @@
 
     &__container {
         text-align: center;
-        padding: 115px 0 46px;
+        padding: 115px 0 50px;
+
+        @media screen and (max-width:992px) {
+            padding-top: 70px;
+        }
     }
 
     &__logo {
         text-transform: uppercase;
         font-size: 24px;
         color: #fff;
-        letter-spacing: 0.4px;
+        letter-spacing: 4.4px;
         font-weight: 700;
-        line-height: 26px;
+        line-height: 32px;
+        margin-bottom: 18px;
     }
 
     // .footer__logo-subtitle
@@ -28,7 +33,7 @@
         display: block;
         text-transform: initial;
         font-size: 16px;
-        letter-spacing: 0.2px;
+        letter-spacing: 1.1px;
         font-weight: 400;
         margin-bottom: 14px;
     }
@@ -48,7 +53,7 @@
 
     &__item {
         &:not(:last-child) {
-            margin-right: 10px;
+            margin-right: 26px;
         }
     }
 
@@ -56,7 +61,7 @@
 
     &__link {
         &>svg {
-            height: 20px;
+            height: 17px;
             fill: #fff;
 
             &:hover {

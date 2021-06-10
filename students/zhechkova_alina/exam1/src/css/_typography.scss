@@ -31,4 +31,21 @@
     text-transform: uppercase;
     border: none;
     cursor: pointer;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        height: 139px;
+        background-color: #496BFE;
+        position: absolute;
+        left: -12px;
+        transform: skew(37deg);
+        transition: width .5s ease;
+    }
+
+    &__span {
+        z-index: 10;
+    }
 }

@@ -8,28 +8,36 @@
 .travel {
     @include bg-cover('../image/travel-bg1.jpg');
 
-    &:last-of-type {
-        @include bg-cover('../image/travel-bg2.jpg')
+    &_background {
+        @include bg-cover('../image/travel-bg2.jpg');
     }
 
 
-    // .travel__container
 
     &__container {
-        padding: 221px 0 96px;
+        padding: 221px 0 103px;
+        display: flex;
+        justify-content: flex-start;
 
         &_flex-end {
-            display: flex;
             justify-content: flex-end;
+
+            @media screen and (max-width:992px) {
+                justify-content: center;
+            }
+        }
+
+        @media screen and (max-width:992px) {
+            padding: 121px 0 53px;
+            justify-content: center;
         }
     }
 
-    // .travel__content
 
     &__content {
         max-width: 541px;
         width: 100%;
-        padding: 46px 30px 50px 24px;
+        padding: 56px 30px 50px 24px;
         background-color: rgba(35, 35, 35, .9);
     }
 
@@ -60,7 +68,15 @@
     // .travel__btn
 
     &__btn {
-        padding: 0 60px;
+        padding: 0 76px;
+
+        &::after {
+            width: 120px;
+        }
+
+        &:hover::after {
+            width: 300px;
+        }
     }
 }
 

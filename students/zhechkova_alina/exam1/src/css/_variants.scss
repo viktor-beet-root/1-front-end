@@ -3,23 +3,25 @@
     overflow: hidden;
 
     &__container {
-        padding: 83px 0 93px;
+        padding: 95px 0 120px;
+        position: relative;
     }
 
 
     &__svg-wrapper {
         margin-bottom: 23px;
+        margin-right: 23px;
     }
 
     &__link {
         text-decoration: none;
+        color: $content-color;
     }
 
     &__svg {
         height: 59px;
         width: 59px;
         fill: #5474fd;
-        z-index: 1000;
 
         &:hover {
             fill: #ff6363;
@@ -27,10 +29,8 @@
     }
 
     &__title {
-        color: $content-color;
         font-size: 36px;
         font-family: $secondary-font;
-        z-index: 1000;
     }
 
     &__item {
@@ -40,6 +40,37 @@
             &:not(:last-child) {
                 margin-bottom: 50px;
             }
+        }
+    }
+
+    &__circles {
+        position: absolute;
+        padding-top: 5.23%;
+        display: inline-block;
+        padding-left: 27%;
+        overflow: hidden;
+        left: 17%;
+        top: 12%;
+
+        &::after {
+            position: absolute;
+            content: '';
+            display: block;
+            border: 1px dashed #656565;
+            height: 300px;
+            width: 126%;
+            top: 0;
+            left: -13%;
+            right: 0;
+            border-radius: 50%;
+        }
+
+        &:nth-child(2) {
+            left: 54%;
+        }
+
+        @include media('md') {
+            display: none;
         }
     }
 }

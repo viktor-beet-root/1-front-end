@@ -1,25 +1,20 @@
-.page {
-
-    // .page__feedback
-
-    &__feedback {}
-}
-
 .feedback {
     @include bg-cover('../image/feedback-bg.jpg');
-    // .feedback__container
 
     &__container {
         padding: 114px 0 200px;
+
+        @media screen and (max-width:992px) {
+            padding-bottom: 100px;
+        }
     }
 
-    // .feedback__title
 
     &__title {
         font-family: $secondary-font;
         font-size: 36px;
         color: #fff;
-        margin-bottom: 82px;
+        margin-bottom: 97px;
         text-align: center;
     }
 
@@ -29,28 +24,43 @@
 
         @media screen and (max-width:992px) {
             flex-direction: column;
+            max-width: 445px;
+            width: 100%;
+            margin: 0 auto;
         }
     }
 }
 
 .block {
     &__img {
-        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    &__image-wrapper {
+        position: relative;
+        overflow: hidden;
+        padding-top: 26%;
         max-width: 445px;
         width: 100%;
+        padding-left: 23%;
 
         @media screen and (max-width:992px) {
-            align-self: center;
+            padding-top: 60%;
+            width: 100%;
+            margin: 0 auto;
         }
     }
 
-    // .block__content
-
     &__content {
-        padding: 50px 50px 70px;
-    }
+        flex-grow: 1;
+        padding: 50px 50px 0 62px;
 
-    // .block__name
+        @media screen and (max-width:992px) {
+            padding-bottom: 20px;
+        }
+    }
 
     &__name {
         text-transform: uppercase;
@@ -63,22 +73,24 @@
         }
     }
 
-    // .block__text
-
     &__text {
-        font-size: 16px;
+        font-size: 14px;
         color: #e8e8e8;
         line-height: 26px;
 
-        text-indent: 30px;
+        text-indent: 24px;
         margin-top: 0;
+        position: relative;
 
         &::before {
             content: '';
             display: inline-block;
-            height: 10px;
-            width: 10px;
-            background-image: url('../image/quote-left-solid.svg');
+            height: 20px;
+            width: 24px;
+            position: absolute;
+            background-image: url('../image/icon_text.jpg');
+            top: -14px;
+            left: -7px;
         }
     }
 }

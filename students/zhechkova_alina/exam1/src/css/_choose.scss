@@ -2,10 +2,12 @@
     @include bg-cover('../image/choose-bg.jpg');
 
     &__container {
-        padding: 115px 0;
+        padding: 202px 0 119px;
+
+        @media screen and (max-width:992px) {
+            padding-top: 100px;
+        }
     }
-
-
 
     &__row {
         @media screen and (max-width:992px) {
@@ -29,13 +31,15 @@
 
     &__paragraph {
         color: $content-color;
+        line-height: 1.6em;
+        letter-spacing: 2.2px;
 
         &:first-of-type {
             margin-bottom: 25px;
         }
 
         &:last-of-type {
-            margin-bottom: 37px;
+            margin-bottom: 45px;
         }
 
         @media screen and (max-width:992px) {
@@ -46,10 +50,19 @@
     &__btn {
         font-size: 16px;
 
-        padding: 0 35px;
+        padding: 0 44px;
 
         @media screen and (max-width:992px) {
             margin-bottom: 20px;
+        }
+
+        &::after {
+            width: 100px;
+            transform: skew(37deg);
+        }
+
+        &:hover::after {
+            width: 400px;
         }
     }
 
@@ -83,5 +96,10 @@
     &___image-wrapper {
         display: flex;
         flex-direction: column;
+        margin-top: -7.5%;
+
+        @media screen and (max-width:992px) {
+            margin-top: 0;
+        }
     }
 }

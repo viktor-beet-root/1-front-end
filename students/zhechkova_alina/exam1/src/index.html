@@ -38,6 +38,7 @@
                 </div>
                 <div class="header__scroll-wrapper scroll">
                     <a href="#" class="scroll__link">Scroll Down</a>
+                    <span class="scroll__arrow"></span>
                 </div>
             </div>
         </div>
@@ -51,6 +52,8 @@
                     <label for="burgerBtn" class="menu__sub-menu-label">
                         <span class="menu__sub-menu-line"></span></label>
                     <ul class="menu__list">
+                        <label for="burgerBtn" class="menu__sub-menu-label-close">
+                            <span class="menu__sub-menu-close-line"></span></label>
                         <li class="menu__item">
                             <a href="#" class="menu__item-link">Who we are</a>
                         </li>
@@ -84,7 +87,9 @@
                         blinded by desire, that.
                     </p>
                     <button class="choose-us__btn btn">
-                        Explore places
+                        <span class="btn__span">
+                            Explore places
+                        </span>
                     </button>
                 </div>
                 <div class="col-6 col-lg-12 choose-us___image-wrapper">
@@ -96,6 +101,8 @@
     </section>
     <section class="page__variants variants">
         <div class="variants__container container">
+            <div class="variants__circles"></div>
+            <div class="variants__circles"></div>
             <div class="variants__row row">
                 <div class="col-4 col-md-12 variants__item">
                     <div class="variants__svg-wrapper">
@@ -105,9 +112,11 @@
                                 transform="translate(-491.719 -1620.22)" />
                         </svg>
                     </div>
-                    <a href="#" class="variants__link">
-                        <h3 class="variants__title">Search Places</h3>
-                    </a>
+                    <h3 class="variants__title">
+                        <a href="#" class="variants__link">
+                            Search Places
+                        </a>
+                    </h3>
                 </div>
                 <div class="col-4 col-md-12 variants__item">
                     <div class="variants__svg-wrapper">
@@ -117,9 +126,11 @@
                                 transform="translate(-870.031 -1619.53)" />
                         </svg>
                     </div>
-                    <a href="#" class="variants__link">
-                        <h3 class="variants__title">Select Places</h3>
-                    </a>
+                    <h3 class="variants__title">
+                        <a href="#" class="variants__link">
+                            Select Places
+                        </a>
+                    </h3>
                 </div>
                 <div class="col-4 col-md-12 variants__item">
                     <div class="variants__svg-wrapper">
@@ -129,9 +140,11 @@
                                 transform="translate(-1249.28 -1620.09)" />
                         </svg>
                     </div>
-                    <a href="#" class="variants__link">
-                        <h3 class="variants__title">Book & Enjoy</h3>
-                    </a>
+                    <h3 class="variants__title">
+                        <a href="#" class="variants__link">
+                            Book & Enjoy
+                        </a>
+                    </h3>
                 </div>
             </div>
         </div>
@@ -149,11 +162,11 @@
                     But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising
                     pain was account born and I account will give you a complete account of the system
                 </p>
-                <button class="travel__btn btn">Book now</button>
+                <button class="travel__btn btn"> <span class="btn__span">Book now</span></button>
             </div>
         </div>
     </section>
-    <section class="page__travel travel">
+    <section class="page__travel travel travel_background">
         <div class="travel__container travel__container_flex-end container">
             <div class="travel__content travel__content">
                 <strong class="travel__subtitle">
@@ -166,7 +179,7 @@
                     But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising
                     pain was account born and I account will give you a complete account of the system
                 </p>
-                <button class="travel__btn btn">Book now</button>
+                <button class="travel__btn btn"> <span class="btn__span">Book now</span></button>
             </div>
         </div>
     </section>
@@ -174,7 +187,9 @@
         <div class="feedback__container container">
             <h2 class="feedback__title">What Our Tourist Say</h2>
             <div class="feedback__block block">
-                <img src="image/feedback-img.jpg" alt="guy" class="block__img">
+                <div class="block__image-wrapper">
+                    <img src="image/feedback-img.jpg" alt="guy" class="block__img">
+                </div>
                 <div class="block__content">
                     <h3 class="block__name">
                         Sam Sumon
