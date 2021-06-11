@@ -1,0 +1,79 @@
+.footer {
+    background-color: $color-footer-bg;
+
+    &__row {
+        &_position {
+            margin-bottom: 23px;
+        }
+    }
+
+    &__col {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: $font-default-name;
+        font-weight: 700;
+        font-size: 24px;
+        letter-spacing: 0.1em;
+        line-height: 26px;
+        color: $color-footer-title;
+
+        &_position {
+            padding-top: 106px;
+            padding-left: 3px;
+        }
+    }
+
+    &__sub-title {
+        font-family: $font-default-name;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.03em;
+        color: $color-footer-sub-title;
+
+        &_position {
+            padding-top: 0.9px;
+            padding-left: 2px;
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__navigation_position {
+        padding-top: 13px;
+    }
+
+    &__navigation-item:nth-of-type(2)>.footer__navigation-link {
+        padding: 6px;
+        fill: blue;
+    }
+
+    &__navigation-item:nth-of-type(4)>.footer__navigation-link {
+        padding-left: 4px;
+    }
+
+    &__navigation-item:nth-of-type(5)>.footer__navigation-link {
+        padding-left: 7px;
+    }
+
+    &__navigation-item_position {
+        padding-top: 13px;
+        padding: 0 9px;
+    }
+
+    &__navigation-link-svg-fill {
+        fill: $color-footer-social-icon;
+
+        &:hover {
+            fill: $color-footer-social-icon-hover;
+        }
+    }
+}

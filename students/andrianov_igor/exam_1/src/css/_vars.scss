@@ -1,3 +1,4 @@
+// Color palette
 $color-white: white;
 $color-black: #000;
 $grey: #5a5a5a;
@@ -8,14 +9,21 @@ $mercury:#E1E1E1;
 $abbey:#999;
 $mine-shaft:#232323;
 
+
+
+// Defaul Border and border radius and color
+$default-border: 1px solid $input-border-color;
 $input-border-color: $grey;
 $default-border-radius: 5px;
 
-$default-border: 1px solid $input-border-color;
 
+
+// Ширина Контейнера и Паддинг для Tipografy
 $container-width: 1110px;
 $default-gap: 15px;
 
+
+// Defaul body bg color
 $body-bg-color: $color-white;
 $border-color: $grey;
 
@@ -42,8 +50,6 @@ $color-choose-text:$mercury;
 $color-search-select-title:$mercury;
 $color-search-select-bg:$mine-shaft;
 
-
-
 //section travel color
 $color-title-travel:$mercury;
 $color-sub-title-travel:$color-white;
@@ -57,12 +63,12 @@ $color-title-testimonial:$color-white;
 $color-sub-title-testimonial:$color-white;
 $color-text-testimonial:$mercury;
 
-
-
-//section about_us color
-$color-section-about-us-bg:$color-white;
-$color-section-about-us-title:$dodger-blue;
-$color-section-about-us-sub-title:$grey;
+//footer
+$color-footer-bg:$mine-shaft;
+$color-footer-title:$color-white;
+$color-footer-sub-title:$color-white;
+$color-footer-social-icon:$mercury;
+$color-footer-social-icon-hover:$dodger-blue;
 
 
 
@@ -72,6 +78,7 @@ $color-btn-text:$color-white;
 
 
 
+// Подключение шрифтов
 $font-folder-path: '../fonts/';
 $folder-image: '../image/';
 
@@ -90,6 +97,8 @@ $default-line-height: 2.1875;
 $default-color-text: $grey;
 
 
+
+// Breack-points для Media @media screen
 $breack-points: ("xl": 1200px,
     "lg": 992px,
     "md": 768px,

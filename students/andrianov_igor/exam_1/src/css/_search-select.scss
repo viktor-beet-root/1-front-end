@@ -1,8 +1,6 @@
 .search-select {
     background-color: $color-search-select-bg;
 
-    &__container {}
-
     &__row {
         position: relative;
     }
@@ -36,7 +34,6 @@
         height: 76px;
         left: 54%;
 
-
         &::after {
             content: '';
             position: absolute;
@@ -49,8 +46,6 @@
             height: 273%;
         }
     }
-
-    &__item {}
 
     &__svg {
         padding: 85px 0 0 147px;
@@ -102,7 +97,6 @@
 
         &__title_position-three {
             padding: 0px;
-
         }
 
         &__item {
@@ -116,7 +110,6 @@
         &__svg-two,
         &__svg-three {
             padding: 0px;
-
         }
 
         &__title_position-three {
@@ -132,6 +125,7 @@
         &__item {
             margin: 30px;
         }
+
     }
 }
 
@@ -143,5 +137,6 @@
         &:hover {
             fill: #ff6363;
         }
+
     }
 }

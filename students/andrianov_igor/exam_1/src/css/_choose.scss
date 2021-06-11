@@ -3,12 +3,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    &__container {}
-
-    &__row {}
-
-    &__col-right {}
-
     &__title {
         font-size: 36px;
         font-family: $font-second-name;
@@ -18,7 +12,6 @@
     }
 
     &__text-top {
-
         font-family: $font-default-name;
         font-weight: 400;
         font-size: 15px;
@@ -46,10 +39,7 @@
         padding: 16px 0px 0px 0px;
     }
 
-    &__btn-text {}
-
     &__col-left {
-
         margin-bottom: 105px;
     }
 
@@ -98,10 +88,6 @@
             display: flex;
             justify-content: center;
             margin-bottom: 45px;
-            // margin: 0px 0px 45px 250px;
         }
-
     }
 }
-
-@media screen and (max-width:576px) {}
