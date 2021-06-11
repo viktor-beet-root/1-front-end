@@ -1,0 +1,147 @@
+.search-select {
+    background-color: $color-search-select-bg;
+
+    &__container {}
+
+    &__row {
+        position: relative;
+    }
+
+    &__circle-left {
+        overflow: hidden;
+        position: absolute;
+        width: 308px;
+        top: 3%;
+        height: 76px;
+        left: 19%;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 31%;
+            left: -3.5%;
+            border-top: 1px dashed $grey;
+            opacity: 1;
+            border-radius: 60%;
+            width: 108%;
+            height: 273%;
+        }
+    }
+
+    &__circle-right {
+        overflow: hidden;
+        position: absolute;
+        width: 308px;
+        top: 3%;
+        height: 76px;
+        left: 54%;
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 31%;
+            left: -3.5%;
+            border-top: 1px dashed $grey;
+            opacity: 1;
+            border-radius: 60%;
+            width: 108%;
+            height: 273%;
+        }
+    }
+
+    &__item {}
+
+    &__svg {
+        padding: 85px 0 0 147px;
+    }
+
+    &__svg-two {
+        padding: 85px 0 0 155px;
+    }
+
+    &__svg-three {
+        padding: 85px 0 0 165px;
+    }
+
+    &__title {
+        font-size: 36px;
+        font-family: $font-second-name;
+        font-weight: 400;
+        color: $color-search-select-title;
+        line-height: 0.722;
+        padding: 24px 0 0 69px;
+    }
+
+    &__title_position-two {
+        padding: 20px 0 0 85px;
+    }
+
+    &__title_position-three {
+        padding: 21px 0 0 89px;
+        margin-bottom: 103px;
+    }
+}
+
+
+@media screen and (max-width:992px) {
+    .search-select {
+
+        &__circle-left,
+        &__circle-right {
+            display: none;
+        }
+
+        &__title {
+            padding: 0px;
+        }
+
+        &__title_position-two {
+            padding: 0px;
+        }
+
+        &__title_position-three {
+            padding: 0px;
+
+        }
+
+        &__item {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__svg,
+        &__svg-two,
+        &__svg-three {
+            padding: 0px;
+
+        }
+
+        &__title_position-three {
+            margin: 0px;
+        }
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    .search-select {
+
+        &__item {
+            margin: 30px;
+        }
+    }
+}
+
+.search-select {
+
+    &__svg-fill {
+        fill: #5474fd;
+
+        &:hover {
+            fill: #ff6363;
+        }
+    }
+}

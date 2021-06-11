@@ -8,7 +8,7 @@
 .header {
 
     &__container {
-        height: 100vh;
+        height: calc(100vh - 97px);
     }
 
     &__head {}
@@ -374,6 +374,16 @@
     clip: rect (0 0 0 0);
 }
 
+
+@media screen and (max-width:768px) {
+    .header__logo {
+        text-align: center;
+    }
+
+    .header__navigation {
+        justify-content: center;
+    }
+}
 
 @media screen and (max-width:576px) {
     .header__logo {
