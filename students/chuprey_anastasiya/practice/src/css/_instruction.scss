@@ -1,13 +1,48 @@
 .instruction {
     background-color: $color-mine-shaft;
-    padding-top: 55px;
-    padding-bottom: 75px;
-    position: relative;
+
     // .instruction__container
 
     &__container {
+        padding-top: 65px;
+        padding-bottom: 75px;
+        position: relative;
+        @include media("md") {
+            padding-top: 30px;
+            padding-bottom: 40px;
+        }
     }
+    &__circle {
+        position: absolute;
+        padding-top: 5.23%;
+        display: inline-block;
+        padding-left: 27%;
+        overflow: hidden;
+        left: 19%;
+        top: 10%;
 
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            border: 1px dashed #656565;
+            height: 300px;
+            width: 126%;
+            top: 0;
+            left: -13%;
+            right: 0;
+            border-radius: 50%;
+            //         border-radius: 50%;
+        }
+
+        &_second {
+            left: 54%;
+        }
+
+        @include media("md") {
+            display: none;
+        }
+    }
     // .instruction__circle
 
     // &__circle {
@@ -33,33 +68,34 @@
     //     }
     // }
 
-    &__circle {
-        position: absolute;
-        max-width: 380px;
-        width: 100%;
-        height: 55px;
-        overflow: hidden;
-        transform: translate(45%, -30%);
-        // left: 26%;
-        // top: 10%;
+    // &__circle {
+    //     position: absolute;
+    //     max-width: 380px;
+    //     width: 100%;
+    //     max-height: 55px;
+    //     height: 100%;
+    //     overflow: hidden;
+    //     transform: translate(45%, -60%);
+    //     // left: 26%;
+    //     // top: 10%;
 
-        &::after {
-            content: "";
-            position: absolute;
-            display: block;
-            max-width: 400px;
-            width: 100%;
-            height: 290px;
-            border-top: 1px dashed $color-dove-gray;
-            border-radius: 50%;
-        }
+    //     &::after {
+    //         content: "";
+    //         position: absolute;
+    //         display: block;
+    //         max-width: 400px;
+    //         width: 100%;
+    //         height: 290px;
+    //         border-top: 1px dashed $color-dove-gray;
+    //         border-radius: 50%;
+    //     }
 
-        &_second {
-            transform: translate(145%, -30%);
-            // left: 50%;
-            // top: 10%;
-        }
-    }
+    //     &_second {
+    //         transform: translate(150%, -59%);
+    //         // left: 50%;
+    //         // top: 10%;
+    //     }
+    // }
 
     // .instruction__steps-box
 
@@ -88,9 +124,25 @@
         max-height: 61px;
         margin-bottom: 20px;
     }
+    &__svg {
+        &_search {
+            fill: rgb(84, 116, 253);
+        }
 
+        // .step-item__svg_select
+
+        &_select {
+            fill: rgb(255, 99, 99);
+        }
+
+        // .step-item__svg_book
+
+        &_book {
+            fill: rgb(0, 162, 255);
+        }
+    }
     &__svg:hover {
-        background-color: red;
+        fill: $color-mercury;
     }
 
     &__title {
@@ -98,5 +150,8 @@
         color: $color-mercury;
         font-weight: 300;
         font-family: $font-secondary-name;
+        @media screen and (max-width: 790px) {
+            font-size: 26px;
+        }
     }
 }

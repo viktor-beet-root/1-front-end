@@ -1,8 +1,8 @@
 .hero-block {
     @include bg-cover("../image/choose_us_bg.png");
-    padding-top: 75px;
+    padding-top: 85px;
     line-height: 26px;
-    padding-bottom: 115px;
+    padding-bottom: 90px;
     &__container {
     }
 
@@ -85,11 +85,11 @@
     // .choose-us__title
 
     &__title {
-        padding-top: 80px;
+        padding-top: 90px;
         color: $color-white;
         font-size: 36px;
         font-family: $font-secondary-name;
-        margin-bottom: 50px;
+        margin-bottom: 61px;
         font-weight: 400;
     }
 
@@ -97,12 +97,11 @@
 
     &__text {
         font-size: 16px;
-
         color: $color-mercury;
-        margin-bottom: 50px;
+        margin-bottom: 43px;
 
         &_margin {
-            margin-bottom: 30px;
+            margin-bottom: 27px;
         }
     }
 
