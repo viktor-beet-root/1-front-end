@@ -181,6 +181,7 @@
 
             @include media ("sm") {
                 max-width: 60px;
+                padding: 0px;
             }
 
             &__text {
@@ -188,8 +189,12 @@
                 padding-left: 20px;
                 padding-right: 20px;
 
+                @media screen and (max-width: 350px) {}
+
                 @include media ("sm") {
-                    display: none;
+                    // display: none;
+                    font-size: 5px;
+                    visibility: hidden;
                     padding-left: 0;
                     padding-right: 0;
                 }
@@ -201,6 +206,8 @@
                 &:hover {
                     fill: $color-tangaroa;
                 }
+
+
             }
 
             &::after {
@@ -270,6 +277,11 @@
             width: 100%;
         }
 
+        @include media ("sm") {
+            padding-top: 5px;
+            padding-bottom: 2px;
+        }
+
         &__container {
             display: flex;
             justify-content: space-between;
@@ -299,6 +311,10 @@
             font-size: 20px;
             // position: absolute;
             // bottom: 0;
+        }
+
+        @include media ("sm") {
+            font-size: 15px;
         }
     }
 
