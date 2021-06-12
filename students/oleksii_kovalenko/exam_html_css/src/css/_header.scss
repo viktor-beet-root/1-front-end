@@ -12,7 +12,6 @@
         flex-grow: 1;
     }
  
-
     &__title {
         text-align: center;
         font-family: $font-default-name;
@@ -94,6 +93,10 @@
         background-position: 100%;
         transition: background-position .5s ease;
 
+        &:hover {
+            background-position: 0 100%;
+        }
+
         @include media ('md') {
             margin: 30px auto;
             height: 56px;
@@ -108,11 +111,6 @@
     }
 
 }
-
-.search__button_search:hover {
-    background-position: 0 100%;
-}
-
 
 .button {
 
@@ -155,4 +153,3 @@
         letter-spacing: 2px;
     }
 }
-

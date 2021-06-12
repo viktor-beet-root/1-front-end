@@ -28,8 +28,8 @@
   background-position: 100%;
   transition: background-position .5s ease;
 
-}
+        &:hover {
+        background-position: 0 100%;
+        }
 
-.button__link:hover {
-    background-position: 0 100%;
 }

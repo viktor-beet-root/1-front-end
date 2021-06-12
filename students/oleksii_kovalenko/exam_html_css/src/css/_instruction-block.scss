@@ -42,9 +42,6 @@
     }
 }
 
-
-
-
 .arc {
     position: absolute;
     padding-top: 5.23%;
@@ -58,7 +55,7 @@
         position: absolute;
         content: '';
         display: block;
-        border: 1px dashed #656565;
+        border: 1px dashed $grey;
         height: 300px;
         width: 126%;
         top: 0;

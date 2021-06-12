@@ -13,7 +13,9 @@
         justify-content: space-between;
         position: relative;
     }
+
     &__list {
+        z-index: 2;
         display: flex;
 
         @include media ('md') {
@@ -29,7 +31,6 @@
             transition: all 0.5s ease-in-out;
         }
     }
-
 
     &__item {
 
