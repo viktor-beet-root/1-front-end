@@ -5,8 +5,8 @@
         }
     }
 
-    padding-top: 230px;
-    padding-bottom: 100px;
+    padding-top: 215px;
+    padding-bottom: 86px;
     &_appartament {
         background-image: url(../image/appartaments.jpg);
         background-repeat: no-repeat;
@@ -30,18 +30,20 @@
 
     &__subtitle {
         font-size: 20px;
-        padding: 35px 0;
+        padding-top: 44px;
+        padding-bottom: 21px;
     }
 
     &__title {
-        padding-bottom: 25px;
+        padding-bottom: 22px;
         font-size: 20px;
         font-family: $font-default-name;
         font-weight: $default-font-weight;
         text-transform: uppercase;
+        line-height: $default-line-height;
     }
 
     &__button-wrapper {
-        margin-top: 33px;
+        margin-top: 56px;
     }
 }

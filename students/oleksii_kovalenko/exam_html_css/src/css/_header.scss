@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;
-    padding-top: 250px;
+    padding-top: 217px;
     display: flex;
     flex-direction: column-reverse;
 
@@ -19,19 +19,30 @@
         line-height: $default-line-height;
         font-weight: 700;
         font-size: 48px;
+        letter-spacing: 6px;
+
+        @include media ('md') {
+            font-size: 46px;
+        }
+
+        @include media ('sm') {
+            font-size: 42px;
+        }
 
     }
 
     &__safe {
         text-align: center;
         font-family: $font-default-name;
-        line-height: $default-line-height;
+        line-height: .4;
         font-weight: 400;
         font-size: 22px;
+        letter-spacing: 6px;
+        padding-bottom: 27px;
     }
 
     &__scroll {
-        margin-top: 70px;
+        margin-top: 114px;
         text-align: center;
     }
 }
@@ -53,6 +64,10 @@
         border: none;
         height: 60px;
         text-align: center;
+        font-family: $font-default-name;
+        font-size: 14px;
+        line-height: $default-line-height;
+        letter-spacing: 2px;
     }
 
     &__button_search {
@@ -101,6 +116,10 @@
 
 .button {
 
+    &__text {
+        padding-left: 18px;
+    }
+
     &__img {
 
         @include media ('sm') {
@@ -133,6 +152,7 @@
         font-family: $font-default-name;
         line-height: $default-line-height;
         font-weight: 400;
+        letter-spacing: 2px;
     }
 }
 
