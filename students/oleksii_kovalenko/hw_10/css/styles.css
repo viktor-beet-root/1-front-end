@@ -130,3 +130,12 @@
     width: 54px;
     height: 54px;
 }
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #818181;
+    margin-top: 75px;
+    margin-bottom: 100px;
+}
