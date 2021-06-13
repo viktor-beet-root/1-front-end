@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "Hans Kendrick V4";
+    src: url("//db.onlinewebfonts.com/t/640850c0965fa5449af39df95c9970de.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/640850c0965fa5449af39df95c9970de.woff") format("woff")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #1d1d1d;
+    text-transform: uppercase;
+    font-family: "Hans Kendrick V4", Arial, Helvetica, sans-serif;
+}
+
+.travel-block {
+    background-color: #e2e7ec;
+    padding: 90px 0 125px 0;
+}
+
+.travel-block__travel-list {
+    margin: 0 auto;
+    margin-bottom: 78px;
+}
+
+.travel-list {
+    max-width: 1120px;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.travel-item {
+    flex-basis: calc(33.333333% - 20px);
+}
+
+.travel-item:nth-child(1), .travel-item:nth-child(3), .travel-item:nth-child(4) {
+    padding-right: 20px;
+}
+
+.travel-item:nth-child(3), .travel-item:nth-child(4), .travel-item:nth-child(5) {
+    margin-top: 20px;
+}
+
+.travel-item_big {
+    flex-basis: calc (66.6666666% - 20px);
+    position: relative;
+    flex-grow: 2;
+}
+
+.travel-item_big>.travel-item__info {
+    position: absolute;
+    bottom: -60px;
+    left: 16px;
+    background-color: transparent;
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 36px;
+    color: #ffffff;
+    width: 600px;
+}
+
+.travel-item__image>img {
+    display: block;
+}
+
+.travel-item__info {
+    width: 360px;
+    background-color: white;
+    padding: 31px 18px 18px 26px;
+}
+
+.travel-item__date {
+    font-size: 13px;
+    letter-spacing: 0px;
+    color: #818181;
+}
+
+.travel-item__date_visability-no {
+    visibility: hidden;
+}
+
+.travel-item__title {
+    height: 78px;
+    margin-bottom: 70px;
+}
+
+.travel-block__loading {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    align-items: center;
+    color: #99a5b0;
+}
