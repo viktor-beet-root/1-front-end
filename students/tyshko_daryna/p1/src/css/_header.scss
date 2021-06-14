@@ -8,6 +8,7 @@
         &__container {
             padding-top: 269px;
             padding-bottom: 115px;
+            height: calc(100vh - 97px);
 
             @media screen and (max-width: 790px) {
                 padding-bottom: 20px;
