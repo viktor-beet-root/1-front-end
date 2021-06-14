@@ -97,6 +97,7 @@
 .product-card__size-wrapper {
     padding-top: 30px;
     padding-bottom: 30px;
+    position: relative;
 }
 
 
@@ -141,6 +142,35 @@
     width: 68px;
     height: 30px;
     font-size: 14px;
+    appearance: none;
+}
+
+.arrow__size-list_1::after {
+    width: 6px;
+    height: 6px;
+    content: "";
+    display: block;
+    border-left: 1px solid #4f5560;
+    border-bottom: 1px solid #4f5560;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 40px;
+    left: 45px;
+}
+
+.arrow__size-list_2::after {
+    width: 6px;
+    height: 6px;
+    content: "";
+    display: block;
+    border-left: 1px solid #4f5560;
+    border-bottom: 1px solid #4f5560;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 40px;
+    left: 120px;
 }
 
 .product-card__qty-list {
@@ -150,6 +180,11 @@
     background: transparent;
     color: #797d84;
     font-size: 14px;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
 }
 
 .button {
