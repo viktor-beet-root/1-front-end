@@ -1,8 +1,12 @@
 .travel {
     @include bg-cover("../image/booking_bg_1.png");
-    padding: 215px 0 75px;
+    padding: 215px 0 85px;
     &_bg-second {
         @include bg-cover("../image/booking_bg_2.png");
+    }
+
+    @media screen and(max-width:1000px) {
+        padding: 115px 0 35px;
     }
 
     // .travel__container
