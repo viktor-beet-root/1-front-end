@@ -60,10 +60,9 @@
     list-style-type: none;
     flex-direction: row;
     justify-content:center;
-    margin-left: 47px;
+    margin-left: 42px;
     padding-bottom: 24px;
 }
-
 
 .product-card__link {
     font-size: 24px;
@@ -100,8 +99,6 @@
     position: relative;
 }
 
-
-
 .product-card__slider-navigation {
     display: flex;
     justify-content: center;
@@ -114,6 +111,11 @@
 
 .product-card__slider-navigatio-color {
     display: block;
+}
+
+.product-card__slider-navigatio-color-active{
+    border: 2px solid gray;
+    border-radius: 50%;
 }
 
 .product-card__slider-navigatio-color:hover {
@@ -136,6 +138,7 @@
 }
 
 .product-card__size-list {
+    padding-left: 10px;
     border: 1px solid #4f5560;
     background: transparent;
     color: #797d84;
@@ -174,6 +177,7 @@
 }
 
 .product-card__qty-list {
+    padding-left: 10px;
     border: 1px solid #4f5560;
     width: 68px;
     height: 30px;
