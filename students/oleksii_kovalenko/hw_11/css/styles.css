@@ -1,7 +1,9 @@
 @font-face {
-    font-family: "MuseoSansRounded-100";
+    font-family: "MuseoSansRounded";
     src: url("../fonts/MuseoSansRounded-100.ttf") format("truetype");
-  }
+    font-weight: normal;
+    font-style: normal
+}
 
 * { 
     margin: 0;
@@ -10,8 +12,11 @@
 }
 
 .page {
-    background: url(../images/main\ bg.jpg) center/cover no-repeat;
-    font-family: "MuseoSansRounded-100",Arial, Helvetica, sans-serif;
+    background: url(../images/main_bg.jpg) center/cover no-repeat;
+    line-height: 1.3;
+    font-size: 14px;
+    font-family: "MuseoSansRounded",Arial, Helvetica, sans-serif;
+    font-weight: 300;
 }
 
 .main {
@@ -25,10 +30,11 @@
 
 .logo {
     position: absolute;
-    top: 30px;
+    top: 24px;
     left: 20px;
 }
 .product-card {
+    max-height: 390px;
     background: #111a28;
     border-radius: 10px;
 }
@@ -39,53 +45,25 @@
 }
 
 .product-card__slider {
-    padding-left: 35px;
+    padding-left: 20px;
 }
 
 .product-card__slider-item {
-    padding-top: 125px;
-    padding-bottom: 30px;
+    padding-top: 128px;
+    padding-left: 16px;
+    padding-bottom: 65px;
 
 }
-
-.product-card__slider-image {
-    max-width:100%;
-    height:auto;
-}
-
 
 .product-card__slider-navigation {
     display: flex;
     list-style-type: none;
     flex-direction: row;
     justify-content:center;
+    margin-left: 47px;
+    padding-bottom: 24px;
 }
 
-.product-card__slider-navigation-item {
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-    border-radius: 50%;;
-    cursor: pointer;
-}
-
-.color-blue {
-    background: #1f273f;
-    border: 2px #7b8088 solid;
-}
-
-.color-white {
-    background: white;
-}
-
-.color-red {
- background: #ed3333;
-
-}
-
-.color-cian {
-    background: #29e3ea;
-}
 
 .product-card__link {
     font-size: 24px;
@@ -99,8 +77,8 @@
 }
 
 .product-card__info {
-    padding-top: 63px;
-    padding-left: 146px;
+    padding-top: 72px;
+    padding-left: 80px;
     padding-right: 22px;
 
 }
@@ -117,15 +95,29 @@
 }
 
 .product-card__size-wrapper {
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.rating {
-    padding-bottom: 30px;
-}
+
 
 .product-card__slider-navigation {
-    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card__slider-navigation-item {
+    padding-right: 7px;
+}
+
+.product-card__slider-navigatio-color {
+    display: block;
+}
+
+.product-card__slider-navigatio-color:hover {
+    border: 2px solid gray;
+    border-radius: 50%;
 }
 
 .rating__item {
@@ -142,28 +134,30 @@
     background-image: url(../images/star-active.svg);
 }
 
-
 .product-card__size-list {
+    border: 1px solid #4f5560;
     background: transparent;
     color: #797d84;
+    width: 68px;
+    height: 30px;
     font-size: 14px;
-    font-family: "MuseoSansRounded-100",Arial, Helvetica, sans-serif;
 }
 
 .product-card__qty-list {
+    border: 1px solid #4f5560;
+    width: 68px;
+    height: 30px;
     background: transparent;
     color: #797d84;
     font-size: 14px;
-    font-family: "MuseoSansRounded-100",Arial, Helvetica, sans-serif;
-
 }
 
 .button {
-    width: 170px;
+    width: 182px;
     height: 40px;
     background: #202835;
     border: 1px solid #4f5560;
     color: #80848b;
     font-size: 14px;
-    font-family: "MuseoSansRounded-100",Arial, Helvetica, sans-serif;
+    font-family: "MuseoSansRounded",Arial, Helvetica, sans-serif;
 }
