@@ -1,19 +1,23 @@
-.info__photo-section {
+.info {
+    &__photo-section {
     padding: 75px 76px 0px 76px;
     justify-content: center;
     align-items: center;
     width: 50%;
     display: flex;
     position: relative;
-}
+   }
 
-.info__photo-wrapper {
+    &__photo-wrapper {
     border: 1px solid #ffcc00;
     padding: 14px;
     z-index: 2;
     position: relative;
     width: 100%;
+    }
+
 }
+
 .photo {
     width: 388px;
     border: 1px solid #ffcc00;
@@ -32,7 +36,6 @@
     z-index: -1; }
   
   .info__photo-wrapper::after {
-    -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     top: 10px;
     left: 98px; }
