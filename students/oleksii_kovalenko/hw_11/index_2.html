@@ -1,78 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles_2.css">
-    <title>HW_11_2</title>
-</head>
-<body class="page">
-    <header class="header page__header">
-        <div class="container">
-            <nav class="navigation">
-                <div class="logo navigation__logo">
-                    <a href="#" class="logo__link">
-                        <svg 
-                        width="127px" height="52px">
-                       <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" font-size="50px" x="0px" y="52.062px"><tspan font-size="50px" font-family="Pacifico" fill="#262626">Cahee</tspan></text>
-                       </svg>
-                    </a>
-                </div>
-                <ul class="menu navigation__menu">
-                    <li class="menu__item menu__item_active">
-                        <a class="menu__link" href="#">HOME</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">ABOUT</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">SERVICES</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">GALLERY</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">BLOG </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">CONTAC</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main class="main page__main">
-        <div class="container">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/styles_2.css" />
+        <title>HW_11_2</title>
+    </head>
+    <body class="page">
+        <header class="header page__header">
+            <div class="header__container">
+                <nav class="navigation">
+                    <div class="logo navigation__logo">
+                        <a href="#" class="logo__link"> Cahee </a>
+                    </div>
+                    <ul class="menu navigation__menu">
+                        <li class="menu__item menu__item_active">
+                            <a class="menu__link" href="#">HOME</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">ABOUT</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">SERVICES</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">GALLERY</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">BLOG </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main page__main">
             <section class="first-section">
-                <div class="first-section__text-info">
-                    <h2 class="first-section__title">Fresh Life</h2>
-                    <p class="first-section__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <div class="first-section__container ">
+                    <div class="first-section__text-info">
+                        <h2 class="first-section__title">Fresh Life</h2>
+                        <p class="first-section__text">
+                            Sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco.
+                        </p>
+                    </div>
+                    <button class="first-section__button button button_primary">
+                        GET FREE NOW
+                    </button>
+                    <div class="first-section__scroll scroll">
+                        <img class="scroll__img" src="images/scroll.png" alt="scroll"/>
+                    </div>
                 </div>
-                <button class="first-section__button button button_primary">GET FREE NOW</button>
-                <div class="first-section__scroll scroll">
-                    <svg 
-                    width="24px" height="40px">
-                    <image  x="0px" y="0px" width="24px" height="40px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAoCAQAAABOBPLeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQflBQsIFAMsCP+3AAACAklEQVQ4y+3VMUiUYRzH8Y+vnjampiCcECKheCQIbZJSVF5jNEiBSk02OOnQJLU0ZEMOFUFimRDU4tJpUQgtQYSEhg7ioiWpdRItnmIN6nWXd56NQb/hD+/z//7e5/8+zwu/vCNSFKhx2gkRpfhqymsvzNj8jeSlGOp1andAutYMuuvDbsNlvSqx4rlpqzioVlQZ5l3zYAsr2Mavuq7AqpuemLe+vRpSqVWPSveUuwH5pXDJLSHvnfNMPGXiTXFvjDom7LjPJrZGiogJm3DeXPLNUcSSO1V5qsGCqKlAoS5hce1JnA4jRnQkn+e0iwvrUhio1oY+kykn05hStzSlD22qA2cUWTacdpQbKXVHw5YVaQk0I2Yxrfkzpe5oUQzNgQimJeRSwjQigTLEc+K2qUOB0K5ps2kDoSBja2s1L3vrT61B8trSVJDRMKDJpoH9G96p/7sdssDZv2EP/Tf8s4Z12X+QdBVgPbCC4n0ZirESmEStwpx4oRpMBcbRoiKnocJZjAfGrCl3MafhgjJrRgOzHqFbZE+8TjeGzAYS+i0o9lBVVrzKkBILbkvkl7Lku6iwRm99yYAf9ViDdT3GdvJhwoYmYa3yffIjmRAhh3W6r8qGXv1kiqwlMTO +oUSNqHJpkZUeild07LqRhEF3MoUiBGqdclKdMiz76JWXplNj9xcI0YsrPw+qKwAAAABJRU5ErkJggg==" />
-                 </svg>
-            </div>
             </section>
-        </div>
-        <section class="second-section">
-            <div class="second-section__container">
-                <img class="second-section__background" src="./images/imssg.png" alt="plate">
-                <div class="second-section__about-us">
-                    <h2 class="about-us__title">About Us</h2>
-                    <p class="about-us__text">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
-                    </p>
-                    <p class="about-us__text">Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
-                    </p>
+            <section class="second-section">
+                <div class="second-section__container container">
+                    <div class="second-section__background">
+                        <img class="second-section__background_img" src="./images/imssg.png" alt="plate"/>
+                    </div>
+                    <div class="second-section__about-us">
+                        <h2 class="about-us__title">About Us</h2>
+                        <p class="about-us__text">
+                            Abore Cahee magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse
+                            cillum.
+                        </p>
+                        <p class="about-us__text">
+                            Nim id est laborum. Sed ut perspiciatis unde omnis
+                            iste natus error sit voluptatem accusantium
+                            doloremque laudantium, totam rem aperiam, eaque ipsa
+                            quae ab illo inventore.
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </section>
-    
-    </main>
-</body>
+            </section>
+        </main>
+    </body>
 </html>

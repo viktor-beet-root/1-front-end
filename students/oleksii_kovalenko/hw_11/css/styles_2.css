@@ -1,3 +1,34 @@
+@font-face {
+    font-family: "Pacifico";
+    src: url("../fonts/Pacifico.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/ralewayblack.woff") format("woff"),
+          url("../fonts/ralewayblack.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/ralewaybold.woff") format("woff"),
+          url("../fonts/ralewaybold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/ralewaylight.woff") format("woff"),
+          url("../fonts/ralewaylight.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,32 +36,32 @@
 }
 
 .page {
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.588;
 }
 
-.page__header{
-    position: relative;
-    width: 1363px;
-    margin: 0 auto;
-    
-}
-
-.container {
+.header__container{
     max-width: 1200px;
     margin: 0 auto;
-    padding:  0 15px;
-    display: flex;
-    align-items: center;
-
+    padding: 0 15px;
 }
 
-.main {
-    background: url(../images/img.png) ;
+.first-section__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-section {
+    background: url(../images/img.jpg);
     background-repeat: no-repeat;
     background-size: auto;
-    height: 107vh;
-    width: 1363px;
-    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
 }
 
 .navigation {
@@ -38,10 +69,17 @@
     display: flex;
     justify-content: space-between;
     padding: 0 15px;
-    position: absolute;
     align-items: center;
+    position: absolute;
     top: 40px;
-    left: 131px;
+    left: 263px;
+}
+
+.logo__link {
+    text-decoration: none;
+    font-family: "Pacifico";
+    color: black;
+    font-size: 50px;
 }
 
 .menu {
@@ -50,11 +88,12 @@
 }
 
 .menu__item {
-    padding-right: 30px;
+    padding-right: 38px;
 }
 
 .menu__link {
     color: #262626;
+    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
@@ -63,76 +102,69 @@
 }
 
 .menu__item_active .menu__link::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
-    bottom: 20px;
+    bottom: 25px;
     width: 100%;
     height: 3px;
     background-color: #ff6033;
 }
 
 .navigation__menu {
-    padding-left: 435px;
+    padding-left: 493px;
+    padding-bottom: 10px;
 }
 
 .first-section__title {
-    font-size: 56px;
+    font-size: 60px;
     font-weight: 900;
-    padding-top: 315px;
-    padding-left: 47px;
+    padding-top: 337px;
 }
 
 .first-section__text {
-    font-size: 15px;
     font-weight: 300;
     margin-bottom: 28px;
-    padding-top: 18px;
-    padding-left: 52px;
+    padding-top: 3px;
     padding-right: 776px;
-    line-height: 1.4;
-
 }
 
-
 .button {
-    width: 185px;
-    height: 50px;
+    width: 200px;
+    height: 55px;
     background-color: #ff6033;
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-size: 20px;
     font-weight: 300;
     color: white;
     border: none;
-    margin-left: 50px;
 }
 
 .scroll {
-    text-align: center;
-    padding-top: 269px;
-    padding-bottom: 57px;
+    padding-top: 180px;
+    margin: 0 auto;
 }
 
-.second-section__about-us{
+.scroll__img {
+    display: block;
+}
+
+.second-section__about-us {
     justify-content: center;
     align-items: center;
-    padding-left: 77px;
-    padding-bottom: 65px;
-    padding-right: 28px;
-    line-height: 1.3;
+    padding-left: 20px;
+    padding-bottom: 84px;
 }
 
 .about-us__title {
-    font-size: 82px;
+    font-size: 90px;
     font-weight: 700;
     color: white;
 }
 
-.about-us__text{
-    font-size: 16px;
+.about-us__text {
     font-weight: 300;
     color: white;
-    line-height: 1.6;
 }
 
 .second-section {
@@ -140,21 +172,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1363px;
-
 }
 
-.second-section__background {
-    padding-top: 37px ;
+.second-section__background_img {
+    padding-top: 37px;
     padding-bottom: 20px;
-    max-width:50%;
-    height:auto;
+    height: auto;
+    display: block;
 }
 
-.second-section__container{
+.second-section__container {
     max-width: 1200px;
     margin: 0 auto;
-    padding:  0 15px;
+    padding: 0 15px;
     display: flex;
     align-items: center;
 }
