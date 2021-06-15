@@ -14,12 +14,7 @@
         text-align: center;
         margin-bottom: 25px;
         height: 65px;
-
     }
-
-    &__row {}
-
-    &__col {}
 
     &__title {
         color: #e8e8e8;
@@ -30,27 +25,6 @@
         line-height: 26px;
     }
 }
-
-.container {}
-
-.row {}
-
-.col-4 {}
-
-.row {}
-
-.enjoy {
-
-    &_flex {}
-
-    &_after {}
-
-    &__row {}
-
-    &__col {}
-}
-
-.col-4 {}
 
 .duga {
     height: 40px;
@@ -87,8 +61,15 @@
 
     @media (min-width:992px) {
         &:hover {
-            fill: #ff6363;
+            fill:#fff;
         }
-
     }
+    &_colb {
+        fill: #00a2ff;
+    }
+    &_colr {
+        fill: #ff6363;
+     }
 }
+
+

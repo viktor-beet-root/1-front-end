@@ -11,37 +11,14 @@
         padding-bottom: 10px;
     }
 
-
-
     &__title {
         text-align: center;
         color: $title-color;
         font-size: 36px;
         font-family: $font-aleo;
         margin-bottom: 94px;
-
-
-
     }
-
-
-
-    &__title-text {}
-
-
-
-    &__row {}
-
-
-
-    &__col {}
 }
-
-.container {}
-
-.row {}
-
-.col-12 {}
 
 .quotes-from {
     display: flex;
@@ -50,12 +27,9 @@
         flex-direction: column;
     }
 
-
-
     &__img {
         display: block;
     }
-
 
     &__wrap {
         background-color: #333333;
@@ -67,17 +41,13 @@
         }
     }
 
-
     &__author {
         font-family: $font-josefin;
         color: #fefefe;
         font-size: 20px;
         text-transform: uppercase;
         margin-bottom: 33px;
-
     }
-
-
 
     &__box {
         position: relative;
@@ -93,8 +63,6 @@
         }
     }
 
-
-
     &__text {
         font-size: 16px;
         color: #e8e8e8;
@@ -104,9 +72,3 @@
         text-indent: 30px;
     }
 }
-
-.svg-inline--fa {}
-
-.fa-quote-left {}
-
-.fa-w-16 {}

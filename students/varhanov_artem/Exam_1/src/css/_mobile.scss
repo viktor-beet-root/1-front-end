@@ -1,4 +1,3 @@
-.conreiner {}
 
 .mobile-container {
     padding-top: 20px;
@@ -41,8 +40,6 @@
 }
 
 .toggle-container {
-
-
     &>.button-toggle,
     &>.button-toggle::before,
     &>.button-toggle::after {
@@ -67,8 +64,6 @@
     }
 }
 
-.button {}
-
 .button-toggle {
     display: flex;
     align-items: center;
@@ -79,7 +74,6 @@
     height: 26px;
     cursor: pointer;
     z-index: 1;
-
 }
 
 .nav-mobile {

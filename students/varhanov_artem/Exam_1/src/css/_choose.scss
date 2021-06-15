@@ -1,6 +1,5 @@
 .choose {
     background-image: url(../image/bg_us.jpeg);
-
     background-repeat: no-repeat;
     background-size: cover;
     padding: 90px 0 90px;
@@ -8,11 +7,6 @@
     @media screen and (max-width:768px) {
         padding: 10px 0 20px;
     }
-
-    &__container {}
-
-
-    &__row {}
 
     &__title {
         margin-bottom: 60px;
@@ -37,11 +31,7 @@
 
     &__text-one {
         margin-bottom: 25px;
-
     }
-
-    &__text-two {}
-
 
     &__img {
         margin-bottom: 5px;
@@ -55,22 +45,7 @@
             max-width: 100%;
             max-height: 100%;
         }
-
-
-
     }
-
-}
-
-.container {}
-
-.row {}
-
-.col-6 {}
-
-.choose-form {
-
-    &_botton {}
 }
 
 .button-btn {
@@ -93,7 +68,6 @@
         background-position: 0 50%;
     }
 }
-
 
 .choose__gallere {
     padding-left: 80px;
@@ -119,5 +93,4 @@
     .choose__col {
         text-align: center;
     }
-
 }
