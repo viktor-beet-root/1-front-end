@@ -1,8 +1,6 @@
 $color-menu-item: $default-color-text;
 $menu-borber: 1px solid $orange;
 
-
-
 .menu {
     display: flex;
     justify-content: flex-end;
@@ -84,7 +82,6 @@ $menu-borber: 1px solid $orange;
             &+.menu__burger-btn .burger-btn__line {
                 background-color: transparent;
                 
-
                 &::after,
                 &::before {
                     top: 0;
@@ -97,9 +94,7 @@ $menu-borber: 1px solid $orange;
 
                  &::before {
                     transform: rotate(-45deg);
-               
                 }
-
 
             }
                 &~.menu__list {
@@ -126,7 +121,6 @@ $menu-borber: 1px solid $orange;
 
     @include media ('md') {
         display: flex;
-
     }
 
     &__line {
@@ -157,5 +151,3 @@ $menu-borber: 1px solid $orange;
         }
     }
 }
-
-

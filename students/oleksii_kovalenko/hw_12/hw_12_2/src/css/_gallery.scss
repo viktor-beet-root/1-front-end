@@ -1,4 +1,6 @@
 .gallery {
+    background: $Bright-Sun;
+    min-height: 1536px;
 
     &__title {
         font-size: 90px;
@@ -13,12 +15,9 @@
     &__text {
         font-size: 17px;
         line-height: 26px;
-
         text-align: center;
     }
 
-    background: $Bright-Sun;
-    min-height: 1536px;
     &__image-wrapper_right {
         display: flex;
         flex-direction: column;
@@ -57,7 +56,6 @@
         }
     }
 }
-
 
 .gallery__button {
     display: flex;

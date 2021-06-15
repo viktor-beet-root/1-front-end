@@ -1,5 +1,4 @@
 .contacts {
-
     &__form {
         background-image: url(../image/contact.jpg);
         background-repeat: no-repeat;
@@ -7,7 +6,6 @@
         text-align: center;
         padding: 90px 0 123px 0;
     }
-
 }
 
 .form {
@@ -33,7 +31,6 @@
 
 .submit-form {
     display: flex;
-
     justify-content: space-between;
 
     &__input {
@@ -132,11 +129,10 @@
 
 .info__title:not(:first-of-type) {
     margin-top: 15px;
-
 }
 
-.form input::-webkit-input-placeholder,
-.form textarea::-webkit-input-placeholder {
+.form input::placeholder,
+.form textarea::placeholder {
     color: $color-white;
     font-size: 15px;
     opacity: 1;

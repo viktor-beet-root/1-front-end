@@ -69,6 +69,13 @@ td {
     background: transparent;
 }
 
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     line-height: 1;
 }
@@ -112,6 +119,3 @@ button {
     padding: 0;
 }
 
-* {
-    box-sizing: border-box;
-}
