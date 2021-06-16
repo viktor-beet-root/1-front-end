@@ -1,33 +1,11 @@
 .reviews {
     @include bg-cover("../image/quote_bg.png");
     padding-top: 95px;
-    padding-bottom: 200px;
+    padding-bottom: 190px;
     color: $color-white;
-    // .reviews__container
-
-    &__container {
-    }
-
-    // .reviews__rew-upper-part
-
-    &__rew-upper-part {
-    }
-
-    // .reviews__rew-lower-part
-
-    &__rew-lower-part {
-    }
 }
-.container {
-}
+
 .rew-upper-part {
-    // .rew-upper-part__head
-
-    &__head {
-    }
-
-    // .rew-upper-part__title
-
     &__title {
         font-size: 36px;
         font-weight: 400;
@@ -37,24 +15,13 @@
         letter-spacing: 1px;
     }
 }
-.row {
-}
-.col-12 {
-}
+
 .rew-lower-part {
     background-color: $color-mine-shaft;
-    // .rew-lower-part__left
-
-    &__left {
-    }
-
-    // .rew-lower-part__img
 
     &__img {
         display: block;
     }
-
-    // .rew-lower-part__right
 
     &__right {
         padding-top: 40px;
@@ -63,20 +30,17 @@
         padding-right: 60px;
     }
 
-    // .rew-lower-part__title
-
     &__title {
         font-size: 20px;
         margin-bottom: 30px;
         font-weight: 300px;
         letter-spacing: -1px;
+
         @media screen and(max-width: 850px) {
             font-size: 16px;
             margin-bottom: 15px;
         }
     }
-
-    // .rew-lower-part__quote
 
     &__quote {
         font-family: $font-primary-name;
@@ -102,56 +66,22 @@
         }
     }
 }
-.col-5 {
-}
-.col-md-12 {
-}
-.col-7 {
-}
+
 @media screen and (max-width: 1200px) {
     .reviews {
         padding-top: 70px;
         padding-bottom: 100px;
-        // .reviews__container
-
-        &__container {
-        }
-
-        // .reviews__rew-upper-part
-
-        &__rew-upper-part {
-        }
-
-        // .reviews__rew-lower-part
-
-        &__rew-lower-part {
-        }
     }
-    .container {
-    }
+
     .rew-upper-part {
-        // .rew-upper-part__head
-
-        &__head {
-        }
-
-        // .rew-upper-part__title
-
         &__title {
             margin-bottom: 45px;
         }
     }
-    .row {
-    }
-    .col-12 {
-    }
+
     .rew-lower-part {
         padding-left: 20px;
-        background-color: transparent; // .rew-lower-part__left
-        &__left {
-        }
-
-        // .rew-lower-part__img
+        background-color: transparent;
 
         &__img {
             padding-top: 20px;
@@ -159,174 +89,51 @@
             width: 100%;
         }
 
-        // .rew-lower-part__right
-
         &__right {
             width: calc(100% - 445px);
             padding-top: 5px;
             padding-right: 20px;
         }
-
-        // .rew-lower-part__title
-
-        &__title {
-        }
-
-        // .rew-lower-part__quote
-
-        &__quote {
-        }
-    }
-    .col-5 {
-    }
-    .col-md-12 {
-    }
-    .col-7 {
     }
 }
 @include media("md") {
     .reviews {
         padding-top: 20px;
         padding-bottom: 10px;
-        // .reviews__container
-
-        &__container {
-        }
-
-        // .reviews__rew-upper-part
-
-        &__rew-upper-part {
-        }
-
-        // .reviews__rew-lower-part
-
-        &__rew-lower-part {
-        }
     }
-    .container {
-    }
-    .rew-upper-part {
-        // .rew-upper-part__head
 
-        &__head {
-        }
-
-        // .rew-upper-part__title
-
-        &__title {
-        }
-    }
-    .row {
-    }
-    .col-12 {
-    }
     .rew-lower-part {
-        // .rew-lower-part__left
-
-        &__left {
-        }
-
-        // .rew-lower-part__img
-
         &__img {
             max-width: 100%;
             padding-right: 20px;
             margin-bottom: 15px;
         }
 
-        // .rew-lower-part__right
-
-        &__right {
-        }
-
-        // .rew-lower-part__title
-
         &__title {
             font-size: 30px;
             text-align: center;
         }
-
-        // .rew-lower-part__quote
 
         &__quote {
             width: 100%;
             font-size: 20px;
         }
     }
-    .col-5 {
-    }
-    .col-lg-12 {
-    }
-    .col-7 {
-    }
 }
 @include media("sm") {
-    .reviews {
-        // .reviews__container
-
-        &__container {
-        }
-
-        // .reviews__rew-upper-part
-
-        &__rew-upper-part {
-        }
-
-        // .reviews__rew-lower-part
-
-        &__rew-lower-part {
-        }
-    }
-    .container {
-    }
     .rew-upper-part {
-        // .rew-upper-part__head
-
-        &__head {
-        }
-
-        // .rew-upper-part__title
-
         &__title {
             font-size: 26px;
         }
     }
-    .row {
-    }
-    .col-12 {
-    }
+
     .rew-lower-part {
-        // .rew-lower-part__left
-
-        &__left {
-        }
-
-        // .rew-lower-part__img
-
-        &__img {
-        }
-
-        // .rew-lower-part__right
-
-        &__right {
-        }
-
-        // .rew-lower-part__title
-
         &__title {
             font-size: 21px;
         }
 
-        // .rew-lower-part__quote
-
         &__quote {
             font-size: 16px;
         }
-    }
-    .col-5 {
-    }
-    .col-md-12 {
-    }
-    .col-7 {
     }
 }

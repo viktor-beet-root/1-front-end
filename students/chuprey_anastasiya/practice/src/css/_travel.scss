@@ -1,6 +1,7 @@
 .travel {
     @include bg-cover("../image/booking_bg_1.png");
     padding: 215px 0 85px;
+
     &_bg-second {
         @include bg-cover("../image/booking_bg_2.png");
     }
@@ -8,26 +9,6 @@
     @media screen and(max-width:1000px) {
         padding: 115px 0 35px;
     }
-
-    // .travel__container
-
-    &__container {
-        // .travel__container_position
-
-        &_position {
-        }
-    }
-
-    // .travel__row
-
-    &__row {
-        // .travel__row_position
-
-        &_position {
-        }
-    }
-
-    // .travel__col
 
     &__col {
         margin-left: 15px;
@@ -38,15 +19,11 @@
         background-color: rgba($color-mine-shaft, $alpha: 0.9);
     }
 
-    // .travel__title
-
     &__title {
         font-size: 20px;
         letter-spacing: 2px;
         margin-bottom: 20px;
     }
-
-    // .travel__subtitle
 
     &__subtitle {
         text-transform: uppercase;
@@ -55,32 +32,17 @@
         color: $color-white;
     }
 
-    // .travel__text
-
     &__text {
         font-size: 15px;
         margin-bottom: 35px;
         font-weight: 300;
     }
 
-    // .travel__button
-
     &__button {
         margin-left: 5px;
     }
 }
-.container {
-}
-.row {
-}
-.col-12 {
-}
-.button {
-    // .button__link
 
-    &__link {
-    }
-}
 .travel:nth-of-type(even) > .travel__container > .travel__row_position {
     justify-content: flex-end;
 }
