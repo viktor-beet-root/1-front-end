@@ -1,0 +1,76 @@
+@include grid();
+
+.page {
+    font-family: $font-dafault;
+    font-size: $default-font-size;
+    line-height: 1.4;
+    min-height: 100vh;
+    background-color: $color-white;
+    padding: $default-gap;
+    color: $mercury;
+}
+
+.container {
+    max-width: $container-width;
+    width: 100%;
+    margin: 0 auto;
+    padding: $default-gap;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 (-$default-gap);
+}
+
+[class^="col-"] {
+    padding: $default-gap;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    max-width: 224px;
+    width: 100%;
+    padding: 18px 30px 15px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $dodger-blue;
+    font-size: 17px;
+    letter-spacing: 1;
+    border: none;
+    color: $color-white;
+    font-family: $font-secondary-name;
+    position: relative;
+    z-index: 20;
+    overflow: hidden;
+
+
+    &__link {
+        color: $color-white;
+        text-decoration: none;
+    }
+
+    &__text {
+        z-index: 3;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 300px;
+        height: 100px;
+        background-color: $dodger-blue2;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: -82%;
+        z-index: -10;
+        transform: skew(50deg);
+        transition: 0.5s ease-in-out;
+    }
+
+    &:hover::after {
+        left: 0;
+    }
+}

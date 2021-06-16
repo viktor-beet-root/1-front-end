@@ -1,0 +1,82 @@
+.travel {
+    padding: 210px 0 90px;
+    @include bg-cover("../image/booking_bg_1.png");
+
+
+    &_bg-second {
+        @include bg-cover("../image/booking_bg_2.png");
+    }
+
+
+
+    &__container {
+
+
+
+        &_position {}
+    }
+
+
+
+    &__row {
+
+
+
+        &_position {}
+    }
+
+
+    &__col {
+        margin-left: 15px;
+        max-width: 540px;
+        width: 100%;
+        padding: 45px 70px 50px 30px;
+        background-color: rgba($mine-shaft, $alpha: 0.9);
+    }
+
+
+
+    &__title {
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        font-weight: 400;
+    }
+
+
+
+    &__subtitle {
+        font-size: 19px;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: $mercury;
+        margin-bottom: 30px;
+    }
+
+
+
+    &__text {
+        font-size: 16px;
+        margin-bottom: 50px;
+        font-weight: 300;
+        color: $dawn;
+    }
+
+
+
+    &__btn {}
+
+
+
+    &__btn-text {}
+}
+
+.container {}
+
+.row {}
+
+.col-12 {}
+
+.travel:nth-of-type(even)>.travel__container>.travel__row_position {
+    justify-content: flex-end;
+}
