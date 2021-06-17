@@ -93,8 +93,9 @@ console.log(commonDiv(8, 6));
 Функция изменения времени на переданное количество часов. 
 Учтите, что в последних 3-х функциях, при изменении одной части времени, может измениться и другая. Например, если ко времени «20:30:45» добавить 30 секунд, то должно получиться «20:31:15», а не «20:30:75».
 */
+
 const timeObj = {
-    hour: 1,
+    hour: 10,
     minute: 22,
     second: 44,
     getTime: getTimeFormat,
@@ -117,37 +118,36 @@ function formatTime(x) {
 
 function changeSec(s) {
     this.second = this.second + s;
-    if (this.second > 60) {
-        this.minute++;
+    while (this.second > 59) {
+        this.changeMin(1);
         this.second = this.second - 60;
     }
-    return formatTime(this.hour) + ':' + formatTime(this.minute) + ':' + formatTime(this.second);
 }
 
 function changeMin(m) {
     this.minute = this.minute + m;
-    if (this.minute > 60) {
-        this.hour++;
+    while (this.minute > 59) {
+        this.changeHours(1);
         this.minute = this.minute - 60;
     }
-    return formatTime(this.hour) + ':' + formatTime(this.minute) + ':' + formatTime(this.second);
 }
 
 function changeHours(h) {
     this.hour = this.hour + h;
-    while (this.hour > 24) {
+    while (this.hour > 23) {
         this.hour = this.hour - 24;
     }
-    return formatTime(this.hour) + ':' + formatTime(this.minute) + ':' + formatTime(this.second);
 }
 
+console.log(timeObj.getTime());
+timeObj.changeSec(120);
+console.log(timeObj.getTime());
 
-// Общий результат всей задачи
-const changeSecRes = changeSec.bind(timeObj);
-const changeMinRes = changeMin.bind(timeObj);
-const changeHourRes = changeHours.bind(timeObj);
-console.log(` ${timeObj.getTime()} \n ${changeSecRes(55)} \n ${changeMinRes(55)} \n ${changeHourRes(55)}`)
+timeObj.changeHours(55);
+console.log(timeObj.getTime());
 
+timeObj.changeMin(120);
+console.log(timeObj.getTime());
 
 /*
 // Угадай число
