@@ -8,6 +8,10 @@
     background-color: $color-white;
     padding: $default-gap;
     color: $mercury;
+
+    @media screen and(max-width: 390px) {
+        padding: 5px;
+    }
 }
 
 .container {
