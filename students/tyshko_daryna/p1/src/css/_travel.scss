@@ -2,9 +2,25 @@
     padding: 210px 0 90px;
     @include bg-cover("../image/booking_bg_1.png");
 
+    @media screen and (max-width: 1000px) {
+        padding: 115px 35px 0;
+    }
+
+    @media screen and (max-width: 440px) {
+        padding: 45px 10px 17px 0;
+    }
+
 
     &_bg-second {
         @include bg-cover("../image/booking_bg_2.png");
+
+        @media screen and (max-width: 1000px) {
+            padding: 115px 35px 0;
+        }
+
+        @media screen and (max-width: 440px) {
+            padding: 45px 10px 17px 0;
+        }
     }
 
 
@@ -32,6 +48,10 @@
         width: 100%;
         padding: 45px 70px 50px 30px;
         background-color: rgba($mine-shaft, $alpha: 0.9);
+
+        @media screen and (max-width: 440px) {
+            padding: 25px 20px 25px 20px;
+        }
     }
 
 
@@ -41,6 +61,11 @@
         letter-spacing: 2px;
         margin-bottom: 30px;
         font-weight: 400;
+
+        @media screen and (max-width: 440px) {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
     }
 
 
@@ -51,6 +76,11 @@
         font-weight: 400;
         color: $mercury;
         margin-bottom: 30px;
+
+        @media screen and (max-width: 440px) {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
     }
 
 
@@ -60,6 +90,11 @@
         margin-bottom: 50px;
         font-weight: 300;
         color: $dawn;
+
+        @media screen and (max-width: 440px) {
+            font-size: 12px;
+            margin-bottom: 25px;
+        }
     }
 
 
