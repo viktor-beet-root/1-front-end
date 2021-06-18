@@ -11,17 +11,17 @@ var car = {
 function getCarInfo() {
   console.log('Manufacturer: ' + car.manufacturer);
   console.log('Model: ' + car.model);
-  console.log('Production year: ' + car.yerarManufact);
-  console.log('Average speed: ' + car.averageSpeed);
+  console.log('Production year: ' + car.yerarManufact + ' year');
+  console.log('Average speed: ' + car.averageSpeed + ' km/h');
 }
 
 getCarInfo(); // 1.2. Функция для подсчета необходимого времени для преодоления переданного расстояния со средней скоростью. Учтите, что через каждые 4 часа дороги водителю необходимо делать перерыв на 1 час.
 
 function calcTime(distance) {
-  if (distance === undefined || isNaN(distance) || distance <= 0) return 'Некоректные данные';
+  if (distance === undefined || isNaN(distance) || distance <= 0) return 'Data no correct !';
   var time = distance / car.averageSpeed;
   if (time > 4) time = time + Math.floor(time / 4);
-  var timeResult = 'Время необходимое для преодолония расстояния: ' + time + ' ч.';
+  var timeResult = 'Time to distenation: ' + time + ' hours';
   return timeResult;
 }
 
