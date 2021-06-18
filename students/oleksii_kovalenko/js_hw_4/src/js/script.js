@@ -13,7 +13,7 @@ let result = 0;
         result = -1;
         return result;
     } else return result;
-    } else return ("Вы ввели неверные данные");
+    } else return ('Вы ввели неверные данные');
 }
 
 console.log(twoNumbers(8));
@@ -29,13 +29,13 @@ function factorial(n) {
     else return n * factorial(n - 1);
 }
 
-console.log(factorial(+prompt("Введите число для вычисления факториала")));
+console.log(factorial(+prompt('Введите число для вычисления факториала')));
 
 // 3. Написать функцию, которая принимает три отдельные цифры и превращает их в одно число. Например: цифры 1, 4, 9 превратятся в число 149.
 
 function number(firstNumber, secondNumer, thirdNumber) {
 
-    if (isNaN(firstNumber) || isNaN(secondNumer) || isNaN(thirdNumber)) return "Вы ввели не цифру";
+    if (isNaN(firstNumber) || isNaN(secondNumer) || isNaN(thirdNumber)) return 'Вы ввели не цифру';
     if (firstNumber < 1 || firstNumber > 9) return 'Первая цифра не может быть: меньше 1 и больше 9';
     if (secondNumer < 0 || secondNumer > 9) return 'Вторая цифра не может быть: меньше 0 и больше 9';
     if (thirdNumber < 0 || thirdNumber > 9) return 'Третья цифра не может быть: меньше 0 и больше 9';
@@ -45,7 +45,7 @@ function number(firstNumber, secondNumer, thirdNumber) {
     return result;
 };
 
-console.log(number(+prompt("Введите первую цифру"), +prompt("Введите вторую цифру"), +prompt("Введите третью цифру")));
+console.log(number(+prompt('Введите первую цифру'), +prompt('Введите вторую цифру'), +prompt('Введите третью цифру')));
 
 // 4. Написать функцию, которая принимает длину и ширину прямоугольника и вычисляет его площадь. Если в функцию передали 1 параметр, то она вычисляет площадь квадрата.
 
@@ -71,7 +71,7 @@ function perfectNumber(num) {
 let number = num;
 let s = 0;
 
-    if (isNaN(number)) return "NaN";
+    if (isNaN(number)) return 'NaN';
     if (number === 0) return 'Null';
     for (let i = 1; number > i; i++) {
 
@@ -86,14 +86,14 @@ let reqNumber = perfectNumber(+prompt('Введите число:'));
 
 function answerPerfectNumber(a) {
 
-    if (a === "NaN") {
+    if (a === 'NaN') {
          return 'Вы ввели не число!';
     } else if (a === 'Null') {
-        return "Вы либо ввели 0, либо не ввели ничего!";
+        return 'Вы либо ввели 0, либо не ввели ничего!';
     } else if (a !== false) {
-        return "Введенное число являеться совершенным!";
+        return 'Введенное число являеться совершенным!';
     } else {
-        return "Введенное число НЕ являеться совершенным!";
+        return 'Введенное число НЕ являеться совершенным!';
     }
 };
 console.log(answerPerfectNumber(reqNumber));
@@ -113,7 +113,7 @@ let answer = '';
         }
         if (thirdNumber === false) continue;
     }
-    return "В диапазоне присутствуют следующие совершенные числа:" + answer;
+    return 'В диапазоне присутствуют совершенные числа:' + answer;
 
 };
 console.log(perfectNumDiapasone(+prompt('Введите число начала диапазона:'), +prompt('Введите число конца диапазона:')));
@@ -126,10 +126,10 @@ let hours = '';
 let minutes = '';
 let seconds = '';
 
-    if (isNaN(hh) || isNaN(mm) || isNaN(ss)) return "Вы ввели не числа!!!";
-    if (hh < 0 || mm < 0 || ss < 0) return 'Часы, минуты и секунды не могут меньше 0!!!';
-    if (hh > 23) return 'Часы не могут принимать значение больше 23!!!';
-    if (mm > 59 || ss > 59) return 'Минуты и секунды не могут принимать знчение больше 59!!!';
+    if (isNaN(hh) || isNaN(mm) || isNaN(ss)) return 'Вы ввели не числа!';
+    if (hh < 0 || mm < 0 || ss < 0) return 'Часы, минуты и секунды не могут меньше 0!';
+    if (hh > 23) return 'Часы не могут принимать значение больше 23!';
+    if (mm > 59 || ss > 59) return 'Минуты и секунды не могут принимать знчение больше 59!';
 
     hours = (hh < 10) ? ('0' + hh) : hh;
     minutes = (mm < 10) ? ('0' + mm) : mm;
@@ -149,17 +149,17 @@ const hourSec = 3600;
 const minutesSec = 60;
 let timeInSeconds;
 
-    if (isNaN(hh) || isNaN(mm) || isNaN(ss)) return "Вы ввели не числа!!!";
-    if (hh < 0 || mm < 0 || ss < 0) return 'Часы, минуты и секунды не могут меньше 0!!!';
+    if (isNaN(hh) || isNaN(mm) || isNaN(ss)) return 'Вы ввели не числа!';
+    if (hh < 0 || mm < 0 || ss < 0) return 'Часы, минуты и секунды не могут меньше 0!';
     if (hh > 23) return 'Часы не могут принимать значение больше 23!!!';
-    if (mm > 59 || ss > 59) return 'Минуты и секунды не могут принимать значение больше 59!!!';
+    if (mm > 59 || ss > 59) return 'Минуты и секунды не могут принимать значение больше 59!';
 
     timeInSeconds = hh * hourSec + mm * minutesSec + ss;
     return timeInSeconds;
 };
 
 let timeSeconds = timeInSec(+prompt('Введите часы:'), +prompt('Введите минуты:'), +prompt('Введите секунды:'));
-console.log("Введеному количеству времени, соответсвует " + timeSeconds + " секунд");
+console.log('Введеному количеству времени, соответсвует ' + timeSeconds + ' секунд');
 
 // 9. Написать функцию, которая принимает количество секунд, переводит их в часы, минуты и секунды и возвращает в виде строки «чч:мм:сс».
 
@@ -172,7 +172,7 @@ const hourSec = 3600;
 const mimutesSec = 60;
 
     if (isNaN(second)) return 'Вы ввели не числа!!!';
-    if (second < 0) return 'Cекунды не могут быть меньше 0!!!';
+    if (second < 0) return 'Cекунды не могут быть меньше 0!';
 
     hours = ~~(second / hourSec);
     second = second % hourSec;
@@ -186,7 +186,7 @@ const mimutesSec = 60;
     return time;
 };
 let secInOur = timeSecInHour(+prompt('Введите количество секунд:'));
-console.log("Веденому количеству секунд, соответствует " + secInOur);
+console.log('Веденому количеству секунд, соответствует ' + secInOur);
 
 // 10. Написать функцию, которая считает разницу между датами. Функция принимает 6 параметров, которые описывают 2 даты, и возвращает результат в виде строки «чч:мм:сс». При выполнении задания используйте функции из предыдущих 2-х заданий: сначала обе даты переведите в секунды, узнайте разницу в секундах, а потом разницу переведите обратно в «чч:мм:сс»
 
