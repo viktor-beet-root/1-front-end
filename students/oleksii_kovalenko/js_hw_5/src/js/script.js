@@ -2,7 +2,7 @@
 
 const car = {
     manufacturer: 'Tesla',
-    model: 'S',
+    model: 'Model S',
     yerarManufact: 2018,
     averageSpeed: 100,
 }
