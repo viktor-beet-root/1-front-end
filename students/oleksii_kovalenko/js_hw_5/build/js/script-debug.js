@@ -1,21 +1,25 @@
 "use strict";
 
 // 1. Создать объект, описывающий автомобиль (производитель, модель, год выпуска, средняя скорость), и следующие функции для работы с этим объектом: 
+
 var car = {
   manufacturer: 'Tesla',
   model: 'S',
   yerarManufact: 2018,
   averageSpeed: 100
-}; // 1.1. Функция для вывода на экран информации об автомобиле;
+}; 
+
+// 1.1. Функция для вывода на экран информации об автомобиле;
 
 function getCarInfo() {
   console.log('Manufacturer: ' + car.manufacturer);
   console.log('Model: ' + car.model);
   console.log('Production year: ' + car.yerarManufact + ' year');
   console.log('Average speed: ' + car.averageSpeed + ' km/h');
-}
+};
+getCarInfo();
 
-getCarInfo(); // 1.2. Функция для подсчета необходимого времени для преодоления переданного расстояния со средней скоростью. Учтите, что через каждые 4 часа дороги водителю необходимо делать перерыв на 1 час.
+// 1.2. Функция для подсчета необходимого времени для преодоления переданного расстояния со средней скоростью. Учтите, что через каждые 4 часа дороги водителю необходимо делать перерыв на 1 час.
 
 function calcTime(distance) {
   if (distance === undefined || isNaN(distance) || distance <= 0) return 'Data no correct !';
@@ -23,11 +27,13 @@ function calcTime(distance) {
   if (time > 4) time = time + Math.floor(time / 4);
   var timeResult = 'Time to distenation: ' + time + ' hours';
   return timeResult;
-}
+};
 
 console.log(calcTime(300));
 console.log(calcTime(500));
-console.log(calcTime(0)); // 2. Создать объект, хранящий в себе отдельно числитель и знаменатель дроби, и следующие функции для работы с этим объектом: 
+console.log(calcTime(0)); 
+
+// 2. Создать объект, хранящий в себе отдельно числитель и знаменатель дроби, и следующие функции для работы с этим объектом: 
 // 2.1. Функция сложения 2-х объектов-дробей;
 // 2.2. Функция вычитания 2-х объектов-дробей;
 // 2.3. Функция умножения 2-х объектов-дробей;
