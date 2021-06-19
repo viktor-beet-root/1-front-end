@@ -15,10 +15,10 @@
     &__title {
         text-align: center;
         font-family: $font-default-name;
-        line-height: $default-line-height;
-        font-weight: 700;
+        line-height: 1.8;
+        font-weight: 900;
         font-size: 48px;
-        letter-spacing: 6px;
+        letter-spacing: 3px;
 
         @include media ('md') {
             font-size: 46px;
@@ -33,7 +33,7 @@
     &__safe {
         text-align: center;
         font-family: $font-default-name;
-        line-height: .4;
+        line-height: 0;
         font-weight: 400;
         font-size: 22px;
         letter-spacing: 6px;
@@ -78,7 +78,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 145px;
+        width: 150px;
         cursor: pointer;
         background: rgb(73, 107, 254);
         background: linear-gradient(
@@ -115,11 +115,12 @@
 .button {
 
     &__text {
-        padding-left: 18px;
+        padding-left: 27px;
+        letter-spacing: 1px;
     }
 
     &__img {
-
+        margin-right: 7px;
         @include media ('sm') {
             margin-left: 20px;
         }

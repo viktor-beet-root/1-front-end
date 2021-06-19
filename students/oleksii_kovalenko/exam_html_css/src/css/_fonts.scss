@@ -2,4 +2,6 @@
 
 @include fonts($font-default-name, 'josefinsansbold', 700);
 
+@include fonts($font-default-name, 'josefinsansexbold', 900);
+
 @include fonts($font-second-name, 'aleoregular', 400);
