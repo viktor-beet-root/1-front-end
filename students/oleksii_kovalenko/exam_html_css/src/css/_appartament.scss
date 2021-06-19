@@ -7,6 +7,12 @@
 
     padding-top: 215px;
     padding-bottom: 86px;
+
+        @include media ("md") {
+            padding-top: 120px;
+            padding-bottom: 70px;;
+        }
+
     &_appartament {
         background-image: url(../image/appartaments.jpg);
         background-repeat: no-repeat;

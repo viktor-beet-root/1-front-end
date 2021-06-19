@@ -4,6 +4,10 @@
     background-size: cover;
     padding: 90px 0;
 
+        @include media("md") {
+        padding: 0;
+        }
+
     &__row {
         flex-wrap: nowrap;
 
