@@ -116,7 +116,6 @@
             margin: 0px;
         }
     }
-
 }
 
 @media screen and (max-width:992px) {
@@ -129,14 +128,21 @@
     }
 }
 
+.search-select__svg-two .search-select__svg-fill {
+    fill: #FF6363;
+}
+
+.search-select__svg-three .search-select__svg-fill {
+    fill: #00A2FF;
+}
+
 .search-select {
 
     &__svg-fill {
         fill: #5474fd;
 
         &:hover {
-            fill: #ff6363;
+            fill: $color-white;
         }
-
     }
 }

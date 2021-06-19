@@ -86,3 +86,36 @@
         }
     }
 }
+
+@media screen and (max-width:768px) {
+    .testimonial__right {
+        order: -1;
+    }
+
+    .testimonial__title_poposition {
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .testimonial__right-quote_position {
+        padding: 0px 0px 0px 10px;
+    }
+
+    .testimonial__right_position {
+        margin-bottom: 26px;
+    }
+
+    .testimonial__right-title_position {
+        padding: 25px 0 10px 15px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .testimonial__right-quote_position {
+        font-size: 14px;
+    }
+
+    .testimonial__right-title_position {
+        font-size: 18px;
+    }
+}

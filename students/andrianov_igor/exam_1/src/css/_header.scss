@@ -8,6 +8,7 @@
 
     &__container {
         height: calc(100vh - 97px);
+        min-height: 500px;
     }
 
     &__title {
@@ -281,9 +282,8 @@
         display: block;
         position: absolute;
         width: 100%;
-        bottom: 0;
+        top: 0;
         left: 0;
-        transform: translate(100%);
         max-height: 0;
         font-size: 0;
         transform: translate(-150%);
@@ -606,5 +606,25 @@
 @media screen and (max-width:1200px) {
     .header__container {
         height: 0%;
+    }
+}
+
+@media screen and (max-height: 722px) {
+    .header__title {
+        margin-top: 170px;
+    }
+
+    .header__search-form {
+        margin-bottom: 75px;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .header__title {
+        margin-top: 110px;
+    }
+
+    .header__search-form {
+        margin-bottom: 55px;
     }
 }

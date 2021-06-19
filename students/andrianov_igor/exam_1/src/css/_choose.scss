@@ -91,3 +91,17 @@
         }
     }
 }
+
+@media screen and (max-width:768px) {
+    .choose__title {
+        padding: 15px 0 5px 0;
+    }
+
+    .choose__col-left {
+        margin-bottom: 0px;
+    }
+
+    .choose__btn {
+        margin-bottom: 16px;
+    }
+}
