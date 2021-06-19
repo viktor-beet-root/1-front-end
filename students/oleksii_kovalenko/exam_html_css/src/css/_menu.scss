@@ -12,6 +12,10 @@
         display: flex;
         justify-content: space-between;
         position: relative;
+        padding: 11px 0 15px ;
+            @include media ('lg') {
+                padding: 10px;
+            }
     }
 
     &__list {
@@ -35,7 +39,7 @@
     &__item {
 
         &:not(:last-child) {
-            margin-right: 30px;
+            margin-right: 42px;
 
             @include media ('md') {
                 border-bottom: 1px solid $black;
