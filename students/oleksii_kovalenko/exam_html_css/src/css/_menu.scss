@@ -16,6 +16,7 @@
             @include media ('lg') {
                 padding: 10px;
             }
+        
     }
 
     &__list {
@@ -29,10 +30,16 @@
             position: absolute;
             left: 0;
             right: 0;
-            top: -249%;
-            background-color: $white;
+            bottom: 70px;
+            height: 776px;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
             transform: translateX(-100%);
             transition: all 0.5s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
     }
 
@@ -50,11 +57,8 @@
         @include media ('md') {
             border-bottom: 1px solid $black;
             text-align: center;
-            padding: 5px 0;
-
-            &:hover {
-                border-left: 5px solid $dodger-blue;
-            }
+            padding: 30px 0;
+            width: 60%;
         }
     }
 
@@ -69,6 +73,10 @@
 
         @include media ('md') {
             color: $dodger-blue;
+
+            &:hover {
+                transform: scale(1.6);
+            }
         }
 
     }

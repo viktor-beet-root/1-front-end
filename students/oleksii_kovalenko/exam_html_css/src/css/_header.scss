@@ -25,7 +25,7 @@
         }
 
         @include media ('sm') {
-            font-size: 42px;
+            font-size: 39px;
         }
 
     }
@@ -38,6 +38,9 @@
         font-size: 22px;
         letter-spacing: 6px;
         padding-bottom: 27px;
+            @include media ('sm') {
+                font-size: 15px;
+            }
     }
 
     &__scroll {
