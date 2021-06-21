@@ -1,5 +1,4 @@
-
- // 1. Подсчитать сумму всех чисел в заданном пользователем диапазоне.
+// 1. Подсчитать сумму всех чисел в заданном пользователем диапазоне.
 
 const fisrtNum= +prompt('Введите число от ', '');
 const lastNum = +prompt('Введите число до ', '');
@@ -68,15 +67,18 @@ let negativeNumber = 0;
 
 for (let g =1; g <= 10; g++){
     userNumbers = +prompt('Введите число ', '');
-    if (userNumbers % 2) {
-        oddNumber = ++oddNumber 
-    } evenNumber = ++evenNumber;
+    if (userNumbers % 2 == 0) {
+        oddNumber = ++oddNumber
+    }
+    if (userNumbers % 2 == !0) {
+        evenNumber = ++evenNumber;
+    }
     if (userNumbers > 0) {
         ++positiveNumber;
     } else if (userNumbers < 0){
         ++negativeNumber;
     } else ++zero;
-}
+}  
 
 const resultEvenNumber = 'Количество четных ' + evenNumber;
 const resultFOddNumber = 'Количество нечетных ' + oddNumber;
@@ -200,4 +202,3 @@ const randomNum = {
 
 randomNum.setNum(prompt("Введите число от 1 до 100"));
 randomNum.getNumber();
-

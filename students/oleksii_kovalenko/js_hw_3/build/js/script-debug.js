@@ -62,11 +62,13 @@ var negativeNumber = 0;
 for (var g = 1; g <= 10; g++) {
   userNumbers = +prompt('Введите число ', '');
 
-  if (userNumbers % 2) {
+  if (userNumbers % 2 == 0) {
     oddNumber = ++oddNumber;
   }
 
-  evenNumber = ++evenNumber;
+  if (userNumbers % 2 == !0) {
+    evenNumber = ++evenNumber;
+  }
 
   if (userNumbers > 0) {
     ++positiveNumber;
