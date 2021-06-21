@@ -68,7 +68,9 @@ let negativeNumber = 0;
 
 for (let g =1; g <= 10; g++){
     userNumbers = +prompt('Введите число ', '');
-    (userNumbers % 2) ? oddNumber = ++oddNumber : evenNumber = ++evenNumber;
+    if (userNumbers % 2) {
+        oddNumber = ++oddNumber 
+    } evenNumber = ++evenNumber;
     if (userNumbers > 0) {
         ++positiveNumber;
     } else if (userNumbers < 0){
@@ -198,3 +200,4 @@ const randomNum = {
 
 randomNum.setNum(prompt("Введите число от 1 до 100"));
 randomNum.getNumber();
+
