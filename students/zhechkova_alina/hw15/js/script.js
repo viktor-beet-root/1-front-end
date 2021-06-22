@@ -65,25 +65,7 @@ console.log(time(56));
 Функция сокращения объекта-дроби.
 */
 
-const frac = {
-    denomFirst: 1,
-    numerFirst: 2,
-    denomSecond: 5,
-    numerSecond: 9,
-}
-
-function commonDiv(a, b) {
-    let maxNum = (a > b) ? a : b;
-    let minNum = (a < b) ? a : b;
-    let delitel = 100;
-    let result = null;
-    while (--delitel > maxNum) {
-        if (delitel % maxNum !== 0 && delitel % minNum !== 0) result = delitel;
-    }
-    result = delitel;
-    return result;
-}
-console.log(commonDiv(8, 6));
+// не успела сделать, сделаю - добавлю)
 
 /*
 3. Создать объект, описывающий время (часы, минуты, секунды), и следующие функции для работы с этим объектом: 
@@ -149,29 +131,32 @@ console.log(timeObj.getTime());
 timeObj.changeMin(120);
 console.log(timeObj.getTime());
 
-/*
+
 // Угадай число
-const number =prompt('Введите число от 1 до 100');
-let max=  100;
-let min= 0;
-let answer= '';
+const number = prompt('Введите число от 1 до 100');
+let max = 100;
+let min = 0;
+let answer = '';
 let num = 0;
+
 function getNumber(number) {
     if (!validateNumb(number)) return;
-         num = number;
-    };
-    function validateNumb(number) {
-        return (number !== null && number !== undefined && !Number.isNaN(+number) && (number < this.max && number > this.min) )
-    };
+    num = number;
+};
+
+function validateNumb(number) {
+    return (number !== null && number !== undefined && !Number.isNaN(+number) && (number < this.max && number > this.min))
+};
+
 function getNumber() {
     let num1 = min;
     let num2 = max;
     let tmpNum = 0;
     let answer = '';
-    while(answer !== '==') {
+    while (answer !== '==') {
         tmpNum = ~~((num1 + num2) / 2)
         answer = prompt(`Ваше число ${tmpNum}? Равно: ==, больше: > , меньше: <`);
-        if (answer === '=='){ 
+        if (answer === '==') {
             break
         } else if (answer === 'больше') {
             num1 = tmpNum
@@ -181,4 +166,3 @@ function getNumber() {
     }
 };
 getNumber();
-*/
