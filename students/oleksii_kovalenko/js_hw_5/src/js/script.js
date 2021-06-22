@@ -30,6 +30,7 @@ function calcTime(distance) {
     time = time + Math.floor( time / 4 );
 
     let timeResult = 'Time to distenation: ' + time + ' hours';
+
     return timeResult;
 }
 
@@ -50,9 +51,60 @@ const secondFraction = {
 };
 
 // 2.1. Функция сложения 2-х объектов-дробей;
+
+function validFraction(fraction) {
+    for (let key in fraction) {
+        return (fraction[key] === undefined || +fraction[key] === 0 || isNaN(fraction[key]));
+    }
+}
+
+function fractionTotal() {
+    if (validFraction(firstFraction) || validFraction(firstFraction)) return "Error";
+
+    const numerator = firstFraction.numerator * secondFraction.denominator + secondFraction.numerator * firstFraction.denominator;
+    const denominator = firstFraction.denominator * secondFraction.denominator;
+
+    return fractionReduction(numerator, denominator);
+}
+console.log(fractionTotal());
+
 // 2.2. Функция вычитания 2-х объектов-дробей;
+
+function fractionSubtraction() {
+    if (validFraction(firstFraction) || validFraction(firstFraction)) return "Error";
+
+    const numerator = firstFraction.numerator * secondFraction.denominator - secondFraction.numerator * firstFraction.denominator;
+    const denominator = firstFraction.denominator * secondFraction.denominator;
+
+    return fractionReduction(numerator, denominator);
+}
+console.log(fractionSubtraction());
+
 // 2.3. Функция умножения 2-х объектов-дробей;
+
+function fractionMultiplication() {
+
+    if (validFraction(firstFraction) || validFraction(firstFraction)) return "Error";
+    const numerator = firstFraction.numerator * secondFraction.numerator;
+    const denominator = firstFraction.denominator * secondFraction.denominator;
+
+    return fractionReduction(numerator, denominator);
+}
+console.log(fractionMultiplication());
+
 // 2.4. Функция деления 2-х объектов-дробей;
+
+function fractionDivision() {
+
+    if (validFraction(firstFraction) || validFraction(firstFraction)) return "Error";
+
+    const numerator = firstFraction.numerator * secondFraction.denominator;
+    const denominator = firstFraction.denominator * secondFraction.numerator;
+
+    return fractionReduction(numerator, denominator);
+}
+console.log(fractionDivision());
+
 // 2.5.Функция сокращения объекта-дроби.
 
 
