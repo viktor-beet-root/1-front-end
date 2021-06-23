@@ -8,7 +8,7 @@ get-свойство, возвращающее диаметр окружност
 метод, вычисляющий длину окружности.
 Продемонстрировать работу свойств и методов. 
 */
-class Circle1 {
+class Circle {
     constructor(rad) {
         this._radius = rad;
     }
@@ -29,12 +29,13 @@ class Circle1 {
         this._radius = newRadius;
     }
 }
-const newCircle1 = new Circle1(10);
+const newCircle1 = new Circle(10);
 
 console.log(newCircle1.radius, newCircle1.diam, newCircle1.getCircleWidth())
 
 newCircle1.newRad = 100;
-console.log(newCircle1.radius)
+console.log(newCircle1.radius);
+
 /*
 2) Реализовать класс, описывающий простой маркер. В классе должны быть следующие компоненты:
 
@@ -52,7 +53,8 @@ class Marker {
     }
     print(text) {
         const p = createElement('p', 'div');
-        p.setAttribute('style', `color: ${this._color}`);
+        p.style.color = this._color;
+        p.style.paddingTop = '10px';
         let arr = text.split('')
         let indexOfSpace = getArrayFromStr(arr)
         getQtyItem(indexOfSpace, arr);
@@ -60,6 +62,22 @@ class Marker {
         p.textContent = result;
     }
 }
+class AddMarkerInk extends Marker {
+    constructor(options) {
+        super(options);
+        console.log(this)
+    }
+    addInk(value) {
+        this._ink = this._ink + value;
+        if (this._ink > 100) this._ink = 100;
+    };
+}
+const markerAddInk = new AddMarkerInk({
+    color: 'gray',
+    ink: 35,
+});
+markerAddInk.addInk(10)
+console.log(markerAddInk.print('asdasdlkjlsdk'))
 
 function getArrayFromStr(array) {
     let indexArr = [];
@@ -104,7 +122,6 @@ function createElement(name, id) {
     return element;
 
 }
-
 
 function getQtyItem(index, array) {
     index.forEach(function (item) {
@@ -156,15 +173,3 @@ employeeList.setNewEmployee({
     position: 'banker'
 });
 console.log(employeeList);
-/*class EmpTable {
-    constructor(options) {
-        this._array = options;
-    }
-    getHtml() {
-        const table = createElement('table', 'div2');
-        table.setAttribute('id', 'table');
-        const tr = createElement('tr', 'table');
-        tr.setAttribute('id', 'tr');
-    }
-}
-*/
