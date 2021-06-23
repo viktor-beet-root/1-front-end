@@ -1,8 +1,35 @@
+$font-Open-Sans: 'Open Sans',
+Arial,
+Helvetica,
+sans-serif;
+$font-Gotham: 'Gotham',
+Arial,
+Helvetica,
+sans-serif;
+$font-Gothambook: 'GothamBook',
+Arial,
+Helvetica,
+sans-serif;
+
+$color-white: #ffffff;
+$color-pickled-bluewood: #2c4058;
+$color-river-bed: #4b5562;
+$color-malibu: #55b7ff;
+$color-heliotrope: #7e5aff;
+$color-cornflower-blue: #7e5cfd;
+$color-tundora:#4b4b4b;
+
+
+$color-primary-light: $color-white;
+
+
+
+
 
 $breack-points: ("xl": 1200px,
     "lg": 992px,
     "md": 768px,
     "sm": 576px);
 
-$container-width: 1140px;
+$container-width: 1200px;
 $default-gap: 15px;
