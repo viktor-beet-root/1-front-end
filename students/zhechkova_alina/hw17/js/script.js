@@ -8,28 +8,6 @@ get-свойство, возвращающее диаметр окружност
 метод, вычисляющий длину окружности.
 Продемонстрировать работу свойств и методов. 
 */
-function Circle(radius) {
-    this.radius = radius;
-    this.getRadius = function () {
-        return radius;
-    }
-    this.getDiam = function () {
-        return radius * 2;
-    }
-}
-
-Circle.prototype.getCircleArea = function (radius) {
-    return radius ** 2 * Math.PI();
-};
-Circle.prototype.getCircleWidth = function (radius) {
-    return radius * 2 * Math.PI();
-};
-
-const newCircle = new Circle(10);
-console.log(newCircle.getRadius())
-
-
-// вариант с объявлением класса
 class Circle1 {
     constructor(rad) {
         this._radius = rad;
@@ -73,7 +51,8 @@ class Marker {
         this._ink = options.ink;
     }
     print(text) {
-        const p = createElement('p', this);
+        const p = createElement('p', 'div');
+        p.setAttribute('style', `color: ${this._color}`);
         let arr = text.split('')
         let indexOfSpace = getArrayFromStr(arr)
         getQtyItem(indexOfSpace, arr);
@@ -92,7 +71,7 @@ function getArrayFromStr(array) {
 
 function getText(defaultArray, arr, text) {
     let result = getQtyInk(defaultArray, arr);
-    addSpace(text, arr, result);
+    addSpace(text, result);
     return result.join('');;
 }
 
@@ -108,7 +87,7 @@ function getQtyInk(defaultArray, arr) {
     return result;
 }
 
-function addSpace(text, arr, result) {
+function addSpace(text, result) {
     let index = getArrayFromStr(text.split(''));
     index.forEach(function (item) {
         result.splice(item, 0, ' ');
@@ -118,13 +97,14 @@ function addSpace(text, arr, result) {
     });
 }
 
-function createElement(name, arr) {
+function createElement(name, id) {
     const element = document.createElement(name);
-    element.setAttribute('style', `color: ${arr._color}`);
-    const div = document.getElementById('div');
+    const div = document.getElementById(id);
     div.prepend(element);
     return element;
+
 }
+
 
 function getQtyItem(index, array) {
     index.forEach(function (item) {
@@ -139,9 +119,52 @@ const newMarker = new Marker({
     color: 'red',
     ink: 35,
 })
-newMarker.print('Lorem ssssssssssss sss ssdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssdssssssssssssssssssssssssssssss');
+newMarker.print('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum');
 
 /*
 3) Реализовать класс Employee, описывающий работника, и создать массив работников банка.
 Реализовать класс EmpTable для генерации HTML-кода таблицы со списком работников банка. Массив работников необходимо передавать через конструктор, а получать HTML-код с помощью метода getHtml().
 Создать объект класса EmpTable и вывести на экран результат работы метода getHtml().*/
+
+
+function Employee(options) {
+    this.employeeList = [];
+}
+Employee.prototype.setNewEmployee = function (options) {
+    if (!options) return;
+    const employee = new ConstrutEmployee(options);
+    this.employeeList.push(employee)
+}
+
+function ConstrutEmployee(options) {
+    this.name = options.name;
+    this.age = options.age;
+    this.state = options.state;
+    this.position = options.position;
+}
+const employeeList = new Employee()
+employeeList.setNewEmployee({
+    name: 'Valera',
+    age: 19,
+    state: 'male',
+    position: 'banker'
+})
+employeeList.setNewEmployee({
+    name: 'Stepa',
+    age: 28,
+    state: 'male',
+    position: 'banker'
+});
+console.log(employeeList);
+/*class EmpTable {
+    constructor(options) {
+        this._array = options;
+    }
+    getHtml() {
+        const table = createElement('table', 'div2');
+        table.setAttribute('id', 'table');
+        const tr = createElement('tr', 'table');
+        tr.setAttribute('id', 'tr');
+    }
+}
+*/
