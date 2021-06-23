@@ -58,6 +58,7 @@ console.log(shoppingList);
 
 // Добавление покупки в список.Учтите, что при добавлении покупки с уже существующим в списке продуктом, необходимо увеличивать количество в существующей покупке, а не добавлять новую.
 function addProduct(options) {
+    if (!options) return;
     const trueFalse = this.find(element => {
         if (element.name === options.name) return true;
     });
@@ -174,6 +175,7 @@ const arrCss = [{
 }, ]
 
 function docStyle(styleName, text) {
+    if (!text) return;
     const p = document.createElement('p');
     p.textContent = text;
     const cssStyle = this.find(function (item) {
@@ -221,6 +223,7 @@ console.log(getOnScreen.call(auditory, 'faculty'));
 
 // Вывод на экран аудиторий для указанного факультета;
 function getForFaculty(faculty) {
+    if (!faculty) return;
     let result = [];
     this.find(function (item) {
         if (item.faculty === faculty) result.push(item);
