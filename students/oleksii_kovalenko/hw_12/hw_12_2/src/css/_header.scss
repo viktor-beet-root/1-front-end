@@ -1,0 +1,22 @@
+.header{
+    position: relative;
+}
+
+.header-position {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,19%);
+}
+
+.logo {
+    font-size: 50px;
+    font-family: $font-logo-name;
+
+         @include media ('md') {
+        text-align: center;
+        }
+}
+
+

@@ -1,0 +1,28 @@
+.footer {
+    background-color: $signal-balck;
+    color: $silver;
+    font-size: 15px;
+
+    &__box{
+        text-align: center ;
+    }
+
+    &__company{
+        font-size: 16px;
+    }
+
+    &__logo{
+        font-size: 25px;
+        font-family: $font-logo-name;
+    }
+
+    &__autor{
+        font-size: 15px;
+    }
+
+    &__author_color{
+        color: $radical-red;
+    }
+}
+
+
