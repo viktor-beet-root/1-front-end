@@ -1,0 +1,32 @@
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 9px;
+    height: 9px;
+    color: black;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background-color: transparent;
+    outline: none;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+.slick-dots li.slick-active button {
+    background-color: #fff;
+}
+.slick-dots{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+.slick-prev,
+.slick-next{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0)
+}
+

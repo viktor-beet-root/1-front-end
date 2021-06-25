@@ -1,0 +1,173 @@
+.whatwedo {
+    overflow: hidden;
+
+    // .whatwedo__container
+
+    &__container {
+        padding-top: 96px;
+        padding-bottom: 140px;  
+    }
+
+    // .whatwedo__title
+
+    &__title {
+        color: $color-primary-dark;
+        font-family: $font-Gotham;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: center;
+        text-transform: uppercase;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 1px;
+            border: 1px solid $color-primary-dark;
+            background-color: $color-primary-dark;
+            margin: 0 auto;
+        }
+    }
+
+    // .whatwedo__text
+
+    &__text {
+        padding-top: 46px;
+        padding-bottom: 129px;
+    }
+
+    // .whatwedo__row
+
+    &__row {}
+
+    // .whatwedo__col
+
+    &__col {}
+
+    // .whatwedo__img-wraper
+
+    &__img-wraper {
+        position: relative;
+        
+
+        &::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: $color-malibu;
+            position: absolute;
+            left: -260px;
+            top: -70px;
+            z-index: -1;
+}
+}
+
+    // .whatwedo__img
+
+    &__img {}
+
+    // .whatwedo__description
+
+    &__description {
+        padding-top: 65px;
+    }
+}
+
+.container {}
+
+.row {}
+
+.col-7 {}
+
+.col-5 {}
+
+.description {
+
+    // .description__sub-title
+
+    &__sub-title {
+        display: block;
+        color: $color-primary-dark;
+        font-family: $font-Gothambook;
+        font-size: 22px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    // .description__title
+
+    &__title {
+        color: $color-primary-dark;
+        font-family: $font-Gotham;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+
+    // .description__text
+
+    &__text {
+        color: $color-p;
+        font-family: $font-Open-Sans;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.7;
+        margin-bottom: 36px;
+    }
+
+    // .description__button
+
+    &__button {
+        margin-bottom: 60px;
+
+    }
+
+    // .description__link
+
+    &__link {
+        width: 331px;
+        height: 18px;
+        color: #2c4058;
+        font-family: $font-Open-Sans;
+        font-size: 18px;
+        font-style: italic;
+        line-height: 1.66;
+        text-decoration: none;
+    }
+}
+
+.btn {
+    display: block;
+    background-color: transparent;
+    width: 190px;
+    height: 50px;
+    border: 1px solid $color-primary-dark;
+    color: $color-primary-dark;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: $font-Gothambook;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+
+.fas {}
+
+.fa-map-marker-alt {
+    margin-right: 8px;
+}
+
+.whatwedo__img-wraper_r {
+    position: relative;
+
+    &::before {
+        background-color: $color-heliotrope;
+        right:  -260px;
+        left: auto;
+       
+}
+}
