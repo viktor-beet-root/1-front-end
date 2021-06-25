@@ -1,0 +1,105 @@
+// Color palette
+$color-white: white;
+$color-black: #000;
+$grey: #5a5a5a;
+$dodger-blue: #5474FD;
+$window-red: #de2e45;
+$window-text-grey: #b9bcd1;
+$mercury:#E1E1E1;
+$abbey:#999;
+$mine-shaft:#232323;
+
+
+
+// Defaul Border and border radius and color
+$input-border-color: $grey;
+$default-border: 1px solid $input-border-color;
+$default-border-radius: 5px;
+
+
+
+// Ширина Контейнера и Паддинг для Tipografy
+$container-width: 1110px;
+$default-gap: 15px;
+
+
+// Defaul body bg color
+$body-bg-color: $color-white;
+$border-color: $grey;
+
+
+//header title color
+$color-header-title-h1:$color-white;
+$color-header-button-bg:$dodger-blue;
+$color-header-navigation-bg:$dodger-blue;
+
+//menu
+$border-menu-bottom:$grey;
+$menu-hover-color:$dodger-blue;
+$menu-default-text-color:$grey;
+$menu-icon-color:$grey;
+$color-overlay-menu-window:$color-white;
+$color-overlay-menu:$color-black;
+$color-language-deafult:$grey;
+
+// section choose
+$color-choose-title:$color-white;
+$color-choose-text:$mercury;
+
+// section search-select
+$color-search-select-title:$mercury;
+$color-search-select-bg:$mine-shaft;
+
+//section travel color
+$color-title-travel:$mercury;
+$color-sub-title-travel:$color-white;
+$color-text-title-travel:$mercury;
+$color-btn-bg-travel:$dodger-blue;
+$color-btn-text-travel:$color-white;
+$color-bg-col-travel:$mine-shaft;
+
+//section testimonial
+$color-title-testimonial:$color-white;
+$color-sub-title-testimonial:$color-white;
+$color-text-testimonial:$mercury;
+
+//footer
+$color-footer-bg:$mine-shaft;
+$color-footer-title:$color-white;
+$color-footer-sub-title:$color-white;
+$color-footer-social-icon:$mercury;
+$color-footer-social-icon-hover:$dodger-blue;
+
+
+
+// Кнопка с ховер эффектом
+$color-btn-bg:$dodger-blue;
+$color-btn-text:$color-white;
+
+
+
+// Подключение шрифтов
+$font-folder-path: '../fonts/';
+$folder-image: '../image/';
+
+$font-default-name: 'Josefin Sans';
+$font-second-name: 'Aleo';
+
+$follback: Arial,
+Helvetica,
+sans-serif;
+
+$font-dafault: $font-default-name,
+$follback;
+
+$default-font-size: 16px;
+$default-line-height: 2.1875;
+$default-color-text: $grey;
+
+
+
+// Breack-points для Media @media screen
+$breack-points: ("xl": 1200px,
+    "lg": 992px,
+    "md": 768px,
+    "sm": 576px);

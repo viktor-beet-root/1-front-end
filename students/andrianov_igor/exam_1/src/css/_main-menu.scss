@@ -1,0 +1,161 @@
+.overlay-menu {
+    background-color: rgba($color-overlay-menu, 0.75);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+
+
+    &__window {
+        top: 83px;
+        background-color: $color-overlay-menu-window;
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 62px 0 60px;
+        border-radius: 10px;
+    }
+
+    &__wrapper {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+}
+
+.menu {
+    text-align: center;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 98px;
+    text-align: center;
+    border-bottom: 1px solid $border-menu-bottom;
+    margin-bottom: 75px;
+
+    &__link {
+        text-decoration: none;
+        color: $mercury;
+
+    }
+
+    &__item:last-child {
+        margin-bottom: 55px;
+    }
+
+    &__link:hover {
+        color: $menu-hover-color;
+    }
+}
+
+.icon {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 23px;
+    margin-bottom: 8px;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 51px;
+        height: 51px;
+        background-color: $mercury;
+        padding: 10px;
+        align-items: center;
+
+        &:hover {
+            background-color: $dodger-blue;
+        }
+    }
+
+    &__link {
+        display: flex;
+    }
+
+    &__svg {
+        fill: white;
+        height: 30px;
+
+        &_second {
+            height: 25px;
+        }
+    }
+
+}
+
+
+.language {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    align-items: center;
+    bottom: 13px;
+
+    &__link {
+        text-decoration: none;
+        color: $color-language-deafult;
+        display: block;
+    }
+
+    &__img {
+        margin-left: 15px;
+        width: 37px;
+        height: 22px;
+    }
+
+}
+
+.menu-close {
+    position: absolute;
+    right: 32px;
+    top: 13px;
+    width: 11px;
+    height: 18px;
+
+    &:checked {
+        display: none;
+    }
+
+    &:before,
+    &:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 2px;
+        background-color: $dodger-blue;
+    }
+
+    &:before {
+        transform: rotate(45deg);
+    }
+
+    &:after {
+        transform: rotate(-45deg);
+    }
+
+    &:checked {
+        display: none;
+    }
+
+}
+
+
+.menu-close-button {
+
+    &:checked {
+        ~.overlay-menu {
+            display: block;
+        }
+    }
+
+}
+
+.menu-close__button {
+    padding: 12px 37px 10px 0px;
+    cursor: pointer;
+
+}

@@ -1,0 +1,21 @@
+.btn-text {
+    display: block;
+    font-size: 18px;
+    font-family: $font-second-name;
+    text-transform: uppercase;
+    color: $color-btn-text;
+    text-decoration: none;
+    width: 225px;
+    height: 60px;
+    background: $color-btn-bg;
+    text-align: center;
+    padding: 13px;
+    background: linear-gradient(47deg, #496bfe 0%, #496bfe 79%, #5474fd 35%, #5474fd 100%);
+    background-size: 340% 100%;
+    background-position: 100%;
+    transition: background-position .5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+
+    &:hover {
+        background-position: 0 100%;
+    }
+}

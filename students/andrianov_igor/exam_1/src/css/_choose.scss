@@ -1,0 +1,107 @@
+.choose {
+    background-image: url(../image/choose-us-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title {
+        font-size: 36px;
+        font-family: $font-second-name;
+        font-weight: 400;
+        color: $color-choose-title;
+        padding: 166px 0 36px 0;
+    }
+
+    &__text-top {
+        font-family: $font-default-name;
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: 0.1em;
+        line-height: 26px;
+        padding: 0px 1px;
+        line-height: 26px;
+        letter-spacing: 0.069em;
+        color: $color-choose-text;
+    }
+
+    &__text-bot {
+        font-family: $font-default-name;
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: 0.1em;
+        line-height: 26px;
+        padding: 26px 1px;
+        line-height: 26px;
+        letter-spacing: 0.069em;
+        color: $color-choose-text;
+    }
+
+    &__btn {
+        padding: 16px 0px 0px 0px;
+    }
+
+    &__col-left {
+        margin-bottom: 105px;
+    }
+
+    &__img-top {
+        display: block;
+        max-width: 350px;
+        width: 100%;
+        margin: 104px 0px 0px 80px;
+    }
+
+    &__img-bot {
+        display: block;
+        max-width: 350px;
+        width: 100%;
+        margin: 6px 0px 0px 205px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .choose {
+        &__img-top {
+            width: 100%;
+            margin: 0px auto;
+            padding-top: 40px;
+        }
+
+        &__img-bot {
+            width: 100%;
+            margin: 20px auto;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .choose {
+        &__title {
+            text-align: center;
+        }
+
+        &__text-top,
+        &__text-bot {
+            text-align: center;
+        }
+
+        &__btn {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 45px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .choose__title {
+        padding: 15px 0 5px 0;
+    }
+
+    .choose__col-left {
+        margin-bottom: 0px;
+    }
+
+    .choose__btn {
+        margin-bottom: 16px;
+    }
+}

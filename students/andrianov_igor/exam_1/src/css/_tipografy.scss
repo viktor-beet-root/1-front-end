@@ -1,0 +1,41 @@
+@include grid();
+
+.page {
+    font-family: $font-dafault;
+    font-size: $default-font-size;
+    line-height: $default-line-height;
+    // @include bg-cover('../image/bg.jpg');
+    min-height: 100vh;
+    color: $default-color-text;
+    background-color: #fff;
+    border: 15px solid white;
+}
+
+.container {
+    max-width: $container-width;
+    width: 100%;
+    margin: 0 auto;
+    padding: $default-gap;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 (-$default-gap);
+}
+
+[class^="col-"] {
+    padding: $default-gap;
+}
+
+img {
+    max-width: 100%;
+}
+
+.black {
+    background-color: black;
+}
+
+.row_relative {
+    position: relative;
+}
