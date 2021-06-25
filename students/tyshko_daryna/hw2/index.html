@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+</head>
+
+<body>
+    <header>
+        <h1>Список покупок</h1>
+        <nav>
+            <ul>
+                <li><a href="#vegetables">Овочі</a></li>
+                <li><a href="#fruits">Фрукти</a></li>
+                <li><a href="#dairy_products">Молочні продукти</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Розгорнутій список покупок</h2>
+            <section id="vegetables">
+                <h3>Овочі</h3>
+                <form action="#">
+                    <ol>
+                        <li><label><input type="checkbox" name="cucumbers">Огірки</label></li>
+                        <li><label><input type="checkbox" name="tomatoes">Помідори</label></li>
+                        <li><label><input type="checkbox" name="potato">Картопля</label></li>
+                        <li><label><input type="checkbox" name="carrots">Морква</label></li>
+                    </ol>
+                </form>
+            </section>
+            <section id="fruits">
+                <h3>Фрукти</h3>
+                <form action="#">
+                    <ol>
+                        <li><label><input type="checkbox" name="grape">Виноград</label></li>
+                        <li><label><input type="checkbox" name="apples">Яблука</label></li>
+                        <li><label><input type="checkbox" name="bananas">Банани</label></li>
+                        <li><label><input type="checkbox" name="oranges">Апельсини</label></li>
+                        <li><label><input type="checkbox" name="strawberries">Полуниця</label></li>
+                    </ol>
+                </form>
+            </section>
+            <section id="dairy_products">
+                <h3>Молочні продукти</h3>
+                <ol>
+                    <form action="#">
+                        <li><input type="checkbox" id="dairy_pro1" name="milk" value="milk">
+                            <label for="dairy_pro1">Молоко</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="dairy_pro2" name="cream" value="cream">
+                            <label for="dairy_pro2">Вершки</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="dairy_pro3" name="kefit" value="kefit">
+                            <label for="dairy_pro3">Кефір</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="dairy_pro4" name="greek_yogurt" value="greek_yogurt">
+                            <label for="dairy_pro4">Грецький йогурт</label>
+                        </li>
+                    </form>
+                </ol>
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>
