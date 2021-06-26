@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .popup,
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: none;
+        }
+
+        .popup.active,
+        .popup.active .overlay {
+            display: block;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, .75);
+        }
+
+        .window {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 350px;
+            padding: 15px;
+            background-color: #fff;
+            transform: translate(-50%, -50%);
+        }
+
+        .window>div:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .window>div input {
+            display: inline-block;
+            width: 100%;
+            height: 25px;
+            padding: 0 10px;
+            box-sizing: border-box;
+            bottom: 1px solid gray;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+    <div class="popup">
+        <div class="overlay">
+            <div class="window">
+                <div>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <input type="text" id="date">
+                </div>
+                <div>
+                    <button type="button" id="popupBtn">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
