@@ -1,4 +1,3 @@
-//2. Создать HTML-страницу с кнопкой "Открыть" и модальным окном. На модальном окне должен быть текст и кнопка "Закрыть". Изначально модальное окно не отображается. При клике на кнопку "Открыть" появляется модальное окно, на кнопку "Закрыть" – исчезает.
 function createElem(options) {
     const tag = document.createElement(options.tagName);
     addClass(tag, options.classList);
@@ -44,35 +43,95 @@ function addContent(node, content) {
 }
 
 function addStyle(node, styleList) {
-    if (!node && !styleList) return;
+    if (!node || !styleList) return;
     for (let key in styleList) {
         node.style[key] = styleList[key];
     }
 }
 
 
+//2. Создать HTML-страницу с кнопкой "Открыть" и модальным окном. На модальном окне должен быть текст и кнопка "Закрыть". Изначально модальное окно не отображается. При клике на кнопку "Открыть" появляется модальное окно, на кнопку "Закрыть" – исчезает.
 
+function ModalWindowConstructor() {
+    let count = 0;
 
+    class Modal {
+        constructor(options) {
+            this.id = count++;
+            this.init(options);
+        }
+        init(options) {
+            this.$defaultElement = document.getElementById('app');
+            this.defaultClass = options.defaultClass || 'modal';
+            this.$btnOpen = createElem({
+                tagName: 'button',
+                classList: 'btn',
+                attributes: {
+                    id: `btnOpen${this.id}`,
+                    type: 'button'
+                },
+                content: 'Open',
+                events: {
+                    eventName: 'click',
+                    handler: this.togglePopUp.bind(this),
+                }
+            });
+            this.$modalObj = createElem({
+                tagName: 'div',
+                classList: this.defaultClass,
+                content: createElem({
+                    tagName: 'div',
+                    classList: `${this.defaultClass}-dialog`,
+                    content: createElem({
+                        tagName: 'div',
+                        classList: `${this.defaultClass}-content`,
+                        content: [createElem({
+                                tagName: 'h3',
+                                classList: `${this.defaultClass}-title`,
+                                content: options.title,
+                            }), createElem({
+                                tagName: 'p',
+                                classList: `${this.defaultClass}-text`,
+                                content: options.text,
+                            }),
+                            createElem({
+                                tagName: 'button',
+                                classList: 'btn',
+                                attributes: {
+                                    id: `btnClose${this.id}`,
+                                    type: 'button'
+                                },
+                                content: 'close',
+                                events: {
+                                    eventName: 'click',
+                                    handler: this.togglePopUp.bind(this),
+                                }
+                            })
+                        ],
+                    })
+                })
+            });
+            this.$defaultElement.append(this.$btnOpen, this.$modalObj);
+        }
+        togglePopUp() {
+            this.$modalObj.classList.toggle('active');
+        }
+    }
+    return Modal;
+};
 
-function modalW() {
-    const popUp = document.getElementById('openModal');
-    openPopUp(popUp);
-    closePopUp(popUp);
-}
+const ModalWindow = new ModalWindowConstructor();
 
-function openPopUp(node) {
-    const btnOpen = document.getElementById('btnOpen');
-    addEvents(btnOpen, {
-        eventName: 'click',
-        handler: node.classList.add('active'),
-    });
-}
+const modal = new ModalWindow({
+    title: 'New modal window',
+    text: 'Hello, My name is Alina and this is my new modal window'
+});
 
-function closePopUp(node) {
-    const btnClose = document.getElementById('btnClose');
-    addEvents(btnClose, {
-        eventName: 'click',
-        handler: node.classList.remove('active'),
-    });
-}
-modalW()
+const modal1 = new ModalWindow({
+    title: 'Lkasj',
+    text: 'ksjdnfs'
+});
+const modal3 = new ModalWindow({
+    title: 'sedds',
+    text: 'ksjdnfs'
+});
