@@ -1,62 +1,46 @@
 .hero {
     display: flex;
-    
-    
-&__slide{
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 700px;
-}
-    // .hero__title
+
+    &__slide {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 700px;
+    }
 
     &__title {
         padding: 35px;
     }
 
-    // .hero__title-text
-
     &__title-text {
-color: $color-primary-light;
-font-family: $font-Gotham;
-font-size: 80px;
-font-weight: 700;
-line-height: 1.2;
-text-transform: uppercase;
-letter-spacing: 4px;
-text-align: center;
-@media screen and (max-width: 768px){
-    font-size: 40px;
-}
-    
+        color: $color-primary-light;
+        font-family: $font-Gotham;
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        text-align: center;
 
-
- }
-
-    // .hero__sub-title
-
-    &__sub-title {
+        @media screen and (max-width: 768px) {
+            font-size: 40px;
+        }
     }
-
-    // .hero__sub-title-text
 
     &__sub-title-text {
-color: $color-primary-light;
-font-family: $font-Gothambook;
-font-weight: 400;
-line-height: 22px;
-text-transform: uppercase;
-letter-spacing: 5.4px;
-font-size: 18px;
-text-align: center;
-display: block;
-
+        color: $color-primary-light;
+        font-family: $font-Gothambook;
+        font-weight: 400;
+        line-height: 22px;
+        text-transform: uppercase;
+        letter-spacing: 5.4px;
+        font-size: 18px;
+        text-align: center;
+        display: block;
     }
-
-    // .hero__scroll
 
     &__scroll {
         position: absolute;
@@ -64,13 +48,41 @@ display: block;
         top: 90%;
         transform: translate(-50%, -50%);
     }
+    .slick-prev,
+    .slick-next{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0)
+    }
+    .slick-dots li button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 9px;
+        height: 9px;
+        color: black;
+        padding: 5px;
+        cursor: pointer;
+        border: 1px solid #fff;
+        background-color: transparent;
+        outline: none;
+        border-radius: 50%;
+        margin-bottom: 40px;
+    }
+    .slick-dots li.slick-active button {
+        background-color: #fff;
+    }
+    .slick-dots{
+        position: absolute;
+        right: 6%;
+        top: 50%;
+    }
 }
-.container {
-}
-.scroll {
-    color: $color-primary-light;;
 
-    // .scroll__down
+.scroll {
+    color: $color-primary-light;
 
     &__down {
         width: 40px;
@@ -85,18 +97,9 @@ display: block;
         &:hover {
             opacity: 0.4;
         }
-    
-    }
-
-    // .scroll__icon
-
-    &__icon {
     }
 }
-.fas {
-}
-.fa-angle-down {
-}
+
 .slick-initialized .slick-slide {
     display: flex;
 }

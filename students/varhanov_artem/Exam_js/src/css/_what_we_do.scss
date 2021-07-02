@@ -35,6 +35,9 @@
     &__text {
         padding-top: 46px;
         padding-bottom: 129px;
+        @media screen and (max-width: 992px){
+            padding-bottom: 10px;
+        }
     }
 
     // .whatwedo__row
@@ -43,7 +46,9 @@
 
     // .whatwedo__col
 
-    &__col {}
+    &__col {
+        
+    }
 
     // .whatwedo__img-wraper
 
@@ -66,7 +71,10 @@
 
     // .whatwedo__img
 
-    &__img {}
+    &__img {
+        display: block;
+        width: 100%;
+    }
 
     // .whatwedo__description
 
@@ -170,4 +178,9 @@
         left: auto;
        
 }
+}
+.whatwedo__col_order {
+    @media screen and (max-width: 992px){
+        order: 1;
+    }
 }
