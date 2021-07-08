@@ -1,8 +1,10 @@
 "use strict";
 
+function _readOnlyError(name) { throw new TypeError("\"" + name + "\" is read-only"); }
+
 // Запросить у пользователя его возраст и определить, кем он является: ребенком (0–12), подростком (12–18), взрослым (18-60) или пенсионером (60– ...).
 var userAge = +prompt('Введите свой возраст');
-var userAgeMessage = null;
+var userAgeMessage = '';
 
 if (userAge >= 0 && userAge < 12) {
   userAgeMessage = 'Вы являетесь ребенком';
@@ -21,7 +23,7 @@ if (userAge >= 0 && userAge < 12) {
 console.log(userAgeMessage); // Запросить у пользователя число от 0 до 9 и вывести ему спецсимвол, который расположен на этой клавише (1–!, 2–@, 3–# и т. д).
 
 var num1 = +prompt('Введите цифру от 0 до 9');
-var numSpec = null;
+var numSpec = '';
 
 switch (num1) {
   case 1:
@@ -76,7 +78,7 @@ var numSecond = ~~(num2 / 10) % 10;
 var numThird = num2 % 10;
 var numSame = null;
 
-if (numFirst === numSecond && numSecond === numThird && numFirst === numThird || numFirst === numSecond || numFirst === numThird || numSecond === numThird) {
+if (numFirst === numSecond && numSecond === numThird && numFirst === numThird) {
   numSame = 'В это числе есть одинаковые цифры';
 } else if (Number.isNaN(num2)) {
   numSame = 'Некорректные данные, введите число';
@@ -119,13 +121,16 @@ console.log(palindrome); // Написать конвертор валют. По
 var usdAmount = +prompt('Введите сумму в долларах');
 var chooseCurrency = prompt('Введите, в какую валюту Вы хотите перевести: EUR, UAH или AZN');
 var exchange;
+var eur = 0.82;
+var uah = 27.38;
+var azn = 1.7;
 
 if (chooseCurrency.toUpperCase() === 'EUR') {
-  exchange = usdAmount * 0.82;
+  exchange = usdAmount * eur;
 } else if (chooseCurrency.toUpperCase() === 'UAH') {
-  exchange = usdAmount * 27.38;
+  exchange = usdAmount * uah;
 } else if (chooseCurrency.toUpperCase() === 'AZN') {
-  exchange = usdAmount * 1.70;
+  exchange = usdAmount * azn;
 } else if (Number.isNaN(usdAmount)) {
   exchange = 'Некорректные данные. Введите число';
 }
@@ -197,48 +202,42 @@ console.log(messageQuestion); // Запросить дату (день, меся
 var day = +prompt('Введите день');
 var month = +prompt('Введите месяц');
 var year = +prompt('Введите год');
-var nextDate;
+var quantity;
 var newDay;
 var newMonth;
 var newYear;
+var leapYear = year % 400 === 0 || year % 4 === 0 && year % 100 !== 0 ? true : false;
 
-if (day === 31 && month !== 12) {
-  newDay = 1;
-  newMonth = month + 1;
-  nextDate = 'Следующий день: ' + newDay + '.' + newMonth + '.' + year;
+switch (month) {
+  case 1:
+  case 3:
+  case 5:
+  case 7:
+  case 8:
+  case 10:
+  case 12:
+    quantity = 31;
+    break;
 
-  if (month === 4 || month === 6 || month === 9 || month === 11 || month > 12) {
-    nextDate = 'Некорректные данные';
-  }
-} else if (month === 12) {
-  newDay = 1;
-  newMonth = 1;
-  newYear = year + 1;
-  nextDate = 'Следующий день: ' + newDay + '.' + newMonth + '.' + newYear;
-} else if (day === 30 && (month === 4 || month === 6 || month === 9 || month === 11)) {
-  newDay = 1;
-  newMonth = month + 1;
-  nextDate = 'Следующий день: ' + newDay + '.' + newMonth + '.' + year;
-} else if (month === 2) {
-  if (day === 28 && year % 4 != 0 || year % 100 == 0 && year % 400 != 0) {
-    newDay = 1;
-    newMonth = month + 1;
-    nextDate = 'Следующий день: ' + newDay + '.' + newMonth + '.' + year;
-  } else if (day === 28) {
-    newDay = day + 1;
-    nextDate = 'Следующий день: ' + newDay + '.' + month + '.' + year;
-  } else if (day === 29 && year % 4 === 0 || year % 100 === 1 && year % 400 === 0) {
-    newDay = 1;
-    newMonth = month + 1;
-    nextDate = 'Следующий день: ' + newDay + '.' + newMonth + '.' + year;
-  } else if (day === 29) {
-    nextDate = 'Некорректные данные';
-  }
-} else if (Number.isNaN(day) || Number.isNaN(month) || Number.isNaN(year) || day > 31 || day <= 0 || month <= 0 || year < 0) {
-  nextDate = 'Некорректные данные';
-} else {
-  newDay = day + 1;
-  nextDate = 'Следующий день: ' + newDay + '.' + month + '.' + year;
+  case 4:
+  case 6:
+  case 9:
+  case 11:
+    quantity = 30;
+    break;
+
+  case 2:
+    quantity = 28;
 }
 
+if (day + 1 > quantity) {
+  1, _readOnlyError("day");
+
+  if (month + 1 > 12) {
+    1, _readOnlyError("month");
+    +year, _readOnlyError("year");
+  } else +month, _readOnlyError("month");
+} else +day, _readOnlyError("day");
+
+nextDate = "".concat(day, ".").concat(month, ".").concat(year);
 console.log(nextDate);
