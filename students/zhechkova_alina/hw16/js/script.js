@@ -33,11 +33,12 @@ function getAllList() {
     let notBought = [];
     let bought = [];
     let result = [];
-    this.find(function (item) {
-        if (item.buy === 'No') notBought.push(item);
-    });
-    this.find(function (item) {
-        if (item.buy === 'Yes') bought.push(item);
+    this.forEach(function (item) {
+        if (item.buy === 'No') {
+            notBought.push(item)
+        } else if (item.buy === 'Yes') {
+            bought.push(item)
+        }
     });
     return result.concat(notBought, bought);
 };
@@ -47,9 +48,9 @@ console.log(getAllListRes);
 
 // Покупка продукта.Функция принимает название продукта и отмечает его как купленный.
 function buyProduct(prodName) {
-    this.find(function (item) {
+    this.forEach(function (item) {
         if (item.name === prodName) {
-            item.buy = 'Yes'
+            item.buy = 'Yes';
         };
     });
 };
@@ -59,7 +60,7 @@ console.log(shoppingList);
 // Добавление покупки в список.Учтите, что при добавлении покупки с уже существующим в списке продуктом, необходимо увеличивать количество в существующей покупке, а не добавлять новую.
 function addProduct(options) {
     if (!options) return;
-    const trueFalse = this.find(element => {
+    const trueFalse = this.forEach(element => {
         if (element.name === options.name) return true;
     });
     switch (trueFalse) {
@@ -120,16 +121,16 @@ function getOnScreen(property) {
 }
 const resultCheck = getOnScreen.call(shopCheck, 'price')
 console.log(resultCheck);
+const arr1 = [1, 2, 4, 5];
+
 
 
 // Подсчет общей суммы покупки;
 function forEachItem(property, array) {
     let result = 0;
-    array.forEach(function (item) {
-        for (let key in item) {
-            if (key === property) result += item[key];
-        }
-    });
+    result = array.reduce((prev, item) => {
+        return prev + item[property];
+    }, 0);
     return result;
 }
 
