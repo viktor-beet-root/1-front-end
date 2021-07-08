@@ -93,7 +93,7 @@ function getTimeFormat() {
 function formatTime(x) {
     let result = x;
     if (x < 10) {
-        result = 0 + String(x);
+        result = '0' + x;
     }
     return result;
 }
@@ -134,35 +134,30 @@ console.log(timeObj.getTime());
 
 // Угадай число
 const number = prompt('Введите число от 1 до 100');
-let max = 100;
-let min = 0;
-let answer = '';
-let num = 0;
-
-function getNumber(number) {
-    if (!validateNumb(number)) return;
-    num = number;
-};
 
 function validateNumb(number) {
     return (number !== null && number !== undefined && !Number.isNaN(+number) && (number < this.max && number > this.min))
 };
 
-function getNumber() {
+function getNumber(number) {
+    if (!validateNumb(number)) return;
+    let max = 100;
+    let min = 0;
     let num1 = min;
     let num2 = max;
     let tmpNum = 0;
     let answer = '';
+
     while (answer !== '==') {
-        tmpNum = ~~((num1 + num2) / 2)
+        tmpNum = ~~((num1 + num2) / 2);
         answer = prompt(`Ваше число ${tmpNum}? Равно: ==, больше: > , меньше: <`);
         if (answer === '==') {
             break
         } else if (answer === 'больше') {
-            num1 = tmpNum
+            num1 = tmpNum;
         } else if (answer === 'меньше') {
-            num2 = tmpNum
+            num2 = tmpNum;
         };
     }
 };
-getNumber();
+getNumber(number);
