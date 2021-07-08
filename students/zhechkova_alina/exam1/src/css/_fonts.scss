@@ -1,3 +1,4 @@
 @include fonts($default-font, $default-font-path, 400, normal);
 @include fonts($default-font, $default-font-path, 700, normal);
-@include fonts($secondary-font, $secondary-font-path, 400, normal)
+@include fonts($secondary-font, $secondary-font-path, 400, normal);
+@import url('https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap');

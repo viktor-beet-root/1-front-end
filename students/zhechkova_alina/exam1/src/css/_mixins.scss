@@ -27,7 +27,8 @@
         font-weight: $font-weight;
         src:local(''),
         url('#{$font-path}.woff2') format('woff2'),
-        url('#{$font-path}.woff') format('woff')
+        url('#{$font-path}.woff') format('woff'),
+        url('#{$font-path}.ttf') format('ttf'),
     }
 }
 
