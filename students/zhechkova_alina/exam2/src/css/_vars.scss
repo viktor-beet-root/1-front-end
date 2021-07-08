@@ -1,0 +1,42 @@
+/*container*/
+$container-width: 1170px;
+$default-gap: 15px;
+$bg-color:#fff;
+
+/*fonts*/
+$default-font:'Gotham',
+Arial,
+Helvetica,
+sans-serif;
+$default-font-path:'../fonts/Gotham-Bold';
+$default-path-two:'../fonts/Gotham-Book';
+
+$secondary-font: 'Open Sans',
+Arial,
+Helvetica,
+sans-serif;
+$secondary-font-path:'../fonts/OpenSans-Regular';
+
+
+/*style for title*/
+$title-color: #e1e1e1;
+$title-size: 24px;
+
+/*style for subtitle*/
+$subtitle-color:#64686f;
+$subtitle-size:14px;
+
+/*style for border*/
+$border-color: #a9aaad;
+
+/*style for button*/
+$bg-btn:#202835;
+$border-btn:1px solid #4f5560;
+$padding-btn:12px 0;
+
+
+/*grid mixin*/
+$breack-points: ("xl": 1200px,
+    "lg": 992px,
+    "md": 768px,
+    "sm": 576px);
