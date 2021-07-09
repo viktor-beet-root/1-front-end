@@ -1,39 +1,70 @@
 'use strict'
-var gulp = require('gulp'),
+const gulp = require('gulp'),
     watch = require('gulp-watch'),
     autoprefixer = require('gulp-autoprefixer'),
     sass = require('gulp-sass'),
     cssmin = require('gulp-cssnano'),
     sourceMaps = require('gulp-sourcemaps'),
+    rigger = require('gulp-rigger'),
     rimraf = require('rimraf'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload,
-    babel = require('gulp-babel'),
-    minify = require('gulp-minify'),
-    rename = require("gulp-rename");
+    rename = require("gulp-rename"),
+    webpack = require('webpack-stream');
 
-var path = {
+const buildPath = './build/';
+const srcPath = './src/';
+
+const isDev = true;
+
+const webpackConfig = {
+    mode: isDev ? 'development' : 'production',
+    output: {
+        filename: 'script.js'
+    },
+    watch: false,
+    devtool: isDev ? 'source-map' : 'none',
+    module: {
+        rules: [{
+            test: /\.n?js$/,
+            exclude: /(node_modules)/,
+            use: {
+                loader: 'babel-loader',
+                options: {
+                    presets: [
+                        ['@babel/preset-env', {
+                            debug: isDev,
+                            corejs: 3,
+                            useBuiltIns: 'usage'
+                        }]
+                    ]
+                }
+            }
+        }]
+    }
+}
+const path = {
     build: {
-        html: './build/',
-        js: './build/js/',
-        css: './build/css/',
-        images: './build/image/',
-        fonts: './build/css/fonts/',
+        html: buildPath,
+        js: buildPath + 'js/',
+        css: buildPath + 'css/',
+        images: buildPath + 'image/',
+        fonts: buildPath + 'css/fonts/',
     },
     src: {
-        html: './src/[^_]*.html',
-        js: './src/js/**/*.js',
-        css: './src/css/**/*.{scss,css}',
-        images: './src/image/**',
-        fonts: './src/css/fonts/**',
+        html: srcPath + '[^_]*.html',
+        js: srcPath + 'js/**/*.js',
+        css: srcPath + 'css/**/*.{scss,css}',
+        images: srcPath + 'image/**',
+        fonts: srcPath + 'css/fonts/**',
     },
     watch: {
-        html: './src/**/*.html',
-        js: './src/js/**/*.js',
-        images: './src/image/**/*.{png,jpg,svg,gif}',
-        css: './src/css/**/*.{scss,css}'
+        html: srcPath + '**/*.html',
+        js: srcPath + 'js/**/*.js',
+        images: srcPath + 'image/**/*.{png,jpg,svg,gif}',
+        css: srcPath + 'css/**/*.{scss,css}'
     },
-    clean: './build'
+    clean: buildPath,
 };
 
 gulp.task("webserver", function () {
@@ -48,7 +79,7 @@ gulp.task("webserver", function () {
 
 gulp.task("html:build", function () {
     return gulp.src(path.src.html)
-
+        .pipe(rigger())
         .pipe(gulp.dest(path.build.html))
         .pipe(reload({
             stream: true
@@ -73,40 +104,13 @@ gulp.task("fonts:build", function () {
 
 gulp.task("js:build", function () {
     return gulp.src(path.src.js)
-        .pipe(sourceMaps.init())
-        .pipe(sourceMaps.write())
-        .pipe(babel({
-            presets: ['@babel/preset-env']
-        }))
-        .pipe(minify({
-            ext: {
-                src: '-debug.js',
-                min: '.min.js'
-            },
-            exclude: ['lib'],
-            ignoreFiles: ['.combo.js', '-min.js', 'lib.js']
-        }))
+        .pipe(webpack(webpackConfig))
         .pipe(gulp.dest(path.build.js))
         .pipe(reload({
             stream: true
         }));
 });
 
-gulp.task("js:prod", function () {
-    return gulp.src(path.src.js)
-        .pipe(babel({
-            presets: ['@babel/preset-env']
-        }))
-        .pipe(minify({
-            ext: {
-                src: '-debug.js',
-                min: '.min.js'
-            },
-            exclude: ['lib'],
-            ignoreFiles: ['.combo.js', '-min.js', 'lib.js']
-        }))
-        .pipe(gulp.dest(path.build.js));
-});
 
 gulp.task("style:prod", function () {
     return gulp.src(path.src.css)
@@ -144,7 +148,7 @@ gulp.task("build", gulp.parallel(
     'images:build',
     'fonts:build'
 ));
-
+/*
 gulp.task("buildProd", gulp.parallel(
     'html:build',
     'js:prod',
@@ -152,7 +156,7 @@ gulp.task("buildProd", gulp.parallel(
     'images:build',
     'fonts:build'
 ));
-
+*/
 gulp.task("watch", function () {
     watch([path.watch.js], gulp.parallel('js:build'));
     watch([path.watch.html], gulp.parallel('html:build'));
@@ -166,4 +170,4 @@ gulp.task("clean", function (callback) {
 
 gulp.task('default', gulp.parallel('build', 'webserver', 'watch'));
 
-gulp.task('prod', gulp.series('clean', gulp.parallel('buildProd')));
+// gulp.task('prod', gulp.series('clean', gulp.parallel('buildProd')));

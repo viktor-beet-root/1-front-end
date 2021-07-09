@@ -6,11 +6,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monticello</title>
+
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/9fa3e87fed.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="page">
-    //= _header.html
+    <header class="page__header header">
+        <div class="header__container container">
+            <div class="row header__row">
+                <div class="col-3 header__logo logo">
+                    <a href="#" class="logo__link">
+                        <img src="image/Logo.png" alt="Monticello" class="logo__img">
+                    </a>
+                </div>
+                <nav class="header__menu menu col-9">
+                    <div class="row">
+                        <ul class="menu__list col-9">
+                            <li class="menu__item active"><a href="#" class="menu__link">About us</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Projects</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">News</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+                        </ul>
+                        <ul class="menu__media media col-3">
+                            <li class="media__item"><a href="#" class="media__link"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="media__item"><a href="#" class="media__link"><i class="fab fa-twitter"></i></a></li>
+                            <li class="media__item"><a href="#" class="media__link"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="hero container">
+            <div class="hero__title-wrapper">
+                <h1 class="hero__title">
+                    Simple & Modern
+                    <span class="hero__subtitle">
+                        We make the world's beatiful every day
+                    </span>
+                </h1>
+            </div>
+            <div class="hero__scroll scroll">
+                <span class="scroll__span"></span>
+            </div>
+        </div>
+    </header>
+    <main class="page__main">
+        <article class="what-we-do">
+            <div class="container what-we-do__container">
+                <div class="row what-we-do__title-wrap">
+                    <h2 class="what-we-do__title col-12">
+                        What we do
+                    </h2>
+                </div>
+            </div>
+        
+            <section class="project">
+                <div class="container project__container">
+                    <div class="row row__content">
+                        <div class="project__image-wrap col-7 col-md-12">
+                            <img src="image/what-we-do.png" alt="town" class="project__image">
+                        </div>
+                        <div class="project__content col-5 col-md-12">
+                            <strong class="project__subtitle">One world</strong>
+                            <h3 class="project__title">Trade Center</h3>
+                            <p class="project__text">Increasing prosperity in our lives can be accomplished by having the right
+                                frame of mind. The truth is, our thoughts are very powerful.</p>
+                            <button class="project__btn btn">More details</button>
+                            <p class="project__address"><i class="fas fa-map-marker-alt"></i> New York City, United States -
+                                1776
+                                feet</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="project commerce">
+                <div class="container project__container">
+                    <div class="row row__content">
+                        <div class="project__content col-5 col-md-12">
+                            <strong class="project__subtitle">International</strong>
+                            <h3 class="project__title">Commerce centre</h3>
+                            <p class="project__text">Successful businesses have many things in common, today we’ll look at the
+                                big
+                                ‘R’ of recognition and how a digital advertising network may help.</p>
+                            <button class="project__btn btn">More details</button>
+                            <p class="project__address"><i class="fas fa-map-marker-alt"></i> Hong Kong - 1588 feet</p>
+                        </div>
+                        <div class="project__image-wrap col-7 col-md-12">
+                            <img src="image/commerse.png" alt="town" class="project__image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
     <script src="js/script-debug.js"></script>
 </body>
 
