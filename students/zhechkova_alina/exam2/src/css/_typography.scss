@@ -16,3 +16,8 @@
     flex-wrap: wrap;
     margin: 0 (-$default-gap);
 }
+
+[class^=col-] {
+    padding: $default-gap;
+    box-sizing: border-box;
+}

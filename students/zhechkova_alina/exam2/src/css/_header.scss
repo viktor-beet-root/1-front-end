@@ -42,11 +42,16 @@
 
     &__list {
         display: flex;
-        justify-content: space-around;
         align-items: center;
+        justify-content: flex-end;
+        padding: 20px 29px;
     }
 
     &__item {
+        &:not(:last-child) {
+            margin-right: 69px;
+        }
+
         cursor: pointer;
 
         &.active::before {
@@ -57,7 +62,7 @@
             content: '';
             height: 8px;
             width: 8px;
-            margin-right: 5px;
+            margin-right: 15px;
             border: 1px solid white;
             display: inline-block;
             border-radius: 50%;
@@ -72,15 +77,17 @@
         font-style: normal;
         text-transform: uppercase;
         font-size: 14px;
+        letter-spacing: 0.6px;
     }
 
-
-    &__media {}
+    &__media {
+        padding-top: 15px;
+        justify-content: flex-end;
+    }
 }
 
 .media {
     display: flex;
-    justify-content: space-around;
 
 
     &__item {
@@ -90,6 +97,10 @@
         position: relative;
         border-radius: 50%;
         cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
     }
 
 
@@ -113,6 +124,7 @@
     &__title-wrapper {
         text-align: center;
         text-transform: uppercase;
+        margin-top: -42px;
     }
 
 
@@ -121,6 +133,7 @@
         color: #fff;
         font-family: $default-font;
         font-size: 80px;
+        letter-spacing: 9.5px;
 
     }
 
@@ -130,7 +143,7 @@
         font-size: 18px;
         font-style: normal;
         display: block;
-        letter-spacing: 3px;
+        letter-spacing: 6px;
     }
 
 
@@ -139,7 +152,7 @@
 
 .scroll {
     position: absolute;
-    bottom: 50px;
+    bottom: 74px;
 
     &__span {
         border: 1px solid #cee1fd;

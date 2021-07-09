@@ -1,0 +1,124 @@
+.page {
+
+    // .page__map
+
+    &__map {}
+}
+
+.map {
+
+    position: relative;
+    background-color: rgb(172, 172, 172);
+    height: 700px;
+    // .map__get-in-touch
+
+    &__get-in-touch {
+        margin: 0 auto;
+        @include bg-cover('../image/map.png');
+        padding: 60px 65px;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 770px;
+        width: 100%;
+
+    }
+}
+
+.row {}
+
+.get-in-touch {
+
+    // .get-in-touch__title-row
+
+    &__title-row {
+        color: #2c4058;
+        margin-bottom: 32px;
+
+        &::before {
+            margin-bottom: 28px;
+            background-color: #2c4058;
+        }
+    }
+
+    // .get-in-touch__title
+
+    &__title {}
+
+    // .get-in-touch__content
+
+    &__content {}
+
+    & p:not(:last-child) {
+        margin-bottom: 40px;
+
+    }
+
+
+    // .get-in-touch__info
+    & p {
+        color: #2c4058;
+        font-size: 18px;
+
+        &>i {
+            color: #7e5aff;
+        }
+    }
+
+    & p>a {
+        text-decoration: none;
+        color: #2c4058;
+
+        &>i {
+            color: #7e5aff;
+        }
+    }
+
+    &__info {
+        padding: 18px 0;
+    }
+
+
+    &__form-wrap {
+        padding-left: 14px;
+    }
+
+    // .get-in-touch__form
+
+    &__form {}
+
+    // .get-in-touch__btn
+
+    &__btn {
+        align-self: flex-end;
+    }
+}
+
+
+.title-row {}
+
+.title {}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    &__input {
+        display: block;
+        border: none;
+        border-bottom: 1px solid #d5d9de;
+        padding: 18px 0;
+        width: 100%;
+
+        &:first-child {
+            margin-bottom: 24px;
+        }
+
+        &:nth-child(2) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.btn {}

@@ -1,0 +1,43 @@
+.page {
+
+    &__footer {}
+}
+
+.footer {
+    @include bg-cover('../image/Bg3.png');
+
+    &__row {}
+
+    &__container {
+        margin: 0 auto;
+        padding: 210px 0;
+        max-width: 770px;
+        width: 100%;
+    }
+
+    &__logo {
+        margin-bottom: 32px;
+        padding: 0 $default-gap;
+    }
+
+    &__copyright {
+        color: #fff;
+    }
+
+    &__media {
+        justify-content: flex-end;
+    }
+
+}
+
+.menu {
+
+    &__media {}
+}
+
+.media {
+
+    &__item {}
+
+    &__link {}
+}
