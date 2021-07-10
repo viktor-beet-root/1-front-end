@@ -14,7 +14,7 @@
         font-family: $default-font;
         font-weight: bold;
         font-size: 44px;
-        color: #2c4058;
+        color: $title-color;
         text-transform: uppercase;
         letter-spacing: 2.8px;
     }
@@ -48,7 +48,7 @@
         .commerce &::after {
             right: unset;
             left: 310px;
-            background-color: #7e5aff;
+            background-color: $icon-color;
         }
 
         &::after {
@@ -56,7 +56,7 @@
             display: block;
             height: 100%;
             width: 100%;
-            background: #55b7ff;
+            background: $color-bg;
             position: absolute;
             right: 309px;
             z-index: -1;
@@ -72,7 +72,8 @@
     &__image {
         display: block;
         z-index: 1000;
-
+        max-width: 636px;
+        width: 100%;
 
     }
 
@@ -90,7 +91,7 @@
     // .project__subtitle
     &__subtitle,
     &__title {
-        color: #2c4058;
+        color: $title-color;
         font-family: $default-font;
         text-transform: uppercase;
 
@@ -113,7 +114,7 @@
 
     &__text {
         font-size: 18px;
-        color: #4b5562;
+        color: $subtitle-color;
         line-height: 30px;
         margin-bottom: 30px;
         font-family: $secondary-font;
@@ -126,16 +127,16 @@
     &__address {
         font-family: $secondary-font;
         font-style: italic;
-        color: #4b5562;
+        color: $subtitle-color;
         font-size: 18px;
     }
 }
 
 .btn {
     text-transform: uppercase;
-    background: #fff;
-    border: 1px solid #000;
-    padding: 16px 45px;
+    background: $bg-btn;
+    border: $border-btn;
+    padding: $padding-btn;
     cursor: pointer;
 
 }

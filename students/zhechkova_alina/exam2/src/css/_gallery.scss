@@ -13,10 +13,10 @@
 
 
     &__title-row {
-        color: #2c4058;
+        color: $title-color;
 
         &::before {
-            background-color: #2c4058;
+            background-color: $title-color;
         }
 
         margin-bottom: 87px;
@@ -28,16 +28,16 @@
 
     &__wrap {
         margin-bottom: 55px;
+
+        @media screen and (max-width:1200px) {
+            flex-direction: column;
+        }
     }
 
 
     &__img-wrap {
         display: flex;
-
-
     }
-
-
 
     &__btn {
         display: block;
@@ -48,28 +48,17 @@
 
     &__img {
         display: block;
+        padding: 5px;
+
+        @media screen and (max-width:1200px) {
+            width: 100%;
+        }
     }
 }
 
-.img-wrap_inner {
-    padding: 0;
+.img-wrap {
+    display: flex;
+    flex-wrap: wrap;
 
-    &:first-of-type {
-        padding-right: 5px;
-    }
 
-    &:last-of-type {
-        padding-left: 5px;
-    }
-
-    &>.gallery__img {
-        &:first-child {
-            padding-bottom: 5px;
-        }
-
-        &:last-child {
-            padding-top: 5px;
-        }
-
-    }
 }

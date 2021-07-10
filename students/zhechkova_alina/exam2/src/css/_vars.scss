@@ -19,21 +19,31 @@ $secondary-font-path:'../fonts/OpenSans-Regular';
 
 /*menu*/
 $menu-item:#fff;
+
 /*style for title*/
-$title-color: #e1e1e1;
+$title-color: #2c4058;
 $title-size: 24px;
 
 /*style for subtitle*/
-$subtitle-color:#64686f;
+$subtitle-color:#4b5562;
 $subtitle-size:14px;
 
+
+$color-white:#fff;
+$color-black:#000;
+$color-bg:#55b7ff;
+$slider-btn:#9bc2eb;
+
+$icon-color:#7e5aff;
 /*style for border*/
 $border-color: #a9aaad;
 
+
+
 /*style for button*/
-$bg-btn:#202835;
-$border-btn:1px solid #4f5560;
-$padding-btn:12px 0;
+$bg-btn:$color-white;
+$border-btn:1px solid $color-black;
+$padding-btn:16px 45px;
 
 
 /*grid mixin*/

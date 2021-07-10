@@ -1,12 +1,5 @@
-.page {
-
-    &__footer {}
-}
-
 .footer {
     @include bg-cover('../image/Bg3.png');
-
-    &__row {}
 
     &__container {
         margin: 0 auto;
@@ -21,23 +14,111 @@
     }
 
     &__copyright {
-        color: #fff;
+        color: $color-white;
     }
 
     &__media {
         justify-content: flex-end;
     }
 
+    &__get-in-touch {
+        margin: 0 auto;
+        max-width: 770px;
+        width: 100%;
+    }
 }
 
-.menu {
+.row {}
 
-    &__media {}
+.get-in-touch {
+    @include bg-cover('../image/map.png');
+    padding: 60px 65px;
+
+    &__title-row {
+        color: $title-color;
+        margin-bottom: 32px;
+
+        &::before {
+            margin-bottom: 28px;
+            background-color: $title-color;
+        }
+    }
+
+
+    &__title {}
+
+
+    &__content {}
+
+    & p:not(:last-child) {
+        margin-bottom: 40px;
+
+    }
+
+
+    // .get-in-touch__info
+    & p {
+        color: #2c4058;
+        font-size: 18px;
+
+        &>i {
+            color: $icon-color;
+        }
+    }
+
+    & p>a {
+        text-decoration: none;
+        color: #2c4058;
+
+        &>i {
+            color: $icon-color;
+        }
+    }
+
+    &__info {
+        padding: 18px 0;
+    }
+
+
+    &__form-wrap {
+        padding-left: 14px;
+    }
+
+    // .get-in-touch__form
+
+    &__form {}
+
+    // .get-in-touch__btn
+
+    &__btn {
+        align-self: flex-end;
+    }
 }
 
-.media {
 
-    &__item {}
+.title-row {}
 
-    &__link {}
+.title {}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    &__input {
+        display: block;
+        border: none;
+        border-bottom: 1px solid #d5d9de;
+        padding: 18px 0;
+        width: 100%;
+
+        &:first-child {
+            margin-bottom: 24px;
+        }
+
+        &:nth-child(2) {
+            margin-bottom: 30px;
+        }
+    }
 }
+
+.btn {}

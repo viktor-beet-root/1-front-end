@@ -71,7 +71,7 @@
 
     &__title {
         font-size: 22px;
-        color: #2c4058;
+        color: $title-color;
         line-height: 34px;
         font-style: bold;
         text-transform: uppercase;
@@ -79,7 +79,7 @@
 
     &__content {
         font-size: 18px;
-        color: #4b5562;
+        color: $subtitle-color;
         line-height: 30px;
         font-family: $secondary-font;
         margin-bottom: 35px;
@@ -104,7 +104,7 @@
     &__name {
         display: block;
         font-size: 18px;
-        color: #2c4058;
+        color: $title-color;
         text-transform: uppercase;
         line-height: 22px;
         margin-bottom: 10px;
@@ -114,7 +114,7 @@
     &__date {
         display: block;
         font-size: 14px;
-        color: #55b7ff;
+        color: $color-bg;
     }
 }
 
@@ -124,14 +124,14 @@
     border-radius: 50%;
     margin-right: 40px;
     cursor: pointer;
-    border: 1px solid white;
+    border: 1px solid $color-white;
 
     &:last-child {
         margin-right: 0;
     }
 
     &.active {
-        background-color: #fff;
+        background-color: $color-white;
     }
 
 }
@@ -139,46 +139,6 @@
 .active {}
 
 .dots-wrapper {}
-
-.btn-slider {
-    position: absolute;
-    cursor: pointer;
-    height: 40px;
-    width: 40px;
-    border: 2px solid #9bc2eb;
-    border-radius: 50%;
-    top: 50%;
-    background: none;
-
-    &_left {
-        left: -8%;
-
-        & .btn-slider__arr {
-            border-top: none;
-            border-right: none;
-        }
-    }
-
-    &_right {
-
-        right: -8%;
-
-        & .btn-slider__arr {
-            border-bottom: none;
-            border-left: none;
-        }
-
-    }
-
-    &__arr {
-        border: 2px solid white;
-        display: inline-block;
-        height: 8px;
-        width: 8px;
-        transform: rotate(45deg);
-
-    }
-}
 
 .title {}
 
@@ -194,8 +154,12 @@
         display: block;
         width: 100px;
         height: 1px;
-        background-color: #fff;
+        background-color: $color-white;
         margin: 0 auto;
         margin-bottom: 35px;
     }
+}
+
+.slick-dots {
+    bottom: unset;
 }

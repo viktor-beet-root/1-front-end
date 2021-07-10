@@ -49,14 +49,14 @@ const path = {
         js: buildPath + 'js/',
         css: buildPath + 'css/',
         images: buildPath + 'image/',
-        fonts: buildPath + 'css/fonts/',
+        fonts: buildPath + 'fonts/',
     },
     src: {
         html: srcPath + '[^_]*.html',
         js: srcPath + 'js/**/*.js',
         css: srcPath + 'css/**/*.{scss,css}',
         images: srcPath + 'image/**',
-        fonts: srcPath + 'css/fonts/**',
+        fonts: srcPath + 'fonts/**',
     },
     watch: {
         html: srcPath + '**/*.html',

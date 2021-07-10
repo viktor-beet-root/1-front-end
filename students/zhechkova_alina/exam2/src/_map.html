@@ -1,31 +1,61 @@
 <section class="page__map map">
-    <div id="app"></div>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            const cords = {
+                lat: 50.434700080802195,
+                lng: 30.55726275023797
+            };
+            const map = new google.maps.Map(document.getElementById('map'), {
+                center: cords,
+                zoom: 18,
+                mapTypeControlOptions: {
+                    mapTypeIds: ["roadmap", "satellite", "hybrid", "terrain", "styled_map"],
+                },
+            });
 
-    <div class="map__get-in-touch get-in-touch">
-        <div class="row title-row get-in-touch__title-row">
-            <h2 class="title get-in-touch__title col-12">
-                Get in touch
-            </h2>
-        </div>
-        <div class="get-in-touch__content">
-            <div class="row">
-                <div class="get-in-touch__info col-6">
-                    <p class="get-in-touch__address"><i class="fas fa-map-marker-alt"></i> 91 Nolan Extensions Suite
-                        670</p>
-                    <p class="get-in-touch__phone"><a href="tel:0012568632454"><i class="fas fa-phone-alt"></i> +001
-                            356-863-2454</a></p>
-                    <p class="get-in-touch__email"><a href="mailto:gahuy93@gmail.com"><i class="fas fa-inbox"></i>
-                            gahuy93@gmail.com</a></p>
-                    <p class="get-in-touch__time"><i class="far fa-clock"></i> From 07:05AM to 19:30PM</p>
-                </div>
-                <div class="get-in-touch__form-wrap col-6">
-                    <form action="#" class="get-in-touch__form form">
-                        <input type="text" class="form__input" placeholder="Name">
-                        <input type="email" class="form__input" placeholder="Email">
-                        <button type="submit" class="get-in-touch__btn btn">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+            const marker = new google.maps.Marker({
+                position: cords,
+                map: map,
+                title: 'Лавра',
+                icon: 'image/Pin.png'
+            });
+
+            const contentString =
+                '<div id="content">' +
+                '<div id="siteNotice">' +
+                "</div>" +
+                '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
+                '<div id="bodyContent">' +
+                "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
+                "sandstone rock formation in the southern part of the " +
+                "Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
+                "south west of the nearest large town, Alice Springs; 450&#160;km " +
+                "(280&#160;mi) by road. Kata Tjuta and Uluru are the two major " +
+                "features of the Uluru - Kata Tjuta National Park. Uluru is " +
+                "sacred to the Pitjantjatjara and Yankunytjatjara, the " +
+                "Aboriginal people of the area. It has many springs, waterholes, " +
+                "rock caves and ancient paintings. Uluru is listed as a World " +
+                "Heritage Site.</p>" +
+                '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
+                "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
+                "(last visited June 22, 2009).</p>" +
+                "</div>" +
+                "</div>";
+            const infowindow = new google.maps.InfoWindow({
+                content: contentString,
+            });
+
+            marker.addListener("click", () => {
+                infowindow.open({
+                    anchor: marker,
+                    map,
+                    shouldFocus: false,
+                });
+            });
+        }
+    </script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCfN_PL-s7vExuyDrvEM33J1pTx4FXFGM&region=RU&language=ru&callback=initMap">
+    </script>
 </section>

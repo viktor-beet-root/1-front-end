@@ -1,0 +1,72 @@
+.hero {
+    @include bg-cover('../image/Bg1.png');
+    position: relative;
+
+    &__container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+
+
+    &__title-wrapper {
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: -42px;
+    }
+
+
+    &__title {
+        font-style: bold;
+        color: $color-white;
+        font-family: $default-font;
+        font-size: 80px;
+        letter-spacing: 9.5px;
+
+    }
+
+
+    &__subtitle {
+        padding-top: 30px;
+        font-size: 18px;
+        font-style: normal;
+        display: block;
+        letter-spacing: 6px;
+    }
+
+
+}
+
+
+.scroll {
+    position: absolute;
+    bottom: 74px;
+
+    &__span {
+        border: 1px solid #cee1fd;
+        position: relative;
+        display: block;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &::after {
+            content: '';
+            border: 1px solid #fff;
+            height: 6px;
+            width: 6px;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            border-top: none;
+            border-left: none;
+        }
+    }
+}

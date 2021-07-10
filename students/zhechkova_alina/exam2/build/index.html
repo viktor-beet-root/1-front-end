@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monticello</title>
 
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/9fa3e87fed.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="page">
@@ -21,8 +24,8 @@
                     </a>
                 </div>
                 <nav class="header__menu menu col-9">
-                    <div class="row">
-                        <ul class="menu__list col-9">
+                    <div class="row menu__row">
+                        <ul class="menu__list col-9 col-lg-12">
                             <li class="menu__item active"><a href="#" class="menu__link">About us</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">Projects</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">News</a></li>
@@ -36,24 +39,28 @@
                             </li>
                         </ul>
                     </div>
+                    <button id="openMenu" class="menu__btn"><span class="menu__btn-span"></span></button>
                 </nav>
             </div>
         </div>
-        <div class="hero container">
-            <div class="hero__title-wrapper">
-                <h1 class="hero__title">
-                    Simple & Modern
-                    <span class="hero__subtitle">
-                        We make the world's beatiful every day
-                    </span>
-                </h1>
-            </div>
-            <div class="hero__scroll scroll">
-                <span class="scroll__span"></span>
-            </div>
-        </div>
+    
     </header>
     <main class="page__main">
+        <section class="hero">
+            <div class="hero__container container">
+                <div class="hero__title-wrapper">
+                    <h1 class="hero__title">
+                        Simple & Modern
+                        <span class="hero__subtitle">
+                            We make the world's beatiful every day
+                        </span>
+                    </h1>
+                </div>
+                <div class="hero__scroll scroll">
+                    <span class="scroll__span"></span>
+                </div>
+            </div>
+        </section>
         <article class="what-we-do">
             <div class="container what-we-do__container">
                 <div class="row what-we-do__title-wrap">
@@ -109,8 +116,8 @@
                         Latest news
                     </h2>
                 </div>
-                <div class="row news__wrapper">
-                    <div class="news__slide slide col-4">
+                <div class="news__wrapper">
+                    <div class="news__slide slide">
                         <div class="slide__wrapper">
                             <img src="image/new1.png" alt="town" class="slide__img">
                             <div class="slide__content-wrap">
@@ -130,7 +137,7 @@
                         </div>
         
                     </div>
-                    <div class="news__slide slide col-4">
+                    <div class="news__slide slide">
                         <div class="slide__wrapper">
                             <img src="image/new2.png" alt="town" class="slide__img">
                             <div class="slide__content-wrap">
@@ -148,7 +155,7 @@
                         </div>
         
                     </div>
-                    <div class="news__slide slide col-4">
+                    <div class="news__slide slide">
                         <div class="slide__wrapper">
                             <img src="image/new3.png" alt="town" class="slide__img">
                             <div class="slide__content-wrap">
@@ -164,19 +171,66 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="news__slide slide">
+                        <div class="slide__wrapper">
+                            <img src="image/new1.png" alt="town" class="slide__img">
+                            <div class="slide__content-wrap">
+                                <h3 class="slide__title">See the unmatched beauty of the great.</h3>
+                                <p class="slide__content">
+                                    Free directories: directories are perfect for customers that are... searching for
+                                </p>
+                                <div class="slide__author author">
+                                    <img src="image/author1.png" alt="author" class="author__img">
+                                    <div class="author__content">
+                                        <strong class="author__name">Isaac Dunn</strong>
+                                        <small class="author__date">09 Feb 2017</small>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
         
                     </div>
-                    <button id="btnPrev" class="btn-slider btn-slider_left"><span class="btn-slider__arr"> </span></button>
-                    <button id="btnNext" class="btn-slider btn-slider_right"><span class="btn-slider__arr"> </span></button>
+                    <div class="news__slide slide">
+                        <div class="slide__wrapper">
+                            <img src="image/new2.png" alt="town" class="slide__img">
+                            <div class="slide__content-wrap">
+                                <h3 class="slide__title">Effective advertising pointers.</h3>
+                                <p class="slide__content">
+                                    Having a home based business is a wonderful asset to your life...
+                                </p>
+                                <div class="slide__author author">
+                                    <img src="image/author2.png" alt="author" class="author__img">
+                                    <div class="author__content"><strong class="author__name">Dominic Freeman</strong>
+                                        <small class="author__date">24 Apr 2017</small></div>
+                                </div>
+                            </div>
+        
+                        </div>
+        
+                    </div>
+                    <div class="news__slide slide">
+                        <div class="slide__wrapper">
+                            <img src="image/new3.png" alt="town" class="slide__img">
+                            <div class="slide__content-wrap">
+                                <h3 class="slide__title">Hypnotise yourself into the ghost.</h3>
+                                <p class="slide__content">
+                                    There are many things that are important to catalog design....
+                                </p>
+                                <div class="slide__author author">
+                                    <img src="image/author3.png" alt="author" class="author__img">
+                                    <div class="author__content"><strong class="author__name">Alice Ward</strong>
+                                        <small class="author__date">30 Dec 2017</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="news__dots">
-                    <span class="dot"></span>
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
+        
                 </div>
-            </div>
         </section>
         <section class="page_gallery gallery">
             <div class="gallery__container container">
@@ -186,18 +240,14 @@
                     </h2>
                 </div>
                 <div class="row gallery__wrap">
-                    <div class="col-6 gallery__img-wrap">
+                    <div class="col-6 col-xl-12 gallery__img-wrap">
                         <img src="image/gallery1.png" alt="town" class="gallery__img">
                     </div>
-                    <div class="col-6 gallery__img-wrap img-wrap">
-                        <div class="col-12 img-wrap img-wrap_inner">
-                            <img src="image/gallery2.png" alt="town" class="gallery__img">
-                            <img src="image/gallery3.png" alt="town" class="gallery__img">
-                        </div>
-                        <div class="col-12 img-wrap img-wrap_inner">
-                            <img src="image/gallery4.png" alt="town" class="gallery__img">
-                            <img src="image/gallery5.png" alt="town" class="gallery__img">
-                        </div>
+                    <div class="col-6 col-xl-12  gallery__img-wrap img-wrap">
+                        <img src="image/gallery2.png" alt="town" class="gallery__img col-6">
+                        <img src="image/gallery3.png" alt="town" class="gallery__img col-6">
+                        <img src="image/gallery4.png" alt="town" class="gallery__img col-6">
+                        <img src="image/gallery5.png" alt="town" class="gallery__img col-6">
                     </div>
                 </div>
                 <button class="btn gallery__btn">
@@ -206,38 +256,95 @@
             </div>
         </section>
         <section class="page__map map">
-            <div id="app"></div>
+            <div id="map"></div>
+            <script>
+                function initMap() {
+                    const cords = {
+                        lat: 50.434700080802195,
+                        lng: 30.55726275023797
+                    };
+                    const map = new google.maps.Map(document.getElementById('map'), {
+                        center: cords,
+                        zoom: 18,
+                        mapTypeControlOptions: {
+                            mapTypeIds: ["roadmap", "satellite", "hybrid", "terrain", "styled_map"],
+                        },
+                    });
         
-            <div class="map__get-in-touch get-in-touch">
-                <div class="row title-row get-in-touch__title-row">
-                    <h2 class="title get-in-touch__title col-12">
-                        Get in touch
-                    </h2>
-                </div>
-                <div class="get-in-touch__content">
-                    <div class="row">
-                        <div class="get-in-touch__info col-6">
-                            <p class="get-in-touch__address"><i class="fas fa-map-marker-alt"></i> 91 Nolan Extensions Suite
-                                670</p>
-                            <p class="get-in-touch__phone"><a href="tel:0012568632454"><i class="fas fa-phone-alt"></i> +001
-                                    356-863-2454</a></p>
-                            <p class="get-in-touch__email"><a href="mailto:gahuy93@gmail.com"><i class="fas fa-inbox"></i>
-                                    gahuy93@gmail.com</a></p>
-                            <p class="get-in-touch__time"><i class="far fa-clock"></i> From 07:05AM to 19:30PM</p>
-                        </div>
-                        <div class="get-in-touch__form-wrap col-6">
-                            <form action="#" class="get-in-touch__form form">
-                                <input type="text" class="form__input" placeholder="Name">
-                                <input type="email" class="form__input" placeholder="Email">
-                                <button type="submit" class="get-in-touch__btn btn">Submit</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    const marker = new google.maps.Marker({
+                        position: cords,
+                        map: map,
+                        title: 'Лавра',
+                        icon: 'image/Pin.png'
+                    });
+        
+                    const contentString =
+                        '<div id="content">' +
+                        '<div id="siteNotice">' +
+                        "</div>" +
+                        '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
+                        '<div id="bodyContent">' +
+                        "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
+                        "sandstone rock formation in the southern part of the " +
+                        "Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
+                        "south west of the nearest large town, Alice Springs; 450&#160;km " +
+                        "(280&#160;mi) by road. Kata Tjuta and Uluru are the two major " +
+                        "features of the Uluru - Kata Tjuta National Park. Uluru is " +
+                        "sacred to the Pitjantjatjara and Yankunytjatjara, the " +
+                        "Aboriginal people of the area. It has many springs, waterholes, " +
+                        "rock caves and ancient paintings. Uluru is listed as a World " +
+                        "Heritage Site.</p>" +
+                        '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
+                        "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
+                        "(last visited June 22, 2009).</p>" +
+                        "</div>" +
+                        "</div>";
+                    const infowindow = new google.maps.InfoWindow({
+                        content: contentString,
+                    });
+        
+                    marker.addListener("click", () => {
+                        infowindow.open({
+                            anchor: marker,
+                            map,
+                            shouldFocus: false,
+                        });
+                    });
+                }
+            </script>
+            <script async
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCfN_PL-s7vExuyDrvEM33J1pTx4FXFGM&region=RU&language=ru&callback=initMap">
+            </script>
         </section>
     </main>
     <footer class="page__footer footer">
+        <div class="footer__get-in-touch get-in-touch">
+            <div class="row title-row get-in-touch__title-row">
+                <h2 class="title get-in-touch__title col-12">
+                    Get in touch
+                </h2>
+            </div>
+            <div class="get-in-touch__content">
+                <div class="row">
+                    <div class="get-in-touch__info col-6">
+                        <p class="get-in-touch__address"><i class="fas fa-map-marker-alt"></i> 91 Nolan Extensions Suite
+                            670</p>
+                        <p class="get-in-touch__phone"><a href="tel:0012568632454"><i class="fas fa-phone-alt"></i> +001
+                                356-863-2454</a></p>
+                        <p class="get-in-touch__email"><a href="mailto:gahuy93@gmail.com"><i class="fas fa-inbox"></i>
+                                gahuy93@gmail.com</a></p>
+                        <p class="get-in-touch__time"><i class="far fa-clock"></i> From 07:05AM to 19:30PM</p>
+                    </div>
+                    <div class="get-in-touch__form-wrap col-6">
+                        <form action="#" class="get-in-touch__form form">
+                            <input type="text" class="form__input" placeholder="Name">
+                            <input type="email" class="form__input" placeholder="Email">
+                            <button type="submit" class="get-in-touch__btn btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row footer__row">
             <div class="footer__container">
                 <div class="row">
@@ -261,7 +368,8 @@
             </div>
         </div>
     </footer>
-    <script src="js/script-debug.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
