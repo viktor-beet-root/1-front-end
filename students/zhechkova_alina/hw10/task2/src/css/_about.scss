@@ -12,20 +12,13 @@
             justify-content: space-between;
         }
 
-        @include media('md') {
-            padding-top: 70px;
-        }
+        @include adaptive-container
     }
 
     &__title {
         color: $white;
         @include title-style;
         margin-bottom: 10px;
-
-        @include media('md') {
-            font-size: 50px;
-            text-align: center;
-        }
     }
 
     &__content {

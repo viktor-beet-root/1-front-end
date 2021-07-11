@@ -7,6 +7,7 @@
         background-size: cover;
         text-align: center;
         padding: 90px 0 123px 0;
+        @include adaptive-container;
     }
 
 }
@@ -15,11 +16,11 @@
     &__title {
         @include title-style;
 
-        margin-bottom: 30px;
-
-        @include media('sm') {
-            font-size: 50px;
+        @include media('lg') {
+            text-align: center;
         }
+
+        margin-bottom: 30px;
     }
 
     &__content {

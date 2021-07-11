@@ -4,24 +4,18 @@
     &__blog-food {
         background-color: #b07cf7;
         padding: 89px 15px 118px;
+        @include adaptive-container;
+
     }
 }
 
 .blog {
-
-
-    &__container {}
-
 
     &__title {
         color: white;
         text-align: center;
         padding-bottom: 32px;
         @include title-style;
-
-        @include media('md') {
-            font-size: 50px;
-        }
     }
 
     &__content {
@@ -35,9 +29,6 @@
         color: white;
         text-align: center;
     }
-
-
-    &__list {}
 
 
     &__btn {
@@ -158,6 +149,9 @@
 
     }
 
+    @include media('md') {
+        padding-bottom: 10px;
+    }
 }
 
 

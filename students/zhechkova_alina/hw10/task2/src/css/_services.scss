@@ -1,9 +1,8 @@
 .page {
-
-
     &__services {
         padding: 139px 0 85px 0;
         background-color: #70bfff;
+        @include adaptive-container;
     }
 }
 
@@ -16,6 +15,7 @@
         background-repeat: no-repeat;
         padding-left: 105px;
         padding-bottom: 13px;
+
 
         @include media('xl') {
             padding: 0 50px;
@@ -41,11 +41,6 @@
         color: $white;
         @include title-style;
         margin-left: 78px;
-
-        @include media('lg') {
-            margin: 0 auto;
-            font-size: 60px;
-        }
     }
 
     &__title-wrapper {
@@ -68,6 +63,9 @@
         padding: 40px 0;
         margin: 0 auto;
 
+        @include media('md') {
+            padding-bottom: 0;
+        }
     }
 
     &__item {
@@ -123,12 +121,12 @@
             }
 
             @include media('sm') {
-                display: none;
+                left: 76%;
             }
         }
 
         @include media('lg') {
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
         }
     }

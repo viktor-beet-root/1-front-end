@@ -9,8 +9,6 @@
 
 .footer {
 
-    &__container {}
-
     &__row {
         @include media('md') {
             flex-direction: column;
