@@ -1,0 +1,10 @@
+.page {
+    font-family: $default-font;
+}
+
+.team {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: $default-gap;
+    box-sizing: border-box;
+}

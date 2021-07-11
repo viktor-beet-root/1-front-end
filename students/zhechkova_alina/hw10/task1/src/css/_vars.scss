@@ -1,0 +1,42 @@
+/*container*/
+$container-width: 1170px;
+$default-gap:106px 15px;
+$bg-color:#111a28;
+
+/*fonts*/
+$default-font:'Raleway',
+sans-serif,
+Arial,
+Helvetica,
+sans-serif;
+$default-font-weight: 500;
+$default-font-path:'../fonts/raleway-v19-latin-ext_latin_cyrillic-ext';
+/*secondary font*/
+$font-secondary:'Open Sans',
+sans-serif;
+$font-secondary-weight:700;
+$secondary-font-path:'../fonts/roboto-v27-latin';
+
+$icon-font-path:'../fonts/ionicons.';
+/*style for title*/
+$title-color: #ffcc00;
+$title-size: 60px;
+$title-font:'Roboto',
+sans-serif;
+;
+$title-font-weight:900;
+
+/*style for subtitle*/
+$subtitle-color:#64686f;
+$subtitle-size:18px;
+
+/*style for border*/
+$border-color: #ffcc00;
+
+/*style for button*/
+$bg-btn:#202835;
+$border-btn:1px solid #4f5560;
+$padding-btn:12px 0;
+
+/*font-size*/
+$content-size:14px;

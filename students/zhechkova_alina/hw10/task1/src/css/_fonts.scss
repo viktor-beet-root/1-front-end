@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Ionicons";
+    src: url("#{$icon-font-path}.eot?v=2.0.1");
+    src: url("#{$icon-font-path}.eot?v=2.0.1#iefix") format("embedded-opentype"),
+    url("#{$icon-font-path}.ttf?v=2.0.1") format("truetype"),
+    url("#{$icon-font-path}.woff?v=2.0.1") format("woff"),
+    url("#{$icon-font-path}.svg?v=2.0.1#Ionicons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('#{$default-font-path}-regular.woff2') format('woff2'),
+    url('#{$default-font-path}-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+    url('#{$default-font-path}-500.woff2') format('woff2'),
+    url('#{$default-font-path}-500.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+    url('#{$secondary-font-path}-900.woff2') format('woff2'),
+    url('#{$secondary-font-path}n-900.woff') format('woff');
+}

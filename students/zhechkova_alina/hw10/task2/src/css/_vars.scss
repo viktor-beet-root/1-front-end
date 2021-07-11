@@ -1,0 +1,52 @@
+/*container*/
+$container-width: 1200px;
+$default-gap:0 15px;
+$container-padding:10px;
+$bg-color:#111a28;
+
+/*fonts*/
+$default-font:'Raleway',
+sans-serif;
+$default-color:#262626;
+
+$default-font:'Raleway',
+sans-serif,
+Arial,
+Helvetica,
+sans-serif;
+$default-font-path:'../fonts/raleway-v19-latin';
+
+/*secondary font*/
+$font-secondary:'Pacifico',
+cursive;
+$font-secondary-weight:400;
+$secondary-font-path:'../fonts/pacifico-v17-latin-regular';
+
+/*style for title*/
+$title-color: #e1e1e1;
+$title-size: 24px;
+
+/*style for subtitle*/
+$subtitle-color:#64686f;
+$subtitle-size:14px;
+
+/*style for border*/
+$border-color: #a9aaad;
+
+/*style for button*/
+$bg-btn:#202835;
+$border-btn:1px solid #4f5560;
+$padding-btn:12px 0;
+
+/*grid mixin*/
+$breack-points: ("xl": 1200px,
+    "lg": 992px,
+    "md": 768px,
+    "sm": 576px);
+
+/*colors*/
+$black:#000;
+$white:#fff;
+$mineshaft:#262626;
+$ss:#00afaf;
+$default-menu-color: #ff6033;

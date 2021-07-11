@@ -1,0 +1,22 @@
+@include grid();
+
+.page {
+    font-family: $default-font;
+}
+
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: $default-gap;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    margin: 0 (-$default-gap);
+
+    &__col {
+        padding: $default-gap;
+        box-sizing: border-box;
+    }
+}
