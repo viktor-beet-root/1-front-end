@@ -1,0 +1,120 @@
+.our-services {
+    background-color: $bg-collor-s-services;
+
+    // .our-services__content
+
+    &__content {
+        padding: 53px 0 0 104px;
+
+
+        @media screen and ( max-width: 992px) {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+    }
+
+    // .our-services__items
+
+    &__items {
+        
+    }
+
+    // .our-services__item
+
+    &__item {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+     
+    
+    }
+
+    // .our-services__link
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        text-decoration: none;
+         
+        &:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        
+      
+        
+        
+    
+
+    }
+
+    // .our-services__bg
+
+    &__bg {
+        background-image: url(../image/img_bg_services.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-left: 22px;
+    }
+
+    // .our-services__title
+
+    &__title {
+        font-size: 90px;
+        font-weight: 700;
+        font-family: $font-main;
+        color:$main-light;
+        text-align: center;
+
+        @media screen and (max-width: 576px) {
+            font-size: 70px;
+        }
+
+       
+    }
+}
+.container {
+}
+.row {
+}
+.col-6 {
+}
+.our-services__img {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    background-color: #fff;
+    position: relative;
+    border-left: 1px solid #9d9d9d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-services__link_title {
+    text-align: center;
+    width: 300px;
+    height: 100%;
+    color: $main-dark;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: $font-main;
+    padding: 0 30px;
+
+    @media screen and ( max-width: 576px) {
+        width: 200px;
+    }
+}
+
+@media screen and ( max-width: 992px) {
+    .our-services_order {
+    order: 2;
+}
+}

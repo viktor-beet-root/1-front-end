@@ -1,0 +1,19 @@
+@include grid ();
+
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: $default-gap;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 (-$default-gap);
+}
+
+[class^="col-"] {
+    padding:$default-gap;
+}
+
+
+

@@ -1,0 +1,154 @@
+.contact-form {
+background-image: url(../image/bg_contact.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+    // .contact-form__head
+
+    &__head {
+        font-family: $font-main;
+        text-align: center;
+        color: $main-dark;
+    }
+
+    // .contact-form__title
+
+    &__title {
+        font-size: 90px;
+        font-weight: 700;
+        margin-bottom: 30px;
+
+        
+    }
+
+    // .contact-form__sub-title
+
+    &__sub-title {
+        max-width: 380px;
+        margin: 0 auto 19px;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 25px;
+    }
+
+    // .contact-form__content
+
+    &__content {
+    }
+
+    // .contact-form__wrapper
+
+    &__wrapper {
+        padding-right: 80px;
+       
+        @media screen and (max-width:992px) {
+            padding: 0;
+            
+        }
+    }
+
+    // .contact-form__input
+
+    &__input {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 20px  19px;
+        background-color: rgba(0, 196, 196, .4);
+        border: none;
+        
+        &:focus{
+            outline: none;
+            border-left:5px solid  #355b82;
+            background-color: rgba(0, 196, 196, .8);
+        }
+        
+    }
+    &__input::placeholder {
+        color: white;
+        font-family: $font-main;
+        font-size: 15px;
+        font-weight: 300;
+
+    }
+
+    // .contact-form__textarea
+
+    &__textarea {
+        width: 100%;
+        resize: none;
+        padding: 20px 19px;
+        min-height: 250px;
+        background-color: rgba(0, 196, 196, .4);
+        border: none;
+        &:focus{
+            outline: none;
+            border-left:5px solid  #355b82;
+            background-color: rgba(0, 196, 196, .8);
+        }
+    }
+    &__textarea::placeholder {
+        color: white;
+        font-family: $font-main;
+        font-size: 15px;
+        font-weight: 300;
+
+    }
+
+    // .contact-form__contact
+
+    &__contact {
+        padding-left: 74px;
+        
+        @media screen and (max-width:992px) {
+            padding: 0;
+            
+        }
+    }
+}
+.container {
+}
+.row {
+}
+.col-12 {
+}
+.col-6 {
+}
+.contacts {
+    font-family: $font-main;
+    line-height: 25px;
+    color: $main-dark;
+
+    // .contacts__title
+
+    &__title {
+        font-weight: 700;
+        font-size: 17px;
+    }
+
+    // .contacts__address
+
+    &__address {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    // .contacts__email
+
+    &__email {
+        text-decoration: none;
+        color: $main-dark;
+        font-size: 20px;
+    }
+
+    // .contacts__phone
+
+    &__phone {
+        text-decoration: none;
+        color: $main-dark;
+        font-size: 20px;
+    }
+}
+.block-contact {
+    padding-top: 65px;
+    padding-bottom: 100px;
+}
