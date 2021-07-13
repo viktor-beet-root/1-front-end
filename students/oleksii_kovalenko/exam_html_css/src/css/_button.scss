@@ -1,0 +1,35 @@
+.button__link {
+    width: $widthElemForms;
+    color: $white;
+    height: $heightElemForms;
+    font-family: $font-second-name;
+    background: rgb(73, 107, 254);
+    background: linear-gradient(
+        45deg,
+        rgba(73, 107, 254, 1) 0%,
+        rgba(73, 107, 254, 1) 79%,
+        rgba(84, 116, 253, 1) 35%,
+        rgba(84, 116, 253, 1) 100%
+    );
+    display: block;
+    border: none;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 18px;
+    letter-spacing: 1px;
+
+    @include media ("md") {
+        margin: auto;
+    }
+    
+  background-size: 350% 100%;
+  background-position: 100%;
+  transition: background-position .5s ease;
+
+        &:hover {
+        background-position: 0 100%;
+        }
+
+}

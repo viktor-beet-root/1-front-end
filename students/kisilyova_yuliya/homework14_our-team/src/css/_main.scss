@@ -1,0 +1,235 @@
+.employee-left {
+    padding: 65px 50px 0px 0px;
+
+    &__corner-box-1 {
+        display: inline-block;
+        width: 414px;
+        height: 414px;
+        position: relative;
+        border: 1px solid $supernova;
+    }
+
+    &__corner-box-1:before,
+    &__corner-box-1:after {
+        content: "";
+        z-index: 1;
+        display: block;
+        position: absolute;
+        background: #FFF;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transform-origin: 50% 50%;
+    }
+
+    &__corner-box-1:before {
+        width: calc(100% + 4px);
+        height: 60%;
+    }
+
+    &__corner-box-1:after {
+        height: calc(100% + 4px);
+        width: 60%;
+    }
+
+    &__photo {
+        position: absolute;
+        padding: 0px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        border: 1px solid $supernova;
+    }
+}
+
+.employee-card {
+    margin: 0 auto;
+    text-align: center;
+
+    &__name {
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        color: $dovegray;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 35px;
+    }
+
+    &__divider {
+        content: '';
+        margin: 0 auto 30px;
+        background-color: $supernova;
+        height: 1px;
+        width: 100px;
+    }
+
+    &__link {
+        margin-right: 5px;
+        background-size: 10px;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        border: 2px solid #cccccc;
+        border-radius: 50%;
+        background-image: url(../image/facebook.svg);
+    }
+
+    &__link:nth-child(2) {
+        background-image: url(../image/twitter.svg);
+        background-size: 13px;
+    }
+
+    &__link:nth-child(3) {
+        background-image: url(../image/google-plus.svg);
+        background-size: 16px;
+    }
+
+    &__link:nth-child(4) {
+        background-image: url(../image/linkedin.svg);
+        background-size: 13px;
+    }
+
+    &__text {
+        font-family: 'Raleway', Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 44px;
+        position: relative;
+    }
+
+    &__text::after {
+        content: "";
+        position: absolute;
+        background-color: $supernova;
+        height: 4px;
+        width: 50px;
+        top: 110%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    &__text::before {
+        content: "";
+        position: absolute;
+        height: 30px;
+        width: 20px;
+        border: 5px solid white;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 10;
+    }
+
+    &__btn {
+        display: inline-block;
+        padding: 0px 10px 0px;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: white;
+        border: 1px solid $supernova;
+        color: $dovegray;
+        transition: .3s;
+    }
+
+    &__btn:hover {
+        transform: translateY(3px);
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    &__wrap {
+        padding-right: 5px;
+    }
+}
+
+strong {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    display: block;
+    font-size: 24px;
+    color: $dovegray;
+    margin-bottom: 26px;
+}
+
+.col-6:first-child {
+    display: block;
+    border-right: 1px solid $supernova;
+}
+
+.employee-box {
+    padding: 66px 0px 66px 0px;
+}
+
+.row {
+    position: relative;
+}
+
+.col-6:first-child::before,
+.col-6:last-child::after {
+    content: "";
+    display: block;
+    border-top: 3px solid $supernova;
+    border-right: 3px solid $supernova;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    transform: rotate(-135deg);
+    top: 48%;
+    right: 95%;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.col-6:last-child::after {
+    transform: rotate(45deg);
+    top: 48%;
+    left: 97%;
+}
+
+.radio-btn {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 40px 0px;
+
+}
+
+input[type='radio'] {
+    visibility: hidden;
+}
+
+input[type='radio']:after {
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    top: -1px;
+    left: -1px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid $supernova;
+}
+
+input[type='radio']:checked:after {
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    top: -1px;
+    left: -1px;
+    position: relative;
+    background-color: $supernova;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid $supernova;
+}

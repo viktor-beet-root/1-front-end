@@ -1,0 +1,11 @@
+%form-elem {
+    border: $default-border;
+    border-radius: $default-border-radius;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.input {
+    @extend %form-elem;
+    height: 55px;
+}

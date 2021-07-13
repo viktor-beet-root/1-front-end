@@ -1,0 +1,59 @@
+.about-us {
+    min-height: 700px;
+    background:$Bondi-Blue;
+
+    &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    }
+
+    &__content {
+        padding-left: 76px;
+        padding-bottom: 76px;
+
+        @include media ('md') {
+            padding-left: 0;
+        }
+    }
+
+    &__content_title {
+        color: $color-white;
+        font-size: 90px;
+    }
+
+    &__content_text {
+        color: $color-white;
+        font-size: 17px;
+        line-height: 29px;
+    }
+
+    &__content-img {
+        width: 567px;
+        display: block;
+        margin: -6% 2%;
+
+        @include media('lg') {
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+    }
+
+}
+
+.about-us-wraper {
+    padding-top: 75px;
+    
+        @include media('lg') {
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            justify-content: center;
+            
+        }
+    
+        &__img-container {
+            width: 100%;
+        }
+}

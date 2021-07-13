@@ -1,0 +1,27 @@
+$color-white: white;
+$supernova: #ffcc00;
+$dove-gray:#666666;
+$silver:#cccccc;
+
+$container-width: 1170px;
+$default-gap: 15px;
+
+$font-default-name: 'Roboto Condensed';
+$font-secondary-name: 'Roboto';
+$font-secondary-path: '../fonts/roboto-v20-latin-300';
+
+$follback: Arial,
+Helvetica,
+sans-serif;
+
+$font-dafault: $font-default-name,
+$follback;
+$font-secondary: $font-secondary-name,
+$follback;
+
+$default-font-size: 12px;
+
+$breack-points: ("xl": 1200px,
+    "lg": 992px,
+    "md": 768px,
+    "sm": 576px);
