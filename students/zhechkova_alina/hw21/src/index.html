@@ -5,8 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
+    <style>
+        .calculate-item,
+        #btnClear,
+        #btnSubmit {
+            box-sizing: border-box;
+            padding: 5px;
+            margin-bottom: 4px;
+        }
 
+        #btnClear {
+            margin-right: 5px;
+        }
+
+        #btnSubmit {
+            flex-grow: 1;
+        }
+
+        .calculate-item,
+        #btnClear {
+            width: 30%;
+        }
+
+        .num.calculate-item {
+            background-color: rgb(243, 242, 242);
+            border-radius: 5px;
+
+        }
+
+        .sign.calculate-item {
+            background-color: rgba(206, 206, 206, 0.878);
+            border-radius: 5px;
+        }
+
+        .sign_wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .calculate_form {
+            max-width: 150px;
+        }
+
+        #calc {
+            width: 100%;
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,35 +62,39 @@
             <div class="row">
                 <form action="#" class="calculate_form">
                     <input type="text" id="calc">
-                    <input type="button" value="1" class="calculate_num">
-                    <input type="button" value="2" class="calculate_num">
-                    <input type="button" value="3" class="calculate_num">
-                    <input type="button" value="4" class="calculate_num">
-                    <input type="button" value="5" class="calculate_num">
-                    <input type="button" value="6" class="calculate_num">
-                    <input type="button" value="7" class="calculate_num">
-                    <input type="button" value="8" class="calculate_num">
-                    <input type="button" value="9" class="calculate_num">
-                    <input type="button" value="0" class="calculate_num">
-                    <input type="button" value=".">
-                    <input type="button" value="+" class="calculate_sign">
-                    <input type="button" value="-" class="calculate_sign">
-                    <input type="button" value="/" class="calculate_sign">
-                    <input type="button" value="*" class="calculate_sign">
+                    <div class="sign_wrap">
+                        <input type="button" class="num calculate-item" value="7">
+                        <input type="button" class="num calculate-item" value="8">
+                        <input type="button" class="num calculate-item" value="9">
+                    </div>
+                    <div class="sign_wrap">
+                        <input type="button" class="num calculate-item" value="4">
+                        <input type="button" class="num calculate-item" value="5">
+                        <input type="button" class="num calculate-item" value="6">
+                    </div>
+                    <div class="sign_wrap">
+                        <input type="button" class="num calculate-item" value="1">
+                        <input type="button" class="num calculate-item" value="2">
+                        <input type="button" class="num calculate-item" value="3">
+                    </div>
+                    <div class="sign_wrap">
+                        <input type="button" class="sign calculate-item" value=".">
+                        <input type="button" class="num calculate-item zero" value="0">
+                        <input type="button" class="sign calculate-item" value="+">
 
-                    <button type="submit" id="btnSubmit">Submit</button>
+                    </div>
+                    <div class="sign_wrap"> <input type="button" class="sign calculate-item" value="-">
+                        <input type="button" class="sign calculate-item" value="*">
+                        <input type="button" class="sign calculate-item" value="/">
+
+                    </div>
+                    <div class="sign_wrap">
+                        <button type="reset" id="btnClear">C</button>
+                        <button type="submit" id="btnSubmit">Submit</button>
+                    </div>
                 </form>
-
-
             </div>
-
         </div>
-
-
-
-
-
-    </div>
 
     </div>
     <script src="js/script.js"></script>

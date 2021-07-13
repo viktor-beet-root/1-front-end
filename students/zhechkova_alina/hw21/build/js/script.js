@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/script.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -10979,6 +10979,65 @@ return jQuery;
 
 /***/ }),
 
+/***/ "./src/js/calculator/getCalc.js":
+/*!**************************************!*\
+  !*** ./src/js/calculator/getCalc.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function getCalc(e) {
+  e.preventDefault();
+  var q = eval(jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calc').val());
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calc').val(function (i, val) {
+    if (!val) return;
+    return val + '=' + q;
+  });
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (getCalc);
+
+/***/ }),
+
+/***/ "./src/js/calculator/getValue.js":
+/*!***************************************!*\
+  !*** ./src/js/calculator/getValue.js ***!
+  \***************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _getCalc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getCalc */ "./src/js/calculator/getCalc.js");
+
+
+
+function getValue() {
+  var form = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculate_form');
+  var item = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculate-item');
+  item.each(function (i, item) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(item).on('click', function (e) {
+      var newVal = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val();
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calc').val(function (i, val) {
+        return val + newVal;
+      });
+    });
+  });
+  form.on('submit', _getCalc__WEBPACK_IMPORTED_MODULE_1__["default"]);
+}
+
+getValue();
+
+/***/ }),
+
 /***/ "./src/js/script.js":
 /*!**************************!*\
   !*** ./src/js/script.js ***!
@@ -10988,22 +11047,109 @@ return jQuery;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _calculator_getValue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./calculator/getValue */ "./src/js/calculator/getValue.js");
+/* harmony import */ var _tabs_task2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tabs/task2 */ "./src/js/tabs/task2.js");
+// Калькулятор
+ // Табы
+
+
+
+/***/ }),
+
+/***/ "./src/js/tabs/changeBtnActive.js":
+/*!****************************************!*\
+  !*** ./src/js/tabs/changeBtnActive.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
-var num = jquery__WEBPACK_IMPORTED_MODULE_0___default()('input');
-console.log(num);
-num.each(function (index, item) {});
 
-function getCalc(e) {
-  e.preventDefault();
-  console.log(jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calc').val());
+function changeBtnActive(btn, index) {
+  btn.each(function (i, item) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(item).removeClass('active');
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(btn[index]).addClass('active');
 }
 
-num.on('click', function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calc').val(this.value);
-});
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('#btnSubmit').on('submit', getCalc);
+/* harmony default export */ __webpack_exports__["default"] = (changeBtnActive);
+
+/***/ }),
+
+/***/ "./src/js/tabs/changeSlide.js":
+/*!************************************!*\
+  !*** ./src/js/tabs/changeSlide.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function changeSlide(game, index) {
+  game.each(function (i, item) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(item).removeClass('active');
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(game[index]).addClass('active');
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (changeSlide);
+
+/***/ }),
+
+/***/ "./src/js/tabs/task2.js":
+/*!******************************!*\
+  !*** ./src/js/tabs/task2.js ***!
+  \******************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _changeSlide__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./changeSlide */ "./src/js/tabs/changeSlide.js");
+/* harmony import */ var _changeBtnActive__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./changeBtnActive */ "./src/js/tabs/changeBtnActive.js");
+
+
+
+
+function prepareNewSLide() {
+  var btn = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.btn');
+  var game = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slide');
+  btn.each(function (index, item) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(item).on('click', function (e) {
+      Object(_changeSlide__WEBPACK_IMPORTED_MODULE_1__["default"])(game, index);
+      Object(_changeBtnActive__WEBPACK_IMPORTED_MODULE_2__["default"])(btn, index);
+    });
+  });
+}
+
+prepareNewSLide();
+
+/***/ }),
+
+/***/ 0:
+/*!************************************************************************************************************************************************************************************!*\
+  !*** multi ./src/js/script.js ./src/js/calculator/getCalc.js ./src/js/calculator/getValue.js ./src/js/tabs/changeBtnActive.js ./src/js/tabs/changeSlide.js ./src/js/tabs/task2.js ***!
+  \************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\hw21\src\js\script.js */"./src/js/script.js");
+__webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\hw21\src\js\calculator\getCalc.js */"./src/js/calculator/getCalc.js");
+__webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\hw21\src\js\calculator\getValue.js */"./src/js/calculator/getValue.js");
+__webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\hw21\src\js\tabs\changeBtnActive.js */"./src/js/tabs/changeBtnActive.js");
+__webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\hw21\src\js\tabs\changeSlide.js */"./src/js/tabs/changeSlide.js");
+module.exports = __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\hw21\src\js\tabs\task2.js */"./src/js/tabs/task2.js");
+
 
 /***/ })
 

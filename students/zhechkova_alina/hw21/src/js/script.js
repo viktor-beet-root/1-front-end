@@ -1,17 +1,6 @@
-import $ from 'jquery';
-
-const num = $('input');
-console.log(num);
-
-num.each((index, item) => {})
+// Калькулятор
+import './calculator/getValue';
 
 
-
-function getCalc(e) {
-    e.preventDefault();
-    console.log($('#calc').val())
-}
-num.on('click', function () {
-    $('#calc').val(this.value)
-});
-$('#btnSubmit').on('submit', getCalc)
+// Табы
+import './tabs/task2'

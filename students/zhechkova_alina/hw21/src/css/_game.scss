@@ -1,0 +1,149 @@
+.game {
+    max-width: 600px;
+    width: 100%;
+    @include position-center;
+    color: #ffffff;
+
+
+    &__container {}
+
+    &__btn-wrap {
+        background-color: #2b3040;
+        padding: 0 60px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__intro {
+        display: flex;
+        background-color: $bg-color;
+        padding: 60px 30px;
+        padding-left: 20px;
+
+    }
+
+    &__img-wrap {
+        padding-right: 20px;
+        width: 37%;
+        margin-left: 27px;
+    }
+
+    &__img {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    &__rating {
+        text-align: center;
+    }
+
+    &__content {
+        width: 59%;
+    }
+
+    &__title {
+        font-size: 32px;
+        margin: 7px 0 10px;
+    }
+
+    &__info {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 35px;
+        color: #fdfdfd;
+    }
+
+    &__text {
+        margin-bottom: 67px;
+        font-size: 14px;
+        color: #b7bacd;
+        line-height: 22px;
+    }
+
+    &__price-wrap {
+        display: flex;
+        font-weight: 700;
+        padding-right: 23px;
+    }
+
+    &__price {
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    &__buy-btn {
+        margin-left: 47px;
+        font-size: 16px;
+        background-color: #13e28d;
+        border-radius: 2px;
+        border-color: transparent;
+        padding: 17px 36px;
+        color: #fff;
+    }
+}
+
+.container {}
+
+.btn {
+    padding: 30px 0;
+    text-transform: uppercase;
+    color: #b7bacd;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+    width: 140px;
+
+    &.active {
+        color: #fff;
+        border-bottom: 2px solid #fff;
+    }
+
+    &__span {
+        font-size: 16px;
+        padding-top: 5px;
+        display: block;
+    }
+}
+
+.price {
+
+    &__discount {
+        font-size: 12px;
+        font-weight: 700;
+        color: #fedc3f;
+        display: block;
+    }
+}
+
+.slide {
+
+    display: none;
+
+    &.active {
+        height: 426px;
+        display: flex;
+    }
+
+}
+
+tspan {
+    white-space: pre
+}
+
+.shp0 {
+    opacity: 0.702;
+    fill: #b7b9cd;
+
+    .btn.active & {
+        opacity: 1;
+        fill: #fff;
+    }
+
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}

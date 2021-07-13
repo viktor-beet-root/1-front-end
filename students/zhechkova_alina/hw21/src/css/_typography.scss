@@ -2,7 +2,7 @@
 
 .page {
     font-family: $default-font;
-    @include bg-cover('../image/bg.jpg');
+    @include bg-cover('../image/bg.png');
     min-height: 100vh;
 }
 
@@ -16,4 +16,9 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 (-$default-gap);
+}
+
+[class^=col-] {
+    padding: $default-gap;
+    box-sizing: border-box;
 }
