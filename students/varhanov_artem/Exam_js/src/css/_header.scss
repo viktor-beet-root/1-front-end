@@ -10,7 +10,11 @@
     &__row {
         justify-content: space-between;
     }
-
+    &__col-3 {
+        @media screen and (max-width: 576px){
+            display: none;
+        }
+    }
     &__col-7 {
         display: flex;
         align-items: center;

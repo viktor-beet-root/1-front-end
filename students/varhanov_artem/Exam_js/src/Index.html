@@ -13,25 +13,84 @@
 </head>
 
 <body class="page">
+     <header class="header-mob">
+         <div class="container">
+             <div class="row">
+                 <div class="col-2 header-mob__col-2">
+                     <button class="header-mob__button button-mobmenu" type="button">
+                         <span class="button-mobmenu__icon-holder">
+                             <span class="dot button-mobmenu__dot-1"></span>
+                             <span class="dot button-mobmenu__dot-2"></span>
+                             <span class="dot button-mobmenu__dot-3"></span>
+                             <span class="dot button-mobmenu__dot-4"></span>
+                             <span class="dot button-mobmenu__dot-5"></span>
+                             <span class="dot button-mobmenu__dot-6"></span>
+                             <span class="dot button-mobmenu__dot-7"></span>
+                             <span class="dot button-mobmenu__dot-8"></span>
+                             <span class="dot button-mobmenu__dot-9"></span>
+                         </span>
+                     </button>
+                 </div>
+                 <div class="col-10">
+                     <div class="heade-mob__logo">
+                         <a href="/"><img class="header__logo-img" src="./Image/Logo.png"></a>
+                     </div>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col-12 mobile-menu">
+                     <hav id="mobile-menu__menu" class="header-mob__nav">
+                         <ul class="header-mob__menu">
+                             <li class="menu__item">
+                                 <a href="#" class="header__link">About </a></li>
+                             <li class="menu__item">
+                                 <a href="#projects" class="header__link">projects</a></li>
+                             <li class="menu__item">
+                                 <a href="#lnews" class="header__link">news</a></li>
+                             <li class="menu__item">
+                                 <a href="#contact" class="header__link">contact</a></li>
+                         </ul>
+                     </hav>
+                     <ul class="header__social-link social-link">
+                        <li class="social-link__item">
+                            <a class="social-link__link" href="#">
+                                <i class="social-link__icon fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="social-link__item">
+                            <a class="social-link__link" href="#">
+                                <i class="social-link__icon fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="social-link__item">
+                            <a class="social-link__link" href="#">
+                                <i class="social-link__icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                 </div>
+             </div>
+         </div>
+     </header>
     <header class="header">
         <div class="container">
             <div class="row header__row">
-                <div class="col-3 col-md-12">
+                <div class="header__col-3 col-3 col-md-12">
                     <div class="header__logo">
                         <a href="#"><img class="header__logo-img" src="./Image/Logo.png"></a>
                     </div>
                 </div>
                 <div class="col-7 header__col-7 col-md-12 ">
-                    <hav class="header__nav">
+                    <hav id="menu" class="header__nav">
                         <ul class="header__menu">
                             <li class="menu__item">
-                                <a href="" class="header__link" href="#">About </a></li>
+                                <a href="#" class="header__link">About </a></li>
                             <li class="menu__item">
-                                <a href="" class="header__link" href="#">projects</a></li>
+                                <a href="#projects" class="header__link">projects</a></li>
                             <li class="menu__item">
-                                <a href="" class="header__link" href="#">news</a></li>
+                                <a href="#lnews" class="header__link">news</a></li>
                             <li class="menu__item">
-                                <a href="" class="header__link" href="#">contact</a></li>
+                                <a href="#contact" class="header__link">contact</a></li>
                         </ul>
                     </hav>
                 </div>
@@ -68,11 +127,13 @@
                         <span class="hero__sub-title-text"><strong>We make the world's beautiful every
                                 day</strong></span>
                     </div>
-                    <div class="hero__scroll scroll">
-                        <div class="scroll__down">
-                            <i class=" scroll__icon fas fa-angle-down"></i>
+                    <a id="scroll" href="#projects">
+                        <div class="hero__scroll scroll">
+                            <div class="scroll__down">
+                                <i class=" scroll__icon fas fa-angle-down"></i>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="hero__slide" style="background-image: url(./Image/Bg.jpeg);">
@@ -84,11 +145,13 @@
                         <span class="hero__sub-title-text"><strong>We make the world's beautiful every
                                 day</strong></span>
                     </div>
+                    <a href="#projects">
                     <div class="hero__scroll scroll">
                         <div class="scroll__down">
                             <i class=" scroll__icon fas fa-angle-down"></i>
                         </div>
                     </div>
+                </a>
                 </div>
             </div>
             <div class="hero__slide" style="background-image: url(./Image/Bg.jpeg);">
@@ -100,15 +163,17 @@
                         <span class="hero__sub-title-text"><strong>We make the world's beautiful every
                                 day</strong></span>
                     </div>
+                    <a href="#projects">
                     <div class="hero__scroll scroll">
                         <div class="scroll__down">
                             <i class=" scroll__icon fas fa-angle-down"></i>
                         </div>
                     </div>
+                </a>
                 </div>
             </div>
         </section>
-        <section class="whatwedo">
+        <section id="projects" class="whatwedo">
             <div class="container whatwedo__container">
                 <div class="whatwedo__title">
                     <h2 class="whatwedo__text">What we do</h2>
@@ -153,7 +218,7 @@
             </div>
 
         </section>
-        <section class="news">
+        <section id="lnews" class="news">
             <div class="container news__container">
                 <div class="news__titel">
                     <h2 class="news__titel-text">latest news</h2>
@@ -161,28 +226,30 @@
                 <div class="row news__row">
                     <div class="col-4 news__col-4 news-content col-lg-12">
                         <div class="news-content__wrapper">
-                        <img class="news-content__img" src="./Image/latest-news-1.jpeg">
-                        <div class="news-content__s">
-                        <h3 class="news-content__titel">See The Unmatched Beauty Of The Great.</h3>
-                        <p class="news-content__text">Free directories: directories are perfect for customers that
-                            are... searching for </p>
-                        </div>
-                        <div class="news-content__author author">
-                            <img class="author__img" src="./Image/latest-news-1-1.png">
-                            <div class="author__wrapper">
-                                <div class="author__name">Isaac Dunn</div>
-                                <div class="author__date">09 Feb 2017</div>
+                            <img class="news-content__img" src="./Image/latest-news-1.jpeg">
+                            <div class="news-content__s">
+                                <h3 class="news-content__titel">See The Unmatched Beauty Of The Great.</h3>
+                                <p class="news-content__text">Free directories: directories are perfect for customers
+                                    that
+                                    are... searching for </p>
+                            </div>
+                            <div class="news-content__author author">
+                                <img class="author__img" src="./Image/latest-news-1-1.png">
+                                <div class="author__wrapper">
+                                    <div class="author__name">Isaac Dunn</div>
+                                    <div class="author__date">09 Feb 2017</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </div>
 
                     <div class="col-4 news__col-4 news-content col-lg-12">
                         <div class="news-content__wrapper">
                             <img class="news-content__img" src="./Image/latest-news-2.jpeg">
                             <div class="news-content__s">
-                            <h3 class="news-content__titel">Effective Advertising Pointers.</h3>
-                            <p class="news-content__text">Having a home based business is a wonderful asset to yourlife...</p>
+                                <h3 class="news-content__titel">Effective Advertising Pointers.</h3>
+                                <p class="news-content__text">Having a home based business is a wonderful asset to
+                                    yourlife...</p>
                             </div>
                             <div class="news-content__author author">
                                 <img class="author__img" src="./Image/latest-news-1-2.png">
@@ -197,10 +264,11 @@
                         <div class="news-content__wrapper">
                             <img class="news-content__img" src="./Image/latest-news-3.jpeg">
                             <div class="news-content__s">
-                            <h3 class="news-content__titel">Hypnotize Yourself Into The Ghost.</h3>
-                            <p class="news-content__text">There are many things that are important to catalog design....
-                            </p>
-                        </div>
+                                <h3 class="news-content__titel">Hypnotize Yourself Into The Ghost.</h3>
+                                <p class="news-content__text">There are many things that are important to catalog
+                                    design....
+                                </p>
+                            </div>
                             <div class="news-content__author author">
                                 <img class="author__img" src="./Image/latest-news-1-3.png">
                                 <div class="author__wrapper">
@@ -210,12 +278,15 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col-4 news__col-4 news-content col-lg-12">
+                    <div class="col-4 news__col-4 news-content col-lg-12">
                         <div class="news-content__wrapper">
                             <img class="news-content__img" src="./Image/latest-news-3.jpeg">
-                            <h3 class="news-content__titel">Hypnotize Yourself Into The Ghost.</h3>
-                            <p class="news-content__text">There are many things that are important to catalog design....
-                            </p>
+                            <div class="news-content__s">
+                                <h3 class="news-content__titel">Hypnotize Yourself Into The Ghost.</h3>
+                                <p class="news-content__text">There are many things that are important to catalog
+                                    design....
+                                </p>
+                            </div>
                             <div class="news-content__author author">
                                 <img class="author__img" src="./Image/latest-news-1-3.png">
                                 <div class="author__wrapper">
@@ -224,13 +295,16 @@
                                 </div>
                             </div>
                         </div>
-                    </div> -->
-                    <!-- <div class="col-4 news__col-4 news-content col-lg-12">
+                    </div>
+                    <div class="col-4 news__col-4 news-content col-lg-12">
                         <div class="news-content__wrapper">
                             <img class="news-content__img" src="./Image/latest-news-3.jpeg">
-                            <h3 class="news-content__titel">Hypnotize Yourself Into The Ghost.</h3>
-                            <p class="news-content__text">There are many things that are important to catalog design....
-                            </p>
+                            <div class="news-content__s">
+                                <h3 class="news-content__titel">Hypnotize Yourself Into The Ghost.</h3>
+                                <p class="news-content__text">There are many things that are important to catalog
+                                    design....
+                                </p>
+                            </div>
                             <div class="news-content__author author">
                                 <img class="author__img" src="./Image/latest-news-1-3.png">
                                 <div class="author__wrapper">
@@ -239,14 +313,126 @@
                                 </div>
                             </div>
                         </div>
-                    </div> -->
-                    
-                  
+                    </div>
                 </div>
             </div>
         </section>
+        <section class="gallery">
+            <div class="container gallery__container">
+                <div class="gallery__title">
+                    <h2 class="gallery__text">gallery</h2>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-lg-12 gallery__col_pp">
+                        <img class="gallery__img im" src="./image/gallery-1.jpeg">
+                    </div>
+                    <div class="col-6 col-lg-12">
+                        <div class="row">
+                            <div class="col-6 col-md-12 gallery__col gallery__col_p ">
+                                <div class="gallery__image">
+                                    <img class="gallery__img gallery__img_m " src="./image/gallery-2.jpeg">
+                                </div>
+                                <div class="gallery__image">
+                                    <img class="gallery__img" src="./image/gallery-3.jpeg">
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-12 gallery__col_p gallery__col_rp">
+                                <div class="gallery__image ">
+                                    <img class="gallery__img gallery__img_m" src="./image/gallery-4.jpeg">
+                                </div>
+                                <div class="gallery__image">
+                                    <img class="gallery__img" src="./image/gallery-5.jpeg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery__button">
+                    <button class="description__button btn">see more</button>
+                </div>
 
+            </div>
+        </section>
+        <section class="maps">
+            <div class="conrainer">
+                <div id="map" class="maps__wrapper"></div>
+            </div>
+
+        </section>
     </main>
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer__wrapper-modal">
+                <div class="footer__title">
+                    <h2 class="footer__title-text">get in touch</h2>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-md-12">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <i class="fas fa-map-marker-alt"></i> 91 Nolan Extensions Suite 670</li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="tel:+001 356-868-2454">
+                                    <i class="fas fa-phone-alt"></i>+001 356-868-2454</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="mailto:gahuy93@gmail.com">
+                                    <i class="fas fa-inbox"></i>gahuy93@gmail.com</a>
+                            </li>
+                            <li class="footer__item"><i class="far fa-clock"></i>From 07:05AM to 19:30PM</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-12">
+                        <form class="footer__form" id="form">
+                            <label class="footer__label"> <input class="footer__input footer__input_m"
+                                    placeholder="Full name" type="text"></label>
+                            <label class="footer__label"></label> <input class="footer__input" placeholder="Email"
+                                type="mail"></label>
+                            <br><br>
+                            <div class="footer__button">
+                                <button class="footer__btn btn" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row footer__row footer__row_margin">
+                    <div class="col-7 col-md-12">
+                        <div class="footer__logo">
+                            <a href="#"><img class="header__logo-img" src="./Image/Logo.png"></a>
+                        </div>
+                        <div class="footer__text">
+                            <span class="footer__text-text">Copyrights © 2017 Monticello Group</span>
+                            <span>Made with <i class="fas fa-heart"></i> by Ga Huy</span>
+                        </div>
+                    </div>
+                    <div class="col-5 footer__col-5 col-md-12">
+                        <ul class="footer__social-link social-link">
+                            <li class="social-link__item">
+                                <a class="social-link__link" href="#">
+                                    <i class="social-link__icon fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="social-link__item">
+                                <a class="social-link__link" href="#">
+                                    <i class="social-link__icon fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="social-link__item">
+                                <a class="social-link__link" href="#">
+                                    <i class="social-link__icon fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxI6bzj55imZUoZdnFQiqrF00Wvr9Lz9s&callback=initMap">
+    </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
