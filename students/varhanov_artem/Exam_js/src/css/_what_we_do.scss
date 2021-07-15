@@ -1,18 +1,14 @@
 .whatwedo {
     overflow: hidden;
 
-    // .whatwedo__container
-
     &__container {
         padding-top: 96px;
-        padding-bottom: 140px;  
-        @media screen and (max-width: 992px){
+        padding-bottom: 140px;
+
+        @media screen and (max-width: 992px) {
             padding-bottom: 10px;
         }
-        
     }
-
-    // .whatwedo__title
 
     &__title {
         color: $color-primary-dark;
@@ -34,31 +30,17 @@
         }
     }
 
-    // .whatwedo__text
-
     &__text {
         padding-top: 46px;
         padding-bottom: 129px;
-        @media screen and (max-width: 992px){
+
+        @media screen and (max-width: 992px) {
             padding-bottom: 10px;
         }
     }
 
-    // .whatwedo__row
-
-    &__row {}
-
-    // .whatwedo__col
-
-    &__col {
-        
-    }
-
-    // .whatwedo__img-wraper
-
     &__img-wraper {
         position: relative;
-        
 
         &::before {
             content: '';
@@ -70,34 +52,20 @@
             left: -260px;
             top: -70px;
             z-index: -1;
-}
-}
-
-    // .whatwedo__img
+        }
+    }
 
     &__img {
         display: block;
         width: 100%;
     }
 
-    // .whatwedo__description
-
     &__description {
         padding-top: 65px;
     }
 }
 
-.container {}
-
-.row {}
-
-.col-7 {}
-
-.col-5 {}
-
 .description {
-
-    // .description__sub-title
 
     &__sub-title {
         display: block;
@@ -109,8 +77,6 @@
         margin-bottom: 10px;
     }
 
-    // .description__title
-
     &__title {
         color: $color-primary-dark;
         font-family: $font-Gotham;
@@ -119,8 +85,6 @@
         line-height: 1.2;
         text-transform: uppercase;
     }
-
-    // .description__text
 
     &__text {
         color: $color-p;
@@ -131,16 +95,10 @@
         margin-bottom: 36px;
     }
 
-    // .description__button
-
     &__button {
         margin-bottom: 60px;
         max-width: 190px;
-        
-
-    }
-
-    // .description__link
+}
 
     &__link {
         width: 331px;
@@ -168,9 +126,6 @@
     font-weight: 400;
 }
 
-
-.fas {}
-
 .fa-map-marker-alt {
     margin-right: 8px;
 }
@@ -180,13 +135,13 @@
 
     &::before {
         background-color: $color-heliotrope;
-        right:  -260px;
+        right: -260px;
         left: auto;
-       
+    }
 }
-}
+
 .whatwedo__col_order {
-    @media screen and (max-width: 992px){
+    @media screen and (max-width: 992px) {
         order: 1;
     }
 }

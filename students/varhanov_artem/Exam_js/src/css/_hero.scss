@@ -48,14 +48,16 @@
         top: 90%;
         transform: translate(-50%, -50%);
     }
+
     .slick-prev,
-    .slick-next{
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    clip: rect(0 0 0 0)
+    .slick-next {
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        clip: rect(0 0 0 0)
     }
+
     .slick-dots li button {
         font-size: 0;
         line-height: 0;
@@ -71,10 +73,12 @@
         border-radius: 50%;
         margin-bottom: 40px;
     }
+
     .slick-dots li.slick-active button {
         background-color: #fff;
     }
-    .slick-dots{
+
+    .slick-dots {
         position: absolute;
         right: 6%;
         top: 50%;

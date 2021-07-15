@@ -1,52 +1,32 @@
 .header-mob {
     position: absolute;
     z-index: 1;
-    @media screen and (min-width: 576px){
+
+    @media screen and (min-width: 576px) {
         display: none;
     }
-    // .header-mob__button
 
-    &__button {
-    }
-
-    // .header-mob__nav
-
-    &__nav {
-    }
     &__col-2 {
         display: flex;
     }
-    // .header-mob__menu
 
-    &__menu {
-    }
     .mobile-menu {
         display: none;
     }
+
     .active {
         display: block;
     }
 }
-.container {
-}
-.row {
-}
-.col-2 {
-}
-
 
 .button-mobmenu {
-background-color: transparent;
-border: none;
-    // .button-mobmenu__icon-holder
+    background-color: transparent;
+    border: none;
 
     &__icon-holder {
         width: 18px;
         height: 18px;
         position: relative;
-        
-        
-    
 
         .dot {
             content: '';
@@ -54,130 +34,50 @@ border: none;
             height: 3px;
             width: 3px;
             background-color: rgba(255, 255, 255, 0.6);
-            
-           
-           
         }
     }
-  // .button-mobmenu__dot-1
 
     &__dot-1 {
         top: 0;
         left: 0;
     }
 
-    // .button-mobmenu__dot-2
-
     &__dot-2 {
         top: 0;
         left: 7px;
     }
-
-    // .button-mobmenu__dot-3
 
     &__dot-3 {
         top: 0;
         left: 14px;
     }
 
-    // .button-mobmenu__dot-4
-
     &__dot-4 {
         top: 7px;
         left: 0;
     }
-
-    // .button-mobmenu__dot-5
 
     &__dot-5 {
         top: 7px;
         left: 7px;
     }
 
-    // .button-mobmenu__dot-6
-
     &__dot-6 {
         top: 7px;
         left: 14px;
     }
 
-    // .button-mobmenu__dot-7
-
     &__dot-7 {
         top: 14px;
     }
-
-    // .button-mobmenu__dot-8
 
     &__dot-8 {
         top: 14px;
         left: 7px;
     }
 
-    // .button-mobmenu__dot-9
-
     &__dot-9 {
         top: 14px;
         left: 14px;
     }
-}
-.col-10 {
-}
-.heade-mob {
-
-    // .heade-mob__logo
-
-    &__logo {
-    }
-}
-.header {
-
-    // .header__logo-img
-
-    &__logo-img {
-    }
-
-    // .header__link
-
-    &__link {
-    }
-
-    // .header__social-link
-
-    &__social-link {
-    }
-}
-.col-12 {
-}
-.menu {
-
-    // .menu__item
-
-    &__item {
-    }
-}
-.social-link {
-
-    // .social-link__item
-
-    &__item {
-    }
-
-    // .social-link__link
-
-    &__link {
-    }
-
-    // .social-link__icon
-
-    &__icon {
-    }
-}
-.fab {
-}
-.fa-facebook-f {
-}
-.fa-twitter {
-}
-.fa-instagram {
 }
