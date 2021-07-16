@@ -1,0 +1,40 @@
+@include grid();
+
+.page {
+    font-family: $font-primary-name, $font-reserve;
+    line-height: 1.6;
+    min-height: 100vh;
+    color: $color-white;
+}
+
+.container {
+    max-width: $container-widht;
+    width: 100%;
+    margin: 0 auto;
+    padding: $default-gap;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 (-$default-gap);
+}
+
+[class^="col-"] {
+    padding: $default-gap;
+}
+.button {
+    padding: 10px 30px 10px 30px;
+    border: 1px solid $color-pickled-bluewood;
+    margin-bottom: 55px;
+    max-width: 190px;
+    text-align: center;
+
+    // .button__link
+
+    &__link {
+        color: $color-pickled-bluewood;
+        font-size: 12px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}

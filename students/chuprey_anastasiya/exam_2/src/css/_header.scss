@@ -1,0 +1,213 @@
+.header {
+    @include bg-cover("../image/bg-header.jpg");
+    min-height: 100vh;
+    line-height: 22px;
+    // .header__container
+
+    &__container {
+    }
+
+    // .header__row
+
+    &__row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 260px;
+    }
+
+    // .header__logo
+
+    &__logo {
+    }
+
+    // .header__menu
+
+    &__menu {
+    }
+
+    // .header__social
+
+    &__social {
+    }
+
+    // .header__slider
+
+    &__slider {
+    }
+
+    // .header__slider-info
+
+    &__slider-info {
+        padding: 0px 10px;
+    }
+
+    // .header__slider-title
+
+    &__slider-title {
+        font-size: 80px;
+        letter-spacing: 4px;
+        line-height: 22px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 40px;
+
+        @media screen and (max-width: 1000px) {
+            font-size: 60px;
+        }
+        @media screen and (max-width: 780px) {
+            font-size: 30px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+        @media screen and (max-width: 500px) {
+            font-size: 20px;
+        }
+    }
+
+    // .header__slider-subtitle
+
+    &__slider-subtitle {
+        font-size: 18px;
+        letter-spacing: 5px;
+        text-align: center;
+        @media screen and (max-width: 780px) {
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+    }
+
+    // .header__scroll
+
+    &__scroll {
+    }
+
+    // .header__scroll-wrapper
+
+    &__scroll-wrapper {
+    }
+
+    // .header__scroll-link
+
+    &__scroll-link {
+    }
+
+    // .header__scroll-img
+
+    &__scroll-img {
+    }
+}
+.container {
+}
+.row {
+}
+.col-3 {
+}
+.logo {
+    // .logo__link
+
+    &__link {
+    }
+}
+.col-lg-2 {
+}
+.col-md-4 {
+}
+.col-sm-4 {
+}
+.menu {
+    flex-grow: 1;
+    // .menu__items
+
+    &__items {
+        display: flex;
+    }
+
+    // .menu__item
+
+    &__item {
+        position: relative;
+        padding-left: 15px;
+        //gоправити норм відступи margin
+        margin-left: 50px;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            border: 1px solid $color-white;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 7px;
+        }
+    }
+
+    // .menu__item-link
+
+    &__item-link {
+        font-size: 14px;
+        line-height: 22px;
+        color: $color-white;
+        text-decoration: none;
+        text-transform: uppercase;
+        // padding-left: 60px;
+        // .menu__item-link_active
+
+        &_active {
+            &::after {
+                background-color: white;
+            }
+        }
+    }
+}
+.col-7 {
+}
+.col-lg-7 {
+}
+.social {
+    align-items: flex-end;
+    // .social__items
+
+    &__items {
+        display: flex;
+    }
+
+    // .social__item
+
+    &__item {
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    // .social__item-link
+
+    &__item-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        border: 1px solid $color-melrose;
+
+        &:hover .social__item-svg_facebook {
+            fill: $color-san-marino;
+        }
+        &:hover .social__item-svg_twitter {
+            fill: $dodger-blue;
+        }
+        &:hover .social__item-svg_instagram {
+            fill: $color-carrot-orange;
+        }
+    }
+
+    // .social__item-svg
+
+    &__item-svg {
+        fill: $color-white;
+    }
+}

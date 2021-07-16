@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Architecture</title>
+</head>
+
+<body class="page">
+
+    <header class="header">
+        <div class="header__container container">
+
+            <div class="header__row row">
+                <div class="header__logo col-3 logo col-lg-2 col-md-4 col-sm-4">
+                    <a class="logo__link" href="#">
+                        <svg width="241px" height="54px">
+                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                d="M238.639,43.629 L237.180,43.629 L237.180,45.768 L236.501,45.768 L236.501,39.707 L238.751,39.707 C240.107,39.707 241.000,40.434 241.000,41.629 L241.000,41.646 C241.000,42.954 239.918,43.629 238.639,43.629 ZM240.313,41.655 C240.313,40.788 239.669,40.338 238.699,40.338 L237.180,40.338 L237.180,43.005 L238.665,43.005 C239.660,43.005 240.313,42.468 240.313,41.671 L240.313,41.655 ZM231.447,30.218 C225.988,30.218 221.945,26.034 221.945,20.811 L221.945,20.759 C221.945,15.535 226.039,11.300 231.498,11.300 C236.957,11.300 241.000,15.483 241.000,20.707 L241.000,20.759 C241.000,25.982 236.905,30.218 231.447,30.218 ZM235.996,20.759 C235.996,18.134 234.151,15.847 231.447,15.847 C228.768,15.847 226.974,18.082 226.974,20.707 L226.974,20.759 C226.974,23.384 228.818,25.671 231.498,25.671 C234.202,25.671 235.996,23.436 235.996,20.811 L235.996,20.759 ZM218.598,45.871 C216.769,45.871 215.542,44.425 215.542,42.754 L215.542,42.737 C215.542,41.066 216.786,39.602 218.615,39.602 C220.444,39.602 221.671,41.049 221.671,42.720 L221.671,42.737 C221.671,44.408 220.426,45.871 218.598,45.871 ZM220.967,42.737 C220.967,41.360 219.972,40.235 218.598,40.235 C217.224,40.235 216.245,41.343 216.245,42.720 L216.245,42.737 C216.245,44.113 217.241,45.239 218.615,45.239 C219.988,45.239 220.967,44.131 220.967,42.754 L220.967,42.737 ZM205.464,11.664 L210.366,11.664 L210.366,25.437 L218.934,25.437 L218.934,29.854 L205.464,29.854 L205.464,11.664 ZM198.780,45.871 C196.892,45.871 195.725,44.486 195.725,42.754 L195.725,42.737 C195.725,41.074 196.935,39.602 198.738,39.602 C199.751,39.602 200.378,39.896 200.978,40.408 L200.541,40.927 C200.077,40.521 199.562,40.235 198.713,40.235 C197.381,40.235 196.428,41.369 196.428,42.720 L196.428,42.737 C196.428,44.182 197.347,45.257 198.807,45.257 C199.494,45.257 200.129,44.988 200.541,44.651 L200.541,43.143 L198.713,43.143 L198.713,42.529 L201.193,42.529 L201.193,44.945 C200.635,45.447 199.794,45.871 198.780,45.871 ZM187.365,11.664 L192.268,11.664 L192.268,25.437 L200.835,25.437 L200.835,29.854 L187.365,29.854 L187.365,11.664 ZM181.224,39.707 L181.903,39.707 L181.903,45.135 L185.285,45.135 L185.285,45.768 L181.224,45.768 L181.224,39.707 ZM167.977,11.664 L182.206,11.664 L182.206,15.951 L172.830,15.951 L172.830,18.706 L181.321,18.706 L181.321,22.682 L172.830,22.682 L172.830,25.566 L182.332,25.566 L182.332,29.854 L167.977,29.854 L167.977,11.664 ZM161.440,40.798 L161.440,45.768 L160.779,45.768 L160.779,39.707 L161.415,39.707 L165.201,44.564 L165.201,39.707 L165.862,39.707 L165.862,45.768 L165.321,45.768 L161.440,40.798 ZM155.666,25.618 C157.511,25.618 158.597,24.735 159.659,23.410 L163.349,26.112 C161.681,28.477 159.431,30.218 155.514,30.218 C150.460,30.218 146.391,26.242 146.391,20.811 L146.391,20.759 C146.391,15.458 150.359,11.300 155.716,11.300 C159.330,11.300 161.655,12.859 163.222,15.094 L159.532,18.030 C158.522,16.731 157.359,15.899 155.666,15.899 C153.190,15.899 151.446,18.056 151.446,20.707 L151.446,20.759 C151.446,23.488 153.190,25.618 155.666,25.618 ZM144.167,39.707 L144.844,39.707 L144.844,45.768 L144.167,45.768 L144.167,39.707 ZM136.305,11.664 L141.234,11.664 L141.234,29.854 L136.305,29.854 L136.305,11.664 ZM139.396,40.338 L137.378,40.338 L137.378,45.768 L136.692,45.768 L136.692,40.338 L134.674,40.338 L134.674,39.707 L139.396,39.707 L139.396,40.338 ZM126.218,29.854 L121.315,29.854 L121.315,16.081 L116.008,16.081 L116.008,11.664 L131.525,11.664 L131.525,16.081 L126.218,16.081 L126.218,29.854 ZM119.854,44.564 L119.854,39.707 L120.515,39.707 L120.515,45.768 L119.974,45.768 L116.093,40.798 L116.093,45.768 L115.432,45.768 L115.432,39.707 L116.068,39.707 L119.854,44.564 ZM99.476,19.875 L99.476,29.854 L94.624,29.854 L94.624,11.664 L99.198,11.664 L106.476,21.279 L106.476,11.664 L111.328,11.664 L111.328,29.854 L107.032,29.854 L99.476,19.875 ZM89.866,45.768 L89.180,45.768 L89.180,40.338 L87.162,40.338 L87.162,39.707 L91.884,39.707 L91.884,40.338 L89.866,40.338
+                        
+                        L89.866,45.768 ZM79.986,30.218 C74.527,30.218 70.484,26.034 70.484,20.811 L70.484,20.759 C70.484,15.535 74.578,11.300 80.037,11.300 C85.496,11.300 89.539,15.483 89.539,20.707 L89.539,20.759 C89.539,25.982 85.444,30.218 79.986,30.218 ZM84.535,20.759 C84.535,18.134 82.690,15.847 79.986,15.847 C77.307,15.847 75.513,18.082 75.513,20.707 L75.513,20.759 C75.513,23.384 77.358,25.671 80.037,25.671 C82.741,25.671 84.535,23.436 84.535,20.811 L84.535,20.759 ZM68.047,53.769 L67.676,53.989 L36.367,0.225 L36.737,0.006 L46.622,16.981 L46.622,11.664 L51.803,11.664 L56.023,18.706 L60.243,11.664 L65.424,11.664 L65.424,29.854 L60.547,29.854 L60.547,19.407 L56.023,26.528 L55.922,26.528 L51.424,19.459 L51.424,25.225 L68.047,53.769 ZM30.983,12.958 L51.538,48.148 L22.919,48.400 L25.241,42.791 L41.890,42.644 L31.080,24.136 L17.439,48.449 L-0.000,48.602 L25.747,3.835 L28.976,9.361 L9.671,42.928 L14.191,42.888 L30.983,12.958 ZM72.172,45.768 L71.494,45.768 L71.494,39.707 L72.172,39.707 L72.172,45.768 ZM81.791,44.564 L81.791,39.707 L82.452,39.707 L82.452,45.768 L81.911,45.768 L78.030,40.798 L78.030,45.768 L77.369,45.768 L77.369,39.707 L78.005,39.707 L81.791,44.564 ZM100.939,40.330 L97.273,40.330 L97.273,42.399 L100.552,42.399 L100.552,43.022 L97.273,43.022 L97.273,45.143 L100.981,45.143 L100.981,45.768 L96.594,45.768 L96.594,39.707 L100.939,39.707 L100.939,40.330 ZM110.078,40.313 C110.369,40.607 110.541,41.032 110.541,41.507 L110.541,41.524 C110.541,42.529 109.854,43.118 108.911,43.291 L110.756,45.768 L109.923,45.768 L108.181,43.412 L106.464,43.412 L106.464,45.768 L105.785,45.768 L105.785,39.707 L108.370,39.707 C109.108,39.707 109.700,39.932 110.078,40.313 ZM106.464,40.338 L106.464,42.798 L108.309,42.798 C109.211,42.798 109.854,42.330 109.854,41.551 L109.854,41.533 C109.854,40.788 109.288,40.338 108.318,40.338 L106.464,40.338 ZM128.513,39.663 L131.252,45.768 L130.522,45.768 L129.818,44.165 L126.547,44.165 L125.834,45.768 L125.139,45.768 L127.878,39.663 L128.513,39.663 ZM129.552,43.551 L128.187,40.460 L126.813,43.551 L129.552,43.551 ZM152.850,39.602 C154.679,39.602 155.906,41.049 155.906,42.720 L155.906,42.737 C155.906,44.408 154.661,45.871 152.832,45.871 C151.003,45.871 149.776,44.425 149.776,42.754 L149.776,42.737 C149.776,41.066 151.021,39.602 152.850,39.602 ZM150.480,42.737 C150.480,44.113 151.476,45.239 152.850,45.239 C154.223,45.239 155.202,44.131 155.202,42.754 L155.202,42.737 C155.202,41.360 154.206,40.235 152.832,40.235 C151.459,40.235 150.480,41.343 150.480,42.720 L150.480,42.737 ZM173.861,39.663 L176.599,45.768 L175.870,45.768 L175.166,44.165 L171.895,44.165 L171.182,45.768 L170.487,45.768 L173.225,39.663 L173.861,39.663 ZM174.900,43.551 L173.534,40.460 L172.161,43.551 L174.900,43.551 ZM210.454,40.313 C210.746,40.607 210.918,41.032 210.918,41.507 L210.918,41.524 C210.918,42.529 210.231,43.118 209.287,43.291 L211.132,45.768 L210.299,45.768 L208.557,43.412 L206.840,43.412 L206.840,45.768 L206.161,45.768 L206.161,39.707 L208.746,39.707 C209.484,39.707 210.076,39.932 210.454,40.313 ZM206.840,40.338 L206.840,42.798 L208.685,42.798 C209.587,42.798 210.231,42.330 210.231,41.551 L210.231,41.533 C210.231,40.788 209.664,40.338 208.694,40.338 L206.840,40.338 ZM227.129,43.187 C227.129,44.494 227.816,45.230 228.966,45.230 C230.074,45.230 230.778,44.554 230.778,43.230 L230.778,39.707 L231.456,39.707 L231.456,43.179 C231.456,44.945 230.452,45.862 228.949,45.862 C227.464,45.862 226.451,44.945 226.451,43.230 L226.451,39.707 L227.129,39.707 L227.129,43.187 Z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="header__menu menu col-7 col-lg-7 col-md-4 col-sm-4">
+                    <!-- <input class="menu__hidden" hidden type="checkbox" id="menuBtn">
+                    <label class="menu__hidden_btn" aria-label="button menu" for="menuBtn">
+                        <span class="menu__hidden_btn-line"></span>
+                    </label> -->
+                    <ul class="menu__items">
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link menu__item-link_active">ABOUT US</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">PROJECTS</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">NEWS</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__social social col-2 col-lg-1 col-md-4 col-sm-4">
+                    <ul class="social__items">
+                        <li class="social__item">
+                            <a class="social__item-link" href="#">
+                                <svg class="social__item-svg social__item-svg_facebook" width="9px" height="16px"
+                                    viewBox="0 0 320 512">
+                                    <path
+                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="social__item">
+                            <a class="social__item-link" href="#">
+                                <svg class="social__item-svg social__item-svg_twitter" width="14px" height="15px"
+                                    viewBox="0 0 512 512">
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="social__item">
+
+                            <a class="social__item-link" href="#">
+                                <svg class="social__item-svg social__item-svg_instagram" width="14px" height="15px"
+                                    viewBox="0 0 448 512">
+                                    <path
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="header__slider">
+                <div class="header__slider-info">
+                    <h2 class="header__slider-title">SIMPLE & MORDERN</h2>
+                    <p class="header__slider-subtitle">WE MAKE THE WORLD'S BEAUTIFUL EVERY DAY</p>
+                </div>
+            </div>
+
+            <div class="header__scroll row">
+                <div class="header__scroll-wrapper col-12">
+                    <a class="header__scroll-link" href="#projects">
+                        <img class="header__scroll-img" src="image/arrow.png" alt="Arrow Down">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <main class="main">
+        <section class="what-we-do">
+            <div class="what-we-do__container container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="what-we-do__title">what we do</h2>
+                    </div>
+                </div>
+                <article class="what-we-do__projects projects projects_left row">
+                    <div class="projects__image-rew  col-7 col-md-12">
+                        <img class="projects__img" src="image/trade-centre.jpg" alt="Trade Center">
+                    </div>
+                    <div class="projects__info col-5 col-md-12">
+                        <h3 class="projects__subtitle">One World</h3>
+                        <h2 class="projects__title">Trade Center</h2>
+                        <p class="projects__text">Increasing prosperity in our lives can be accomplished by having the
+                            right frame of mind. The truth is, our thoughts are very powerful.</p>
+                        <div class="projects__button button">
+                            <a href="#" class="button__link">more details</a>
+                        </div>
+                        <div class="projects__address">
+                            <a href="#" class="projects__address-link">
+                                <svg class="projects__address-svg" width="14px" height="15px" version="1.1" x="0px"
+                                    y="0px" viewBox="0 0 66.667 125" enable-background="new 0 0 66.667 100"
+                                    xml:space="preserve">
+                                    <path
+                                        d="M33.333,0C14.187,0,0,15.278,0,33.333c0,22.222,21.478,55.36,26.042,61.198c2.1,2.687,3.733,5.469,7.292,5.469  c3.388,0,5.089-2.634,7.378-5.556c4.228-5.396,25.955-38.889,25.955-61.111C66.667,15.538,52.344,0,33.333,0z M33.333,50  c-9.377,0-16.667-7.29-16.667-16.667c0-9.376,7.29-16.753,16.667-16.753c10.069,0,16.654,8.333,16.654,16.159  C49.988,42.708,42.711,50,33.333,50z" />
+                                </svg>
+                                <address>New York City, United States - 1776 feet</address>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="what-we-do__projects projects projects_right row">
+                    <div class="projects__info col-5 col-md-12">
+                        <h3 class="projects__subtitle">International</h3>
+                        <h2 class="projects__title">Commerce Centre</h2>
+                        <p class="projects__text">Successful businesses have many things in common, today we’ll look at
+                            the big ‘R’ of recognition and how a digital advertising network may help.</p>
+                        <div class="projects__button button">
+                            <a href="#" class="button__link">more details</a>
+                        </div>
+                        <div class="projects__address">
+                            <a href="#" class="projects__address-link">
+                                <svg class="projects__address-svg" width="14px" height="15px" version="1.1" x="0px"
+                                    y="0px" viewBox="0 0 66.667 125" enable-background="new 0 0 66.667 100"
+                                    xml:space="preserve">
+                                    <path
+                                        d="M33.333,0C14.187,0,0,15.278,0,33.333c0,22.222,21.478,55.36,26.042,61.198c2.1,2.687,3.733,5.469,7.292,5.469  c3.388,0,5.089-2.634,7.378-5.556c4.228-5.396,25.955-38.889,25.955-61.111C66.667,15.538,52.344,0,33.333,0z M33.333,50  c-9.377,0-16.667-7.29-16.667-16.667c0-9.376,7.29-16.753,16.667-16.753c10.069,0,16.654,8.333,16.654,16.159  C49.988,42.708,42.711,50,33.333,50z" />
+                                </svg>
+                                <address>Hong Kong - 1588 Feet</address>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="projects__image-rew col-7 col-md-12">
+                        <img class="projects__img" src="image/comerc-centre.jpg" alt="Trade Center">
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="news">
+            <div class="news__container container">
+                <div class="row">
+                    <div class="news__title col-12">
+                        <h2>latest news</h2>
+                    </div>
+                </div>
+                <div class="news__news-items news-items row">
+                    <div class="news-items__news-item news-item col-4 col-md-12">
+                        <div class="news-item__img-rew img-rew">
+                            <div class="img-rew__circle"></div>
+                            <img class="img-rew_img" src="image/news01.jpg" alt="Beauty Of The Great">
+                        </div>
+                        <div class="news-item__news-info news-info">
+                            <h3 class="news-info__title">See The Unmatched Beauty Of The Great.</h3>
+                            <p class="news-info__text">Free directories: directories are perfect for customers that
+                                are...</p>
+                            <div class="news-info__user-rew user-rew">
+                                <div class="user-rew__icon user-rew__icon_user1"></div>
+                                <strong class="user-rew__user-name">Isaac Dunn</strong>
+                                <span class="user-rew__date">09 Feb 2017</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news-items__news-item news-item col-4 col-md-12">
+                        <div class="news-item__img-rew img-rew">
+                            <div class="img-rew__circle"></div>
+                            <img class="img-rew_img" src="image/news02.jpg" alt="Beauty Of The Great">
+                        </div>
+                        <div class="news-item__news-info news-info">
+                            <h3 class="news-info__title">Effective Advertising Pointers.</h3>
+                            <p class="news-info__text">Having a home based business is a wonderful asset to your life...
+                            </p>
+                            <div class="news-info__user-rew user-rew">
+                                <div class="user-rew__icon user-rew__icon_user2"></div>
+                                <strong class="user-rew__user-name">Dominic Freeman</strong>
+                                <span class="user-rew__date">24 Apr 2017</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="news-items__news-item news-item col-4 col-md-12">
+                        <div class="news-item__img-rew img-rew">
+                            <div class="img-rew__circle"></div>
+                            <img class="img-rew_img" src="image/news03.jpg" alt="Beauty Of The Great">
+                        </div>
+                        <div class="news-item__news-info news-info">
+                            <h3 class="news-info__title">Hypnotize Yourself Into The Ghost.</h3>
+                            <p class="news-info__text">There are many things that are important to catalog design....
+                            </p>
+                            <div class="news-info__user-rew user-rew">
+                                <div class="user-rew__icon user-rew__icon_user3"></div>
+                                <strong class="user-rew__user-name">Alice Ward</strong>
+                                <span class="user-rew__date">30 Dec 2017</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="gallery__container container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="gallery__title">Gallery</h2>
+                    </div>
+                </div>
+                <div class="row gallery__img-list img-list">
+                    <div class="img-list__image-wrapper img-list__image-wrapper_big col-6 col-md-12">
+                        <img class="img-list__img" src="image/callery01.jpg" alt="gallery">
+                    </div>
+
+                    <div class="img-list__image-wrapper img-list__image-wrapper_left col-3 col-md-6">
+                        <img class="img-list__img" src="image/callery02.jpg" alt="gallery">
+                        <img class="img-list__img" src="image/callery04.jpg" alt="gallery">
+                    </div>
+
+                    <div class="img-list__image-wrapper img-list__image-wrapper_right col-3 col-md-6">
+                        <img class="img-list__img" src="image/callery03.jpg" alt="gallery">
+                        <img class="img-list__img" src="image/callery05.jpg" alt="gallery">
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="gallery__button button">
+                        <a href="#" class="button__link">see more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
