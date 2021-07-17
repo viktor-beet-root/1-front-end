@@ -147,9 +147,6 @@
     &__user-name {
         font-size: 18px;
         color: $color-pickled-bluewood;
-        // @media screen and (max-width: 768px) {
-        //     font-size: 14px;
-        // }
     }
 
     &__date {
@@ -157,76 +154,6 @@
         font-size: 14px;
         line-height: 22px;
         color: $color-malibu;
-        // @media screen and (max-width: 768px) {
-        //     font-size: 12px;
-        // }
-    }
-}
-
-.news-items {
-    // .news-items__news-item
-
-    &__news-item {
-    }
-}
-.news-item {
-    // .news-item__img-rew
-
-    &__img-rew {
-    }
-
-    // .news-item__news-info
-
-    &__news-info {
-    }
-}
-.col-4 {
-}
-.img-rew {
-    // .img-rew_img
-
-    &_img {
-    }
-
-    // .img-rew__circle
-
-    &__circle {
-    }
-}
-.news-info {
-    // .news-info__title
-
-    &__title {
-    }
-
-    // .news-info__text
-
-    &__text {
-    }
-
-    // .news-info__user-rew
-
-    &__user-rew {
-    }
-}
-.user-rew {
-    // .user-rew__icon
-
-    &__icon {
-        // .user-rew__icon_user3
-
-        &_user3 {
-        }
-    }
-
-    // .user-rew__user-name
-
-    &__user-name {
-    }
-
-    // .user-rew__date
-
-    &__date {
     }
 }
 
@@ -235,8 +162,12 @@
         padding-top: 50px;
 
         &__title {
-            font-size: 40px;
+            font-size: 45px;
             margin-bottom: 20px;
+
+            @media screen and (max-width: 480px) {
+                font-size: 30px;
+            }
         }
     }
 
