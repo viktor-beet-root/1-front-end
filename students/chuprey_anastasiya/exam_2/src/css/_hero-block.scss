@@ -1,0 +1,94 @@
+.hero {
+    @include bg-cover("../image/bg-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    padding-top: 200px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    // .hero__slider
+
+    &__slider {
+    }
+
+    // .hero__slide-item
+
+    &__slide-item {
+    }
+
+    // .hero__scroll
+
+    &__scroll {
+    }
+}
+.header {
+    // .header__slide-title
+
+    &__slide-title {
+        font-size: 80px;
+        font-family: $font-primary-name;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 0.275;
+        text-align: center;
+    }
+
+    // .header__slide-subtitle
+
+    &__slide-subtitle {
+        font-size: 18px;
+        font-family: $font-primary-name;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.222;
+        text-align: center;
+    }
+}
+.scroll {
+    // .scroll__wrapper
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 34px;
+    }
+
+    // .scroll__link
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        opacity: 0.8;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid $color-white;
+        animation: bounce 3s infinite ease-in-out;
+    }
+
+    @keyframes bounce {
+        from,
+        to {
+            top: 0;
+        }
+
+        40%,
+        60% {
+            top: 20px;
+        }
+    }
+
+    // .scroll__img
+
+    &__img {
+    }
+}
+.row {
+}
+.col-12 {
+}

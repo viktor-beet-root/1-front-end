@@ -20,7 +20,7 @@ const isDev = true;
 const webpackConfig = {
     mode: isDev ? 'development' : 'production',
     output: {
-        filename: 'app.js'
+        filename: 'script.js'
     },
     watch: false,
     devtool: isDev ? 'source-map' : 'none',
