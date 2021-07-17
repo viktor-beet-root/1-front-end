@@ -42,3 +42,13 @@
 10. Использование SVG где возможно
 
 ### РЕШЕНИЕ заливаем на GitHub
+
+
+### Для желающих сделать на чистом js
+<https://fancyapps.com/docs/ui/fancybox> 
+<https://biati-digital.github.io/glightbox/> 
+<https://splidejs.com/> 
+<https://glidejs.com/> 
+<https://swiperjs.com/> 
+<https://masonry.desandro.com/> 
+<https://isotope.metafizzy.co/> 
