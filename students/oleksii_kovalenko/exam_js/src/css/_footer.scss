@@ -1,0 +1,256 @@
+.footer {
+    background-image: url(../image/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    margin-top: -192px;
+
+    &__wrapp {
+        padding: 188px 0 192px;
+        width: 67.3%;
+        margin: 0 auto;
+    }
+
+    &__cover {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        @include media ('sm') {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__social {
+        padding-top: 7px;
+        width: 167px;
+    }
+
+    &__content {
+        display: flex;
+        max-width: 411px;
+        justify-content: space-between;
+        margin-top: 28px;
+
+            @include media ('sm') {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+    }
+
+    &__text {
+        color: $textColorWhite;
+        font-family: $default-fonts-name;
+        font-weight: 400;
+        font-size: 14px;
+
+        @include media ('sm') {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    & .social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        &__wrapp {
+            display: flex;
+        }
+    }
+
+    .contact {
+        &__wrapp {
+            background-image: url(../image/contact-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center;
+            position: relative;
+            margin: -340px auto 0;
+            max-width: 770px;
+            z-index: 100;
+            padding: 98px 60px 68px;
+    
+            @include media ('sm') {
+                padding: 69px 40px 45px;
+            }
+
+        }
+    
+        &__title {
+            font-size: 44px;
+            color: $colorTitleWhatWe;
+            font-weight: 500;
+            font-family: $font-default-name;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+    
+            @include media ('sm') {
+                font-size: 30px;
+            }
+    
+            &::before {
+                content: '';
+                top: -9px;
+                left: 50%;
+                transform: translateX(-50%);
+                position: absolute;
+                width: 100px;
+                height: 1px;
+                background-color: $colorTitleWhatWe;
+            }
+        }
+    
+        &__content {
+            padding-right: 30px;
+    
+            @include media ('sm') {
+                padding: 0;
+            }
+    
+            &-wrapp {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 31px;
+    
+                @include media ('lg') {
+                    display: block;
+                }
+            }
+        }
+    
+        &__form {
+            display: flex;
+            flex-direction: column;
+            width: 48%;
+    
+            @include media ('lg') {
+                width: 100%
+            }
+    
+            &-name,
+            &-email,
+            &-btn {
+                font-family: $secondary-fonts;
+                color: $colorTitleWhatWe;
+                outline: none;
+            }
+
+            &-name:active,
+            &-email:active,
+            &-name:focus,
+            &-email:focus {
+                border-bottom: 1px solid $colorTitleWhatWe;
+            }
+    
+            &-name,
+            &-email {
+                border: transparent;
+                border-bottom: 1px solid $borderInputNoActive;
+                font-weight: 400;
+                font-family: $font-default-name;
+                padding: 2px 0 16px;
+                font-size: 18px;
+            }
+    
+            &-name::placeholder,
+            &-email::placeholder {
+                color: $borderInputNoActive
+            }
+    
+            &-email {
+                margin-top: 32px;
+            }
+    
+            &-btn {
+                margin-top: 31px;
+                width: 140px;
+                height: 50px;
+                border: 1px solid $colorTitleWhatWe;
+                align-self: flex-end;
+                text-transform: uppercase;
+                font-size: 14px;
+                background-color: transparent;
+    
+                @include media('mi') {
+                    width: 100%;
+                }
+    
+                &:hover {
+                    box-shadow: $defaultBoxShadow;
+                    transition: transform .5s ease-in-out;
+                    background-color: $pickledBluewood;
+                    color: $white;
+                }
+            }
+        }
+    
+        &__tel,
+        &__adress,
+        &__email,
+        &__time {
+            position: relative;
+            padding-left: 23px;
+            color: $colorTitleWhatWe;
+            font-family: $font-default-name;
+            font-weight: 400;
+            margin-bottom: 28px;
+    
+            @include media ('sm') {
+                padding: 0;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    
+        &__adress::before {
+            content: url(../image/location.svg);
+        }
+    
+        &__tel::before {
+            content: url(../image/phone.svg);
+        }
+    
+        &__email::before {
+            content: url(../image/email.svg);
+        }
+    
+        &__time::before {
+            content: url(../image/clock.svg);
+        }
+    
+        &__tel::before,
+        &__adress::before,
+        &__email::before,
+        &__time::before {
+            position: absolute;
+            width: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+    
+            @include media ('sm') {
+                top: -20px;
+                left: 50%;
+                transform: translateX(-50%);
+    
+            }
+        }
+    }
+}
+
+//validation form///
+
+input:not([type="checkbox"]):required.valid {
+    border-bottom: 2px solid #33cc33;
+}
+input:not([type="checkbox"]):required.invalid {
+    border-bottom: 2px solid red;
+}
+

@@ -1,0 +1,10 @@
+@include fonts($font-default-name, 'gotham-book-webfont', 400);
+
+@include fonts($font-default-name, 'gotham-medium-webfont', 500);
+
+@include fonts($font-default-name, 'gotham-bold-webfont', 700);
+
+@include fonts($font-second-name, 'open-sans-v18-latin-300italic', 300);
+
+@include fonts($font-second-name, 'open-sans-v18-latin-regular', 400);
+

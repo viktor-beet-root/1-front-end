@@ -1,0 +1,162 @@
+.aboutUs {
+    padding-top: 106px;
+    overflow-x: hidden;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 190px;
+
+    &__title {
+        font-size: 80px;
+        font-family: $font-default-name;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $textColorWhite;
+        letter-spacing: 8px;
+
+            @include media ('lg') {
+                font-size: 62px;
+            }
+
+            @include media ('md') {
+                font-size: 43px;
+            }
+
+            @include media ('sm') {
+                font-size: 30px;
+            }
+    }
+
+    &__text {
+        font-size: 18px;
+        font-family: $font-default-name;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $textColorWhite;
+        line-height: 1.2;
+        letter-spacing: 5px;
+
+            @include media ('lg') {
+                font-size: 14px;
+            }
+
+            @include media ('md') {
+                font-size: 13px;
+            }
+
+            @include media ('sm') {
+                font-size: 11px;
+            }
+        }
+}
+
+
+//dots settings//
+
+.vertical-dots {
+    position: absolute;
+    top: 40.5%;
+    transform: translateY(-50%);
+    right: 18px;
+    height: 100px;
+
+    @include media ('xl') {
+        display: flex;
+        top: 63%;
+        right: 42%;
+    }
+
+    @include media ('md') {
+        display: flex;
+        top: 63%;
+        right: 42%;
+    }
+
+    @include media ('sm') {
+        display: flex;
+        top: 63%;
+        right: 39%;
+    }
+
+    @include media ('mi') {
+        display: flex;
+        top: 63%;
+        right: 32%;
+    }
+}
+
+.vertical-dots li button:before {
+   border: 1px solid white;
+   border-radius: 50%;
+    position: absolute;
+    right: 219%;
+    margin-right: -50px;
+    content: "";
+    width: 8px;
+    height: 8px;
+    color: $textColorWhite;
+    background-color: transparent;
+
+        @include media ('xl') {
+            margin-left: 20px;
+        }
+}
+
+.vertical-dots li.slick-active button:before {
+    position: absolute;
+    opacity: 0.75;
+    color: $textColorWhite;
+    content: "";
+    background-color: white;
+}
+
+///scroll///
+
+.scroll {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll_arrow {
+    display: block;
+    width: 5px;
+    height: 5px;
+    transform: rotate(45deg);
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.aboutUs__scroll_position{
+   position: absolute;
+   top: 83.5%;
+   left: 48.7%;
+}
+
+.scroll:hover {
+    border: 3px solid white;
+    transition: all .1s ease-in-out;
+}
+
+.scroll:hover .scroll_arrow {
+    width: 9px;
+    height: 9px;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    transition: all .1s ease-in-out;
+}
+
+

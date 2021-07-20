@@ -1,0 +1,119 @@
+.gallery {
+    padding: 144px 0 125px;
+
+    &__content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 44px;
+        color: $colorTitleWhatWe;
+        font-family: $font-default-name;
+        font-weight: 600;
+        text-transform: uppercase;
+        position: relative;
+
+        &::before {
+            content: '';
+            top: -19px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            width: 100px;
+            height: 1px;
+            background-color: $colorTitleWhatWe;
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+
+        &-wrapp {
+            margin-top: 75px;
+            display: flex;
+            padding: 0 -5px;
+
+            @include media ('lg') {
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center ;
+                align-items: center;
+            }
+        }
+
+        &-half,
+        &-smoll {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+
+            @include media ('md') {
+                width: 100%
+            }
+        }
+
+        &-big {
+            padding: 5px;
+            position: relative;
+        }
+
+        &-smoll {
+            padding: 5px;
+        }
+
+        &-smoll {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        margin: 47px auto 0;
+        width: 190px;
+        height: 50px;
+        border: 1px solid $colorTitleWhatWe;
+        color: $pickledBluewood;
+        font-weight: 400;
+        font-family: $font-default-name;
+        text-transform: uppercase;
+        font-size: 14px;
+        justify-content: center;
+        align-items: center;
+        cursor: default;
+        outline: none;
+        text-decoration: none;
+
+        &:hover {
+            color: $white;
+            background-color: $pickledBluewood;
+            box-shadow: $defaultBoxShadow;
+            transition: transform .5s ease-in-out;
+        }
+
+        &-text {
+            font-size: 14px;
+            font-family: $secondary-fonts;
+            color: $colorTitleWhatWe;
+            text-transform: uppercase;
+        }
+    }
+
+    &__img-hovefect-wrapp:hover::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url('../image/360.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        top: 40%;
+    }
+}
+
+.img-wrapp{
+    position: relative;
+}
