@@ -17887,6 +17887,7 @@ var settings = {
   dotsClass: 'slick-dots',
   appendDots: jquery__WEBPACK_IMPORTED_MODULE_14___default()('.news__slider-dots'),
   slidesToShow: 3,
+  autoplay: true,
   arrows: true,
   autoplaySpeed: 3000,
   responsive: [{
