@@ -79,7 +79,7 @@ const settings = {
     dotsClass: 'slick-dots',
     appendDots: $('.news__slider-dots'),
     slidesToShow: 3,
-
+    autoplay: true,
     arrows: true,
     autoplaySpeed: 3000,
 
