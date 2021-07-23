@@ -1,5 +1,34 @@
 "use strict";
 
+function initMap() {
+  var brooklun = {
+    lat: 40.686280255564796,
+    lng: -73.90061989110093
+  };
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: brooklun,
+    zoom: 13,
+    styles: [{
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#e8e8e8"
+      }]
+    }, {
+      "featureType": "road.arterial",
+      "elementType": "labels.text.fill",
+      "stylers": [{
+        "color": "#757575"
+      }]
+    }]
+  });
+  var marker = new google.maps.Marker({
+    position: brooklun,
+    map: map,
+    title: 'Park',
+    icon: 'image/Pin.png'
+  });
+}
+
 function throttle(func, ms) {
   var isThrottled = false,
       savedArgs,
@@ -99,36 +128,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.addEventListener('scroll', showHeaderThrottle);
 });
-
-function initMap() {
-  var brooklun = {
-    lat: 40.686280255564796,
-    lng: -73.90061989110093
-  };
-  var map = new google.maps.Map(document.getElementById('map'), {
-    center: brooklun,
-    zoom: 13,
-    styles: [{
-      "elementType": "geometry",
-      "stylers": [{
-        "color": "#e8e8e8"
-      }]
-    }, {
-      "featureType": "road.arterial",
-      "elementType": "labels.text.fill",
-      "stylers": [{
-        "color": "#757575"
-      }]
-    }]
-  });
-  var marker = new google.maps.Marker({
-    position: brooklun,
-    map: map,
-    title: 'Park',
-    icon: 'image/Pin.png'
-  });
-}
-
 var sections = document.querySelectorAll("section");
 var navLi = document.querySelectorAll("nav ul li a");
 window.addEventListener("scroll", function () {
