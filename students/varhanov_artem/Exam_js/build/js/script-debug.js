@@ -85,15 +85,7 @@ $(document).ready(function () {
   $('.button-mobmenu').click(function (event) {
     $('.button-mobmenu,.mobile-menu').toggleClass("active");
   });
-}); // $(window).scroll(function(){
-//   if ($(window).scrollTop() > 300) {
-//       $('.header').addClass('sticky');
-//   }
-//   else {
-//       $('.header').removeClass('sticky');
-//   }
-// });
-
+});
 document.addEventListener('DOMContentLoaded', function () {
   var hero = document.querySelector('.hero');
   var header = document.querySelector('.header');

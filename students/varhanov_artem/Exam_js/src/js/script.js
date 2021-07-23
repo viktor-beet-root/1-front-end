@@ -93,14 +93,7 @@ $(document).ready(function(){
   
 });
 
-// $(window).scroll(function(){
-//   if ($(window).scrollTop() > 300) {
-//       $('.header').addClass('sticky');
-//   }
-//   else {
-//       $('.header').removeClass('sticky');
-//   }
-// });
+
 document.addEventListener('DOMContentLoaded', () =>{
   const hero = document.querySelector('.hero');
   const header = document.querySelector('.header');
