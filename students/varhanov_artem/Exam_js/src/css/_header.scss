@@ -1,10 +1,11 @@
 .header {
-
-    position: fixed;
+    transition: all 2s ease-in;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 2;
+    opacity: 1;
     background-color: rgba(112, 117, 248, 0.5);
 
     &__row {
@@ -67,10 +68,33 @@
     }
 }
 
+.invisible {
+    opacity: 0;
+}
+
+.sticky {
+    position: fixed;
+    opacity: 1;
+    
+}
 .menu {
 
     &__item {
         position: relative;
+
+         .active::before{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 9px;
+            height: 9px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            top: 40%;
+            left: 0;
+            transform: translate(-50%, -50%);
+            background-color: white;
+        }
 
         ::before {
             content: '';

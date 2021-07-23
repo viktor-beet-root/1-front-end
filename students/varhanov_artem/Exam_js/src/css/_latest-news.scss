@@ -127,12 +127,43 @@
         flex-direction: column;
     }
 
+    &__wrapper-img {
+        position: relative;
+        margin-bottom: 30px;
+
+        &:hover::after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: '';
+            display: block;
+            background: linear-gradient(0deg, rgba(2, 0, 36, .5) 0%, rgba(0, 0, 0, .5) 100%, rgba(0, 212, 255, .5) 100%);
+        }
+        &:hover::before {
+            content: '';
+            background-image:url(../image/Hover.png);
+            background-position: center;
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 100px;
+            z-index: 5;
+        }
+
+    }
+
     &__s {
         flex-grow: 1;
     }
 
     &__img {
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
         display: block;
         width: 100%;
     }

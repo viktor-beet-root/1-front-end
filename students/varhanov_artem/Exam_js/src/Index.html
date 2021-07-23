@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+  />
     <link href="css/style.css" rel="stylesheet">
 
     <title>architecture</title>
@@ -72,7 +73,7 @@
             </div>
         </div>
     </header>
-    <header class="header">
+    <header id="headers" class="header">
         <div class="container">
             <div class="row header__row">
                 <div class="header__col-3 col-3 col-md-12">
@@ -81,18 +82,18 @@
                     </div>
                 </div>
                 <div class="col-7 header__col-7 col-md-12 ">
-                    <hav id="menu" class="header__nav">
+                    <nav id="menu" class="header__nav" id="header__menu">
                         <ul class="header__menu">
+                            <li class="menu__item ">
+                                <a href="#about" class="about header__link active">About </a></li>
                             <li class="menu__item">
-                                <a href="#" class="header__link">About </a></li>
+                                <a href="#projects" class="projects header__link ">projects</a></li>
                             <li class="menu__item">
-                                <a href="#projects" class="header__link">projects</a></li>
+                                <a href="#lnews" class="lnews header__link ">news</a></li>
                             <li class="menu__item">
-                                <a href="#lnews" class="header__link">news</a></li>
-                            <li class="menu__item">
-                                <a href="#contact" class="header__link">contact</a></li>
+                                <a href="#contact" class="contact header__link ">contact</a></li>
                         </ul>
-                    </hav>
+                    </nav>
                 </div>
                 <div class="col-2 header__col-2 col-md-12">
                     <ul class="header__social-link social-link">
@@ -117,7 +118,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="hero">
+        <section id="about" class="hero">
             <div class="hero__slide" style="background-image: url(./Image/Bg.jpeg);">
                 <div class="container">
                     <div class="hero__title">
@@ -226,7 +227,9 @@
                 <div class="row news__row">
                     <div class="col-4 news__col-4 news-content col-lg-12">
                         <div class="news-content__wrapper">
-                            <img class="news-content__img" src="./Image/latest-news-1.jpeg">
+                            <div class="news-content__wrapper-img">
+                                <img class="news-content__img" src="./Image/latest-news-1.jpeg">
+                            </div>
                             <div class="news-content__s">
                                 <h3 class="news-content__titel">See The Unmatched Beauty Of The Great.</h3>
                                 <p class="news-content__text">Free directories: directories are perfect for customers
@@ -245,7 +248,9 @@
 
                     <div class="col-4 news__col-4 news-content col-lg-12">
                         <div class="news-content__wrapper">
-                            <img class="news-content__img" src="./Image/latest-news-2.jpeg">
+                            <div class="news-content__wrapper-img">
+                                <img class="news-content__img" src="./Image/latest-news-2.jpeg">
+                            </div>
                             <div class="news-content__s">
                                 <h3 class="news-content__titel">Effective Advertising Pointers.</h3>
                                 <p class="news-content__text">Having a home based business is a wonderful asset to
@@ -262,7 +267,9 @@
                     </div>
                     <div class="col-4 news__col-4 news-content col-lg-12">
                         <div class="news-content__wrapper">
-                            <img class="news-content__img" src="./Image/latest-news-3.jpeg">
+                            <div class="news-content__wrapper-img">
+                                <img class="news-content__img" src="./Image/latest-news-3.jpeg">
+                            </div>
                             <div class="news-content__s">
                                 <h3 class="news-content__titel">Hypnotize Yourself Into The Ghost.</h3>
                                 <p class="news-content__text">There are many things that are important to catalog
@@ -280,7 +287,9 @@
                     </div>
                     <div class="col-4 news__col-4 news-content col-lg-12">
                         <div class="news-content__wrapper">
-                            <img class="news-content__img" src="./Image/latest-news-3.jpeg">
+                            <div class="news-content__wrapper-img">
+                                <img class="news-content__img" src="./Image/latest-news-3.jpeg">
+                            </div>
                             <div class="news-content__s">
                                 <h3 class="news-content__titel">Hypnotize Yourself Into The Ghost.</h3>
                                 <p class="news-content__text">There are many things that are important to catalog
@@ -298,7 +307,9 @@
                     </div>
                     <div class="col-4 news__col-4 news-content col-lg-12">
                         <div class="news-content__wrapper">
-                            <img class="news-content__img" src="./Image/latest-news-3.jpeg">
+                            <div class="news-content__wrapper-img">
+                                <img class="news-content__img" src="./Image/latest-news-3.jpeg">
+                            </div>
                             <div class="news-content__s">
                                 <h3 class="news-content__titel">Hypnotize Yourself Into The Ghost.</h3>
                                 <p class="news-content__text">There are many things that are important to catalog
@@ -317,30 +328,30 @@
                 </div>
             </div>
         </section>
-        <section class="gallery">
+        <section id="lgallery" class="gallery">
             <div class="container gallery__container">
                 <div class="gallery__title">
                     <h2 class="gallery__text">gallery</h2>
                 </div>
                 <div class="row">
-                    <div class="col-6 col-lg-12 gallery__col_pp">
-                        <img class="gallery__img im" src="./image/gallery-1.jpeg">
+                    <div data-fancybox="gallery"  data-src="./image/gallery-1.jpeg" class="col-6 col-lg-12 gallery__col_pp">
+                        <img  class="gallery__img im" src="./image/gallery-1.jpeg">
                     </div>
                     <div class="col-6 col-lg-12">
                         <div class="row">
                             <div class="col-6 col-md-12 gallery__col gallery__col_p ">
-                                <div class="gallery__image">
-                                    <img class="gallery__img gallery__img_m " src="./image/gallery-2.jpeg">
+                                <div data-fancybox="gallery"  data-src="./image/gallery-2b.jpeg" class="gallery__image">
+                                    <img  class="gallery__img gallery__img_m " src="./image/gallery-2.jpeg">
                                 </div>
-                                <div class="gallery__image">
+                                <div data-fancybox="gallery" data-src="./image/gallery-3.jpeg" class="gallery__image">
                                     <img class="gallery__img" src="./image/gallery-3.jpeg">
                                 </div>
                             </div>
                             <div class="col-6 col-md-12 gallery__col_p gallery__col_rp">
-                                <div class="gallery__image ">
+                                <div data-fancybox="gallery" data-src="./image/gallery-4.jpeg" class="gallery__image ">
                                     <img class="gallery__img gallery__img_m" src="./image/gallery-4.jpeg">
                                 </div>
-                                <div class="gallery__image">
+                                <div data-fancybox="gallery" data-src="./image/gallery-5.jpeg" class="gallery__image">
                                     <img class="gallery__img" src="./image/gallery-5.jpeg">
                                 </div>
                             </div>
@@ -353,7 +364,7 @@
 
             </div>
         </section>
-        <section class="maps">
+        <section id="gmaps" class="maps">
             <div class="conrainer">
                 <div id="map" class="maps__wrapper"></div>
             </div>
@@ -387,7 +398,7 @@
                             <label class="footer__label"> <input class="footer__input footer__input_m"
                                     placeholder="Full name" type="text"></label>
                             <label class="footer__label"></label> <input class="footer__input" placeholder="Email"
-                                type="mail"></label>
+                                type="email"></label>
                             <br><br>
                             <div class="footer__button">
                                 <button class="footer__btn btn" type="submit">Submit</button>
@@ -430,11 +441,10 @@
 
         </div>
     </footer>
-    <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxI6bzj55imZUoZdnFQiqrF00Wvr9Lz9s&callback=initMap">
-    </script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxI6bzj55imZUoZdnFQiqrF00Wvr9Lz9s&callback=initMap"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/2d7ccc6461.js" crossorigin="anonymous"></script>
     <script src="./js/script.min.js"></script>
