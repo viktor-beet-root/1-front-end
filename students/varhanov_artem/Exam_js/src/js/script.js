@@ -106,11 +106,7 @@ document.addEventListener('DOMContentLoaded', () =>{
   const header = document.querySelector('.header');
   const heroCenter = hero.offsetHeight / 2;
 
-  // const showHeaderThrottle = throttle(() => {
-  //   const scrollTop = window.scrollY;
-  //   (scrollTop >= 100) ? header.classList.add('invisible') : header.classList.remove('invisible');
-  //   (scrollTop >= heroCenter) ? header.classList.add('sticky') : header.classList.remove('sticky');
-  // }, 500)
+
   const showHeaderThrottle = () => {
     const scrollTop = window.scrollY;
     (scrollTop >= 100) ? header.classList.add('invisible') : header.classList.remove('invisible');

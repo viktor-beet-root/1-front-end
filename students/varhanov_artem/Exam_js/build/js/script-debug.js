@@ -97,11 +97,7 @@ $(document).ready(function () {
 document.addEventListener('DOMContentLoaded', function () {
   var hero = document.querySelector('.hero');
   var header = document.querySelector('.header');
-  var heroCenter = hero.offsetHeight / 2; // const showHeaderThrottle = throttle(() => {
-  //   const scrollTop = window.scrollY;
-  //   (scrollTop >= 100) ? header.classList.add('invisible') : header.classList.remove('invisible');
-  //   (scrollTop >= heroCenter) ? header.classList.add('sticky') : header.classList.remove('sticky');
-  // }, 500)
+  var heroCenter = hero.offsetHeight / 2;
 
   var showHeaderThrottle = function showHeaderThrottle() {
     var scrollTop = window.scrollY;
