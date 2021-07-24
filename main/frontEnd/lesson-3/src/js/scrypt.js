@@ -17,21 +17,30 @@ const catalogVm = new Vue({
         //     return this.pathImageFolder + imageName;
         // }
         addToCart(product) {
-            console.log(product);
+            const productInCart = this.isCartProduct(product.id);
 
-            cart.cartList.push({
-                id: product.id,
-                sku: product.sku,
-                name: product.name,
-                img: product.img,
-                price: product.price,
-                specialPrice: product.specialPrice,
-                qty: 1
-            });
-        }
+            if (productInCart) {
+                productInCart.qty++;
+            } else {
+                cart.cartList.push({
+                    id: product.id,
+                    sku: product.sku,
+                    name: product.name,
+                    img: product.img,
+                    price: product.price,
+                    specialPrice: product.specialPrice,
+                    qty: 1
+                });
+            }
+        },
+        isCartProduct(productId) {
+            return cart.cartList.find(product => product.id === productId);
+        },
     },
     computed: {
-
+        getInStocProducts() {
+            return this.products.filter(product => product.instock)
+        }
     },
     watch: {},
 });
@@ -42,6 +51,18 @@ const cart = new Vue({
         cartList: [],
         pathImageFolder: pathImageFolder,
         currensySymbol: currensySymbol,
+    },
+    computed: {
+        getCountProduct() {
+            if (!this.cartList.length) return 0;
+
+            return this.cartList.map(product => product.qty).reduce((sum, qty) => sum + qty);
+        },
+        getTotalPrice() {
+            if (!this.cartList.length) return 0;
+
+            return this.cartList.map(product => product.specialPrice * product.qty).reduce((sum, qty) => sum + qty).toLocaleString();
+        }
     },
     methods: {
         setQtyProduct(product, isIncrement) {
@@ -54,6 +75,7 @@ const cart = new Vue({
                 }
                 product.qty--;
             }
+            this.saveToLocalStorage();
         },
         findProductIndex(productId) {
             return this.cartList.map(product => product.id).indexOf(productId);
@@ -62,6 +84,21 @@ const cart = new Vue({
             if (productIndex === -1) return;
 
             this.cartList.splice(productIndex, 1);
-        }
-    }
+        },
+        // saveToLocalStorage() {
+        //     localStorage.setItem('cartList', JSON.stringify(this.cartList));
+        // }
+    },
+    // watch: {
+    //     cartList() {
+    //         localStorage.setItem('cartList', JSON.stringify(this.cartList));
+    //     }
+    // },
+    mounted() {
+        this.cartList = JSON.parse(localStorage.getItem('cartList'));
+
+    },
+    updated() {
+        localStorage.setItem('cartList', JSON.stringify(this.cartList));
+    },
 });

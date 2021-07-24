@@ -12,20 +12,26 @@
 <body class="page">
     <div id="cart">
         <div class="cart-list">
-            <div class="cart__item cart-product" v-for="product in cartList" :key="product.id">
-                <img :src="pathImageFolder + product.img" :alt="product.name">
+            <h3>Корзина: ({{ getCountProduct }})</h3>
+            <div class="cart__item cart-product" v-for="(product, index) in cartList" :key="product.id">
+                <img class="cart-product__img" :src="pathImageFolder + product.img" :alt="product.name">
                 <strong>{{ product.name }}</strong>
                 <p :class="{sale: product.price !== product.specialPrice}">
-                    Цена: <span>{{ product.price }} {{ currensySymbol }}</span>
+                    Цена: <span>{{ product.price.toLocaleString() }} {{ currensySymbol }}</span>
                     <span v-if="product.price !== product.specialPrice">
-                        {{ product.specialPrice }} {{ currensySymbol }}
+                        {{ product.specialPrice.toLocaleString() }} {{ currensySymbol }}
                     </span>
                 </p>
                 <div>
                     <button @click="setQtyProduct(product, false)">-</button>
                     <input type="text" v-model="product.qty">
                     <button @click="setQtyProduct(product, true)">+</button>
+                    <button @click="removeProduct(index)">Удалить</button>
                 </div>
+                <p>Всего: {{ (product.specialPrice * product.qty).toLocaleString() }} {{ currensySymbol }}</p>
+            </div>
+            <div class="cart-total" v-if="getTotalPrice !== 0">
+                Стоимость покупки: {{ getTotalPrice }} {{ currensySymbol }}
             </div>
         </div>
     </div>
