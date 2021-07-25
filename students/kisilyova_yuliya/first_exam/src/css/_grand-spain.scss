@@ -1,0 +1,132 @@
+.grand-spain-first {
+
+    background-image: url(../image/Img5.png);
+    @include picture-properties;
+
+
+    &__container {
+        padding: 230px 0px 100px;
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+
+        @media (max-width:768px) {
+            padding: 100px 0px 80px;
+        }
+        @media (max-width:576px) {
+            padding: 60px 0px 60px;
+        }
+    }
+
+    &__row {
+        margin: 0px 15px;
+    }
+
+    &__wrapper {
+        height: 371px;
+        max-width: 540px;
+        background-color: #232323;
+        opacity: 0.9;
+        padding: 50px 30px;
+        @media (max-width:576px) {
+            height: 320px;
+        }
+    }
+
+    &__abovetitle {
+        display: block;
+        font-size: 20px;
+        padding-bottom: 25px;
+    }
+
+    &__title {
+        font-size: 20px;
+        text-transform: uppercase;
+        padding-bottom: 28px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 26px;
+        @media (max-width: 576px) {
+            font-size: 13px;
+        }
+    }
+
+    &__button-secondary {
+        opacity: 1;
+        margin-top: -150px;
+        margin-left: 30px;
+
+        @media screen and (max-width: 576px) {
+            margin: 10px auto;
+        }
+    }
+
+}
+
+.grand-spain-second {
+
+    background-image: url(../image/Img6.png);
+    @include picture-properties;
+
+    &__container {
+        padding: 230px 0px 100px;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 10;
+        position: relative;
+        @media (max-width:768px) {
+            padding: 100px 0px 80px;
+        }
+        @media (max-width:576px) {
+            padding: 60px 0px 60px;
+        }
+    }
+
+    &__row {
+        margin: 0px 15px;
+    }
+
+    &__wrapper {
+        height: 371px;
+        max-width: 540px;
+        background-color: #232323;
+        opacity: 0.9;
+        padding: 50px 30px;
+        @media (max-width:576px) {
+            height: 320px;
+        }
+    }
+
+    &__abovetitle {
+        display: block;
+        font-size: 20px;
+        padding-bottom: 25px;
+    }
+
+    &__title {
+        font-size: 20px;
+        text-transform: uppercase;
+        padding-bottom: 28px;
+
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 26px;
+        @media (max-width: 576px) {
+            font-size: 13px;
+        }
+    }
+
+    &__button-secondary {
+        opacity: 1;
+        margin-top: -150px;
+        margin-left: 30px;
+
+        @media screen and (max-width: 576px) {
+            margin: 10px auto;
+        }
+    }
+}

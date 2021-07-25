@@ -1,0 +1,56 @@
+@mixin grid($count: 12) {
+    @for $i from 1 through $count {
+        $width: 100% / 12 * $i;
+
+        .col-#{$i} {
+            max-width: $width;
+            width: 100%;
+            flex-basis: $width;
+        }
+
+        @each $breack-point,
+        $breack-point-value in $breack-points {
+            @media screen and (max-width: $breack-point-value) {
+                .col-#{$breack-point}-#{$i} {
+                    max-width: $width;
+                    width: 100%;
+                    flex-basis: $width;
+                }
+            }
+        }
+    }
+}
+@mixin media($point) {
+    @media screen and (max-width: map-get($breack-points, $point)) {
+        @content;
+    }
+}
+@mixin position-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin picture-properties {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@mixin button-style {
+    margin-top: 60px;
+    width: 226px;
+    height: 60px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-family: $secondary-font;
+    color: white;
+    text-transform: uppercase;
+    vertical-align: middle;
+    letter-spacing: 1px;
+    font-size: 14px;
+    position: relative;
+    background: linear-gradient(45deg, rgba(73, 107, 254, 1) 0%, rgba(73, 107, 254, 1) 43%, rgba(84, 116, 253, 1) 43%, rgba(84, 116, 253, 1) 80%);
+    background-position: 50%;
+    background-size: 300% 100%;
+    transition: background-position .5s ease-in-out;
+}

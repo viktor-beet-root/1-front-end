@@ -1,0 +1,28 @@
+.page {
+     min-height: 100vh;
+     border: solid 15px white;
+     box-sizing: border-box;
+     font-family: $default-font;
+     color: $font-color;
+}
+
+@include grid();
+
+.container {
+     max-width: 1110px;
+     width: 100%;
+     margin: 0 auto;
+     padding: $default-gap;
+}
+
+.row {
+     display: flex;
+     flex-wrap: wrap;
+     display: flex;
+     justify-content: center;
+     margin: 0 (-$default-gap);
+}
+
+[class^="col-"] {
+     padding: $default-gap;
+}

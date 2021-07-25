@@ -1,0 +1,44 @@
+@font-face {
+     font-family: 'Josefin Sans';
+     font-style: normal;
+     font-weight: 400;
+     src: local(''),
+          url('../fonts/josefin-sans-v16-latin-regular.woff2') format('woff2'),
+          url('../fonts/josefin-sans-v16-latin-regular.woff') format('woff'); 
+}
+@font-face {
+     font-family: 'Josefin Sans';
+     font-style: normal;
+     font-weight: 700;
+     src: local(''),
+          url('../fonts/josefin-sans-v16-latin-700.woff2') format('woff2'), 
+          url('../fonts/josefin-sans-v16-latin-700.woff') format('woff'); 
+}
+
+@font-face {
+     font-family: 'Aleo';
+     font-style: normal;
+     font-weight: 400;
+     src: local(''),
+          url('../fonts/aleo-v4-latin-regular.woff2') format('woff2'),
+          url('../fonts/aleo-v4-latin-regular.woff') format('woff');
+}
+
+@font-face {
+     font-family: 'Josefin Sans';
+     font-style: normal;
+     font-weight: 300;
+     src: local(''),
+          url('../fonts/josefin-sans-v16-latin-300.woff2') format('woff2'), 
+          url('../fonts/josefin-sans-v16-latin-300.woff') format('woff'); 
+}
+
+@font-face {
+     font-family: 'Josefin Sans';
+     font-style: normal;
+     font-weight: 200;
+     src: local(''),
+          url('../fonts/josefin-sans-v16-latin-200.woff2') format('woff2'), 
+          url('../fonts/josefin-sans-v16-latin-200.woff') format('woff');
+}
+

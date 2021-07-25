@@ -1,0 +1,76 @@
+.footer {
+    height: 268px;
+    background-color: #232323;
+    display: block;
+    @media (max-width:576px) {
+        height: 220px;
+    }
+
+    &__title {
+        display: block;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 90px 0px 16px; 
+        @media (max-width:576px) {
+            padding: 40px 0px 16px; 
+        }
+    }
+
+    &__text {
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        padding-bottom: 30px;
+    }
+
+    // .footer__links
+
+    &__links {}
+}
+
+.cards-list {
+
+    display: flex;
+    justify-content: center;
+
+    &__box {
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+        background-color: #e8e8e8;
+    }
+
+    &__box-facebook {
+        mask-image: url(../image/facebook.svg);
+    }
+
+    &__box-twitter {
+        mask-image: url(../image/twitter.svg);
+    }
+
+    &__box-linkedin {
+        mask-image:  url(../image/linkedin.svg);
+    }
+
+    &__box-youtube {
+        mask-image: url(../image/youtube.svg);
+    }
+
+    &__box-pinterest {
+        mask-image: url(../image/pinterest.svg);
+    }
+
+    &__box-pinterest,
+    &__box-youtube,
+    &__box-facebook,
+    &__box-twitter,
+    &__box-linkedin
+        {
+        &:hover {
+            background-color: $dodgerBlue1;
+        }
+
+    }
+}

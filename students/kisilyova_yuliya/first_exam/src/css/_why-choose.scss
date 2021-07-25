@@ -1,0 +1,95 @@
+.why-choose {
+    background-image: url(../image/Img2.png);
+    @include picture-properties;
+
+    &__container {
+        padding-bottom: 90px;
+        @media (max-width:576px) {
+            padding-bottom: 60px;
+        }
+    }
+
+    &__header {
+        margin: 205px 0px 60px;
+        font-size: 36px;
+        font-family: $secondary-font;     
+        @media (max-width: 768px) {
+            margin: 120px 0px 60px;
+        }
+        @media (max-width: 576px) {
+            font-size: 30px;
+            margin: 80px 0px 40px;
+        }
+    }
+
+    &__row {
+        margin: 0px 0px;
+    }
+
+    &__paragraph {
+        font-size: 13.5px;
+        letter-spacing: 2px;
+        font-weight: 200;
+        font-weight: normal;
+        line-height: 1.6;
+    }
+
+    &__pics {
+        z-index: 10;
+    }
+}
+
+.wrapper-pictures {
+    margin-top: 120px;
+
+    @media (max-width: 768px) {
+        margin-top: 80px;
+    }
+    @media (max-width: 576px) {
+        margin-top: 60px;
+    }
+
+    &__lake {
+        display: flex;
+        justify-content: flex-start;
+        z-index: 10;
+        padding: 0px 0px 5px 75px;
+
+        img {
+            max-width: 100%;
+        }
+        @media (max-width: 768px) {
+            padding: 0px 0px 5px 0px;
+        }
+        @media (max-width: 576px) {
+            justify-content: center;
+        }
+    }
+
+    &__mountain {
+        display: flex;
+        justify-content: flex-end;
+        z-index: 10;
+
+        img {
+            max-width: 100%;
+        }
+        @media (max-width: 576px) {
+            justify-content: center;
+        }
+    }
+}
+
+.button-secondary {
+    @include button-style;
+
+    @media (max-width: 576px) {
+        display: block;
+        margin: 30px auto 0px;
+    }
+
+}
+
+.button-secondary:hover {
+    background-position: 0 100%;
+}
