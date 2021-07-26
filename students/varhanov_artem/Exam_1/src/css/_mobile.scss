@@ -1,6 +1,6 @@
 
 .mobile-container {
-    padding-top: 20px;
+    // padding-top: 20px;
     overflow: hidden;
 
     @media screen and (min-width:769px) {
@@ -26,6 +26,8 @@
 
     &__input:checked~.toggle-container>.button-toggle {
         transform: rotate(45deg);
+        position: absolute;
+        z-index: 2;
     }
 
     &__input:checked~.toggle-container>.button-toggle::before {
@@ -81,6 +83,13 @@
     position: absolute;
     left: -100%;
     transition-duration: .50s;
+    height: 100vh;
+    background-color: rgba(35, 35, 35, 0.9);
+    z-index: 1;
+    width: 92%;
+    margin-left: -34px;
+    padding-top: 60px;
+    padding-left: 20px;
 
     &__list {
         transition-duration: .25s;
