@@ -1,34 +1,59 @@
 "use strict";
 
-function initMap() {
-  var brooklun = {
-    lat: 40.686280255564796,
-    lng: -73.90061989110093
-  };
-  var map = new google.maps.Map(document.getElementById('map'), {
-    center: brooklun,
-    zoom: 13,
-    styles: [{
-      "elementType": "geometry",
-      "stylers": [{
-        "color": "#e8e8e8"
-      }]
-    }, {
-      "featureType": "road.arterial",
-      "elementType": "labels.text.fill",
-      "stylers": [{
-        "color": "#757575"
-      }]
-    }]
-  });
-  var marker = new google.maps.Marker({
-    position: brooklun,
-    map: map,
-    title: 'Park',
-    icon: 'image/Pin.png'
-  });
-}
-
+// function initMap() {
+//   const brooklun = {lat: 40.686280255564796, lng: -73.90061989110093};
+//   const map = new google.maps.Map(document.getElementById('map'), {
+//     center: brooklun,
+//     zoom: 13,
+//     styles: [{
+//       "elementType": "geometry",
+//       "stylers": [{
+//           "color": "#e8e8e8"
+//       }]
+//   },
+//   {
+//       "featureType": "road.arterial",
+//       "elementType": "labels.text.fill",
+//       "stylers": [{
+//           "color": "#757575"
+//       }]
+//   },
+// ]
+//   });
+//   const marker = new google.maps.Marker({
+//     position: brooklun,
+//     map,
+//     title:'Park',
+//     icon:'image/Pin.png',
+//   });
+// }
+// function initMap() {
+//   const brooklun = {lat: 40.686280255564796, lng: -73.90061989110093};
+//   const map = new google.maps.Map(document.getElementById('map'), {
+//     center: brooklun,
+//     zoom: 13,
+//     styles: [{
+//       "elementType": "geometry",
+//       "stylers": [{
+//           "color": "#e8e8e8"
+//       }]
+//   },
+//   {
+//       "featureType": "road.arterial",
+//       "elementType": "labels.text.fill",
+//       "stylers": [{
+//           "color": "#757575"
+//       }]
+//   },
+// ]
+//   });
+//   const marker = new google.maps.Marker({
+//     position: brooklun,
+//     map,
+//     title:'Park',
+//     icon:'image/Pin.png',
+//   });
+// }
 function throttle(func, ms) {
   var isThrottled = false,
       savedArgs,
@@ -128,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.addEventListener('scroll', showHeaderThrottle);
 });
-var sections = document.querySelectorAll("section");
+var sections = document.querySelectorAll("section, footer");
 var navLi = document.querySelectorAll("nav ul li a");
 window.addEventListener("scroll", function () {
   var current = "";
@@ -147,4 +172,27 @@ window.addEventListener("scroll", function () {
       a.classList.add("active");
     }
   });
-});
+}); // var sections = $('section')
+// , nav = $('nav')
+// , nav_height = nav.outerHeight();
+// $(window).on('scroll', function () {
+// var cur_pos = $(this).scrollTop();
+// sections.each(function() {
+//   var top = $(this).offset().top - nav_height,
+//       bottom = top + $(this).outerHeight();
+//   if (cur_pos >= top && cur_pos <= bottom) {
+//     nav.find('a').removeClass('active');
+//     sections.removeClass('active');
+//     $(this).addClass('active');
+//     nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+//   }
+// });
+// });
+// nav.find('a').on('click', function () {
+// var $el = $(this)
+//   , id = $el.attr('href');
+// $('html, body').animate({
+//   scrollTop: $(id).offset().top - nav_height
+// }, 500);
+// return false;
+// });
