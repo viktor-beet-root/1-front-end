@@ -1,0 +1,389 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #7b60f9;
+    }
+
+    // .header__container
+
+    &__container {}
+
+    // .header__row
+
+    &__row {
+        position: relative;
+        // z-index: 2;
+    }
+
+    // .header__logo
+
+    &__logo {
+        padding-left: 10px;
+    }
+
+    // .header__link
+
+    &__link {}
+
+    // .header__logo-img
+
+    &__logo-img {}
+
+    // .header__menu
+
+    &__menu {}
+
+    // .header__burger
+
+    &__burger {
+        position: absolute;
+        right: 0;
+        display: none;
+
+
+    }
+
+    // .header__berger-line
+
+    &__berger-line {
+        position: relative;
+        display: block;
+        width: 30px;
+        background-color: $color-white;
+        height: 2px;
+    }
+
+    &__berger-line::before,
+    &__berger-line::after {
+        content: '';
+        background-color: $color-white;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+    }
+
+    &__berger-line::before {
+        top: 10px;
+    }
+
+    &__berger-line::after {
+        bottom: 10px;
+    }
+
+    // .header__social
+
+    &__social {}
+}
+
+.container {}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.col-3 {}
+
+.logo {}
+
+.col-lg-2 {}
+
+.col-md-4 {}
+
+.col-sm-4 {}
+
+.menu {
+    z-index: 2;
+    // .menu__items
+
+    &__items {
+        display: flex;
+        padding-left: 70px;
+    }
+
+    // .menu__item
+
+    &__item {
+        padding-left: 60px;
+    }
+
+    // .menu__item-link
+
+    &__item-link {
+        text-decoration: none;
+        color: $color-white;
+        font-size: 14px;
+        line-height: 22px;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            display: block;
+            border: 1px solid $color-white;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-35%);
+            left: -15px;
+        }
+
+        // .menu__item-link_active
+
+        &_active::before {
+            background-color: $color-white;
+        }
+    }
+}
+
+.col-7 {}
+
+.col-lg-7 {}
+
+.social {
+
+    // .social__items
+
+    &__items {
+        display: flex;
+        padding-left: 20px;
+    }
+
+    // .social__item
+
+    &__item {
+        padding-left: 17px;
+    }
+
+    // .social__item-link
+
+    &__item-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        border: 1px solid $color-melrose;
+
+        &:hover .social__item-svg_facebook {
+            fill: $color-san-marino;
+        }
+
+        &:hover .social__item-svg_twitter {
+            fill: $color-malibu;
+        }
+
+        &:hover .social__item-svg_instagram {
+            fill: $color-carrot-orange;
+        }
+
+    }
+
+    // .social__item-svg
+
+    &__item-svg {
+        fill: $color-white;
+
+        // .social__item-svg_facebook
+
+        &_facebook {}
+
+        // .social__item-svg_twitter
+
+        &_twitter {}
+
+        // .social__item-svg_instagram
+
+        &_instagram {}
+    }
+}
+
+.col-2 {}
+
+.col-lg-1 {}
+
+
+@media screen and(max-width:768px) {
+    .header {
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background-color: #7b60f9;
+            z-index: 2;
+        }
+
+        // .header__container
+
+        &__container {}
+
+        // .header__row
+
+        &__row {}
+
+        // .header__logo
+
+        &__logo {}
+
+        // .header__link
+
+        &__link {}
+
+        // .header__logo-img
+
+        &__logo-img {}
+
+        // .header__menu
+
+        &__menu {}
+
+        // .header__burger
+
+        &__burger {
+            display: block;
+            position: absolute;
+            top: 5%;
+            right: 2%;
+        }
+
+        // .header__berger-line
+
+        &__berger-line {}
+
+        // .header__social
+
+        &__social {}
+    }
+
+    .container {}
+
+    .row {}
+
+    .col-3 {}
+
+    .logo {}
+
+    .col-lg-2 {}
+
+    .col-md-4 {}
+
+    .col-sm-4 {}
+
+    .menu {
+
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background-color: rgba($color: #396c92, $alpha: 2.0);
+        // .menu__items
+
+        &__items {
+            display: block;
+            font-size: 30px;
+            position: absolute;
+            top: 15%;
+            left: 0%;
+            width: 100%;
+            text-align: center;
+            padding-left: 0;
+        }
+
+        // .menu__item
+
+        &__item {
+            padding-left: 0;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background-color: salmon;
+            }
+
+            &:last-child::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background-color: salmon;
+            }
+        }
+
+        // .menu__item-link
+
+        &__item-link {
+
+            // .menu__item-link_active
+
+            &_active {}
+        }
+    }
+
+    .col-7 {}
+
+    .col-lg-7 {}
+
+    .social {
+
+        // .social__items
+
+        &__items {}
+
+        // .social__item
+
+        &__item {}
+
+        // .social__item-link
+
+        &__item-link {}
+
+        // .social__item-svg
+
+        &__item-svg {
+
+            // .social__item-svg_facebook
+
+            &_facebook {}
+
+            // .social__item-svg_twitter
+
+            &_twitter {}
+
+            // .social__item-svg_instagram
+
+            &_instagram {}
+        }
+    }
+
+    .col-2 {}
+
+    .col-lg-1 {}
+
+}
