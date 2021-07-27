@@ -46,6 +46,7 @@
 
     &__scroll {
         position: absolute;
+        z-index: 1;
         left: 50%;
         top: 90%;
         transform: translate(-50%, -50%);
@@ -100,6 +101,8 @@
 
 .scroll {
     color: $color-primary-light;
+    z-index: 1;
+    // position: absolute;
 
     &__down {
         width: 40px;

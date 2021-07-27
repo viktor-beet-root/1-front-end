@@ -1,65 +1,31 @@
-// function initMap() {
-//   const brooklun = {lat: 40.686280255564796, lng: -73.90061989110093};
-//   const map = new google.maps.Map(document.getElementById('map'), {
-//     center: brooklun,
-//     zoom: 13,
-//     styles: [{
-//       "elementType": "geometry",
-//       "stylers": [{
-//           "color": "#e8e8e8"
-//       }]
-//   },
+function initMap() {
+  const brooklun = {lat: 40.686280255564796, lng: -73.90061989110093};
+  const map = new google.maps.Map(document.getElementById('map'), {
+    center: brooklun,
+    zoom: 13,
+    styles: [{
+      "elementType": "geometry",
+      "stylers": [{
+          "color": "#e8e8e8"
+      }]
+  },
  
-//   {
-//       "featureType": "road.arterial",
-//       "elementType": "labels.text.fill",
-//       "stylers": [{
-//           "color": "#757575"
-//       }]
-//   },
-// ]
-//   });
-//   const marker = new google.maps.Marker({
-//     position: brooklun,
-//     map,
-//     title:'Park',
-//     icon:'image/Pin.png',
-//   });
-// }
-
-
-// function initMap() {
-//   const brooklun = {lat: 40.686280255564796, lng: -73.90061989110093};
-//   const map = new google.maps.Map(document.getElementById('map'), {
-//     center: brooklun,
-//     zoom: 13,
-//     styles: [{
-//       "elementType": "geometry",
-//       "stylers": [{
-//           "color": "#e8e8e8"
-//       }]
-//   },
- 
-//   {
-//       "featureType": "road.arterial",
-//       "elementType": "labels.text.fill",
-//       "stylers": [{
-//           "color": "#757575"
-//       }]
-//   },
-// ]
-//   });
-//   const marker = new google.maps.Marker({
-//     position: brooklun,
-//     map,
-//     title:'Park',
-//     icon:'image/Pin.png',
-//   });
-// }
-
-
-
-
+  {
+      "featureType": "road.arterial",
+      "elementType": "labels.text.fill",
+      "stylers": [{
+          "color": "#757575"
+      }]
+  },
+]
+  });
+  const marker = new google.maps.Marker({
+    position: brooklun,
+    map,
+    title:'Park',
+    icon:'image/Pin.png',
+  });
+}
 
 
 function throttle(func, ms) {
@@ -137,11 +103,14 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop: top}, 1500);
     });
 
-  $("#scroll").on("click", function (event) {
+  $(".scroll").on("click", function (event) {
       event.preventDefault();
-      const id  = $(this).attr('href'),
-          top = $(id).offset().top;
-      $('body,html').animate({scrollTop: top}, 1500);
+      const id  = $(event.currentTarget).attr('href');
+      const section = $(id)[0];
+      if (section !== undefined) {
+        const top = section.offsetTop
+        $('body,html').animate({scrollTop: top}, 1500);
+      }
   });
 
   $(".mobile-menu__menu").on("click","a", function (event) {
@@ -154,7 +123,6 @@ $(document).ready(function(){
   $('.button-mobmenu').click(function(event){
   $('.button-mobmenu,.mobile-menu').toggleClass("active")
   });
-  
 });
 
 
@@ -207,34 +175,35 @@ window.addEventListener("scroll", () => {
 
 
 
-// var sections = $('section')
-// , nav = $('nav')
-// , nav_height = nav.outerHeight();
 
-// $(window).on('scroll', function () {
-// var cur_pos = $(this).scrollTop();
+// Valid form
+$(function() {
+  $(".btn-submit").on("click", validate);
 
-// sections.each(function() {
-//   var top = $(this).offset().top - nav_height,
-//       bottom = top + $(this).outerHeight();
+  function validateEmail(email) {
+    var re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+    return re.test(String(email).toLowerCase());
+  }
   
-//   if (cur_pos >= top && cur_pos <= bottom) {
-//     nav.find('a').removeClass('active');
-//     sections.removeClass('active');
-    
-//     $(this).addClass('active');
-//     nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
-//   }
-// });
-// });
+  function sendForm() {
+    $(".error").text("Form sending").fadeIn();
+  }
 
-// nav.find('a').on('click', function () {
-// var $el = $(this)
-//   , id = $el.attr('href');
+  function validate() {
+    var email = $(".email").val();
+    var $error = $(".error");
+    $error.text("");
+    $error.css("color", "green");
 
-// $('html, body').animate({
-//   scrollTop: $(id).offset().top - nav_height
-// }, 500);
-
-// return false;
-// });
+    if (validateEmail(email)) {
+      $error.fadeOut();
+      sendForm();
+    } else {
+      $error.fadeIn();
+      $error.text(email + " is not valid");
+        $error.css("color", "red");
+     
+    }
+    return false;
+  }
+});

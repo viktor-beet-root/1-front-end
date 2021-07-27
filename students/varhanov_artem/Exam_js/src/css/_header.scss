@@ -95,6 +95,7 @@
             left: 0;
             transform: translate(-50%, -50%);
             background-color: white;
+           
         }
 
         ::before {
@@ -108,12 +109,17 @@
             top: 40%;
             left: 0;
             transform: translate(-50%, -50%);
+            @media screen and (max-width: 576px) {
+                display: none;
+            }
         }
     }
 }
 
 .social-link {
     display: flex;
+    
+    
 
     &__item {
         margin-left: 20px;

@@ -1,6 +1,18 @@
 .header-mob {
     position: absolute;
     z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+
+     &__menu {
+         text-align: center;
+
+         .menu__item {
+            margin-bottom: 10px;
+
+         }
+     }
 
     @media screen and (min-width: 576px) {
         display: none;
@@ -12,10 +24,18 @@
 
     .mobile-menu {
         display: none;
+        height: 100vh;
+        background-color: darkblue;
+
+        .header__social-link {
+            justify-content: center;
+        }
+        
     }
 
     .active {
         display: block;
+
     }
 }
 

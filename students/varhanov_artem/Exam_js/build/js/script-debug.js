@@ -1,59 +1,34 @@
 "use strict";
 
-// function initMap() {
-//   const brooklun = {lat: 40.686280255564796, lng: -73.90061989110093};
-//   const map = new google.maps.Map(document.getElementById('map'), {
-//     center: brooklun,
-//     zoom: 13,
-//     styles: [{
-//       "elementType": "geometry",
-//       "stylers": [{
-//           "color": "#e8e8e8"
-//       }]
-//   },
-//   {
-//       "featureType": "road.arterial",
-//       "elementType": "labels.text.fill",
-//       "stylers": [{
-//           "color": "#757575"
-//       }]
-//   },
-// ]
-//   });
-//   const marker = new google.maps.Marker({
-//     position: brooklun,
-//     map,
-//     title:'Park',
-//     icon:'image/Pin.png',
-//   });
-// }
-// function initMap() {
-//   const brooklun = {lat: 40.686280255564796, lng: -73.90061989110093};
-//   const map = new google.maps.Map(document.getElementById('map'), {
-//     center: brooklun,
-//     zoom: 13,
-//     styles: [{
-//       "elementType": "geometry",
-//       "stylers": [{
-//           "color": "#e8e8e8"
-//       }]
-//   },
-//   {
-//       "featureType": "road.arterial",
-//       "elementType": "labels.text.fill",
-//       "stylers": [{
-//           "color": "#757575"
-//       }]
-//   },
-// ]
-//   });
-//   const marker = new google.maps.Marker({
-//     position: brooklun,
-//     map,
-//     title:'Park',
-//     icon:'image/Pin.png',
-//   });
-// }
+function initMap() {
+  var brooklun = {
+    lat: 40.686280255564796,
+    lng: -73.90061989110093
+  };
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: brooklun,
+    zoom: 13,
+    styles: [{
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#e8e8e8"
+      }]
+    }, {
+      "featureType": "road.arterial",
+      "elementType": "labels.text.fill",
+      "stylers": [{
+        "color": "#757575"
+      }]
+    }]
+  });
+  var marker = new google.maps.Marker({
+    position: brooklun,
+    map: map,
+    title: 'Park',
+    icon: 'image/Pin.png'
+  });
+}
+
 function throttle(func, ms) {
   var isThrottled = false,
       savedArgs,
@@ -120,13 +95,17 @@ $(document).ready(function () {
       scrollTop: top
     }, 1500);
   });
-  $("#scroll").on("click", function (event) {
+  $(".scroll").on("click", function (event) {
     event.preventDefault();
-    var id = $(this).attr('href'),
-        top = $(id).offset().top;
-    $('body,html').animate({
-      scrollTop: top
-    }, 1500);
+    var id = $(event.currentTarget).attr('href');
+    var section = $(id)[0];
+
+    if (section !== undefined) {
+      var top = section.offsetTop;
+      $('body,html').animate({
+        scrollTop: top
+      }, 1500);
+    }
   });
   $(".mobile-menu__menu").on("click", "a", function (event) {
     event.preventDefault();
@@ -172,27 +151,35 @@ window.addEventListener("scroll", function () {
       a.classList.add("active");
     }
   });
-}); // var sections = $('section')
-// , nav = $('nav')
-// , nav_height = nav.outerHeight();
-// $(window).on('scroll', function () {
-// var cur_pos = $(this).scrollTop();
-// sections.each(function() {
-//   var top = $(this).offset().top - nav_height,
-//       bottom = top + $(this).outerHeight();
-//   if (cur_pos >= top && cur_pos <= bottom) {
-//     nav.find('a').removeClass('active');
-//     sections.removeClass('active');
-//     $(this).addClass('active');
-//     nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
-//   }
-// });
-// });
-// nav.find('a').on('click', function () {
-// var $el = $(this)
-//   , id = $el.attr('href');
-// $('html, body').animate({
-//   scrollTop: $(id).offset().top - nav_height
-// }, 500);
-// return false;
-// });
+}); // Valid form
+
+$(function () {
+  $(".btn-submit").on("click", validate);
+
+  function validateEmail(email) {
+    var re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+    return re.test(String(email).toLowerCase());
+  }
+
+  function sendForm() {
+    $(".error").text("Form sending").fadeIn();
+  }
+
+  function validate() {
+    var email = $(".email").val();
+    var $error = $(".error");
+    $error.text("");
+    $error.css("color", "green");
+
+    if (validateEmail(email)) {
+      $error.fadeOut();
+      sendForm();
+    } else {
+      $error.fadeIn();
+      $error.text(email + " is not valid");
+      $error.css("color", "red");
+    }
+
+    return false;
+  }
+});
