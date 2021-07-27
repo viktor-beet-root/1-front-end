@@ -93,6 +93,10 @@
         font-weight: 500;
         line-height: 1.2;
         text-transform: uppercase;
+        padding: 25px 0 0;
+        @media screen and (max-width: 992px) {
+            font-size: 35px;
+        }
 
         &::before {
             content: '';
@@ -102,6 +106,9 @@
             border: 1px solid #2c4058;
             background-color: #2c4058;
             margin: 0 auto 30px;
+            @media screen and (max-width: 992px) {
+               display: none;
+            }
         }
     }
 
@@ -134,6 +141,9 @@
         font-family: $font-Gothambook;
         font-size: 18px;
         font-weight: 300;
+        @media screen and (max-width: 992px) {
+            font-size: 15px;
+        }
     }
 
     &__form {
@@ -165,6 +175,12 @@
 
     &__btn {
         max-width: 140px;
+    }
+    &__col {
+        @media screen and (max-width: 992px) {
+            padding: 15px 30px;
+        }
+        
     }
 }
 
