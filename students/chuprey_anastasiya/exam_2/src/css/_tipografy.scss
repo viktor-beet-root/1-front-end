@@ -37,4 +37,11 @@
         text-decoration: none;
         text-transform: uppercase;
     }
+
+    &:hover {
+        background-color: $color-pickled-bluewood;
+    }
+    &:hover .button__link {
+        color: $color-white;
+    }
 }
