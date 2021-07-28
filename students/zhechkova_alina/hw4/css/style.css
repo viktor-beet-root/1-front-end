@@ -1,0 +1,135 @@
+* {
+    transition: all .1s ease-in;
+    margin: 0;
+}
+
+body {
+    border: 23px solid #fff;
+    height: 100vh;
+    min-height: 800px;
+    background: #3b3f45;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1237px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+    color: #eb7e7f;
+    text-align: center;
+    line-height: 30px;
+    padding: 25px 0;
+}
+
+main .container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 40px 20px;
+}
+
+h1 span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+footer {
+    font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+    color: #eb7e7f;
+    text-align: center;
+    line-height: 30px;
+    padding: 25px 0;
+}
+
+footer a {
+    color: #eb7e7f
+}
+
+header {
+    background-color: #4a4f56;
+    margin-bottom: 0;
+}
+
+main {
+    background-color: #3b3f45;
+}
+
+label:hover {
+    background-color: #625e77;
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+}
+
+form label:nth-of-type(2n+1) {
+    background-color: #88839e;
+}
+
+form label:nth-of-type(2n) {
+    background-color: #7a7593;
+}
+
+[type="checkbox"]:checked+label {
+    text-decoration: line-through;
+    opacity: 50%;
+}
+
+[type="checkbox"]:active+label {
+    background: orange;
+}
+
+label {
+    display: block;
+    padding: 15px 0px 15px 17px;
+    width: 772px;
+    color: #fff;
+    font-family: Arial;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label::before {
+    content: " ";
+    display: inline-block;
+    margin-right: 15px;
+    width: 24px;
+    height: 24px;
+    background: #e1e1e1;
+    border: 1px solid #a8a8a8;
+    vertical-align: -5px;
+}
+
+input:checked+label::before {
+    content: url(../img/check-solid.svg);
+    color: #434343;
+    display: inline-block;
+}
+
+.form small::before {
+    content: '(';
+}
+
+.form small::after {
+    content: ')';
+}
+
+.form small {
+    color: #b9c6d6;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.btn {
+    background-color: #4a4f56;
+    color: #eb7e7f;
+    border: none;
+    padding: 24px 0;
+    width: 800px;
+    margin-top: 40px;
+    font-size: 20px;
+}
