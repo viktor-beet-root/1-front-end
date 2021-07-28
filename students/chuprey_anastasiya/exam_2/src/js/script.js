@@ -56,13 +56,18 @@ slider.slick({
 })
 
 
+
+
+const burger = document.querySelector('.header__burger')
+const nav = document.querySelector('.menu__items')
+const logo = document.querySelector('.header__logo')
+const social = document.querySelector('.social')
 const navSlide = () => {
-    const burger = document.querySelector('.header__burger')
-    const nav = document.querySelector('.menu__items')
-    const logo = document.querySelector('.header__logo')
+
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
         logo.classList.toggle('bg-logo');
+        social.classList.toggle('social-burger')
 
     })
 }
