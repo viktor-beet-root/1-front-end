@@ -1,22 +1,33 @@
 .hero {
     @include bg-cover('../image/Bg1.png');
     position: relative;
+    height: 100vh;
+    overflow: hidden;
 
     &__container {
         height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         position: relative;
     }
 
 
 
     &__title-wrapper {
+        position: absolute;
         text-align: center;
         text-transform: uppercase;
         margin-top: -42px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+
+        @media screen and (max-width:768px) {
+            margin-top: -30px;
+        }
+
+        @media screen and (max-width:576px) {
+            margin-top: -20px;
+        }
     }
 
 
@@ -27,6 +38,18 @@
         font-size: 80px;
         letter-spacing: 9.5px;
 
+        @media screen and (max-width:992px) {
+            font-size: 65px;
+        }
+
+        @media screen and (max-width:768px) {
+            font-size: 50px;
+
+        }
+
+        @media screen and (max-width:576px) {
+            font-size: 35px;
+        }
     }
 
 
@@ -36,15 +59,57 @@
         font-style: normal;
         display: block;
         letter-spacing: 6px;
+
+        @media screen and (max-width:768px) {
+            font-size: 14px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width:576px) {
+            font-size: 12px;
+        }
     }
 
+    &__dots {
+        &>.slick-dots {
+            position: absolute;
+            width: 25px;
+            bottom: auto;
+            top: 50%;
+            right: 25px;
+            transform: translateY(-50%);
+
+            &>li {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                cursor: pointer;
+                border: 1px solid $color-white;
+
+                &.slick-active {
+                    background-color: $color-white;
+                }
+            }
+
+            &>li>button::before {
+                height: 1px;
+                width: 1px;
+                overflow: hidden;
+                clip: rect(0, 0, 0, 0);
+            }
+        }
+    }
 
 }
+
 
 
 .scroll {
     position: absolute;
     bottom: 74px;
+    left: 50%;
+    transform: translateX(-50%);
 
     &__span {
         border: 1px solid #cee1fd;
@@ -69,4 +134,49 @@
             border-left: none;
         }
     }
+
+    @media screen and (max-width:768px) {
+        bottom: 50px;
+    }
+
+    @media screen and (max-width:576px) {
+        bottom: 40px;
+    }
+}
+
+.slick-slide {
+    &>div {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+.simple {
+
+    @include bg-cover('../image/Bg1.png');
+
+}
+
+.fast {
+    @include bg-cover('../image/Bg2.png');
+
+}
+
+.futuristic {
+    @include bg-cover('../image/Bg3.png');
+
+}
+
+.creative {
+    @include bg-cover('../image/Bg1.png');
+
+}
+
+.contemporary {
+    @include bg-cover('../image/Bg2.png');
+}
+
+.slick-list {
+    padding: 0 !important;
 }

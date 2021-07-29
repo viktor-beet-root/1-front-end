@@ -1,16 +1,33 @@
 .footer {
     @include bg-cover('../image/Bg3.png');
+    position: relative;
 
     &__container {
         margin: 0 auto;
         padding: 210px 0;
         max-width: 770px;
         width: 100%;
+
+        @media screen and (max-width:990px) {
+            padding: 100px 0;
+        }
+
+        @media screen and (max-width:768px) {
+            padding: 90px 0;
+        }
     }
 
     &__logo {
         margin-bottom: 32px;
         padding: 0 $default-gap;
+
+        @media screen and (max-width:990px) {
+            padding-right: 0;
+        }
+
+        @media screen and (max-width:768px) {
+            padding-right: 0;
+        }
     }
 
     &__copyright {
@@ -19,6 +36,24 @@
 
     &__media {
         justify-content: flex-end;
+
+        &>.media__item {
+            @media screen and (max-width:990px) {
+                background-color: rgba(255, 255, 255, 0.138);
+
+            }
+        }
+
+        @media screen and (max-width:990px) {
+            padding: 0;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width:768px) {
+            padding: 0;
+        }
+
     }
 
     &__get-in-touch {
@@ -33,6 +68,10 @@
 .get-in-touch {
     @include bg-cover('../image/map.png');
     padding: 60px 65px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -60%;
 
     &__title-row {
         color: $title-color;
@@ -64,6 +103,14 @@
         &>i {
             color: $icon-color;
         }
+
+        @media screen and (max-width:990px) {
+            font-size: 16px;
+        }
+
+        @media screen and (max-width:768px) {
+            font-size: 14px;
+        }
     }
 
     & p>a {
@@ -92,6 +139,12 @@
 
     &__btn {
         align-self: flex-end;
+    }
+
+    @media screen and (max-width:990px) {
+        position: static;
+        transform: unset;
+        width: 100%;
     }
 }
 

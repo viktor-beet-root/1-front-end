@@ -1,65 +1,78 @@
-.page {
-
-    // .page__news
-
-    &__news {}
-}
-
 .news {
     @include bg-cover('../image/Bg2.png');
-
-    // .news__container
 
     &__container {
         padding: 140px 0 137px;
         position: relative;
-    }
 
-    // .news__title-row
+        @media screen and (max-width:1200px) {
+            padding: 100px 0 100px;
+
+        }
+
+        @media screen and (max-width:990px) {
+            padding: 80px 0 80px;
+
+        }
+
+        @media screen and (max-width:768px) {
+            padding: 60px 0 60px;
+
+        }
+
+        @media screen and (max-width:576px) {
+            padding: 50px 0 50px;
+        }
+    }
 
     &__title-row {
         margin-bottom: 84px;
         color: #fff;
 
+        @media screen and (max-width:768px) {
+            margin-bottom: 60px;
+        }
+
+        @media screen and (max-width:576px) {
+            margin-bottom: 50px;
+        }
 
     }
-
-    // .news__title
-
-    &__title {}
-
-    // .news__wrapper
 
     &__wrapper {
         margin-bottom: 49px;
+        max-height: 540.641px;
+        height: 100%;
     }
 
-    // .news__slide
-
-    &__slide {}
-
-    // .news__dots
+    &__slide {
+        height: 100%;
+    }
 
     &__dots {
 
         display: flex;
         justify-content: center;
+
+        @media screen and (max-width:1200px) {
+            margin-top: 100px;
+        }
     }
 }
 
 .slide {
     padding: 10px;
     display: flex;
+    height: 100%;
 
     &__wrapper {
         background-color: #fff;
     }
 
-    // .slide__img
-
     &__img {
         display: block;
         width: 100%;
+
     }
 
     &__content-wrap {
@@ -67,14 +80,16 @@
     }
 
 
-    // .slide__title
-
     &__title {
         font-size: 22px;
         color: $title-color;
         line-height: 34px;
         font-style: bold;
         text-transform: uppercase;
+
+        @media screen and (max-width:1200px) {
+            font-size: 18px;
+        }
     }
 
     &__content {
@@ -83,10 +98,17 @@
         line-height: 30px;
         font-family: $secondary-font;
         margin-bottom: 35px;
+
+        @media screen and (max-width:1200px) {
+            width: 100%;
+            overflow: hidden;
+        }
     }
 
 
-    &__author {}
+    &__author {
+        align-self: center;
+    }
 }
 
 
@@ -95,6 +117,7 @@
 
     &__img {
         display: block;
+        align-self: center;
     }
 
     &__content {
@@ -108,6 +131,10 @@
         text-transform: uppercase;
         line-height: 22px;
         margin-bottom: 10px;
+
+        @media screen and (max-width:1200px) {
+            font-size: 16px;
+        }
     }
 
 
@@ -115,6 +142,10 @@
         display: block;
         font-size: 14px;
         color: $color-bg;
+
+        @media screen and (max-width:1200px) {
+            font-size: 12px;
+        }
     }
 }
 
@@ -136,11 +167,12 @@
 
 }
 
-.active {}
 
-.dots-wrapper {}
-
-.title {}
+.title {
+    @media screen and (max-width:576px) {
+        font-size: 35px;
+    }
+}
 
 .title-row {
     text-align: center;
@@ -160,6 +192,34 @@
     }
 }
 
+
+
 .slick-dots {
     bottom: unset;
+
+
+    &>li {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 1px solid $color-white;
+
+        &.slick-active {
+            background-color: $color-white;
+        }
+    }
+
+    &>li>button::before {
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+    }
+}
+
+.slick-arrow {
+    @media screen and (max-width:990px) {
+        display: none;
+    }
 }
