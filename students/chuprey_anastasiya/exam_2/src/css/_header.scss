@@ -21,6 +21,7 @@
     &__logo {
         position: relative;
         transition: 0.6s;
+        z-index: 2000;
     }
 
     &__link {
@@ -37,10 +38,11 @@
     }
 
     &__burger {
+        display: none;
+        transition: all 3s ease;
     }
 
     &__burger-line {
-        display: none;
         cursor: pointer;
         width: 25px;
         height: 3px;
@@ -50,7 +52,7 @@
         z-index: 20000;
         right: 5%;
         top: 55%;
-
+        transition: 2s ease;
         &::before,
         &::after {
             content: "";
@@ -62,10 +64,10 @@
         }
 
         &::before {
-            top: 8px;
+            transform: translateY(8px);
         }
         &::after {
-            bottom: 8px;
+            transform: translateY(-8px);
         }
     }
 
@@ -229,10 +231,11 @@
         }
 
         &__burger {
+            display: block;
         }
 
         &__burger-line {
-            display: block;
+            visibility: visible;
         }
 
         &__social {
@@ -249,7 +252,7 @@
             display: block;
             // margin-bottom: 40px;
             padding-top: 150px;
-            transform: translateY(-100%);
+            transform: translateX(-100%);
             transition: transform 1s ease-in;
             background-color: $color-melrose;
         }
@@ -274,7 +277,8 @@
         bottom: 2%;
         right: 50%;
         transform: translateX(100%);
-        transition: transform 1.5s ease-in-out;
+        transition: transform 0.3s ease-in-out;
+
         &__items {
         }
 
@@ -286,6 +290,7 @@
         }
 
         &__item-link {
+            border: none;
         }
 
         &__item-svg {
@@ -295,13 +300,27 @@
 }
 .nav-active {
     // visibility: visible;
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
-.bg-logo {
-    position: relative;
-    z-index: 2000;
-}
+// .bg-logo {
+//     position: relative;
+//     z-index: 2000;
+// }
 .social-burger {
     transform: translateX(50%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.header__burger.open .header__burger-line {
+    transform: translateX(-80%);
+    background: transparent;
+}
+
+.header__burger.open .header__burger-line::before {
+    transform: rotate(45deg); //translate(10px, -10px);
+}
+
+.header__burger.open .header__burger-line::after {
+    transform: rotate(-45deg); //translate(10px, 10px);
 }

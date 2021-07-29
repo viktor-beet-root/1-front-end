@@ -16638,16 +16638,38 @@ var burger = document.querySelector('.header__burger');
 var nav = document.querySelector('.menu__items');
 var logo = document.querySelector('.header__logo');
 var social = document.querySelector('.social');
+var menuItem = document.querySelectorAll('.menu__item');
+var menuOpen = false;
+burger.addEventListener('click', function () {
+  if (!menuOpen) {
+    burger.classList.add('open');
+    menuOpen = true;
+  } else {
+    burger.classList.remove('open');
+    menuOpen = false;
+  }
+});
 
 var navSlide = function navSlide() {
   burger.addEventListener('click', function () {
     nav.classList.toggle('nav-active');
-    logo.classList.toggle('bg-logo');
     social.classList.toggle('social-burger');
   });
 };
 
 navSlide();
+jquery__WEBPACK_IMPORTED_MODULE_5___default()('.menu__item-link').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_5___default()('.menu__items').toggleClass('nav-active');
+  jquery__WEBPACK_IMPORTED_MODULE_5___default()('.social').toggleClass('social-burger');
+});
+jquery__WEBPACK_IMPORTED_MODULE_5___default()(document).ready(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_5___default()('.news-items').slick({
+    infinite: true,
+    dots: true,
+    speed: 1000,
+    slidesToShow: 3
+  });
+});
 
 /***/ }),
 

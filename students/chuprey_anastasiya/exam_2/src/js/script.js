@@ -25,6 +25,7 @@ const menuLength = menuLinks.length;
 const current = document.getElementsByClassName('active');
 
 for (let i = 0; i < menuLength; i++) {
+
     menuLinks[i].addEventListener('click', function () {
 
         current[0].className = current[0].className.replace('active');
@@ -62,14 +63,45 @@ const burger = document.querySelector('.header__burger')
 const nav = document.querySelector('.menu__items')
 const logo = document.querySelector('.header__logo')
 const social = document.querySelector('.social')
+const menuItem = document.querySelectorAll('.menu__item');
+
+let menuOpen = false;
+
+burger.addEventListener('click', () => {
+    if (!menuOpen) {
+        burger.classList.add('open');
+        menuOpen = true;
+    } else {
+        burger.classList.remove('open')
+        menuOpen = false;
+    }
+});
+
 const navSlide = () => {
 
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
-        logo.classList.toggle('bg-logo');
         social.classList.toggle('social-burger')
 
     })
 }
 
 navSlide();
+
+
+
+$('.menu__item-link').click(function () {
+    $('.menu__items').toggleClass('nav-active');
+    $('.social').toggleClass('social-burger')
+})
+
+
+
+$(document).ready(function () {
+    $('.news-items').slick({
+        infinite: true,
+        dots: true,
+        speed: 1000,
+        slidesToShow: 3,
+    });
+})

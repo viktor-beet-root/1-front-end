@@ -24,7 +24,6 @@
 
 .news-items {
     display: flex;
-    justify-content: space-between;
     margin: 0 -15px 100px;
 
     &__news-item {
@@ -33,6 +32,8 @@
 .news-item {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 100vh;
     padding: 15px;
 
     &__news-info {
