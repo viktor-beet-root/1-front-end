@@ -17,7 +17,7 @@
         position: absolute;
         text-align: center;
         text-transform: uppercase;
-        margin-top: -20px;
+        margin-top: -5px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -73,15 +73,16 @@
             width: 25px;
             bottom: auto;
             top: 50%;
-            right: 25px;
+            right: 125px;
             transform: translateY(-50%);
 
             &>li {
-                width: 8px;
-                height: 8px;
+                width: 9px;
+                height: 9px;
                 border-radius: 50%;
                 cursor: pointer;
                 border: 1px solid $color-white;
+                margin-bottom: 33px;
 
                 &.slick-active {
                     background-color: $color-white;

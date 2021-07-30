@@ -2,7 +2,7 @@
     @include bg-cover('../image/Bg2.png');
 
     &__container {
-        padding: 140px 0 137px;
+        padding: 135px 0 155px;
         position: relative;
 
         @media screen and (max-width:1200px) {
@@ -26,7 +26,7 @@
     }
 
     &__title-row {
-        margin-bottom: 84px;
+        margin-bottom: 70px;
         color: #fff;
 
         @media screen and (max-width:768px) {
@@ -40,13 +40,23 @@
     }
 
     &__wrapper {
-        margin-bottom: 49px;
+        margin-bottom: 36px;
         max-height: 540.641px;
         height: 100%;
+        overflow: hidden;
+
+        @media screen and (max-width:768px) {
+            max-height: 800px;
+        }
     }
 
     &__slide {
+        max-height: 540.641px;
         height: 100%;
+
+        @media screen and (max-width:768px) {
+            max-height: 800px;
+        }
     }
 
     &__dots {
@@ -63,22 +73,57 @@
 .slide {
     padding: 10px;
     display: flex;
-    height: 100%;
 
     &__wrapper {
         background-color: #fff;
+        position: relative;
+
     }
 
     &__img {
         display: block;
         width: 100%;
 
-        &-wrap:hover {
+
+
+        &-wrap {
+            overflow: hidden;
+
+            &::before {
+                content: '';
+                display: none;
+                position: absolute;
+                width: 100%;
+                height: 244px;
+                background-color: #000;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                transform: translate(0);
+                opacity: .4;
+                cursor: pointer;
+            }
+
             &:hover {
-                &>.slide__img-hover {
+                &::before {
                     display: block;
+                    z-index: 1000;
+                }
+
+                & .slide__img {
+                    transform: scale(1.2);
+                    object-fit: cover;
+                    transition: transform .5s ease;
+                }
+
+                & .slide__img-hover {
+                    visibility: visible;
+                    z-index: 100000;
+                    pointer-events: all;
                 }
             }
+
         }
 
         &-hover {
@@ -129,6 +174,8 @@
 
     &__content-wrap {
         padding: 19px 20px 27px;
+
+
     }
 
 
@@ -154,6 +201,7 @@
         @media screen and (max-width:1200px) {
             width: 100%;
             overflow: hidden;
+            margin-bottom: 20px;
         }
     }
 
@@ -251,11 +299,15 @@
 
 
     &>li {
-        width: 8px;
-        height: 8px;
+        width: 9px;
+        height: 9px;
         border-radius: 50%;
         cursor: pointer;
         border: 1px solid $color-white;
+
+        &:not(:last-child) {
+            margin-right: 37px;
+        }
 
         &.slick-active {
             background-color: $color-white;
@@ -271,7 +323,49 @@
 }
 
 .slick-arrow {
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: block;
+
+    &::before {
+        color: transparent;
+        border: 1px solid white;
+        display: block;
+        height: 15px;
+        width: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
     @media screen and (max-width:990px) {
         display: none;
     }
+}
+
+.slick-prev {
+    left: -80px;
+
+    &::before {
+        border-top: none;
+        border-right: none;
+    }
+}
+
+
+.slick-next {
+    right: -80px;
+
+    &::before {
+        border-bottom: none;
+        border-left: none;
+    }
+}
+
+.lb-outerContainer {
+    top: 287px;
+    position: absolute;
 }

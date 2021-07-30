@@ -36,7 +36,7 @@
             background-color: $title-color;
         }
 
-        margin-bottom: 87px;
+        margin-bottom: 67px;
 
         @media screen and (max-width:990px) {
             margin-bottom: 60px;
@@ -51,11 +51,10 @@
     }
 
 
-    &__title {}
 
 
     &__wrap {
-        margin-bottom: 55px;
+        margin-bottom: 44px;
 
         @media screen and (max-width:1200px) {
             flex-direction: column;
@@ -94,21 +93,20 @@
 .img-wrap {
     display: flex;
     flex-wrap: wrap;
-
-
 }
 
 #ajaxWrap {
-    padding: 0 5px 5px;
+    padding: 0 9px 5px;
 }
 
 .ajax-photo {
-    padding: 5px 5px 10px 10px;
     height: 447.99px;
     object-fit: cover;
     object-position: center;
+    width: 100%;
 
     &:nth-child(2n) {
-        padding-right: 10px;
+        padding-left: 9px;
     }
+
 }

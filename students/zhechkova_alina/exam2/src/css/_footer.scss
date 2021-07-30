@@ -71,11 +71,11 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -60%;
+    top: -57%;
 
     &__title-row {
         color: $title-color;
-        margin-bottom: 32px;
+        margin-bottom: 17px;
 
         &::before {
             margin-bottom: 28px;
@@ -90,7 +90,8 @@
     &__content {}
 
     & p:not(:last-child) {
-        margin-bottom: 40px;
+        margin-bottom: 33px;
+
 
     }
 
@@ -163,15 +164,20 @@
         border-bottom: 1px solid #d5d9de;
         padding: 18px 0;
         width: 100%;
+        font-size: 18px;
 
-        &:first-child {
-            margin-bottom: 24px;
+        &:invalid {
+            border-bottom: 2px solid rgb(146, 0, 0);
         }
 
         &:nth-child(2) {
-            margin-bottom: 30px;
+            margin-bottom: 12px;
         }
     }
 }
 
-.btn {}
+.error-message {
+    height: 24px;
+    overflow: hidden;
+    color: red;
+}

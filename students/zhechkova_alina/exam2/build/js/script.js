@@ -17859,7 +17859,7 @@ var smBtn = document.getElementById('seeMoreBtn');
 function getPhoto(response) {
   var html = "";
   response.forEach(function (photo) {
-    html += "<img src=".concat(photo.urls.raw, " alt=").concat(photo.alt_description, " class=\"col-6 ajax-photo col-md-12\">");
+    html += "<a href=\"".concat(photo.urls.raw, "\" data-lightbox=\"city\" class=\"col-6 col-md-12\"><img src=").concat(photo.urls.raw, " alt=").concat(photo.alt_description, " class=\"ajax-photo\"></a>");
   });
   var div = document.getElementById('ajaxWrap');
   div.insertAdjacentHTML('beforeend', html);
@@ -18122,6 +18122,17 @@ form.addEventListener('submit', validateForm);
 
 /***/ }),
 
+/***/ "./src/js/gallery/openGallery.js":
+/*!***************************************!*\
+  !*** ./src/js/gallery/openGallery.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./src/js/menu/openMenu.js":
 /*!*********************************!*\
   !*** ./src/js/menu/openMenu.js ***!
@@ -18203,6 +18214,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _menu_openMenu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu/openMenu */ "./src/js/menu/openMenu.js");
 /* harmony import */ var _menu_openMenu__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_menu_openMenu__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _scroll_scrollTo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./scroll/scrollTo */ "./src/js/scroll/scrollTo.js");
+/* harmony import */ var _scroll_scrollTo__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_scroll_scrollTo__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _scroll_stickyHeader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./scroll/stickyHeader */ "./src/js/scroll/stickyHeader.js");
 /* harmony import */ var _scroll_stickyHeader__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_scroll_stickyHeader__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _btn_moreDetails__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./btn/moreDetails */ "./src/js/btn/moreDetails.js");
@@ -18210,6 +18222,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _btn_seeMoreBtn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./btn/seeMoreBtn */ "./src/js/btn/seeMoreBtn.js");
 /* harmony import */ var _form_validateForm__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./form/validateForm */ "./src/js/form/validateForm.js");
 /* harmony import */ var _popup_popup__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./popup/popup */ "./src/js/popup/popup.js");
+/* harmony import */ var _gallery_openGallery__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./gallery/openGallery */ "./src/js/gallery/openGallery.js");
+/* harmony import */ var _gallery_openGallery__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_gallery_openGallery__WEBPACK_IMPORTED_MODULE_9__);
+
 
 
 
@@ -18226,22 +18241,10 @@ __webpack_require__.r(__webpack_exports__);
 /*!***********************************!*\
   !*** ./src/js/scroll/scrollTo.js ***!
   \***********************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('a[href^="#"').on('click', function () {
-  var href = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('href');
-  var addr = jquery__WEBPACK_IMPORTED_MODULE_0___default()(href).offset().top;
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('html, body').animate({
-    scrollTop: jquery__WEBPACK_IMPORTED_MODULE_0___default()(href).offset().top
-  });
-  return false;
-});
 
 /***/ }),
 
@@ -18342,21 +18345,22 @@ sliderNew.slick({
 /***/ }),
 
 /***/ 0:
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./src/js/script.js ./src/js/btn/moreDetails.js ./src/js/btn/seeMoreBtn.js ./src/js/createDom/addAtributes.js ./src/js/createDom/addClass.js ./src/js/createDom/addContent.js ./src/js/createDom/addEvents.js ./src/js/createDom/createElem.js ./src/js/form/validateForm.js ./src/js/menu/openMenu.js ./src/js/popup/btnClosePopup.js ./src/js/popup/popup.js ./src/js/scroll/scrollTo.js ./src/js/scroll/stickyHeader.js ./src/js/slider/sliderHero.js ./src/js/slider/sliderNews.js ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./src/js/script.js ./src/js/btn/moreDetails.js ./src/js/btn/seeMoreBtn.js ./src/js/form/validateForm.js ./src/js/createDom/addAtributes.js ./src/js/createDom/addClass.js ./src/js/createDom/addContent.js ./src/js/createDom/addEvents.js ./src/js/createDom/createElem.js ./src/js/gallery/openGallery.js ./src/js/menu/openMenu.js ./src/js/popup/btnClosePopup.js ./src/js/popup/popup.js ./src/js/scroll/scrollTo.js ./src/js/scroll/stickyHeader.js ./src/js/slider/sliderHero.js ./src/js/slider/sliderNews.js ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\script.js */"./src/js/script.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\btn\moreDetails.js */"./src/js/btn/moreDetails.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\btn\seeMoreBtn.js */"./src/js/btn/seeMoreBtn.js");
+__webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\form\validateForm.js */"./src/js/form/validateForm.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\createDom\addAtributes.js */"./src/js/createDom/addAtributes.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\createDom\addClass.js */"./src/js/createDom/addClass.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\createDom\addContent.js */"./src/js/createDom/addContent.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\createDom\addEvents.js */"./src/js/createDom/addEvents.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\createDom\createElem.js */"./src/js/createDom/createElem.js");
-__webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\form\validateForm.js */"./src/js/form/validateForm.js");
+__webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\gallery\openGallery.js */"./src/js/gallery/openGallery.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\menu\openMenu.js */"./src/js/menu/openMenu.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\popup\btnClosePopup.js */"./src/js/popup/btnClosePopup.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\popup\popup.js */"./src/js/popup/popup.js");

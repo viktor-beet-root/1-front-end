@@ -7,3 +7,4 @@ import './btn/moreDetails';
 import './btn/seeMoreBtn';
 import './form/validateForm';
 import './popup/popup'
+import './gallery/openGallery'
