@@ -141,6 +141,22 @@
                                 having the right
                                 frame of mind. The truth is, our thoughts are very powerful.</p>
                             <button class="project__btn btn" id="detailsTrade"><span>More details</span></button>
+                            <div class="popup">
+                                <div class="popup__window">
+                                    <div class="popup__header">
+                                        <strong class="popup__title"></strong>
+                                        <button class="popup__close" type="button">X</button>
+                                    </div>
+                                    <div class="popup__content">
+                                        <p class="popup__text"></p>
+                                        <input class="popup__input" type="text">
+                                    </div>
+                                    <div class="popup__footer">
+                                        <button class="btn popup__btn popup__btn_ok" type="button">Ok</button>
+                                        <button class="btn popup__btn popup__btn_cansel" type="button">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
                             <p class="project__address"><i class="fas fa-map-marker-alt"></i> New York City, United States -
                                 1776
                                 feet</p>
@@ -168,6 +184,22 @@
                                 big
                                 ‘R’ of recognition and how a digital advertising network may help.</p>
                             <button class="project__btn btn" id="detailsCommerce"><span>More details</span></button>
+                            <div class="popup">
+                                <div class="popup__window">
+                                    <div class="popup__header">
+                                        <strong class="popup__title"></strong>
+                                        <button class="popup__close" type="button">X</button>
+                                    </div>
+                                    <div class="popup__content">
+                                        <p class="popup__text"></p>
+                                        <input class="popup__input" type="text">
+                                    </div>
+                                    <div class="popup__footer">
+                                        <button class="btn popup__btn popup__btn_ok" type="button">Ok</button>
+                                        <button class="btn popup__btn popup__btn_cansel" type="button">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
                             <p class="project__address"><i class="fas fa-map-marker-alt"></i> Hong Kong - 1588 feet</p>
                         </div>
         
@@ -403,9 +435,9 @@
                         <p class="get-in-touch__time"><i class="far fa-clock"></i> From 07:05AM to 19:30PM</p>
                     </div>
                     <div class="get-in-touch__form-wrap col-6">
-                        <form action="#" class="get-in-touch__form form">
-                            <input type="text" class="form__input" placeholder="Name">
-                            <input type="email" class="form__input" placeholder="Email">
+                        <form action="#" id="contactForm" class="get-in-touch__form form">
+                            <input type="text" class="form__input" placeholder="Name" id="nameInput">
+                            <input type="email" class="form__input" placeholder="Email" id="emailInput">
                             <button type="submit" class="get-in-touch__btn btn">Submit</button>
                         </form>
                     </div>
