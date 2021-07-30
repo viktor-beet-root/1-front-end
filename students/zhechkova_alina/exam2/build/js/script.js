@@ -15703,29 +15703,28 @@ var smBtn = document.getElementById('seeMoreBtn');
 function getPhoto(response) {
   var html = "";
   response.forEach(function (photo) {
-    html += "<img src=".concat(photo.urls.raw, " alt=").concat(alt_description, " class=\"col-6\">");
-    console.log(photo, html);
+    html += "<img src=".concat(photo.urls.raw, " alt=").concat(photo.alt_description, " class=\"col-6 ajax-photo col-md-12\">");
   });
   var div = document.getElementById('ajaxWrap');
-  div.innerHTML = html;
-  console.log(response);
+  div.insertAdjacentHTML('beforeend', html);
 }
 
 smBtn.addEventListener('click', function () {
-  return ajax_get("https://api.unsplash.com/photos/random/?count=4&client_id=cpnwAlnMv_WQLAZD4dS3j9dNZIwN8NYCx8ByylfYd_c", function (data) {
+  return ajaxGet("https://api.unsplash.com/photos/random/?count=4&client_id=cpnwAlnMv_WQLAZD4dS3j9dNZIwN8NYCx8ByylfYd_c", function (data) {
     return getPhoto(JSON.parse(data));
   });
 });
 
-function ajax_get(url, callback) {
+function ajaxGet(url, callback) {
   var xmlhttp = new XMLHttpRequest();
+  var data;
 
   xmlhttp.onreadystatechange = function () {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
       try {
-        var data = xmlhttp.responseText;
+        data = xmlhttp.responseText;
       } catch (err) {
-        console.log(err.message + " in " + xmlhttp.responseText);
+        console.error(err.message + " in " + xmlhttp.responseText);
         return;
       }
 

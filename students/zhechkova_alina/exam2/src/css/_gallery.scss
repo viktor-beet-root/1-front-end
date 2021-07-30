@@ -99,3 +99,18 @@
 
 
 }
+
+#ajaxWrap {
+    padding: 0 5px 5px;
+}
+
+.ajax-photo {
+    padding: 5px 5px 10px 10px;
+    height: 447.99px;
+    object-fit: cover;
+    object-position: center;
+
+    &:nth-child(2n) {
+        padding-right: 10px;
+    }
+}
