@@ -1,20 +1,25 @@
 $popup-padding: 20px;
 $popup-border: 1px solid lightgray;
 
-.popup {
+
+.popup-trade,
+.popup-commerce {
     position: fixed;
     bottom: 0;
     top: 0;
     right: 0;
     left: 0;
     background-color: rgba(0, 0, 0, .75);
-    display: none;
+    display: flex;
+    visibility: hidden;
+    pointer-events: none;
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
 
     &.active {
-        display: flex;
+        visibility: visible;
+        pointer-events: all;
         z-index: 100000;
     }
 

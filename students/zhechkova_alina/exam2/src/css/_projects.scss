@@ -33,20 +33,11 @@
 
 }
 
-.row {
-
-    // .row__content
-
-
-}
-
 .row__content {
     @media screen and (max-width:768px) {
         flex-direction: column-reverse;
     }
 }
-
-.trade {}
 
 .project {
 
@@ -217,15 +208,6 @@
     }
 }
 
-.btn {
-    text-transform: uppercase;
-    background: $bg-btn;
-    border: $border-btn;
-    padding: $padding-btn;
-    cursor: pointer;
-
-}
-
 .commerce {
     & .row {
         justify-content: space-between;
@@ -240,5 +222,55 @@
         @media screen and (max-width:768px) {
             padding-left: 20px;
         }
+    }
+}
+
+.btn {
+    text-transform: uppercase;
+    background: $bg-btn;
+    border: $border-btn;
+    padding: $padding-btn;
+    cursor: pointer;
+    overflow: hidden;
+
+    position: relative;
+
+
+
+    &:before {
+        -webkit-transition: 0.5s all ease;
+        transition: 0.5s all ease;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        opacity: 0;
+        content: '';
+        background-color: rgb(145, 145, 145);
+        z-index: -2;
+    }
+
+    &:hover {
+        &:before {
+            -webkit-transition: 0.5s all ease;
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+        }
+    }
+
+    &:focus {
+        &:before {
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+        }
+    }
+
+    &:active {
+        transform: translateY(3px);
     }
 }

@@ -1,46 +1,22 @@
-import defaultOptions from "./defaultOptions";
-import setEventPopup from "./setEventPopup";
+import btnClosePopup from './btnClosePopup';
 
-class Popup {
-    constructor(options) {
-        this.options = {
-            ...defaultOptions,
-            ...options
-        }
+const tradeBtn = document.getElementById('detailsTrade');
+const tradeBtnClose = document.querySelector('.popup-trade__btn');
 
-        setEventPopup.apply(this);
-        this.title = '';
-        this.text = '';
+const commerceBtn = document.getElementById('detailsCommerce');
+const commerceBtnClose = document.querySelector('.popup-commerce__btn')
 
-    }
+tradeBtn.addEventListener('click', (e) => {
+    const popup = document.querySelector('.popup-trade')
+    console.log(popup)
+    popup.classList.add('active')
+})
 
-    show() {
-        this.options.wrapper.classList.add('active');
-    }
+commerceBtn.addEventListener('click', (e) => {
+    const popup = document.querySelector('.popup-commerce')
+    console.log(popup)
+    popup.classList.add('active')
+})
 
-    hide() {
-        this.options.wrapper.classList.remove('active');
-    }
-    addTitle(title) {
-        if (title) {
-            this.title.textContent = title;
-            return;
-        }
-        if (this.options.title) {
-            this.title.textContent = this.options.title;
-        }
-    }
-    addText(text) {
-        if (text) {
-            this.text.textContent = text;
-            return;
-        }
-        if (this.options.text) {
-            this.text.textContent = this.options.text
-        };
-    }
-
-
-}
-
-export default Popup;
+btnClosePopup(tradeBtnClose, document.querySelector('.popup-trade'))
+btnClosePopup(commerceBtnClose, document.querySelector('.popup-commerce'))

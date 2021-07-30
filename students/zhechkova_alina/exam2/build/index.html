@@ -27,10 +27,10 @@
                 <nav class="header__menu menu col-9 col-lg-12">
                     <div class="row menu__row">
                         <ul class="menu__list col-9 col-lg-12">
-                            <li class="menu__item active"><a href="/" class="menu__link">About us</a></li>
-                            <li class="menu__item"><a href="#aboutUs" class="menu__link">Projects</a></li>
-                            <li class="menu__item"><a href="#news" class="menu__link">News</a></li>
-                            <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+                            <li class="menu__item active menu__item_scroll"><a href="/" class="menu__link">About us</a></li>
+                            <li class="menu__item menu__item_scroll"><a href="#aboutUs" class="menu__link">Projects</a></li>
+                            <li class="menu__item menu__item_scroll"><a href="#news" class="menu__link">News</a></li>
+                            <li class="menu__item menu__item_scroll"><a href="#contact" class="menu__link">Contact</a></li>
                         </ul>
                         <ul class="menu__media media col-3 col-lg-12">
                             <li class="media__item"><a href="#" class="media__link"><i class="fab fa-facebook-f"></i></a>
@@ -115,7 +115,7 @@
             </div>
             <div class="hero__dots"></div>
         </section>
-        <article class="what-we-do" id="aboutUs">
+        <article class="what-we-do section" id="aboutUs">
             <div class="container what-we-do__container">
                 <div class="row what-we-do__title-wrap">
                     <h2 class="what-we-do__title col-12">
@@ -141,19 +141,23 @@
                                 having the right
                                 frame of mind. The truth is, our thoughts are very powerful.</p>
                             <button class="project__btn btn" id="detailsTrade"><span>More details</span></button>
-                            <div class="popup">
-                                <div class="popup__window">
-                                    <div class="popup__header">
-                                        <strong class="popup__title"></strong>
-                                        <button class="popup__close" type="button">X</button>
+                            <div class="popup-trade">
+                                <div class="popup-trade__window">
+                                    <div class="popup-trade__header">
+                                        <strong class="popup-trade__title">Trade Center</strong>
                                     </div>
-                                    <div class="popup__content">
-                                        <p class="popup__text"></p>
-                                        <input class="popup__input" type="text">
+                                    <div class="popup-trade__content">
+                                        <p class="popup-trade__text">Increasing prosperity in our lives can be accomplished by
+                                            having the right
+                                            frame of mind. The truth is, our thoughts are very powerful.
+                                            <br>
+                                            Increasing prosperity in our lives can be accomplished by
+                                            having the right
+                                            frame of mind. The truth is, our thoughts are very powerful.</p>
                                     </div>
-                                    <div class="popup__footer">
-                                        <button class="btn popup__btn popup__btn_ok" type="button">Ok</button>
-                                        <button class="btn popup__btn popup__btn_cansel" type="button">Cancel</button>
+                                    <div class="popup-trade__footer">
+                                        <button class="btn popup-trade__btn popup-trade__btn_ok" type="button">Ok</button>
+        
                                     </div>
                                 </div>
                             </div>
@@ -184,22 +188,28 @@
                                 big
                                 ‘R’ of recognition and how a digital advertising network may help.</p>
                             <button class="project__btn btn" id="detailsCommerce"><span>More details</span></button>
-                            <div class="popup">
-                                <div class="popup__window">
-                                    <div class="popup__header">
-                                        <strong class="popup__title"></strong>
-                                        <button class="popup__close" type="button">X</button>
+                            <div class="popup-commerce">
+                                <div class="popup-commerce__window">
+                                    <div class="popup-commerce__header">
+                                        <strong class="popup-commerce__title">Commerce centre</strong>
                                     </div>
-                                    <div class="popup__content">
-                                        <p class="popup__text"></p>
-                                        <input class="popup__input" type="text">
+                                    <div class="popup-commerce__content">
+                                        <p class="popup-commerce__text">Successful businesses have many things in common, today
+                                            we’ll look at the
+                                            big
+                                            ‘R’ of recognition and how a digital advertising network may help.
+                                            <br>
+                                            Successful businesses have many things in common, today
+                                            we’ll look at the
+                                            big
+                                            ‘R’ of recognition and how a digital advertising network may help.</p>
                                     </div>
-                                    <div class="popup__footer">
-                                        <button class="btn popup__btn popup__btn_ok" type="button">Ok</button>
-                                        <button class="btn popup__btn popup__btn_cansel" type="button">Cancel</button>
+                                    <div class="popup-commerce__footer">
+                                        <button class="btn popup-commerce__btn popup-commerce__btn_ok" type="button">Ok</button>
                                     </div>
                                 </div>
                             </div>
+        
                             <p class="project__address"><i class="fas fa-map-marker-alt"></i> Hong Kong - 1588 feet</p>
                         </div>
         
@@ -207,7 +217,7 @@
                 </div>
             </section>
         </article>
-        <section class="page__news news" id="news">
+        <section class="page__news news section" id="news">
             <div class="container news__container">
                 <div class="row title-row news__title-row">
                     <h2 class="title news__title col-12">
@@ -217,7 +227,10 @@
                 <div class="news__wrapper">
                     <div class="news__slide slide">
                         <div class="slide__wrapper">
-                            <img src="image/new1.png" alt="town" class="slide__img">
+                            <div class="slide__img-wrap">
+                                <img src="image/new1.png" alt="town" class="slide__img">
+                                <div class="slide__img-hover"></div>
+                            </div>
                             <div class="slide__content-wrap">
                                 <h3 class="slide__title">See the unmatched beauty of the great.</h3>
                                 <p class="slide__content">
@@ -237,7 +250,10 @@
                     </div>
                     <div class="news__slide slide">
                         <div class="slide__wrapper">
-                            <img src="image/new2.png" alt="town" class="slide__img">
+                            <div>
+                                <img src="image/new2.png" alt="town" class="slide__img">
+                                <div class="slide__img-hover"></div>
+                            </div>
                             <div class="slide__content-wrap">
                                 <h3 class="slide__title">Effective advertising pointers.</h3>
                                 <p class="slide__content">
@@ -255,7 +271,10 @@
                     </div>
                     <div class="news__slide slide">
                         <div class="slide__wrapper">
-                            <img src="image/new3.png" alt="town" class="slide__img">
+                            <div>
+                                <img src="image/new3.png" alt="town" class="slide__img">
+                                <div class="slide__img-hover"></div>
+                            </div>
                             <div class="slide__content-wrap">
                                 <h3 class="slide__title">Hypnotise yourself into the ghost.</h3>
                                 <p class="slide__content">
@@ -272,7 +291,10 @@
                     </div>
                     <div class="news__slide slide">
                         <div class="slide__wrapper">
-                            <img src="image/new1.png" alt="town" class="slide__img">
+                            <div>
+                                <img src="image/new1.png" alt="town" class="slide__img">
+                                <div class="slide__img-hover"></div>
+                            </div>
                             <div class="slide__content-wrap">
                                 <h3 class="slide__title">See the unmatched beauty of the great.</h3>
                                 <p class="slide__content">
@@ -292,7 +314,10 @@
                     </div>
                     <div class="news__slide slide">
                         <div class="slide__wrapper">
-                            <img src="image/new2.png" alt="town" class="slide__img">
+                            <div>
+                                <img src="image/new2.png" alt="town" class="slide__img">
+                                <div class="slide__img-hover"></div>
+                            </div>
                             <div class="slide__content-wrap">
                                 <h3 class="slide__title">Effective advertising pointers.</h3>
                                 <p class="slide__content">
@@ -310,7 +335,10 @@
                     </div>
                     <div class="news__slide slide">
                         <div class="slide__wrapper">
-                            <img src="image/new3.png" alt="town" class="slide__img">
+                            <div>
+                                <img src="image/new3.png" alt="town" class="slide__img">
+                                <div class="slide__img-hover"></div>
+                            </div>
                             <div class="slide__content-wrap">
                                 <h3 class="slide__title">Hypnotise yourself into the ghost.</h3>
                                 <p class="slide__content">
@@ -423,7 +451,7 @@
                     Get in touch
                 </h2>
             </div>
-            <div class="get-in-touch__content" id="contact">
+            <div class="get-in-touch__content section" id="contact">
                 <div class="row">
                     <div class="get-in-touch__info col-6">
                         <p class="get-in-touch__address"><i class="fas fa-map-marker-alt"></i> 91 Nolan Extensions Suite
@@ -437,7 +465,9 @@
                     <div class="get-in-touch__form-wrap col-6">
                         <form action="#" id="contactForm" class="get-in-touch__form form">
                             <input type="text" class="form__input" placeholder="Name" id="nameInput">
+                            <div class="error-message"></div>
                             <input type="email" class="form__input" placeholder="Email" id="emailInput">
+                            <div class="error-message"></div>
                             <button type="submit" class="get-in-touch__btn btn">Submit</button>
                         </form>
                     </div>
@@ -468,6 +498,7 @@
         </div>
     </footer>
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script src="/path/to/dist/jquery.scroll-spy.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

@@ -7,8 +7,8 @@ sliderNew.slick({
     slidesToScroll: 1,
     dots: true,
     appendDots: $('.news__dots'),
-    autoplay: true,
-    autoplaySpeed: 2000,
+    //autoplay: true,
+    //autoplaySpeed: 2000,
     responsive: [{
             breakpoint: 1199,
             settings: {
