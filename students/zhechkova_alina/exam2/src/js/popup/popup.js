@@ -21,6 +21,25 @@ class Popup {
     hide() {
         this.options.wrapper.classList.remove('active');
     }
+    addTitle(title) {
+        if (title) {
+            this.title.textContent = title;
+            return;
+        }
+        if (this.options.title) {
+            this.title.textContent = this.options.title;
+        }
+    }
+    addText(text) {
+        if (text) {
+            this.text.textContent = text;
+            return;
+        }
+        if (this.options.text) {
+            this.text.textContent = this.options.text
+        };
+    }
+
 
 }
 
