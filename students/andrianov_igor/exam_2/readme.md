@@ -1,3 +1,3 @@
-https://ice-xo.github.io/1-front-end/students/andrianov_igor/exam_1/build/
+https://ice-xo.github.io/1-front-end/students/andrianov_igor/exam_2/build/
 
-Exam 1
+Exam 2
