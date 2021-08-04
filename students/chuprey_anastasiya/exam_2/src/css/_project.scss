@@ -1,5 +1,5 @@
 .what-we-do {
-    padding-top: 100px;
+    padding-top: 90px;
     overflow-x: hidden;
     overflow-y: hidden;
 
@@ -13,8 +13,8 @@
         text-transform: uppercase;
         text-align: center;
         font-family: $font-secondary-name;
-        margin-bottom: 170px;
-        @include line-before-upper($color-black, -10px);
+        margin-bottom: 137px;
+        @include line-before-upper($color-black, 10px);
 
         @media screen and (max-width: 500px) {
             font-size: 30px;
@@ -29,9 +29,11 @@
     }
 
     &__image-rew:nth-child(odd) {
-        padding-right: 40px;
+        padding-right: 5px;
+        margin-bottom: 210px;
         @media screen and (max-width: 1200px) {
-            padding-left: 20px;
+            padding-left: 15px;
+            margin-bottom: 0px;
         }
     }
 
@@ -42,7 +44,7 @@
         width: 100%;
         background-color: $color-malibu;
         bottom: 15%;
-        right: 55%;
+        right: 45%;
         z-index: -1;
     }
 
@@ -109,6 +111,7 @@
         text-transform: uppercase;
         font-weight: bold;
         margin-bottom: 20px;
+        font-family: $font-secondary-name;
     }
 
     &__text {

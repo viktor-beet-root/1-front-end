@@ -1,23 +1,12 @@
 import $ from 'jquery';
 import 'slick-carousel';
-import titleList from './lib/titleList';
-import getTitleHtml from './lib/getTitleHtml';
-window.addEventListener("scroll", function () {
-    const header = this.document.querySelector("header");
+import 'lightbox2';
+import googleMap from './lib/googleMap';
+import seeMore from './lib/seeMore';
+import stickyHeader from './lib/stickyHeader';
+import horizontalSlider from './lib/horizontalSlider';
+import verticalSlider from './lib/verticalSlider';
 
-    header.classList.toggle("sticky", window.scrollY > 0)
-});
-
-$(document).ready(function () {
-    $('a[href*="#"]').bind("click", function (e) {
-        var anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $(anchor.attr('href')).offset().top
-        }, 1000);
-        e.preventDefault();
-    });
-    return false;
-});
 
 const menuItems = document.querySelector('.menu__items');
 const menuLinks = document.querySelectorAll('.menu__item-link');
@@ -36,27 +25,6 @@ for (let i = 0; i < menuLength; i++) {
         }
     })
 }
-
-
-
-
-
-const slider = $('.slider');
-let titleItemHtml = '';
-titleList.forEach((title) => {
-    titleItemHtml += (getTitleHtml(title));
-})
-
-slider.append(titleItemHtml);
-slider.slick({
-    infinite: true,
-    dots: true,
-    speed: 1000,
-    cssEase: 'linear',
-    dotsClass: "vertical-dots",
-})
-
-
 
 
 const burger = document.querySelector('.header__burger')
@@ -81,27 +49,29 @@ const navSlide = () => {
 
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
-        social.classList.toggle('social-burger')
+        social.classList.toggle('social-burger');
+
 
     })
 }
-
-navSlide();
 
 
 
 $('.menu__item-link').click(function () {
     $('.menu__items').toggleClass('nav-active');
-    $('.social').toggleClass('social-burger')
+
+    burger.classList.remove('open');
+    if ($(window).width() < 768) {
+        $('.social').toggleClass('social-burger');
+    }
+
+    menuOpen = false;
 })
 
 
-
-$(document).ready(function () {
-    $('.news-items').slick({
-        infinite: true,
-        dots: true,
-        speed: 1000,
-        slidesToShow: 3,
-    });
-})
+navSlide();
+seeMore();
+googleMap();
+horizontalSlider();
+stickyHeader();
+verticalSlider();

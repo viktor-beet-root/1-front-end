@@ -77,3 +77,15 @@
 //     color: $color-black;
 //     font-weight: 900;
 // }
+
+// Adaptive font size
+$containerMaxWidth: 1200;
+
+@mixin adaptive-font-size($pcDesktopFontSize, $mobilePhoneFontSize) {
+    $addSize: $pcDesktopFontSize - $mobilePhoneFontSize;
+    font-size: $pcDesktopFontSize + px;
+
+    @media (max-width: #{$containerMaxWidth + px}) {
+        font-size: calc(#{$mobilePhoneFontSize + px} + #{$addSize} * ((100vw - 320px) / #{$containerMaxWidth - 320}));
+    }
+}

@@ -1,7 +1,11 @@
 .news {
     @include bg-cover("../image/bg-news.jpg");
-    padding-top: 100px;
-    padding-bottom: 120px;
+    padding-top: 170px;
+    padding-bottom: 80px;
+    @media screen and (max-width: 1200px) {
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
 
     &__container {
         line-height: 22px;
@@ -12,22 +16,16 @@
         font-weight: 400;
         text-align: center;
         text-transform: uppercase;
-        margin-bottom: 60px;
+        margin-bottom: 90px;
         position: relative;
 
         @include line-before-upper($color-white, -37px);
-    }
-
-    &__news-items {
     }
 }
 
 .news-items {
     display: flex;
     margin: 0 -15px 100px;
-
-    &__news-item {
-    }
 }
 .news-item {
     display: flex;
@@ -35,12 +33,10 @@
     width: 100%;
     max-width: 100vh;
     padding: 15px;
-
-    &__news-info {
-    }
 }
 .img-rew {
     position: relative;
+
     &_img {
         display: block;
         width: 100%;
@@ -85,7 +81,7 @@
     flex-grow: 1;
     background-color: $color-white;
     padding: 20px;
-    @media screen and (max-width: 7680px) {
+    @media screen and (max-width: 768px) {
         width: 100%;
     }
 
@@ -119,10 +115,6 @@
         @media screen and (max-width: 1200px) {
             font-size: 15px;
         }
-    }
-    //поміняти шрифт не на італік
-
-    &__user-rew {
     }
 }
 .user-rew {
@@ -173,7 +165,7 @@
     }
 
     .news-items {
-        padding: 0 70px;
+        padding: 0 100px;
         @media screen and (max-width: 550px) {
             padding: 0 40px;
         }
