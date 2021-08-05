@@ -58,6 +58,7 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        padding-left: 0;
 
         &__wrapp {
             display: flex;
@@ -204,7 +205,7 @@
     
             @include media ('sm') {
                 padding: 0;
-                font-size: 14px;
+                font-size: 12px;
                 text-align: center;
             }
         }
@@ -253,4 +254,3 @@ input:not([type="checkbox"]):required.valid {
 input:not([type="checkbox"]):required.invalid {
     border-bottom: 2px solid red;
 }
-

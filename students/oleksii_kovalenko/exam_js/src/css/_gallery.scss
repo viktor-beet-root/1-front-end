@@ -1,6 +1,10 @@
 .gallery {
     padding: 144px 0 125px;
 
+    @include media ('lg') {
+        padding: 40px 0 20px;
+    }
+
     &__content {
         padding-left: 0;
         padding-right: 0;
@@ -41,6 +45,10 @@
                 flex-direction: column;
                 justify-content: center ;
                 align-items: center;
+            }
+
+            @include media ('md') {
+                margin-top: 0px;
             }
         }
 

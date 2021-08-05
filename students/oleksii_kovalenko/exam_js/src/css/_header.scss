@@ -15,7 +15,8 @@
     
             @include media ('lg') {
                 width: 100%;
-                flex-direction: column;
+                flex-wrap: wrap;
+                flex-direction: column-reverse;
             }
     }
 }

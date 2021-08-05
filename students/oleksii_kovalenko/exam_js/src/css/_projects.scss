@@ -2,10 +2,6 @@
     padding: 105px 0 110px;
     position: relative;
 
-    @include media ('lg') {
-        padding: 44px 0 0px;
-    }
-
     &::before,
     &::after {
         content: '';
@@ -27,7 +23,6 @@
         @include media ('lg') {
             top: 197px;
         }
-
     }
 
     &::after {
@@ -68,11 +63,6 @@
             height: 1px;
             background-color: $pickledBluewood;
         }
-
-        @include media ('md') {
-            margin-bottom: 10px;
-            font-size: 37px;
-        }
     }
 
     &__content {
@@ -93,21 +83,12 @@
             font-size: 22px;
             margin-top: 48px;
 
-            @include media ('md') {
-                margin-top: 0px;
-            }
-
             &2 {
                 font-size: 44px;
                 text-transform: uppercase;
                 font-weight: 700;
                 line-height: 1.09;
                 margin-bottom: 24px;
-
-                @include media ('md') {
-                    font-size: 22px;
-                    margin-top: 20px;
-                }
             }
         }
 
@@ -176,10 +157,10 @@
                 margin-bottom: 0px;
             }
         }
-    }
 
-    &__content-commerce {
-        display: flex;
-        flex-direction: row-reverse;
+        &-commerce {
+            display: flex;
+            flex-direction: row-reverse;
+        }
     }
 }

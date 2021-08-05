@@ -1,9 +1,9 @@
 .aboutUs {
-    padding-top: 106px;
+    padding-top: 88px;
     overflow-x: hidden;
 }
 
-.slider{
+.slider {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -54,7 +54,6 @@
             }
         }
 }
-
 
 //dots settings//
 
@@ -158,5 +157,3 @@
     border-bottom: 3px solid white;
     transition: all .1s ease-in-out;
 }
-
-

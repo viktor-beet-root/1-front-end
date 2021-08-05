@@ -18,25 +18,27 @@
 </head>
 
 <body class="page">
+
     <header class="header">
         <section class="mainMenu">
             <div class="header__container container menu__wrapp menu__noSticky default" id="menu">
                 <div class="logo header__logo">
                     <img class="header__logo_img" src="./image/Logo.svg" alt="Monticello">
                 </div>
+                <div class="gamburger ">
+                    <span ></span>
+                    <span ></span>
+                    <span ></span>
+                 </div>
                 <nav class="menu header__menu" id="header__menu">
-                    <input class="menu__hidden " hidden type="checkbox" id="mainMenu">
-                    <label class="menu__hidden_btn" aria-label="button menu" for="mainMenu">
-                        <span class="menu__hidden_btn-line"></span>
-                    </label>
                     <ul class="menu__items" id="menu__items">
                         <li class="menu__item ">
-                            <a href="#aboutUs" class="menu__item_link ">
+                            <a href="#whatWeDo" class="menu__item_link ">
                                 about us
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a  href="#whatWeDo" class="menu__item_link">
+                            <a  href="#gallery" class="menu__item_link">
                                 projects
                             </a>
                         </li>
@@ -137,8 +139,7 @@
                 <div class="whatWeDo__content">
                     <div class="row whatWeDo__content-commerce">
                         <div class="col-7 col-xl-8 col-lg-12 whatWeDo__content-img-wrapp">
-                            <img class="whatWeDo__content-img whatWeDo__content-img-commerce"
-                                src="./image/commerce_center .png" alt="picture">
+                            <img class="whatWeDo__content-img whatWeDo__content-img-commerce" src="./image/commerce_center .png" alt="picture">
                         </div>
                         <div class="col-5 col-xl-4 col-lg-12">
                             <h3 class="whatWeDo__content-title">International</h3>
@@ -338,7 +339,7 @@
                                 <p class="contact__time">From 07:05AM to 19:30PM</p>
                             </div>
                             <form action=""  class="contact__form popup__form" name="form1">
-                                <input type="text" class="contact__form-name form__input-modal form__input_width field _req" value="" placeholder="Name"                                     title="Введите имя"
+                                <input type="text" class="contact__form-name form__input-modal form__input_width field _req" value="" placeholder="Name"title="Введите имя"
                                 required>
                                 <input type="email" class="contact__form-email form__input-modal field _req email" value="" placeholder="Email" id="email" title="Введите корректно поле email"
                                 required>
@@ -387,4 +388,5 @@
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd2T5kq2eY7-w0dk65xWAULyH83_DNPNI&callback=initMap"></script>
 
 </body>
+
 </html>
