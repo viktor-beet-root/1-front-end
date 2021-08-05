@@ -17834,11 +17834,11 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 jquery__WEBPACK_IMPORTED_MODULE_14___default()(document).ready(function () {
   var $menu = jquery__WEBPACK_IMPORTED_MODULE_14___default()("#menu");
   jquery__WEBPACK_IMPORTED_MODULE_14___default()(window).scroll(function () {
-    if (jquery__WEBPACK_IMPORTED_MODULE_14___default()(this).scrollTop() > 100 && $menu.hasClass("default")) {
+    if (jquery__WEBPACK_IMPORTED_MODULE_14___default()(this).scrollTop() > 200 && $menu.hasClass("default")) {
       $menu.fadeOut('fast', function () {
         jquery__WEBPACK_IMPORTED_MODULE_14___default()(this).removeClass("default").addClass("fixed transbg").fadeIn('fast');
       });
-    } else if (jquery__WEBPACK_IMPORTED_MODULE_14___default()(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
+    } else if (jquery__WEBPACK_IMPORTED_MODULE_14___default()(this).scrollTop() <= 200 && $menu.hasClass("fixed")) {
       $menu.fadeOut('fast', function () {
         jquery__WEBPACK_IMPORTED_MODULE_14___default()(this).removeClass("fixed transbg").addClass("default").fadeIn('fast');
       });
@@ -17870,7 +17870,8 @@ nav.find('a').on('click', function () {
     scrollTop: jquery__WEBPACK_IMPORTED_MODULE_14___default()(id).offset().top - nav_height
   }, 500);
   return false;
-}); ///header slider///
+}); /////
+///header slider///
 
 var slider = jquery__WEBPACK_IMPORTED_MODULE_14___default()('.slider');
 slider.slick({
