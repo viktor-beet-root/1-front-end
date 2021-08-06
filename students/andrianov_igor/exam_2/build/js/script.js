@@ -16142,140 +16142,136 @@ module.exports = g;
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 // Google Map
-function googleMap() {
-  window.initMap = initMap;
-  var map;
+window.initMap = initMap;
+var map;
 
-  function initMap() {
-    var coordinates = {
-      lat: 40.679947441061444,
-      lng: -73.90163573236964
-    };
-    map = new google.maps.Map(document.getElementById('map'), {
-      center: coordinates,
-      zoom: 14,
-      mapTypeControlOptions: {
-        mapTypeIds: ["roadmap", "satellite", "hybrid", "terrain", "styled_map"]
-      },
-      styles: [{
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#f5f5f5"
-        }]
-      }, {
-        "elementType": "labels.icon",
-        "stylers": [{
-          "visibility": "off"
-        }]
-      }, {
-        "elementType": "labels.text.fill",
-        "stylers": [{
-          "color": "#616161"
-        }]
-      }, {
-        "elementType": "labels.text.stroke",
-        "stylers": [{
-          "color": "#f5f5f5"
-        }]
-      }, {
-        "featureType": "administrative.land_parcel",
-        "elementType": "labels.text.fill",
-        "stylers": [{
-          "color": "#bdbdbd"
-        }]
-      }, {
-        "featureType": "poi",
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#eeeeee"
-        }]
-      }, {
-        "featureType": "poi",
-        "elementType": "labels.text.fill",
-        "stylers": [{
-          "color": "#757575"
-        }]
-      }, {
-        "featureType": "poi.park",
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#e5e5e5"
-        }]
-      }, {
-        "featureType": "poi.park",
-        "elementType": "labels.text.fill",
-        "stylers": [{
-          "color": "#9e9e9e"
-        }]
-      }, {
-        "featureType": "road",
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#ffffff"
-        }]
-      }, {
-        "featureType": "road.arterial",
-        "elementType": "labels.text.fill",
-        "stylers": [{
-          "color": "#757575"
-        }]
-      }, {
-        "featureType": "road.highway",
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#dadada"
-        }]
-      }, {
-        "featureType": "road.highway",
-        "elementType": "labels.text.fill",
-        "stylers": [{
-          "color": "#616161"
-        }]
-      }, {
-        "featureType": "road.local",
-        "elementType": "labels.text.fill",
-        "stylers": [{
-          "color": "#9e9e9e"
-        }]
-      }, {
-        "featureType": "transit.line",
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#e5e5e5"
-        }]
-      }, {
-        "featureType": "transit.station",
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#eeeeee"
-        }]
-      }, {
-        "featureType": "water",
-        "elementType": "geometry",
-        "stylers": [{
-          "color": "#c9c9c9"
-        }]
-      }, {
-        "featureType": "water",
-        "elementType": "labels.text.fill",
-        "stylers": [{
-          "color": "#9e9e9e"
-        }]
+function initMap() {
+  var coordinates = {
+    lat: 40.679947441061444,
+    lng: -73.90163573236964
+  };
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: coordinates,
+    zoom: 14,
+    mapTypeControlOptions: {
+      mapTypeIds: ["roadmap", "satellite", "hybrid", "terrain", "styled_map"]
+    },
+    styles: [{
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#f5f5f5"
       }]
-    });
-    var marker = new google.maps.Marker({
-      position: coordinates,
-      map: map,
-      title: 'The Evergreens Cemetery',
-      icon: './images/marker.png'
-    });
-  }
-
-  ;
+    }, {
+      "elementType": "labels.icon",
+      "stylers": [{
+        "visibility": "off"
+      }]
+    }, {
+      "elementType": "labels.text.fill",
+      "stylers": [{
+        "color": "#616161"
+      }]
+    }, {
+      "elementType": "labels.text.stroke",
+      "stylers": [{
+        "color": "#f5f5f5"
+      }]
+    }, {
+      "featureType": "administrative.land_parcel",
+      "elementType": "labels.text.fill",
+      "stylers": [{
+        "color": "#bdbdbd"
+      }]
+    }, {
+      "featureType": "poi",
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#eeeeee"
+      }]
+    }, {
+      "featureType": "poi",
+      "elementType": "labels.text.fill",
+      "stylers": [{
+        "color": "#757575"
+      }]
+    }, {
+      "featureType": "poi.park",
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#e5e5e5"
+      }]
+    }, {
+      "featureType": "poi.park",
+      "elementType": "labels.text.fill",
+      "stylers": [{
+        "color": "#9e9e9e"
+      }]
+    }, {
+      "featureType": "road",
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#ffffff"
+      }]
+    }, {
+      "featureType": "road.arterial",
+      "elementType": "labels.text.fill",
+      "stylers": [{
+        "color": "#757575"
+      }]
+    }, {
+      "featureType": "road.highway",
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#dadada"
+      }]
+    }, {
+      "featureType": "road.highway",
+      "elementType": "labels.text.fill",
+      "stylers": [{
+        "color": "#616161"
+      }]
+    }, {
+      "featureType": "road.local",
+      "elementType": "labels.text.fill",
+      "stylers": [{
+        "color": "#9e9e9e"
+      }]
+    }, {
+      "featureType": "transit.line",
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#e5e5e5"
+      }]
+    }, {
+      "featureType": "transit.station",
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#eeeeee"
+      }]
+    }, {
+      "featureType": "water",
+      "elementType": "geometry",
+      "stylers": [{
+        "color": "#c9c9c9"
+      }]
+    }, {
+      "featureType": "water",
+      "elementType": "labels.text.fill",
+      "stylers": [{
+        "color": "#9e9e9e"
+      }]
+    }]
+  });
+  var marker = new google.maps.Marker({
+    position: coordinates,
+    map: map,
+    title: 'The Evergreens Cemetery',
+    icon: './images/marker.png'
+  });
 }
 
 ;
-/* harmony default export */ __webpack_exports__["default"] = (googleMap);
+/* harmony default export */ __webpack_exports__["default"] = (initMap);
 
 /***/ }),
 
@@ -16481,7 +16477,7 @@ __webpack_require__.r(__webpack_exports__);
  //See more
 
 function seeMore() {
-  var htmlGalleryPhotos = "\n<div class=\"container\">\n    <div class=\"row append__row id=\"seeMoreP\">\n\n        <div class=\"img-list__image-wrapper-a img-list__image-wrapper_left col-3 col-md-6\">\n            <a class=\"img-list__image-link-a\" href=\"./images/gallery_2.png\" data-lightbox=\"lbox\">\n                <img class=\"img-list__img\" src=\"./images/gallery_2.png\" alt=\"gallery\">\n            </a>\n            <a class=\"img-list__image-link-a\" href=\"./images/gallery_3.png\" data-lightbox=\"lbox\">\n                <img class=\"img-list__img\" src=\"./images/gallery_3.png\" alt=\"gallery\">\n            </a>\n        </div>\n\n        <div class=\"img-list__image-wrapper-a img-list__image-wrapper_right col-3 col-md-6\">\n            <a class=\"img-list__image-link-a\" href=\"./images/gallery_4.png\" data-lightbox=\"lbox\">\n                <img class=\"img-list__img\" src=\"./images/gallery_4.png\" alt=\"gallery\">\n            </a>\n            <a class=\"img-list__image-link-a\" href=\"./images/gallery_5.png\" data-lightbox=\"lbox\">\n                <img class=\"img-list__img\" src=\"./images/gallery_5.png\" alt=\"gallery\">\n            </a>\n        </div>\n\n        <div class=\"img-list__image-wrapper-a img-list__image-wrapper_left col-3 col-md-6\">\n            <a class=\"img-list__image-link-a\" href=\"./images/gallery_2.png\" data-lightbox=\"lbox\">\n                <img class=\"img-list__img\" src=\"./images/gallery_2.png\" alt=\"gallery\">\n            </a>\n            <a class=\"img-list__image-link-a\" href=\"./images/gallery_3.png\" data-lightbox=\"lbox\">\n                <img class=\"img-list__img\" src=\"./images/gallery_3.png\" alt=\"gallery\">\n            </a>\n        </div>\n\n        <div class=\"img-list__image-wrapper-a img-list__image-wrapper_right col-3 col-md-6\">\n            <a class=\"img-list__image-link-a\" href=\"./images/gallery_4.png\" data-lightbox=\"lbox\">\n                <img class=\"img-list__img\" src=\"./images/gallery_4.png\" alt=\"gallery\">\n            </a>\n            <a class=\"img-list__image-link-a\" href=\"./images/gallery_5.png\" data-lightbox=\"lbox\">\n                <img class=\"img-list__img\" src=\"./images/gallery_5.png\" alt=\"gallery\">\n            </a>\n        </div>\n\n    </div>\n\n</div>\n"; //Add photos at Gallery Section
+  var htmlGalleryPhotos = "\n<div class=\"container append\">\n    <div class=\"row append__row append__row_adaptive id=\"seeMoreP\">\n\n        <div class=\"img-list__image-wrapper-a img-list__image-wrapper_left col-3 col-md-6\">\n            <a class=\"img-list__image-link-a\" href=\"./images/gallery_2.png\" data-lightbox=\"lbox\">\n                <img class=\"img-list__img\" src=\"./images/gallery_2.png\" alt=\"gallery\">\n            </a>\n            <a class=\"img-list__image-link-a\" href=\"./images/gallery_3.png\" data-lightbox=\"lbox\">\n                <img class=\"img-list__img\" src=\"./images/gallery_3.png\" alt=\"gallery\">\n            </a>\n        </div>\n\n        <div class=\"img-list__image-wrapper-a img-list__image-wrapper_right col-3 col-md-6\">\n            <a class=\"img-list__image-link-a\" href=\"./images/gallery_4.png\" data-lightbox=\"lbox\">\n                <img class=\"img-list__img\" src=\"./images/gallery_4.png\" alt=\"gallery\">\n            </a>\n            <a class=\"img-list__image-link-a\" href=\"./images/gallery_5.png\" data-lightbox=\"lbox\">\n                <img class=\"img-list__img\" src=\"./images/gallery_5.png\" alt=\"gallery\">\n            </a>\n        </div>\n\n        <div class=\"img-list__image-wrapper-a img-list__image-wrapper_left col-3 col-md-6\">\n            <a class=\"img-list__image-link-a\" href=\"./images/gallery_2.png\" data-lightbox=\"lbox\">\n                <img class=\"img-list__img\" src=\"./images/gallery_2.png\" alt=\"gallery\">\n            </a>\n            <a class=\"img-list__image-link-a\" href=\"./images/gallery_3.png\" data-lightbox=\"lbox\">\n                <img class=\"img-list__img\" src=\"./images/gallery_3.png\" alt=\"gallery\">\n            </a>\n        </div>\n\n        <div class=\"img-list__image-wrapper-a img-list__image-wrapper_right col-3 col-md-6\">\n            <a class=\"img-list__image-link-a\" href=\"./images/gallery_4.png\" data-lightbox=\"lbox\">\n                <img class=\"img-list__img\" src=\"./images/gallery_4.png\" alt=\"gallery\">\n            </a>\n            <a class=\"img-list__image-link-a\" href=\"./images/gallery_5.png\" data-lightbox=\"lbox\">\n                <img class=\"img-list__img\" src=\"./images/gallery_5.png\" alt=\"gallery\">\n            </a>\n        </div>\n\n    </div>\n\n</div>\n"; //Add photos at Gallery Section
 
   jquery__WEBPACK_IMPORTED_MODULE_1___default()(document).ready(function () {
     var $seeMore = jquery__WEBPACK_IMPORTED_MODULE_1___default()('#seeMore');
@@ -16518,7 +16514,7 @@ function formValidationFooter() {
   }
 
   function validateUser(userName) {
-    var ruser = /^[a-zA-Z0-9]+$/;
+    var ruser = /^[a-zA-ZА-Яа-яЁё]+$/;
     return ruser.test(userName);
   }
 
@@ -16653,7 +16649,7 @@ Object(_lib_newsSlider__WEBPACK_IMPORTED_MODULE_4__["default"])();
 Object(_lib_headerMenuNavigation__WEBPACK_IMPORTED_MODULE_5__["default"])();
 Object(_lib_seeMore__WEBPACK_IMPORTED_MODULE_6__["default"])();
 Object(_lib_validationForm__WEBPACK_IMPORTED_MODULE_7__["default"])();
-Object(_lib_googleMap__WEBPACK_IMPORTED_MODULE_8__["default"])();
+_lib_googleMap__WEBPACK_IMPORTED_MODULE_8__["default"];
 
 /***/ }),
 

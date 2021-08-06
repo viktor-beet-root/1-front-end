@@ -10,6 +10,10 @@
     overflow-x: hidden;
     padding-top: 0px;
 
+    @media screen and (max-height: 768px) {
+        top: 2%;
+    }
+
     &_fixed {
         position: fixed;
         top: 0;
@@ -94,22 +98,7 @@
     &__items {
         display: flex;
         padding-top: 12px;
-    }
-
-    &__item:first-child {
-        padding-left: 37px;
-    }
-
-    &__item:nth-child(2) {
-        padding-left: 65px;
-    }
-
-    &__item:nth-child(3) {
-        padding-left: 67px;
-    }
-
-    &__item:nth-child(4) {
-        padding-left: 100px;
+        justify-content: space-around;
     }
 
     &__item-link_active::before {
@@ -242,6 +231,10 @@
 
 // Burger Menu
 @media screen and (max-width: 768px) {
+    .header__link {
+        z-index: 2;
+    }
+
     .social__item-link {
         width: 30px;
         height: 30px;
@@ -253,9 +246,13 @@
         width: 20px;
         height: 20px;
         right: 20px;
-        top: 7px;
+        top: 30px;
         position: fixed;
         z-index: 10;
+
+        @media screen and (max-width: 340px) {
+            right: 10px;
+        }
     }
 
     .menu__hidden_btn-line {
@@ -314,6 +311,7 @@
         background-image: linear-gradient(45deg, rgba(85, 183, 255, .9), rgba(126, 90, 255, .9));
         top: -45px;
         height: 100vh;
+        padding-top: 90px;
     }
 
     .menu__hidden:checked~.header__menu>.menu__items {
@@ -327,7 +325,7 @@
         border-bottom: 1px solid $color-white;
         margin: 0;
         padding: 0;
-        background-image: linear-gradient(45deg, rgba(85, 183, 255, 0.9), rgba(126, 90, 255, 0.9));
+        // background-image: linear-gradient(45deg, rgba(85, 183, 255, 0.9), rgba(126, 90, 255, 0.9));
         cursor: pointer;
     }
 
@@ -340,7 +338,7 @@
 
     .menu__item:hover,
     .menu__item:focus {
-        background-color: $cornflower-blue;
+        background-color: rgba($cornflower-blue, 0.2);
         border-top: 0px solid transparent;
     }
 
@@ -366,13 +364,12 @@
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
-        border-top: 1px solid white;
         border-bottom: 1px solid white;
         opacity: 1;
         visibility: hidden;
         transition: 0.25s ease-in-out;
         transform: translate(-50%, 0%);
-        background-image: linear-gradient(45deg, rgba(85, 183, 255, 0.9), rgba(126, 90, 255, 0.9));
+        background-image: linear-gradient(173deg, rgba(85, 183, 255, 0.9), rgba(126, 90, 255, 0.9));
         z-index: 1;
     }
 

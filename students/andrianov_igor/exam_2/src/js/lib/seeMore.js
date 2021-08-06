@@ -2,8 +2,8 @@ import $ from 'jquery';
 //See more
 function seeMore() {
     const htmlGalleryPhotos = `
-<div class="container">
-    <div class="row append__row id="seeMoreP">
+<div class="container append">
+    <div class="row append__row append__row_adaptive id="seeMoreP">
 
         <div class="img-list__image-wrapper-a img-list__image-wrapper_left col-3 col-md-6">
             <a class="img-list__image-link-a" href="./images/gallery_2.png" data-lightbox="lbox">

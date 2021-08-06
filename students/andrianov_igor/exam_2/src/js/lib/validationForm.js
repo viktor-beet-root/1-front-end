@@ -8,7 +8,7 @@ function formValidationFooter() {
     }
 
     function validateUser(userName) {
-        const ruser = /^[a-zA-Z0-9]+$/;
+        const ruser = /^[a-zA-ZА-Яа-яЁё]+$/;
         return ruser.test(userName);
     }
 
