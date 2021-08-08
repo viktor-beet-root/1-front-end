@@ -33,6 +33,7 @@
         margin: 0;
         display: flex;
         flex-direction: row;
+        z-index: 1;
     }
 
     &__logo {
