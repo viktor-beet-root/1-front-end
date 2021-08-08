@@ -10,7 +10,7 @@
     overflow-x: hidden;
     padding-top: 0px;
 
-    @media screen and (max-height: 768px) {
+    @media screen and (max-height: 1920px) {
         top: 2%;
     }
 
@@ -111,6 +111,7 @@
     }
 
     &__item-link {
+        display: block;
         font-family: $font-default;
         font-size: 14px;
         color: $color-white;
@@ -297,21 +298,17 @@
     .menu__items {
         width: 100%;
         position: fixed;
-        margin-top: 45px;
-        flex-direction: column;
-        visibility: hidden;
+        -ms-flex-direction: column;
         left: 50%;
+        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
-        background-color: $color-white;
+        background-color: white;
         text-align: center;
         opacity: 0;
-        transition: .5s ease-in-out;
-        padding: 0;
-        z-index: 1;
-        background-image: linear-gradient(45deg, rgba(85, 183, 255, .9), rgba(126, 90, 255, .9));
-        top: -45px;
+        background-image: linear-gradient(45deg, rgba(85, 183, 255, 0.9), rgba(126, 90, 255, 0.9));
+        top: -24px;
         height: 100vh;
-        padding-top: 90px;
+        padding-top: 100px;
     }
 
     .menu__hidden:checked~.header__menu>.menu__items {
