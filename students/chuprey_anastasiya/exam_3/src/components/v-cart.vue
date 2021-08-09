@@ -1,10 +1,12 @@
 <template>
   <div class="v-cart">
     <router-link :to="{ name: 'catalog' }">
-      <div class="v-catalog__link-to-cart">Back to catalog</div>
+      <div class="v-cart__link-to-shop">Back to catalog</div>
     </router-link>
-    <h2>Cart</h2>
-    <p v-if="!cart_data.length">There are no products in cart...</p>
+    <h2 class="v-cart__title">Cart</h2>
+    <p class="v-cart__message" v-if="!cart_data.length">
+      There are no products in cart...
+    </p>
     <v-cart-item
       v-for="(item, index) in cart_data"
       :key="item.article"
@@ -80,6 +82,14 @@ export default {
 
 <style lang="scss">
 .v-cart {
+  padding-top: 200px;
+  min-height: 100vh;
+  background-color: hsl(69, 42%, 91%);
+  // position: absolute;
+  // top: 70px;
+  // left: 0;
+  // right: 0;
+
   margin-bottom: 100px;
   &__total {
     position: fixed;
@@ -89,12 +99,40 @@ export default {
     padding: 10px 30px;
     display: flex;
     justify-content: center;
-    background-color: rgb(250, 126, 198);
+    background-color: #a8b58b;
     color: white;
     font-size: 20px;
   }
   &__total-name {
     margin-right: 16px;
+  }
+  &__link-to-shop {
+    position: absolute;
+    top: 130px;
+    right: 15px;
+    padding: 16px;
+    border-radius: 5px;
+    background-color: #c9cfae;
+    color: white;
+    transition: all 0.7s ease-in-out;
+    z-index: 10;
+    &:hover {
+      background-color: #a8b58b;
+    }
+  }
+  &__title {
+    font-size: 70px;
+    color: #a8b58b;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    // text-transform: uppercase;
+    @include line-before-upper(#a8b58b, -15px);
+  }
+  &__message {
+    text-align: center;
+    font-size: 25px;
+    color: #a8b58b;
   }
 }
 </style>
