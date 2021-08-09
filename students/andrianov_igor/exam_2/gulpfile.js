@@ -149,6 +149,14 @@ gulp.task("build", gulp.parallel(
     'fonts:build'
 ));
 
+gulp.task("buildProd", gulp.parallel(
+    'html:build',
+    'js:build',
+    'style:prod',
+    'images:build',
+    'fonts:build'
+));
+
 gulp.task("watch", function () {
     watch([path.watch.js], gulp.parallel('js:build'));
     watch([path.watch.html], gulp.parallel('html:build'));
@@ -162,4 +170,4 @@ gulp.task("clean", function (callback) {
 
 gulp.task('default', gulp.parallel('build', 'webserver', 'watch'));
 
-//gulp.task('prod', gulp.series('clean', gulp.parallel('buildProd')));
+// gulp.task('prod', gulp.series('clean', gulp.parallel('buildProd')));

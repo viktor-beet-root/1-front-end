@@ -2,7 +2,7 @@
     background-color: $color-projects-bg;
     overflow-y: hidden;
     overflow-x: hidden;
-    /*для горизонтального меню*/
+    /*for horizontal menu*/
     position: relative;
 
     &::before {
@@ -17,7 +17,6 @@
         @media (max-width: 1200px) {
             display: none;
         }
-
     }
 
     &::after {
@@ -32,7 +31,6 @@
         @media (max-width: 1200px) {
             display: none;
         }
-
     }
 
     &__container {
@@ -42,7 +40,6 @@
         @media (max-width: 360px) {
             padding-top: 67px;
         }
-
     }
 
     &__title {
@@ -121,7 +118,6 @@
         @media (max-width: 576px) {
             box-shadow: none;
         }
-
     }
 
     &__trade-subtitle {
@@ -150,7 +146,6 @@
         @media (max-width: 360px) {
             padding: 0px 0px 0px 0px;
         }
-
     }
 
     &__trade-text {
@@ -163,7 +158,6 @@
             justify-content: center;
             align-items: center;
         }
-
     }
 
     &__trade-btn {
@@ -179,7 +173,6 @@
             margin: 0 auto;
             margin-bottom: 22px;
         }
-
     }
 
     &__trade-location-text {
@@ -189,7 +182,6 @@
             text-align: center;
             padding: 0;
         }
-
     }
 
     &__commerce-info-wrapper {
@@ -202,7 +194,6 @@
         @media (max-width: 360px) {
             padding-top: 50px;
         }
-
     }
 
     &__commerce-subtitle {
@@ -213,7 +204,6 @@
             padding: 0px 0px 0px 0px;
             text-align: center;
         }
-
     }
 
     &__commerce-title {
@@ -225,7 +215,6 @@
             text-align: center;
             margin-bottom: 10px;
         }
-
     }
 
     &__commerce-text {
@@ -238,7 +227,6 @@
             justify-content: center;
             align-items: center;
         }
-
     }
 
     &__commerce-btn {
@@ -254,7 +242,6 @@
             margin: 0 auto;
             margin-bottom: 22px;
         }
-
     }
 
     &__commerce-location-text {
@@ -265,7 +252,6 @@
             padding: 0;
             margin-bottom: 15px;
         }
-
     }
 
     &__commerce-img-wrapper {
@@ -283,7 +269,6 @@
         @media (max-width: 576px) {
             padding: 0px 0px 0px 0px;
         }
-
     }
 
     &__commerce-img {
@@ -291,9 +276,7 @@
         @media (max-width: 576px) {
             box-shadow: none;
         }
-
     }
-
 }
 
 //Block elements
@@ -353,12 +336,10 @@
     @media (max-width: 360px) {
         margin-bottom: 15px;
     }
-
 }
 
 //media
 .container {
-
     @media (max-width: 992px) {
         max-width: 720px;
     }
@@ -370,7 +351,6 @@
     @media (max-width: 576px) {
         max-width: 100%;
     }
-
 }
 
 .whatWeDo {
@@ -414,7 +394,6 @@
             width: 100px;
             height: 1px;
         }
-
     }
 
     &__content {
@@ -466,7 +445,6 @@
                 top: 0;
                 left: 0;
             }
-
         }
 
         &-img {
@@ -477,7 +455,6 @@
                 display: flex;
                 justify-content: flex-end;
             }
-
         }
 
         &-trade {

@@ -31,7 +31,6 @@
         @media screen and (max-width: 360px) {
             margin-bottom: 10px;
         }
-
     }
 }
 
@@ -165,7 +164,6 @@
         letter-spacing: 0.12px;
         @include adaptive-font-size(18, 14);
     }
-
 }
 
 .user-rew {
@@ -206,9 +204,7 @@
         color: $malibu;
         margin-bottom: 17px;
         @include adaptive-font-size(14, 12);
-
     }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -219,12 +215,10 @@
             font-size: 45px;
             margin-bottom: 20px;
 
-
             @media screen and (max-width: 480px) {
                 font-size: 30px;
             }
         }
-
     }
 
     .news-items {
@@ -245,11 +239,10 @@
             line-height: 26px;
         }
     }
-
 }
 
 // Slider Button
-//  Подключение в script.js
+//  Connecting in script.js
 // prevArrow: $('.news__navigation-previous'),
 // nextArrow: $('.news__navigation-next'),
 .news-slider-btn {
@@ -304,7 +297,6 @@
         background-color: rgba(0, 0, 0, 0.2615021008403361);
         border: 1px solid black;
     }
-
 }
 
 .news__navigation-next {
@@ -346,7 +338,6 @@
         background-color: rgba(0, 0, 0, 0.2615021008403361);
         border: 1px solid black;
     }
-
 }
 
 .news__navigation-next,
@@ -398,7 +389,6 @@
     @media screen and (max-width: 370px) {
         left: 15%;
     }
-
 
     @media screen and (max-width: 360px) {
         left: 17%;

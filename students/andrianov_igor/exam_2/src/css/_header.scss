@@ -193,7 +193,8 @@
         &__item:nth-child(3),
         &__item:nth-child(4) {
             padding-left: 0px;
-            padding: 10px 30px;
+            // padding: 10px 30px;
+            padding: 0;
         }
     }
 }
@@ -210,6 +211,8 @@
     .menu__item-link {
         justify-content: flex-start;
         font-size: 13px;
+        align-items: center;
+        line-height: 2.5;
     }
 
     .social__item-link {

@@ -13,4 +13,3 @@ newsSlider();
 headerMenuNavigation();
 seeMore();
 formValidationFooter();
-initMap;

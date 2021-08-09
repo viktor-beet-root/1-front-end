@@ -7,7 +7,7 @@
 
     &__container {
 
-        // Для Perfect pixel
+        // For Perfect pixel
         // padding-top: 400px;
         @media screen and (max-width:768px) {
             max-width: 100%;
@@ -24,7 +24,7 @@
         background-color: #fff;
         max-width: 770px;
         margin-bottom: 55px;
-        // Установить margin когда будет карта
+        // Set margin when there is a map
         margin: -314px auto 0;
     }
 
@@ -44,9 +44,7 @@
         &::after {
             z-index: 20;
         }
-
     }
-
 
     &__contact-adress {
 
@@ -58,9 +56,7 @@
                 padding-left: 0;
                 text-align: center;
             }
-
         }
-
     }
 
     &__contact-tel {
@@ -89,7 +85,6 @@
             padding-left: 0;
             text-align: center;
         }
-
     }
 
     &__contact-time {
@@ -105,9 +100,7 @@
                 padding-left: 0;
                 text-align: center;
             }
-
         }
-
     }
 
     &__contact-form {
@@ -115,7 +108,6 @@
         &_position {
             margin-bottom: 40px;
         }
-
     }
 
     &__contact-form-name,
@@ -144,7 +136,6 @@
             margin-left: 6px;
             margin-bottom: 31px;
         }
-
     }
 
     &__contact-form-email {
@@ -153,7 +144,6 @@
             margin-left: 6px;
             margin-bottom: 28px;
         }
-
     }
 
     &__contact-form-btn {
@@ -178,9 +168,7 @@
             @media screen and (max-width: 768px) {
                 margin: 0 auto;
             }
-
         }
-
     }
 
     &__cover {
@@ -236,9 +224,7 @@
             margin-right: 0;
             text-align: center;
         }
-
     }
-
 }
 
 .contact-text {
@@ -256,7 +242,6 @@
     @media screen and (max-width: 576px) {
         padding-left: 0 !important;
     }
-
 }
 
 .footer {
@@ -271,7 +256,6 @@
         left: 3%;
         @include adaptive-font-size (14, 12);
     }
-
 }
 
 // Social Item Footer
