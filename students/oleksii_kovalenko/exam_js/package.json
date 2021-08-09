@@ -30,6 +30,7 @@
     },
     "dependencies": {
         "jquery": "^3.6.0",
+        "jquery-validation": "^1.19.3",
         "lightbox2": "^2.11.3",
         "page-scroll-to-id": "^1.6.8",
         "slick-carousel": "^1.8.1",

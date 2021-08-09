@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import 'slick-carousel';
 import 'lightbox2';
+import 'jquery-validation';
 
 //menu-sticky//
 
@@ -41,38 +42,33 @@ $('.menu__items a').click(function() {
     $('span:nth-child(3)').removeClass('last');
 });
 
-//smoth scroll and active menu//
+// active menu//
 
- var sections = $('section')
- , nav = $('nav')
- , nav_height = nav.outerHeight();
+var positions = [],
+	currentActive = null,
+	links = $('.scroll-to');
 
-$(window).on('scroll', function () {
- var cur_pos = $(this).scrollTop();
- 
- sections.each(function() {
-   var top = $(this).offset().top - nav_height,
-       bottom = top + $(this).outerHeight();
-   
-   if (cur_pos >= top && cur_pos <= bottom) {
-     nav.find('a').removeClass('active');
-     sections.removeClass('active');
-     
-     $(this).addClass('active');
-     nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
-   }
- });
+$(".anchor").each(function(){
+	positions.push({
+		top: $(this).position().top - 200,
+		a: links.filter('[href="#'+$(this).attr('id')+'"]')
+	});
 });
 
-nav.find('a').on('click', function () {
- var $el = $(this)
-   , id = $el.attr('href');
- 
- $('html, body').animate({
-   scrollTop: $(id).offset().top - nav_height
- }, 800);
- 
- return false;
+positions = positions.reverse();
+
+$(window).on('scroll',function() {
+	var winTop = $(window).scrollTop();
+	for(var i = 0; i < positions.length; i++){
+		if(positions[i].top < winTop){
+			if(currentActive !== i){
+				currentActive = i;
+				links.removeClass('active');
+				positions[i].a.addClass("active");
+			}
+			break;
+		}
+	}
 });
 
 ///header slider///
@@ -284,23 +280,57 @@ window.initMap = initMap;
 
 //form validation//
 
-const form = document.forms.form1
+// const form = document.forms.form1
 
-form.addEventListener('change', function() {
-    this.btnSubmit.disabled = this.checkValidity() ? false : true
-});
+// form.addEventListener('change', function() {
+//     this.btnSubmit.disabled = this.checkValidity() ? false : true
+// });
 
-Array.from(form.elements).forEach(inp => {
-    if(inp.required && inp.type != 'checkbox') {
-        inp.addEventListener('change', () => {
-            if(inp.checkValidity()) {
-                inp.classList.remove('invalid')
-                inp.classList.add('valid')
-            } else {
-                inp.classList.remove('valid')
-                inp.classList.add('invalid')
-                inp.reportValidity()
+// Array.from(form.elements).forEach(inp => {
+//     if(inp.required && inp.type != 'checkbox') {
+//         inp.addEventListener('change', () => {
+//             if(inp.checkValidity()) {
+//                 inp.classList.remove('invalid')
+//                 inp.classList.add('valid')
+//             } else {
+//                 inp.classList.remove('valid')
+//                 inp.classList.add('invalid')
+//                 inp.reportValidity()
+//             }
+//         })
+//     }
+// });
+
+$(document).on('click', '.send', function() {
+    var validateForm = $(document).find('#contacsform');
+    validateForm.validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
             }
-        })
-    }
+            ,email: {
+                required: true,
+                email: true,
+                minlength: 5
+            }
+        },
+        messages: {
+            name: {
+                required: "Enter your name",
+            }
+            ,phone: {
+                required: "Enter Email",
+            }
+        },
+        submitHandler: function(form) {
+            form.submit();
+        },
+        errorPlacement: function(error, element) {
+            var item = element.parents('.item');
+            item.append(error);
+        }
+    });
+ 
+    validateForm.submit();
 });

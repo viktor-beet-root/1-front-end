@@ -9,6 +9,11 @@
         padding: 188px 0 192px;
         width: 67.3%;
         margin: 0 auto;
+
+        @include media ('lg') {
+            width: 100%;
+        }
+        
     }
 
     &__cover {
@@ -78,7 +83,7 @@
             padding: 98px 60px 68px;
     
             @include media ('sm') {
-                padding: 69px 40px 45px;
+                padding: 69px 10px 45px;
             }
 
         }
@@ -91,9 +96,17 @@
             text-align: center;
             text-transform: uppercase;
             position: relative;
-    
-            @include media ('sm') {
+
+            @include media ('md') {
                 font-size: 30px;
+            }
+
+            @include media ('sm') {
+                font-size: 24px;
+            }
+    
+            @include media ('mi') {
+                font-size: 21px;
             }
     
             &::before {
@@ -130,6 +143,7 @@
             display: flex;
             flex-direction: column;
             width: 48%;
+            background-color: white;
     
             @include media ('lg') {
                 width: 100%
@@ -158,6 +172,7 @@
                 font-family: $font-default-name;
                 padding: 2px 0 16px;
                 font-size: 18px;
+                width: 100%;
             }
     
             &-name::placeholder,
@@ -202,6 +217,13 @@
             font-family: $font-default-name;
             font-weight: 400;
             margin-bottom: 28px;
+
+
+            @include media ('md') {
+                padding: 0;
+                font-size: 14px;
+                text-align: center;
+            }
     
             @include media ('sm') {
                 padding: 0;
@@ -247,10 +269,21 @@
 }
 
 //validation form///
-
-input:not([type="checkbox"]):required.valid {
-    border-bottom: 2px solid #33cc33;
+  
+input:valid:not(:placeholder-shown) {
+    border-color: green;
 }
-input:not([type="checkbox"]):required.invalid {
-    border-bottom: 2px solid red;
+  
+input:invalid:not(:placeholder-shown) {
+    border-color: red;
+}
+
+input:invalid:not(:placeholder-shown) + .form__error {
+    display: block;
+}
+
+.error {
+    font-size: 12px;
+    font-family: $default-fonts-name;
+    color: red;
 }

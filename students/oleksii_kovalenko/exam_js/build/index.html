@@ -31,24 +31,24 @@
                     <span ></span>
                  </div>
                 <nav class="menu header__menu" id="header__menu">
-                    <ul class="menu__items" id="menu__items">
+                    <ul class="menu__items links" id="menu__items">
                         <li class="menu__item ">
-                            <a href="#whatWeDo" class="menu__item_link ">
+                            <a href="#div1" class="menu__item_link  scroll-to active">
                                 about us
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a  href="#gallery" class="menu__item_link">
+                            <a  href="#div2" class="menu__item_link scroll-to">
                                 projects
                             </a>
                         </li>
                         <li class="menu__item"> 
-                            <a href="#news" class="menu__item_link">
+                            <a href="#div3" class="menu__item_link scroll-to">
                                 news
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a href="#contact" class="menu__item_link">
+                            <a href="#div4" class="menu__item_link scroll-to">
                                 contact
                             </a>
                         </li>
@@ -67,7 +67,7 @@
                 </div>
             </div>
         </section>
-        <section class="aboutUs" id="aboutUs" >
+        <section class="aboutUs anchor" id="div1">
             <div class="container">
                 <div class="slider">
                     <div class="slider__item ">
@@ -103,7 +103,7 @@
                 </div>
                 <div class="vertical-dots"></div>
                 <div class="aboutUs__scroll_position">
-                    <a href="#whatWeDo">
+                    <a href="#div2">
                         <div class="aboutUs__scroll scroll header__scroll">
                             <p class="aboutUs__scroll_arrow scroll_arrow"></p>
                         </div>
@@ -113,7 +113,7 @@
         </section>
     </header>
     <main class="main">
-        <section class="whatWeDo" id="whatWeDo">
+        <section class="whatWeDo anchor" id="div2">
             <div class="container">
                 <h2 class="whatWeDo__heading">What We Do</h2>
                 <div class="whatWeDo__content whatWeDo__content-trade">
@@ -158,7 +158,7 @@
                 </div>
             </div>
         </section>
-        <section class="news" id="news" >
+        <section class="news anchor" id="div3" >
             <div class="container">
                 <h2 class="news__title">latest news</h2>
                     <div class="news__list">
@@ -321,33 +321,36 @@
                 </a>
             </div>
         </section>
-        <section class="maps" id="contact">
-            <div class="maps__map" id="map"></div>
+        <section class="maps anchor" id="div4">
+            <div class="maps__map" id="map" ></div>
         </section>
     </main>
     <footer class="footer">
-        <section class="adressInfo">
-            <div class="container" >
+        <section class="adressInfo " >
+            <div class="container">
                 <div class="footer__wrapp">
-                    <div class="contact__wrapp section" >
+                    <div class="contact__wrapp section "> 
                         <h2 class="contact__title">get in touch</h2>
-                        <div class="contact__content-wrapp">
+                        <div class="contact__content-wrapp" >
                             <div class="contact__content">
                                 <p class="contact__adress">91 Nolan Extensions Suite 670</p>
                                 <p class="contact__tel">+001 356-868-2454</p>
                                 <p class="contact__email">gahuy93@gmail.com</p>
                                 <p class="contact__time">From 07:05AM to 19:30PM</p>
                             </div>
-                            <form action=""  class="contact__form popup__form" name="form1">
-                                <input type="text" class="contact__form-name form__input-modal form__input_width field _req" value="" placeholder="Name"title="Введите имя"
-                                required>
-                                <input type="email" class="contact__form-email form__input-modal field _req email" value="" placeholder="Email" id="email" title="Введите корректно поле email"
-                                required>
-                                <input type="submit" class="contact__form-btn button popup__btn-post disabled" value="Submit"  name="btnSubmit" disabled>
+                            <form action="#" class="contact__form popup__form form" name="form1"  method="post" enctype="multipart/form-data" id="contacsform" >
+                                <div class="item">
+                                    <input type="text" class="contact__form-name form__input-modal form__input_width field _req" value="" placeholder="Name"title="Введите имя" type="text" name="name" id="name" required>
+                                </div>
+                                <div class="item">
+                                    <input type="email" class="contact__form-email form__input-modal field _req email" value="" placeholder="Email" title="Not correct email" name="email" id="email" required>
+                                </div>
+                                <input type="submit" class="contact__form-btn button popup__btn-post disabled send" value="Submit"  name="btnSubmit" type="button" >
+                                
                             </form>
                         </div>
                     </div>
-                    <div class="footer__cover">
+                    <div class="footer__cover" >
                         <div class="footer__logo">
                             <a href="#header" class="footer__logo-link">
                                 <img src="./image/Logo.svg" alt="logo">

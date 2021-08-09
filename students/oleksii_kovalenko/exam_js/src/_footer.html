@@ -1,25 +1,28 @@
-<section class="adressInfo">
-    <div class="container" >
+<section class="adressInfo " >
+    <div class="container">
         <div class="footer__wrapp">
-            <div class="contact__wrapp section" >
+            <div class="contact__wrapp section "> 
                 <h2 class="contact__title">get in touch</h2>
-                <div class="contact__content-wrapp">
+                <div class="contact__content-wrapp" >
                     <div class="contact__content">
                         <p class="contact__adress">91 Nolan Extensions Suite 670</p>
                         <p class="contact__tel">+001 356-868-2454</p>
                         <p class="contact__email">gahuy93@gmail.com</p>
                         <p class="contact__time">From 07:05AM to 19:30PM</p>
                     </div>
-                    <form action=""  class="contact__form popup__form" name="form1">
-                        <input type="text" class="contact__form-name form__input-modal form__input_width field _req" value="" placeholder="Name"title="Введите имя"
-                        required>
-                        <input type="email" class="contact__form-email form__input-modal field _req email" value="" placeholder="Email" id="email" title="Введите корректно поле email"
-                        required>
-                        <input type="submit" class="contact__form-btn button popup__btn-post disabled" value="Submit"  name="btnSubmit" disabled>
+                    <form action="#" class="contact__form popup__form form" name="form1"  method="post" enctype="multipart/form-data" id="contacsform" >
+                        <div class="item">
+                            <input type="text" class="contact__form-name form__input-modal form__input_width field _req" value="" placeholder="Name"title="Введите имя" type="text" name="name" id="name" required>
+                        </div>
+                        <div class="item">
+                            <input type="email" class="contact__form-email form__input-modal field _req email" value="" placeholder="Email" title="Not correct email" name="email" id="email" required>
+                        </div>
+                        <input type="submit" class="contact__form-btn button popup__btn-post disabled send" value="Submit"  name="btnSubmit" type="button" >
+                        
                     </form>
                 </div>
             </div>
-            <div class="footer__cover">
+            <div class="footer__cover" >
                 <div class="footer__logo">
                     <a href="#header" class="footer__logo-link">
                         <img src="./image/Logo.svg" alt="logo">
