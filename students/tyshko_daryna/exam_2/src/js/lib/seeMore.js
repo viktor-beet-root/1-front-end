@@ -15,5 +15,5 @@ function seeMore () {
 export default seeMore;
 
 
-// спробувати зробіті тогл
-// після фрилансера
+
+

@@ -15476,6 +15476,60 @@ function btnMenu() {
 
 /***/ }),
 
+/***/ "./src/js/lib/scrollHeader.js":
+/*!************************************!*\
+  !*** ./src/js/lib/scrollHeader.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// window.onscroll = () => {
+//     const header = document.querySelector('.header');
+//     const Y = window.scrollY
+//     if(Y > 300) {
+//         header.classList.add('.header_fixed');
+//     }
+// }
+
+/***/ }),
+
+/***/ "./src/js/lib/scrolling.js":
+/*!*********************************!*\
+  !*** ./src/js/lib/scrolling.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.for-each.js */ "./node_modules/core-js/modules/es.array.for-each.js");
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+function scrolling() {
+  var scroll = document.querySelectorAll('.menu__item-link').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      var href = this.getAttribute('href').substring(1);
+      var scrollTarget = document.getElementById(href);
+      var topOffset = 50;
+      var elemPosition = scrollTarget.getBoundingClientRect().top;
+      var offsetPosition = elemPosition - topOffset;
+      window.scrollBy({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    });
+  });
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (scrolling);
+
+/***/ }),
+
 /***/ "./src/js/lib/seeMore.js":
 /*!*******************************!*\
   !*** ./src/js/lib/seeMore.js ***!
@@ -15499,8 +15553,7 @@ function seeMore() {
   });
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (seeMore); // спробувати зробіті тогл
-// після фрилансера
+/* harmony default export */ __webpack_exports__["default"] = (seeMore);
 
 /***/ }),
 
@@ -15532,10 +15585,44 @@ function sliderTitle() {
 /*!**********************************!*\
   !*** ./src/js/lib/sliderNews.js ***!
   \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./slider */ "./src/js/lib/slider.js");
 
 
+function sliderNews() {
+  $(document).ready(function () {
+    $('.news__news-items').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: '<span class="priw_arrow"><i class="fas fa-angle-left"><</i></span>',
+      nextArrow: '<span class="next_arrow"><i class="fas fa-angle-right">></i></span>',
+      dots: true,
+      responsive: [{
+        breakpoint: 993,
+        settings: {
+          slidesToShow: 2
+        }
+      }, {
+        breakpoint: 770,
+        settings: {
+          slidesToShow: 1
+        }
+      }, {
+        breakpoint: 577,
+        settings: {
+          slidesToShow: 1
+        }
+      }]
+    });
+  });
+}
+
+;
+/* harmony default export */ __webpack_exports__["default"] = (sliderNews);
 
 /***/ }),
 
@@ -15548,18 +15635,16 @@ function sliderTitle() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.for-each.js */ "./node_modules/core-js/modules/es.array.for-each.js");
-/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
-/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var lightbox2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lightbox2 */ "./node_modules/lightbox2/dist/js/lightbox.js");
-/* harmony import */ var lightbox2__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lightbox2__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _lib_seeMore__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lib/seeMore */ "./src/js/lib/seeMore.js");
-/* harmony import */ var _lib_slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./lib/slider */ "./src/js/lib/slider.js");
-/* harmony import */ var _lib_btnMenu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./lib/btnMenu */ "./src/js/lib/btnMenu.js");
-
-
+/* harmony import */ var lightbox2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lightbox2 */ "./node_modules/lightbox2/dist/js/lightbox.js");
+/* harmony import */ var lightbox2__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lightbox2__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _lib_seeMore__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/seeMore */ "./src/js/lib/seeMore.js");
+/* harmony import */ var _lib_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/slider */ "./src/js/lib/slider.js");
+/* harmony import */ var _lib_btnMenu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lib/btnMenu */ "./src/js/lib/btnMenu.js");
+/* harmony import */ var _lib_scrolling__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./lib/scrolling */ "./src/js/lib/scrolling.js");
+/* harmony import */ var _lib_sliderNews__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./lib/sliderNews */ "./src/js/lib/sliderNews.js");
 // import $ from 'jquery';
+
+
 
 
 
@@ -15579,35 +15664,23 @@ __webpack_require__.r(__webpack_exports__);
 //             });
 //         }
 //     });
-// плавна прокрутка
 
-document.querySelectorAll('.menu__item-link').forEach(function (link) {
-  link.addEventListener('click', function (e) {
-    e.preventDefault();
-    var href = this.getAttribute('href').substring(1);
-    var scrollTarget = document.getElementById(href);
-    var topOffset = 50;
-    var elemPosition = scrollTarget.getBoundingClientRect().top;
-    var offsetPosition = elemPosition - topOffset;
-    window.scrollBy({
-      top: offsetPosition,
-      behavior: 'smooth'
-    });
-  });
-}); // слайдер новини
+window.onscroll = function () {
+  var header = document.querySelector('.header');
+  var Y = window.scrollY;
 
-$(document).ready(function () {
-  $('.news__news-items').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    prevArrow: '<span class="priw_arrow"><i class="fas fa-angle-left"><</i></span>',
-    nextArrow: '<span class="next_arrow"><i class="fas fa-angle-right">></i></span>',
-    dots: true
-  });
-});
-Object(_lib_slider__WEBPACK_IMPORTED_MODULE_4__["default"])();
-Object(_lib_seeMore__WEBPACK_IMPORTED_MODULE_3__["default"])();
-Object(_lib_btnMenu__WEBPACK_IMPORTED_MODULE_5__["default"])();
+  if (Y > 300) {
+    header.classList.add('fixed');
+  } else if (Y < 100) {
+    header.classList.remove('fixed');
+  }
+};
+
+Object(_lib_sliderNews__WEBPACK_IMPORTED_MODULE_5__["default"])();
+Object(_lib_scrolling__WEBPACK_IMPORTED_MODULE_4__["default"])();
+Object(_lib_slider__WEBPACK_IMPORTED_MODULE_2__["default"])();
+Object(_lib_seeMore__WEBPACK_IMPORTED_MODULE_1__["default"])();
+Object(_lib_btnMenu__WEBPACK_IMPORTED_MODULE_3__["default"])();
 
 /***/ }),
 
@@ -16490,15 +16563,17 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 /***/ }),
 
 /***/ 0:
-/*!********************************************************************************************************************************************************!*\
-  !*** multi ./src/js/script.js ./src/js/slick.min.js ./src/js/lib/btnMenu.js ./src/js/lib/seeMore.js ./src/js/lib/slider.js ./src/js/lib/sliderNews.js ***!
-  \********************************************************************************************************************************************************/
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./src/js/script.js ./src/js/slick.min.js ./src/js/lib/btnMenu.js ./src/js/lib/scrollHeader.js ./src/js/lib/scrolling.js ./src/js/lib/seeMore.js ./src/js/lib/slider.js ./src/js/lib/sliderNews.js ***!
+  \***************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /Users/pc/Desktop/stud/1-front-end/students/tyshko_daryna/exam_2/src/js/script.js */"./src/js/script.js");
 __webpack_require__(/*! /Users/pc/Desktop/stud/1-front-end/students/tyshko_daryna/exam_2/src/js/slick.min.js */"./src/js/slick.min.js");
 __webpack_require__(/*! /Users/pc/Desktop/stud/1-front-end/students/tyshko_daryna/exam_2/src/js/lib/btnMenu.js */"./src/js/lib/btnMenu.js");
+__webpack_require__(/*! /Users/pc/Desktop/stud/1-front-end/students/tyshko_daryna/exam_2/src/js/lib/scrollHeader.js */"./src/js/lib/scrollHeader.js");
+__webpack_require__(/*! /Users/pc/Desktop/stud/1-front-end/students/tyshko_daryna/exam_2/src/js/lib/scrolling.js */"./src/js/lib/scrolling.js");
 __webpack_require__(/*! /Users/pc/Desktop/stud/1-front-end/students/tyshko_daryna/exam_2/src/js/lib/seeMore.js */"./src/js/lib/seeMore.js");
 __webpack_require__(/*! /Users/pc/Desktop/stud/1-front-end/students/tyshko_daryna/exam_2/src/js/lib/slider.js */"./src/js/lib/slider.js");
 module.exports = __webpack_require__(/*! /Users/pc/Desktop/stud/1-front-end/students/tyshko_daryna/exam_2/src/js/lib/sliderNews.js */"./src/js/lib/sliderNews.js");

@@ -2,7 +2,11 @@
     @include bg-cover("../image/bg-news.jpg");
     padding-top: 100px;
     padding-bottom: 120px;
-    // min-width: 0;
+
+    @media screen and (max-width: 1200px) {
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
 
     &__container {
         line-height: 22px;
@@ -87,6 +91,10 @@
     padding: 7px 14px;
     z-index: 20;
     cursor: pointer;
+
+    @media screen and (max-width: 550px) {
+        right: 22%;
+    }
 }
 
 .news-items .slick-dots li {

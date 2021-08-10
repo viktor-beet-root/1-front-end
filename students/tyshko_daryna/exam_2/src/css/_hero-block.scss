@@ -135,3 +135,52 @@
 .row {}
 
 .col-12 {}
+
+@media screen and(max-width:992px) {
+    .header {
+        &__slide-title {
+            font-size: 60px;
+        }
+    }
+}
+
+@include media("lg") {}
+
+.header {
+    padding: 10px 15px 0px;
+
+    &__slide-title {
+        font-size: 50px;
+        letter-spacing: 3px;
+        margin-top: 20px;
+        padding-right: 30px;
+        padding-left: 30px;
+        font-size: 40px;
+    }
+
+    &__slide-subtitle {
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 90px;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+}
+
+.header {
+    &__wrapper {
+        margin-bottom: 34px;
+    }
+}
+
+@include media("md") {
+    .header {
+        padding: 90px 15px 0px;
+
+        &__slide-title {
+            padding-right: 20px;
+            padding-left: 20px;
+            font-size: 26px;
+        }
+    }
+}

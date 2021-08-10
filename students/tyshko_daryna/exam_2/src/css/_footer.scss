@@ -41,6 +41,11 @@
             z-index: 20;
         }
 
+        @media screen and (max-width: 576px) {
+            font-size: 25px;
+            padding-top: 55px;
+        }
+
     }
 
     &__contact-adress {
@@ -48,6 +53,11 @@
         &_position {
             padding-left: 61px;
             margin-bottom: 24px;
+
+            @media screen and (max-width: 576px) {
+                padding-left: 0;
+                text-align: center;
+            }
         }
     }
 
@@ -119,11 +129,6 @@
         font-size: 18px;
         font-family: $font-primary-name;
         line-height: 1.222;
-        // -webkit-text-size-adjust: 100%;
-        // line-height: 1.15;
-        // text-align: left;
-        // color: rgb(44, 64, 88);
-        // background-color: red;
     }
 
     &__contact-form-name {
@@ -132,6 +137,11 @@
             margin-left: 6px;
             margin-bottom: 31px;
         }
+
+        @media screen and (max-width: 576px) {
+            padding-left: 0;
+            text-align: center;
+        }
     }
 
     &__contact-form-email {
@@ -139,6 +149,15 @@
         &_position {
             margin-left: 6px;
             margin-bottom: 31px;
+
+            @media screen and (max-width: 768px) {
+                margin-bottom: 24px;
+            }
+
+            @media screen and (max-width: 576px) {
+                padding-left: 0;
+                text-align: center;
+            }
         }
     }
 
@@ -148,7 +167,6 @@
         font-family: $font-primary-name;
         color: $color-pickled-bluewood;
         outline: none;
-        margin-top: 31px;
         width: 140px;
         height: 50px;
         border: 1px solid $color-pickled-bluewood;
@@ -156,8 +174,6 @@
         text-transform: uppercase;
         font-size: 14px;
         background-color: transparent;
-        margin-left: 186px;
-        margin-bottom: 38px;
         cursor: pointer;
 
         &_position {
@@ -236,4 +252,26 @@
     line-height: 34px;
     color: $color-pickled-bluewood;
     text-decoration: none;
+    font-size: 16px;
+}
+
+.social__items_position {
+    padding: 0;
+
+    @media screen and (max-width: 576px) {
+        padding-left: 0 !important;
+    }
+}
+
+.footer {
+    &__input-wrapper {
+        position: relative;
+    }
+
+    &__input-text-msg {
+        position: absolute;
+        top: 90%;
+        left: 3%;
+        font-size: 12px;
+    }
 }
