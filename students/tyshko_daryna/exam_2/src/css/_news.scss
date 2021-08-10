@@ -2,9 +2,11 @@
     @include bg-cover("../image/bg-news.jpg");
     padding-top: 100px;
     padding-bottom: 120px;
+    // min-width: 0;
 
     &__container {
         line-height: 22px;
+        // min-width: 0;
     }
 
     &__title {
@@ -25,8 +27,86 @@
     display: flex;
     justify-content: space-between;
     margin: 0 -15px 100px;
+    min-width: 0;
+    position: relative;
+
 
     &__news-item {}
+}
+
+.news-items .slick-track {
+    display: flex;
+}
+
+.news-items .slick-list {
+    overflow: hidden;
+}
+
+
+.news-items .priw_arrow {
+    border: 1px solid $color-white;
+    position: absolute;
+    left: -5%;
+    top: 40%;
+    padding: 7px 14px;
+    border-radius: 50%;
+    z-index: 20;
+    cursor: pointer;
+    transition: all 2s ease-in-out;
+
+    @media screen and (max-width: 1260px) {
+        left: 0;
+        background-color: $color-melrose;
+        top: 30%;
+    }
+}
+
+.news-items .next_arrow {
+    border: 1px solid $color-white;
+    position: absolute;
+    right: -5%;
+    top: 40%;
+    padding: 7px 14px;
+    border-radius: 50%;
+    z-index: 20;
+    cursor: pointer;
+    transition: all 2s ease-in-out;
+
+    @media screen and (max-width: 1260px) {
+        right: 0;
+        background-color: $color-melrose;
+        top: 30%;
+    }
+}
+
+.news-items .slick-dots {
+    display: flex;
+    position: absolute;
+    right: 40%;
+    top: 110%;
+    padding: 7px 14px;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.news-items .slick-dots li {
+    list-style: none;
+    margin: 0px 10px 0px;
+}
+
+.news-items .slick-dots li button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    padding: 2px;
+    background-color: transparent;
+    border: solid 1px $color-white;
+    border-radius: 50%;
+}
+
+.news-items .slick-dots li.slick-active button {
+    background-color: $color-white;
+    border: none;
 }
 
 .news-item {

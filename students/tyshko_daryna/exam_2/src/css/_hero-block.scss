@@ -18,13 +18,50 @@
     // .hero__scroll
 
     &__scroll {}
+
+
+}
+
+.slick-track {
+    display: flex;
+}
+
+
+.hero__slider .slick-dots {
+    position: absolute;
+    right: 2%;
+    top: 35%;
+}
+
+.hero__slider .slick-dots li {
+    list-style: none;
+    margin-top: 40px;
+
+}
+
+.hero__slider .slick-dots li button {
+    font-size: 0;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    padding: 1px;
+    background-color: transparent;
+    border: solid 1px white;
+    line-height: 0;
+    display: block;
+    cursor: pointer;
+    outline: none;
+}
+
+.hero__slider .slick-dots li.slick-active button {
+    border: none;
+    background-color: white;
 }
 
 .header {
     // .header__slide-title
 
     &__slide-title {
-        padding-top: 20px;
         font-size: 80px;
         font-family: $font-primary-name;
         color: rgb(255, 255, 255);
@@ -32,17 +69,22 @@
         text-transform: uppercase;
         line-height: 0.275;
         text-align: center;
+        margin-top: 180px;
+        margin-bottom: 40px;
+        cursor: pointer;
     }
 
     // .header__slide-subtitle
 
     &__slide-subtitle {
+        padding-top: 35px;
         font-size: 18px;
         font-family: $font-primary-name;
         color: rgb(255, 255, 255);
         text-transform: uppercase;
         line-height: 1.222;
         text-align: center;
+        cursor: pointer;
     }
 }
 
@@ -53,6 +95,8 @@
         display: flex;
         justify-content: center;
         margin-bottom: 34px;
+        margin-top: 225px;
+
     }
 
     // .scroll__link

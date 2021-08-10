@@ -4,26 +4,28 @@
     background-size: cover;
     background-position: top;
     background-color: $color-heliotrope;
-    // Установить margin когда будет карта
-    // margin-top: -164px;
 
     &__container {
-        // Для Perfect pixel
-        // padding-top: 400px;
+        @media screen and (max-width: 768px) {
+            max-width: 100%;
+        }
     }
 
     &__contact-wrapper {
+        position: relative;
+        background-color: $color-white;
+        background-image: url(../image/bg-modal.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom;
         margin: 0 auto;
         justify-content: center;
-        background-color: $color-white;
         max-width: 770px;
         margin-bottom: 55px;
-        // background-color: green;
-        // Установить margin когда будет карта
-        // margin: -340px auto 0;
+        margin: -370px auto 0;
     }
 
     &__contact-header-title {
+        position: relative;
         font-family: $font-secondary-name;
         font-weight: normal;
         font-size: 44px;
@@ -32,13 +34,14 @@
         color: $color-pickled-bluewood;
         padding-top: 85px;
         margin-bottom: 43px;
+        position: relative;
+        @include line-before-upper($color-pickled-bluewood, 60px);
 
-        &_color {}
+        &::after {
+            z-index: 20;
+        }
+
     }
-
-    &__contact-content-wrapper {}
-
-    &__contact-content {}
 
     &__contact-adress {
 
@@ -48,14 +51,17 @@
         }
     }
 
-    &__contact-svg {}
-
     &__contact-tel {
         display: block;
 
         &_position {
             padding-left: 66px;
             margin-bottom: 24px;
+
+            @media screen and (max-width: 576px) {
+                padding-left: 0;
+                text-align: center;
+            }
         }
     }
 
@@ -65,6 +71,11 @@
         &_position {
             padding-left: 67px;
             margin-bottom: 24px;
+
+            @media screen and (max-width: 576px) {
+                padding-left: 0;
+                text-align: center;
+            }
         }
     }
 
@@ -72,6 +83,15 @@
 
         &_position {
             padding-left: 65px;
+
+            @media screen and (max-width: 768px) {
+                margin-bottom: 24px;
+            }
+
+            @media screen and (max-width: 576px) {
+                padding-left: 0;
+                text-align: center;
+            }
         }
     }
 
@@ -139,9 +159,19 @@
         margin-left: 186px;
         margin-bottom: 38px;
         cursor: pointer;
+
+        &_position {
+            margin-left: 186px;
+            margin-bottom: 40px;
+
+            @media screen and (max-width: 768px) {
+                margin: 0 auto;
+            }
+        }
     }
 
     &__cover {
+        padding-top: 55px;
         margin-bottom: 27px;
     }
 
@@ -149,9 +179,11 @@
         display: flex;
         justify-content: center;
         padding-left: 56px;
-    }
 
-    &__logo-link {}
+        @media screen and (max-width: 768px) {
+            padding-left: 0px;
+        }
+    }
 
     &__social {
         display: flex;
@@ -162,6 +194,26 @@
     &__content {
         padding-left: 201px;
         margin-bottom: 193px;
+
+        @media screen and (max-width: 992px) {
+            margin-bottom: 60px;
+        }
+
+        @media screen and (max-width: 576px) {
+            margin-bottom: 50px;
+        }
+
+        @media screen and (max-width: 452px) {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 992px) {
+            padding-left: 0;
+            justify-content: center;
+        }
     }
 
     &__text {
@@ -170,6 +222,11 @@
         color: $color-white;
         line-height: 1.571;
         margin-right: 18px;
+
+        @media screen and (max-width: 576px) {
+            margin-right: 0;
+            text-align: center;
+        }
     }
 }
 
