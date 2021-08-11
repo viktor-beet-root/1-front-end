@@ -5,5 +5,6 @@ module.exports = {
                 prependData: `@import "@/assets/style/_style.scss";`
             }
         }
-    }
+    },
+    publicPath: '/1-front-end/'
 };
