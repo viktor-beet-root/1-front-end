@@ -90,13 +90,13 @@ export default {
   // left: 0;
   // right: 0;
 
-  margin-bottom: 100px;
+  margin-bottom: 85px;
   &__total {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 10px 30px;
+    padding: 25px 30px;
     display: flex;
     justify-content: center;
     background-color: #a8b58b;
@@ -107,9 +107,9 @@ export default {
     margin-right: 16px;
   }
   &__link-to-shop {
-    position: absolute;
-    top: 130px;
-    right: 15px;
+    position: fixed;
+    top: 170px;
+    right: 0;
     padding: 16px;
     border-radius: 5px;
     background-color: #c9cfae;

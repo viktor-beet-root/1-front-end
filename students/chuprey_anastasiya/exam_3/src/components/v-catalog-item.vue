@@ -52,15 +52,15 @@ export default {
 .v-catalog-item {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   // flex-basis: 25%;
   // box-shadow: 0 0 2px 0 #e0e0e0;
-  padding: 16px;
+  padding: $padding * 2;
   margin-bottom: 16px;
 
   &__image-wrap {
-    height: 400px;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   &__image {
     width: 100%;
@@ -74,14 +74,18 @@ export default {
     text-transform: uppercase;
     font-size: 20px;
     color: #a8b58b;
-    height: 70px;
     overflow: hidden;
   }
-  // &__price {
-  //   text-align: center;
-  // }
+  &__name {
+    text-align: center;
+    height: 70px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #745f84;
+  }
 
   &__add-to-cart-btn {
+    font-weight: 600;
     padding: 5px 10px;
     // border-radius: 10px;
     border: 1px solid #a8b58b;

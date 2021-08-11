@@ -22,3 +22,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+[Посилання на git-hub](https://nastiachooo.github.io/1-front-end/students/chuprey_anastasiya/exam_3/build/index.html)

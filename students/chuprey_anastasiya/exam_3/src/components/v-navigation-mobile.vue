@@ -1,7 +1,7 @@
 <template>
-  <div class="v-navigation" :class="{ onScroll: !view.topOfPage }">
-    <nav class="v-navigation__nav nav">
-      <div class="nav__logo">
+  <div class="v-navigation-mob">
+    <nav class="v-navigation-mob__nav-mob nav-mob">
+      <div class="nav-mob__logo">
         <a href="#home"
           ><img
             class="nav__logo-img"
@@ -9,23 +9,14 @@
             alt="logo"
         /></a>
       </div>
-      <ul class="nav__menu menu">
-        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-        <li class="menu__item">
-          <a class="menu__link" href="#shop">Catalog</a>
-        </li>
-        <li class="menu__item"><a class="menu__link" href="#">About as</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Cart</a></li>
-      </ul>
-      <div class="nav__search">
+      <div class="nav-mob__search">
         <input
-          class="nav__search-input"
+          class="nav-mob__search-input"
           type="text"
           name=""
-          id=""
           placeholder="Find macarons..."
         />
-        <div class="nav__search-svg-wrap">
+        <div class="nav-mob__search-svg-wrap">
           <svg
             fill="#ffffff"
             xmlns="http://www.w3.org/2000/svg"
@@ -39,6 +30,20 @@
           </svg>
         </div>
       </div>
+      <ul class="nav-mob__menu-mob menu-mob">
+        <li class="menu-mob__item">
+          <a class="menu-mob__link" href="#home">Home</a>
+        </li>
+        <li class="menu-mob__item">
+          <a class="menu-mob__link" href="#shop">Catalog</a>
+        </li>
+        <li class="menu-mob__item">
+          <a class="menu-mob__link" href="#">About as</a>
+        </li>
+        <li class="menu-mob__item">
+          <a class="menu-mob__link" href="#">Cart</a>
+        </li>
+      </ul>
     </nav>
   </div>
 </template>
@@ -49,23 +54,7 @@ export default {
   name: "v-navigation",
   props: {},
   data() {
-    return {
-      view: {
-        topOfPage: true,
-      },
-    };
-  },
-  beforeMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  },
-  methods: {
-    handleScroll() {
-      if (window.pageYOffset > 0) {
-        if (this.view.topOfPage) this.view.topOfPage = false;
-      } else {
-        if (!this.view.topOfPage) this.view.topOfPage = true;
-      }
-    },
+    return {};
   },
 };
 </script>
@@ -73,25 +62,29 @@ export default {
 
 
 <style lang="scss">
-.v-navigation {
+.v-navigation-mob {
   position: fixed;
-  width: 100%;
+  width: 40%;
   top: 0;
-  left: 0;
+  left: 10px;
+  transform: translateY(-400px);
 
   z-index: 10000;
   overflow-x: hidden;
   overflow-y: hidden;
-  transition: ease-in-out 0.6s;
+  transition: ease-in-out 0.9s;
+  @media screen and (max-width: 768px) {
+    width: 60%;
+  }
 }
-.onScroll {
-  background-color: white;
-}
-.nav {
-  padding: 5px 15px 10px;
+
+.nav-mob {
+  padding: 0px 15px 10px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
+  background-color: white;
 
   &__logo {
     padding-left: 20px;
@@ -103,6 +96,7 @@ export default {
   &__search {
     display: flex;
     background-color: #a8b58b;
+    margin-bottom: 20px;
   }
   &__search-svg-wrap {
     padding: 3px 5px 0px 0px;
@@ -113,6 +107,7 @@ export default {
     border: none;
     padding: 5px 10px;
     background-color: #a8b58b;
+
     &::placeholder {
       color: white;
       font-size: 14px;
@@ -124,12 +119,14 @@ export default {
     }
   }
 }
-.menu {
+.menu-mob {
   display: flex;
+  flex-direction: column;
   list-style: none;
   transition: all 0.7 ease-in-out;
+  padding-bottom: 10px;
   &__item {
-    padding: 0px 30px;
+    padding: 15px 0px 0px;
   }
   &__link {
     text-decoration: none;
@@ -137,7 +134,10 @@ export default {
     color: $color-black;
     transition: all 0.3s ease-in-out;
     font-weight: 600;
-    font-size: 21px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
     &::after {
       content: "";
       display: block;

@@ -11,11 +11,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 
 
-
 library.add(faUserSecret);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
-
 Vue.use(BootstrapVue)
 
 Vue.config.productionTip = false;
