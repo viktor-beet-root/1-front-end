@@ -1,6 +1,5 @@
 .page {
     &.fixed {
-        padding: 0 20px;
         overflow: hidden;
     }
 }
@@ -33,6 +32,7 @@
 
         @media screen and (max-width:992px) {
             margin: 0 auto;
+            padding-top: 30px;
         }
     }
 
@@ -74,6 +74,11 @@
 
             }
 
+            @media screen and (max-width:992px) {
+                margin-right: 0;
+            }
+
+
         }
 
 
@@ -97,7 +102,7 @@
         }
 
         @media screen and (max-width:992px) {
-            border-bottom: 1px solid rgb(163, 163, 163);
+            border-bottom: 1px solid lightgray;
             padding: 10px 0;
         }
     }
@@ -113,7 +118,7 @@
         letter-spacing: 0.6px;
 
         @media screen and (max-width:992px) {
-            color: #000;
+            color: white;
         }
     }
 
@@ -128,13 +133,13 @@
 
         &>.media__item>.media__link {
             @media screen and (max-width:992px) {
-                color: rgb(106, 106, 106);
+                color: white;
             }
         }
 
         &>.media__item {
             @media screen and (max-width:992px) {
-                border: 1px solid #3a3843;
+                border: 1px solid lightgray;
                 width: 30px;
                 height: 30px;
             }
@@ -142,13 +147,24 @@
     }
 
     @media screen and (max-width:992px) {
-        display: none;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateX(-3000px);
+        transition: transform .5s ease;
+        position: absolute;
 
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgb(138, 120, 255);
 
         &.active {
-            display: block;
-            height: 100vh;
+            visibility: visible;
+            pointer-events: all;
+            transform: translateX(0);
+            height: 102vh;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding-top: 50px;
         }
     }
 }
@@ -223,5 +239,6 @@
         position: absolute;
         right: 20px;
         opacity: 1;
+        z-index: 100000;
     }
 }

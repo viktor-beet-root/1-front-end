@@ -71,7 +71,7 @@ gulp.task("webserver", function () {
     return browserSync({
         /*proxy: "my.web.local",*/
         host: 'localhost',
-        port: 3000,
+        port: 3300,
         tunnel: false,
         server: path.build.html
     });

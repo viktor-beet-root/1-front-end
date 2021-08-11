@@ -2,6 +2,12 @@
     @include bg-cover('../image/Bg3.png');
     position: relative;
 
+    &__row {
+        @media screen and (max-width:992px) {
+            padding: 0 20px;
+        }
+    }
+
     &__container {
         margin: 0 auto;
         padding: 210px 0;

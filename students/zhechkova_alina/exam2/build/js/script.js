@@ -18137,8 +18137,17 @@ form.addEventListener('submit', validateForm);
 /*!*********************************!*\
   !*** ./src/js/menu/openMenu.js ***!
   \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.for-each.js */ "./node_modules/core-js/modules/es.array.for-each.js");
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
 
 (function openMenu() {
   var btn = document.getElementById('openMenu');
@@ -18146,6 +18155,13 @@ form.addEventListener('submit', validateForm);
   btn.addEventListener('click', function () {
     menu.classList.toggle('active');
     document.body.classList.toggle('fixed');
+  });
+  var menuItem = document.querySelectorAll('.menu__link');
+  menuItem.forEach(function (item) {
+    item.addEventListener('click', function () {
+      document.body.classList.remove('fixed');
+      menu.classList.remove('active');
+    });
   });
 })();
 
@@ -18212,9 +18228,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _slider_sliderNews__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./slider/sliderNews */ "./src/js/slider/sliderNews.js");
 /* harmony import */ var _slider_sliderHero__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slider/sliderHero */ "./src/js/slider/sliderHero.js");
 /* harmony import */ var _menu_openMenu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu/openMenu */ "./src/js/menu/openMenu.js");
-/* harmony import */ var _menu_openMenu__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_menu_openMenu__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _scroll_scrollTo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./scroll/scrollTo */ "./src/js/scroll/scrollTo.js");
-/* harmony import */ var _scroll_scrollTo__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_scroll_scrollTo__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _scroll_stickyHeader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./scroll/stickyHeader */ "./src/js/scroll/stickyHeader.js");
 /* harmony import */ var _scroll_stickyHeader__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_scroll_stickyHeader__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _btn_moreDetails__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./btn/moreDetails */ "./src/js/btn/moreDetails.js");
@@ -18241,10 +18255,35 @@ __webpack_require__.r(__webpack_exports__);
 /*!***********************************!*\
   !*** ./src/js/scroll/scrollTo.js ***!
   \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+  // Add smooth scrolling to all links
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()("a").on('click', function (event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault(); // Store hash
+
+      var hash = this.hash; // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('html, body').animate({
+        scrollTop: jquery__WEBPACK_IMPORTED_MODULE_0___default()(hash).offset().top
+      }, 800, function () {
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+
+  });
+});
 
 /***/ }),
 
@@ -18346,7 +18385,7 @@ sliderNew.slick({
 
 /***/ 0:
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./src/js/script.js ./src/js/btn/moreDetails.js ./src/js/btn/seeMoreBtn.js ./src/js/form/validateForm.js ./src/js/createDom/addAtributes.js ./src/js/createDom/addClass.js ./src/js/createDom/addContent.js ./src/js/createDom/addEvents.js ./src/js/createDom/createElem.js ./src/js/gallery/openGallery.js ./src/js/menu/openMenu.js ./src/js/popup/btnClosePopup.js ./src/js/popup/popup.js ./src/js/scroll/scrollTo.js ./src/js/scroll/stickyHeader.js ./src/js/slider/sliderHero.js ./src/js/slider/sliderNews.js ***!
+  !*** multi ./src/js/script.js ./src/js/btn/moreDetails.js ./src/js/btn/seeMoreBtn.js ./src/js/createDom/addAtributes.js ./src/js/createDom/addClass.js ./src/js/createDom/addContent.js ./src/js/createDom/addEvents.js ./src/js/createDom/createElem.js ./src/js/form/validateForm.js ./src/js/gallery/openGallery.js ./src/js/menu/openMenu.js ./src/js/popup/btnClosePopup.js ./src/js/popup/popup.js ./src/js/scroll/scrollTo.js ./src/js/scroll/stickyHeader.js ./src/js/slider/sliderHero.js ./src/js/slider/sliderNews.js ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -18354,12 +18393,12 @@ sliderNew.slick({
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\script.js */"./src/js/script.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\btn\moreDetails.js */"./src/js/btn/moreDetails.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\btn\seeMoreBtn.js */"./src/js/btn/seeMoreBtn.js");
-__webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\form\validateForm.js */"./src/js/form/validateForm.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\createDom\addAtributes.js */"./src/js/createDom/addAtributes.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\createDom\addClass.js */"./src/js/createDom/addClass.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\createDom\addContent.js */"./src/js/createDom/addContent.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\createDom\addEvents.js */"./src/js/createDom/addEvents.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\createDom\createElem.js */"./src/js/createDom/createElem.js");
+__webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\form\validateForm.js */"./src/js/form/validateForm.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\gallery\openGallery.js */"./src/js/gallery/openGallery.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\menu\openMenu.js */"./src/js/menu/openMenu.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\popup\btnClosePopup.js */"./src/js/popup/btnClosePopup.js");
