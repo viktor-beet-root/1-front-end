@@ -33,6 +33,11 @@
         font-weight: 700;
         letter-spacing: 4.2px;
         line-height: 1.2;
+
+        @media screen and (max-width:576px) {
+            font-size: 32px;
+            text-align: center;
+        }
     }
 
     // .header__subtitle
@@ -44,6 +49,10 @@
         letter-spacing: 5.1px;
         text-transform: initial;
         margin-bottom: 47px;
+
+        @media screen and (max-width:576px) {
+            font-size: 13px;
+        }
     }
 
     // .header__form-search
@@ -60,6 +69,10 @@
             align-items: center;
             max-width: 500px;
             width: 100%;
+        }
+
+        @media screen and (max-width:576px) {
+            margin-bottom: 85px;
         }
     }
 
