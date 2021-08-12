@@ -312,6 +312,7 @@
         top: -24px;
         height: 100vh;
         padding-top: 100px;
+        pointer-events: none;
     }
 
     .menu__hidden:checked~.header__menu>.menu__items {
@@ -319,6 +320,7 @@
         visibility: visible;
         transition: .5s ease-in-out;
         opacity: 1;
+        pointer-events: all;
     }
 
     .menu__item {
