@@ -8,7 +8,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-
+import * as VueGoogleMaps from 'vue2-google-maps';
 
 
 library.add(faUserSecret);
@@ -25,3 +25,10 @@ new Vue({
 }).$mount("#app");
 
 
+
+
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: 'AIzaSyCKcv820tqBKBUZTF3Zbc1AEnCJcbMv7Vs'
+  },
+})

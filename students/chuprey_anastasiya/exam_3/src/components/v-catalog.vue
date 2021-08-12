@@ -37,6 +37,7 @@
       </b-row>
     </b-container>
     <v-carusel :carusel_data="sliderItems" :interval="3000" />
+    <v-contact />
   </div>
 </template>
 
@@ -45,11 +46,14 @@
 import vCatalogItem from "./v-catalog-item";
 import { mapActions, mapGetters } from "vuex";
 import vCarusel from "./v-carusel";
+import VContact from "./v-contact.vue";
+
 export default {
   name: "v-catalog",
   components: {
     vCatalogItem,
     vCarusel,
+    VContact,
   },
   props: {},
 

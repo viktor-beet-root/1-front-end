@@ -1,12 +1,12 @@
 <template>
-  <div class="container v-carusel">
-    <div class="row">
-      <div class="col-12">
+  <b-container class="container v-carusel">
+    <b-row>
+      <b-col xl="12">
         <p class="v-carusel__title">About us</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="v-carusel__left col-6">
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col xl="6" md="12" class="v-carusel__left">
         <VueSlickCarousel v-bind="settings">
           <v-carusel-item
             v-for="item in carusel_data"
@@ -14,8 +14,8 @@
             :item_data="item"
           />
         </VueSlickCarousel>
-      </div>
-      <div class="v-carusel__right col-6">
+      </b-col>
+      <b-col xl="6" md="12" class="v-carusel__right">
         <h2 class="v-carusel__right-title">Our Products</h2>
         <p class="v-carusel__right-text">
           Handmade at our very own confectionary, our macarons make delightful
@@ -32,9 +32,9 @@
           You will want to come back often to experience our limited-time
           seasonal macaron flavors and fresh seasonal offerings.
         </p>
-      </div>
-    </div>
-  </div>
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 <script>
 import vCaruselItem from "./v-carusel-item";
