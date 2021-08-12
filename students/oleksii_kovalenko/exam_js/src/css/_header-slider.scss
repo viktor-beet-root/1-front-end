@@ -4,7 +4,6 @@
 }
 
 .slider {
-    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -28,7 +27,13 @@
             }
 
             @include media ('sm') {
-                font-size: 30px;
+                font-size: 32px;
+                letter-spacing: 1px;
+            }
+
+            @include media ('mi') {
+                font-size: 27px;
+                letter-spacing: 1px;
             }
     }
 
@@ -51,6 +56,11 @@
 
             @include media ('sm') {
                 font-size: 11px;
+                letter-spacing: 2px;
+            }
+
+            @include media ('mi') {
+                font-size: 8px;
             }
         }
 }
@@ -72,20 +82,20 @@
 
     @include media ('md') {
         display: flex;
-        top: 63%;
-        right: 42%;
+        top: 58%;
+        right: 40%;
     }
 
     @include media ('sm') {
         display: flex;
-        top: 63%;
-        right: 39%;
+        top: 56%;
+        right: 36%;
     }
 
     @include media ('mi') {
         display: flex;
-        top: 63%;
-        right: 32%;
+        top: 55%;
+        right: 30%;
     }
 }
 
