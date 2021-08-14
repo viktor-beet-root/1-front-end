@@ -8,6 +8,10 @@
     font-weight: 400;
     font-size: 14px;
 
+        @include media ('mi') {
+            min-height: 100vh;
+        }
+
     &__container {
         display: flex;
         align-items: center;

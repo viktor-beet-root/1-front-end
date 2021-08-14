@@ -93,6 +93,9 @@
 .slick-dotted.slick-slider {
 	margin-bottom: 100px;
 	padding-bottom: 150px;
+	@media (max-width: 1200px) {
+		padding-bottom: 80px;
+	}
 }
 
 .slick-dots {
