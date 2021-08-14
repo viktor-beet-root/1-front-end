@@ -43,6 +43,10 @@
         left: 51.3%;
         transform: translateX(-50%);
 
+        @include media ('xl') {
+            top: -60px;
+        }
+
         & .slick-dots li button:before {
             content: '';
             width: 8px;
@@ -61,7 +65,7 @@
         margin-top: 80px;
 
             @include media ('lg') {
-                margin-top: 35px;;
+                margin-top: 35px;
         }
 
         & .slick-prev,
