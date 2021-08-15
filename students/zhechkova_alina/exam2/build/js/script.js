@@ -17859,7 +17859,7 @@ var smBtn = document.getElementById('seeMoreBtn');
 function getPhoto(response) {
   var html = "";
   response.forEach(function (photo) {
-    html += "<a href=\"".concat(photo.urls.raw, "\" data-lightbox=\"city\" class=\"col-6 col-md-12\"><img src=").concat(photo.urls.raw, " alt=").concat(photo.alt_description, " class=\"ajax-photo\"></a>");
+    html += "<a href=\"".concat(photo.urls.raw, "\" data-lightbox=\"city\" class=\"lightbox-image-item col-6 col-md-12\"><img src=").concat(photo.urls.raw, " alt=").concat(photo.alt_description, " class=\"ajax-photo\"></a>");
   });
   var div = document.getElementById('ajaxWrap');
   div.insertAdjacentHTML('beforeend', html);
@@ -18099,10 +18099,17 @@ function validateForm(e) {
   });
   var emailInput = document.getElementById('emailInput');
 
+  if (!inputName.value && !emailInput.value) {
+    var name = document.querySelector('#nameInput+.error-message');
+    name.textContent = 'Введите имя';
+    var email = document.querySelector('#emailInput+.error-message');
+    email.textContent = 'Введите email';
+    return;
+  }
+
   if (!/[A-Za-zА-Яа-яЁё]+(\s+[A-Za-zА-Яа-яЁё]+)?/.test(nameInput.value)) {
     var message = document.querySelector('#nameInput+.error-message');
     message.textContent = 'Введите имя';
-    console.log(nameInput.value);
     return;
   }
 
@@ -18110,7 +18117,6 @@ function validateForm(e) {
     var _message = document.querySelector('#emailInput+.error-message');
 
     _message.textContent = 'Введите email';
-    console.log(emailInput.value);
     return;
   }
 
@@ -18130,6 +18136,19 @@ form.addEventListener('submit', validateForm);
 /***/ (function(module, exports) {
 
 
+
+/***/ }),
+
+/***/ "./src/js/lightboxOpen.js":
+/*!********************************!*\
+  !*** ./src/js/lightboxOpen.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var elem = document.querySelectorAll('.lightbox-image-item');
+console.log(elem);
+var lightbox = document.getElementById('lightbox');
 
 /***/ }),
 
@@ -18238,6 +18257,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _popup_popup__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./popup/popup */ "./src/js/popup/popup.js");
 /* harmony import */ var _gallery_openGallery__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./gallery/openGallery */ "./src/js/gallery/openGallery.js");
 /* harmony import */ var _gallery_openGallery__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_gallery_openGallery__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _lightboxOpen__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./lightboxOpen */ "./src/js/lightboxOpen.js");
+/* harmony import */ var _lightboxOpen__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_lightboxOpen__WEBPACK_IMPORTED_MODULE_10__);
+
 
 
 
@@ -18384,21 +18406,22 @@ sliderNew.slick({
 /***/ }),
 
 /***/ 0:
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./src/js/script.js ./src/js/btn/moreDetails.js ./src/js/btn/seeMoreBtn.js ./src/js/createDom/addAtributes.js ./src/js/createDom/addClass.js ./src/js/createDom/addContent.js ./src/js/createDom/addEvents.js ./src/js/createDom/createElem.js ./src/js/form/validateForm.js ./src/js/gallery/openGallery.js ./src/js/menu/openMenu.js ./src/js/popup/btnClosePopup.js ./src/js/popup/popup.js ./src/js/scroll/scrollTo.js ./src/js/scroll/stickyHeader.js ./src/js/slider/sliderHero.js ./src/js/slider/sliderNews.js ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./src/js/lightboxOpen.js ./src/js/script.js ./src/js/createDom/addAtributes.js ./src/js/createDom/addClass.js ./src/js/createDom/addContent.js ./src/js/createDom/addEvents.js ./src/js/createDom/createElem.js ./src/js/form/validateForm.js ./src/js/btn/moreDetails.js ./src/js/btn/seeMoreBtn.js ./src/js/gallery/openGallery.js ./src/js/menu/openMenu.js ./src/js/popup/btnClosePopup.js ./src/js/popup/popup.js ./src/js/scroll/scrollTo.js ./src/js/scroll/stickyHeader.js ./src/js/slider/sliderHero.js ./src/js/slider/sliderNews.js ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+__webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\lightboxOpen.js */"./src/js/lightboxOpen.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\script.js */"./src/js/script.js");
-__webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\btn\moreDetails.js */"./src/js/btn/moreDetails.js");
-__webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\btn\seeMoreBtn.js */"./src/js/btn/seeMoreBtn.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\createDom\addAtributes.js */"./src/js/createDom/addAtributes.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\createDom\addClass.js */"./src/js/createDom/addClass.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\createDom\addContent.js */"./src/js/createDom/addContent.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\createDom\addEvents.js */"./src/js/createDom/addEvents.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\createDom\createElem.js */"./src/js/createDom/createElem.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\form\validateForm.js */"./src/js/form/validateForm.js");
+__webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\btn\moreDetails.js */"./src/js/btn/moreDetails.js");
+__webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\btn\seeMoreBtn.js */"./src/js/btn/seeMoreBtn.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\gallery\openGallery.js */"./src/js/gallery/openGallery.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\menu\openMenu.js */"./src/js/menu/openMenu.js");
 __webpack_require__(/*! C:\Users\HP\Desktop\1-front-end\students\zhechkova_alina\exam2\src\js\popup\btnClosePopup.js */"./src/js/popup/btnClosePopup.js");

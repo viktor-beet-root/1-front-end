@@ -3,7 +3,7 @@ const smBtn = document.getElementById('seeMoreBtn');
 function getPhoto(response) {
     let html = ``;
     response.forEach(photo => {
-        html += `<a href="${photo.urls.raw}" data-lightbox="city" class="col-6 col-md-12"><img src=${photo.urls.raw} alt=${photo.alt_description} class="ajax-photo"></a>`
+        html += `<a href="${photo.urls.raw}" data-lightbox="city" class="lightbox-image-item col-6 col-md-12"><img src=${photo.urls.raw} alt=${photo.alt_description} class="ajax-photo"></a>`
     });
     const div = document.getElementById('ajaxWrap');
     div.insertAdjacentHTML('beforeend', html)

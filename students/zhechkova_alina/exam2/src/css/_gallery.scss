@@ -4,6 +4,29 @@
     &_gallery {}
 }
 
+.lightbox {
+    z-index: 100000;
+    transform: translate(0px, -40%);
+}
+
+.lightbox-image-item {
+    &_first {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.lb-outerContainer,
+.lb-image {
+    max-width: 293px !important;
+    max-height: 225px !important;
+    object-fit: cover;
+}
+
+.lightboxOverlay {
+    z-index: 100000;
+}
+
 .gallery {
     &__container {
         padding: 140px 0;
@@ -84,8 +107,17 @@
         display: block;
         padding: 5px;
 
+        &_first {
+            @media screen and (max-width:1200px) {
+                height: 590px;
+
+
+            }
+        }
+
         @media screen and (max-width:1200px) {
             width: 100%;
+
         }
     }
 }

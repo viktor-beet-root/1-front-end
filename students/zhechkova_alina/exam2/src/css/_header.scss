@@ -10,6 +10,10 @@
         width: 100%;
         background-color: #6698f9;
         z-index: 100000;
+
+        .header__container {
+            padding: 0;
+        }
     }
 
     position: absolute;
@@ -119,7 +123,10 @@
 
         @media screen and (max-width:992px) {
             color: white;
+            width: 100%;
+            display: block;
         }
+
     }
 
     &__media {

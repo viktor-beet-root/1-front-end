@@ -8,3 +8,4 @@ import './btn/seeMoreBtn';
 import './form/validateForm';
 import './popup/popup'
 import './gallery/openGallery'
+import './lightboxOpen';

@@ -79,6 +79,12 @@
     transform: translateX(-50%);
     top: -57%;
 
+    &__wrap {
+        @media screen and (max-width:576px) {
+            flex-direction: column-reverse;
+        }
+    }
+
     &__title-row {
         color: $title-color;
         margin-bottom: 17px;
@@ -131,6 +137,10 @@
 
     &__info {
         padding: 18px 0;
+
+        @media screen and (max-width:576px) {
+            text-align: center;
+        }
     }
 
 
