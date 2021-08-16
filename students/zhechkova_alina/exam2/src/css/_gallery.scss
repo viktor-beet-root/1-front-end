@@ -1,0 +1,144 @@
+.page {
+
+
+    &_gallery {}
+}
+
+.lightbox {
+    z-index: 100000;
+    transform: translate(0px, -40%);
+}
+
+.lightbox-image-item {
+    &_first {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.lb-outerContainer,
+.lb-image {
+    max-width: 293px !important;
+    max-height: 225px !important;
+    object-fit: cover;
+}
+
+.lightboxOverlay {
+    z-index: 100000;
+}
+
+.gallery {
+    &__container {
+        padding: 140px 0;
+
+        @media screen and (max-width:1200px) {
+            padding: 100px 0;
+
+        }
+
+        @media screen and (max-width:990px) {
+            padding: 80px 0;
+
+        }
+
+        @media screen and (max-width:768px) {
+            padding: 60px 0;
+
+        }
+
+        @media screen and (max-width:576px) {
+            padding: 50px 0;
+        }
+    }
+
+
+    &__title-row {
+        color: $title-color;
+
+        &::before {
+            background-color: $title-color;
+        }
+
+        margin-bottom: 67px;
+
+        @media screen and (max-width:990px) {
+            margin-bottom: 60px;
+
+        }
+
+
+        @media screen and (max-width:576px) {
+            margin-bottom: 40px;
+
+        }
+    }
+
+
+
+
+    &__wrap {
+        margin-bottom: 44px;
+
+        @media screen and (max-width:1200px) {
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+    }
+
+
+    &__img-wrap {
+        display: flex;
+
+        &:first-child {
+            @media screen and (max-width:1200px) {
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    &__img {
+        display: block;
+        padding: 5px;
+
+        &_first {
+            @media screen and (max-width:1200px) {
+                height: 590px;
+
+
+            }
+        }
+
+        @media screen and (max-width:1200px) {
+            width: 100%;
+
+        }
+    }
+}
+
+.img-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ajaxWrap {
+    padding: 0 9px 5px;
+}
+
+.ajax-photo {
+    height: 447.99px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+
+    &:nth-child(2n) {
+        padding-left: 9px;
+    }
+
+}

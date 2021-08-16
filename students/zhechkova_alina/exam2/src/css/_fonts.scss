@@ -1,0 +1,3 @@
+@include fonts($default-font, $default-font-path, bold, bold);
+@include fonts($default-font, $default-path-two, normal, normal);
+@include fonts($secondary-font, $secondary-font-path, 400, normal);

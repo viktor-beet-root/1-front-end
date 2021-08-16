@@ -1,0 +1,53 @@
+/*container*/
+$container-width: 1180px;
+$default-gap: 5px;
+$bg-color:#fff;
+
+/*fonts*/
+$default-font:'Gotham',
+Arial,
+Helvetica,
+sans-serif;
+$default-font-path:'../fonts/Gotham-Bold';
+$default-path-two:'../fonts/Gotham-Book';
+
+$secondary-font: 'Open Sans',
+Arial,
+Helvetica,
+sans-serif;
+$secondary-font-path:'../fonts/OpenSans-Regular';
+
+/*menu*/
+$menu-item:#fff;
+
+/*style for title*/
+$title-color: #2c4058;
+$title-size: 24px;
+
+/*style for subtitle*/
+$subtitle-color:#4b5562;
+$subtitle-size:14px;
+
+
+$color-white:#fff;
+$color-black:#000;
+$color-bg:#55b7ff;
+$slider-btn:#9bc2eb;
+
+$icon-color:#7e5aff;
+/*style for border*/
+$border-color: #a9aaad;
+
+
+
+/*style for button*/
+$bg-btn:$color-white;
+$border-btn:1px solid $color-black;
+$padding-btn:16px 45px;
+
+
+/*grid mixin*/
+$breack-points: ("xl": 1200px,
+    "lg": 992px,
+    "md": 768px,
+    "sm": 576px);

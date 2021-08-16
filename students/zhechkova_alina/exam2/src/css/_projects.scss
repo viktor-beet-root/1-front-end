@@ -1,0 +1,276 @@
+.what-we-do {
+    overflow: hidden;
+
+    &__container {
+        padding: 133px 0 98px;
+
+        @media screen and (max-width:768px) {
+            padding: 50px 0 0;
+        }
+    }
+
+
+    &__title-wrap {
+        text-align: center;
+    }
+
+    &__title {
+        font-family: $default-font;
+        font-weight: bold;
+        font-size: 44px;
+        color: $title-color;
+        text-transform: uppercase;
+        letter-spacing: 2.8px;
+
+        @media screen and (max-width:768px) {
+            font-size: 38px;
+        }
+
+        @media screen and (max-width:576px) {
+            font-size: 30px;
+        }
+    }
+
+}
+
+.row__content {
+    @media screen and (max-width:768px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.project {
+
+
+    &__container {
+        padding: 55px 0 150px;
+
+        @media screen and (max-width:768px) {
+            padding: 10px 0 50px;
+        }
+
+        @media screen and (max-width:576px) {
+            padding: 10px 0 40px;
+        }
+    }
+
+    &__image-wrap {
+        position: relative;
+
+        .commerce & {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .commerce &::after {
+            right: unset;
+            left: 310px;
+            background-color: $icon-color;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            height: 100%;
+            width: 100vw;
+            background: $color-bg;
+            position: absolute;
+            right: 309px;
+            z-index: -1;
+            bottom: 70px;
+            right: 310px;
+
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            display: block;
+        }
+    }
+
+    // .project__image
+
+    &__image {
+        display: block;
+        z-index: 1000;
+        max-width: 636px;
+        width: 100%;
+
+        @media screen and (max-width:768px) {
+            margin: 0 auto;
+        }
+    }
+
+    // .project__content
+
+    &__content {
+        padding: 55px 0 60px 20px;
+
+        .commerce & {
+            padding: 55px 0 60px 7px;
+
+        }
+    }
+
+    // .project__subtitle
+    &__subtitle,
+    &__title {
+        color: $title-color;
+        font-family: $default-font;
+        text-transform: uppercase;
+
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 44px;
+        line-height: 45px;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+
+        @media screen and (max-width:768px) {
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width:576px) {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__subtitle {
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 28px;
+
+        @media screen and (max-width:768px) {
+            font-size: 18px;
+        }
+
+        @media screen and (max-width:576px) {
+            font-size: 16px;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        color: $subtitle-color;
+        line-height: 30px;
+        margin-bottom: 30px;
+        font-family: $secondary-font;
+        height: 90px;
+        overflow: hidden;
+
+        &.initial-text {
+            height: initial;
+        }
+
+        @media screen and (max-width:768px) {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width:576px) {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+    }
+
+    &__btn {
+        margin-bottom: 60px;
+
+        @media screen and (max-width:768px) {
+            margin-bottom: 40px;
+        }
+
+        @media screen and (max-width:576px) {
+            margin-bottom: 35px;
+        }
+    }
+
+    &__address {
+        font-family: $secondary-font;
+        font-style: italic;
+        color: $subtitle-color;
+        font-size: 18px;
+
+        @media screen and (max-width:768px) {
+            font-size: 16px;
+        }
+
+        @media screen and (max-width:576px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.commerce {
+    & .row {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+
+        @media screen and (max-width:768px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    & .project__content {
+        @media screen and (max-width:768px) {
+            padding-left: 20px;
+        }
+    }
+}
+
+.btn {
+    text-transform: uppercase;
+    background: $bg-btn;
+    border: $border-btn;
+    padding: $padding-btn;
+    cursor: pointer;
+    overflow: hidden;
+
+    position: relative;
+
+
+
+    &:before {
+        -webkit-transition: 0.5s all ease;
+        transition: 0.5s all ease;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        opacity: 0;
+        content: '';
+        background-color: rgb(145, 145, 145);
+        z-index: -2;
+    }
+
+    &:hover {
+        &:before {
+            -webkit-transition: 0.5s all ease;
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+        }
+    }
+
+    &:focus {
+        &:before {
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+        }
+    }
+
+    &:active {
+        transform: translateY(3px);
+    }
+}

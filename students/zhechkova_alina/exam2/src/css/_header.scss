@@ -1,0 +1,251 @@
+.page {
+    &.fixed {
+        overflow: hidden;
+    }
+}
+
+.header {
+    &.sticky {
+        position: fixed;
+        width: 100%;
+        background-color: #6698f9;
+        z-index: 100000;
+
+        .header__container {
+            padding: 0;
+        }
+    }
+
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &__row {
+        align-content: center;
+
+        @media screen and (max-width:992px) {
+            display: block;
+        }
+    }
+
+
+    &__container {
+        padding: 60px 0 0;
+
+        @media screen and (max-width:992px) {
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+    }
+
+}
+
+
+
+.logo {
+    @media screen and (max-width:992px) {
+        display: inline-block;
+    }
+
+}
+
+.menu {
+
+
+    &__row {}
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 20px 29px;
+
+        @media screen and (max-width:992px) {
+            display: block;
+        }
+    }
+
+    &__item {
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 69px;
+
+            @media screen and (max-width:1200px) {
+                margin-right: 46px;
+
+            }
+
+            @media screen and (max-width:992px) {
+                margin-right: 0;
+            }
+
+
+        }
+
+
+        &.active::before {
+            background-color: $color-white;
+        }
+
+        &::before {
+            content: '';
+            height: 8px;
+            width: 8px;
+            margin-right: 15px;
+            border: 1px solid white;
+            display: inline-block;
+            border-radius: 50%;
+
+            @media screen and (max-width:992px) {
+                display: none;
+            }
+
+        }
+
+        @media screen and (max-width:992px) {
+            border-bottom: 1px solid lightgray;
+            padding: 10px 0;
+        }
+    }
+
+
+    &__link {
+        color: $menu-item;
+        text-decoration: none;
+        font-family: $default-font;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 0.6px;
+
+        @media screen and (max-width:992px) {
+            color: white;
+            width: 100%;
+            display: block;
+        }
+
+    }
+
+    &__media {
+        padding: 15px 15px 0;
+        justify-content: flex-end;
+
+        @media screen and (max-width:992px) {
+            justify-content: flex-start;
+            padding-left: 30px;
+        }
+
+        &>.media__item>.media__link {
+            @media screen and (max-width:992px) {
+                color: white;
+            }
+        }
+
+        &>.media__item {
+            @media screen and (max-width:992px) {
+                border: 1px solid lightgray;
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    @media screen and (max-width:992px) {
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateX(-3000px);
+        transition: transform .5s ease;
+        position: absolute;
+
+        background-color: rgb(138, 120, 255);
+
+        &.active {
+            visibility: visible;
+            pointer-events: all;
+            transform: translateX(0);
+            height: 102vh;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding-top: 50px;
+        }
+    }
+}
+
+
+.media {
+    display: flex;
+
+
+    &__item {
+        border: 1px solid #b19dfc;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+
+
+    }
+
+
+    &__link {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $menu-item;
+    }
+}
+
+.btn-menu {
+    display: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-top: 5px;
+
+    &__span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        position: relative;
+
+        &::after,
+        &::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            position: absolute;
+        }
+
+        &::after {
+            top: 8px;
+        }
+
+        &::before {
+            bottom: 8px;
+        }
+    }
+
+    @media screen and (max-width:992px) {
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        opacity: 1;
+        z-index: 100000;
+    }
+}

@@ -1,0 +1,185 @@
+.hero {
+    @include bg-cover('../image/Bg1.png');
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+
+    &__container {
+        height: 100vh;
+        position: relative;
+    }
+
+    & .slick-arrow {
+        display: none !important;
+    }
+
+    &__title-wrapper {
+        position: absolute;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: -5px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+
+
+    }
+
+
+    &__title {
+        font-style: bold;
+        color: $color-white;
+        font-family: $default-font;
+        font-size: 80px;
+        letter-spacing: 9.5px;
+
+        @media screen and (max-width:992px) {
+            font-size: 65px;
+        }
+
+        @media screen and (max-width:768px) {
+            font-size: 50px;
+
+        }
+
+        @media screen and (max-width:576px) {
+            font-size: 35px;
+        }
+    }
+
+
+    &__subtitle {
+        padding-top: 30px;
+        font-size: 18px;
+        font-style: normal;
+        display: block;
+        letter-spacing: 6px;
+
+        @media screen and (max-width:768px) {
+            font-size: 14px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width:576px) {
+            font-size: 12px;
+        }
+    }
+
+    &__dots {
+        &>.slick-dots {
+            position: absolute;
+            width: 25px;
+            bottom: auto;
+            top: 50%;
+            right: 125px;
+            transform: translateY(-50%);
+
+            &>li {
+                width: 9px;
+                height: 9px;
+                border-radius: 50%;
+                cursor: pointer;
+                border: 1px solid $color-white;
+                margin-bottom: 33px;
+
+                &.slick-active {
+                    background-color: $color-white;
+                }
+            }
+
+            &>li>button::before {
+                height: 1px;
+                width: 1px;
+                overflow: hidden;
+                clip: rect(0, 0, 0, 0);
+            }
+
+            @media screen and (max-width:990px) {
+                width: initial;
+                left: 50%;
+                transform: translate(-50%, 1000%);
+
+            }
+        }
+    }
+
+}
+
+
+
+.scroll {
+    position: absolute;
+    bottom: 74px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &__span {
+        border: 1px solid #cee1fd;
+        position: relative;
+        display: block;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &::after {
+            content: '';
+            border: 1px solid #fff;
+            height: 6px;
+            width: 6px;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            border-top: none;
+            border-left: none;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        bottom: 50px;
+    }
+
+    @media screen and (max-width:576px) {
+        bottom: 40px;
+    }
+}
+
+.slick-slide {
+    &>div {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+.simple {
+    @include bg-cover('../image/Bg1.png');
+
+}
+
+.fast {
+    @include bg-cover('../image/Bg2.png');
+
+}
+
+.futuristic {
+    @include bg-cover('../image/Bg3.png');
+
+}
+
+.creative {
+    @include bg-cover('../image/Bg1.png');
+
+}
+
+.contemporary {
+    @include bg-cover('../image/Bg2.png');
+}
+
+.slick-list {
+    padding: 0 !important;
+}
