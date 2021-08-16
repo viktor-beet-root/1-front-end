@@ -1,0 +1,195 @@
+.footer {
+    background-image: url(../image/Bg-footernew.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 525px;
+
+    @media screen and (max-width: 992px) {
+        min-height: 400px;
+    }
+
+    &__wrapper-modal {
+        background-color: transparent;
+        background-image: url(../image/Bg-modal.png);
+        background-position: center;
+        padding-top: 60px;
+        background-repeat: no-repeat;
+        max-width: 770px;
+        width: 100%;
+        height: 450px;
+        margin: -300px auto;
+        z-index: 1;
+        position: relative;
+        box-shadow: 0 -4px 30px rgba(133, 133, 133, 0.2);
+
+        @media screen and (max-width: 992px) {
+            padding-top: 10px;
+        }
+    }
+
+    &__row_margin {
+        margin-top: 70px;
+
+        @media screen and (max-width: 992px) {
+            margin-top: 5px;
+        }
+    }
+
+    &__logo {
+        margin-bottom: 48px;
+
+        @media screen and (max-width: 992px) {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__social-link {
+        justify-content: flex-end;
+
+        @media screen and (max-width: 992px) {
+            justify-content: center;
+        }
+    }
+
+    &__text {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 14px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        @media screen and (max-width: 992px) {
+            flex-direction: column;
+        }
+    }
+
+    &__text-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 0 20px;
+
+            @media screen and (max-width: 992px) {
+                display: none;
+            }
+        }
+    }
+
+    &__title {
+        text-align: center;
+        color: #2c4058;
+        font-family: $font-Gotham;
+        font-size: 44px;
+        font-weight: 500;
+        line-height: 1.2;
+        text-transform: uppercase;
+        padding: 25px 0 0;
+        @media screen and (max-width: 992px) {
+            font-size: 35px;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 1px;
+            border: 1px solid #2c4058;
+            background-color: #2c4058;
+            margin: 0 auto 30px;
+            @media screen and (max-width: 992px) {
+               display: none;
+            }
+        }
+    }
+
+    &__list {
+        padding-left: 60px;
+
+        .fas,
+        .far {
+            color: #7e5aff;
+            margin-right: 10px;
+        }
+
+        @media screen and (max-width: 992px) {
+            padding-left: 5px;
+        }
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 45px;
+
+        @media screen and (max-width: 992px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__link,
+    &__item {
+        text-decoration: none;
+        color: #2c4058;
+        font-family: $font-Gothambook;
+        font-size: 18px;
+        font-weight: 300;
+        @media screen and (max-width: 992px) {
+            font-size: 15px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        padding-right: 60px;
+
+        @media screen and (max-width: 992px) {
+            padding: 0 5px;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #2c4058;
+        padding-bottom: 20px;
+        outline: none;
+    }
+
+    &__input_m {
+        margin-bottom: 40px;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__btn {
+        max-width: 140px;
+    }
+    &__col {
+        @media screen and (max-width: 992px) {
+            padding: 15px 30px;
+        }
+        
+    }
+}
+
+span {
+    display: block;
+}
+
+input::placeholder {
+    font-size: 18px;
+    color: #4b5562;
+    opacity: 0.5;
+}

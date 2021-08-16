@@ -1,0 +1,103 @@
+.header-mob {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+
+     &__menu {
+         text-align: center;
+
+         .menu__item {
+            margin-bottom: 10px;
+
+         }
+     }
+
+    @media screen and (min-width: 576px) {
+        display: none;
+    }
+
+    &__col-2 {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: none;
+        height: 100vh;
+        background-color: darkblue;
+
+        .header__social-link {
+            justify-content: center;
+        }
+        
+    }
+
+    .active {
+        display: block;
+
+    }
+}
+
+.button-mobmenu {
+    background-color: transparent;
+    border: none;
+
+    &__icon-holder {
+        width: 18px;
+        height: 18px;
+        position: relative;
+
+        .dot {
+            content: '';
+            position: absolute;
+            height: 3px;
+            width: 3px;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+    }
+
+    &__dot-1 {
+        top: 0;
+        left: 0;
+    }
+
+    &__dot-2 {
+        top: 0;
+        left: 7px;
+    }
+
+    &__dot-3 {
+        top: 0;
+        left: 14px;
+    }
+
+    &__dot-4 {
+        top: 7px;
+        left: 0;
+    }
+
+    &__dot-5 {
+        top: 7px;
+        left: 7px;
+    }
+
+    &__dot-6 {
+        top: 7px;
+        left: 14px;
+    }
+
+    &__dot-7 {
+        top: 14px;
+    }
+
+    &__dot-8 {
+        top: 14px;
+        left: 7px;
+    }
+
+    &__dot-9 {
+        top: 14px;
+        left: 14px;
+    }
+}
