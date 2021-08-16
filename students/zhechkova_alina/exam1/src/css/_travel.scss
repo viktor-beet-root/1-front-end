@@ -1,0 +1,85 @@
+.page {
+
+    // .page__travel
+
+    &__travel {}
+}
+
+.travel {
+    @include bg-cover('../image/travel-bg1.jpg');
+
+    &_background {
+        @include bg-cover('../image/travel-bg2.jpg');
+    }
+
+
+
+    &__container {
+        padding: 221px 0 103px;
+        display: flex;
+        justify-content: flex-start;
+
+        &_flex-end {
+            justify-content: flex-end;
+
+            @media screen and (max-width:992px) {
+                justify-content: center;
+            }
+        }
+
+        @media screen and (max-width:992px) {
+            padding: 121px 0 53px;
+            justify-content: center;
+        }
+    }
+
+
+    &__content {
+        max-width: 541px;
+        width: 100%;
+        padding: 56px 30px 50px 24px;
+        background-color: rgba(35, 35, 35, .9);
+    }
+
+    &__subtitle {
+        color: $content-color;
+        font-size: 20px;
+        letter-spacing: .75px;
+        margin-bottom: 27px;
+        display: block;
+    }
+
+    &__title {
+        color: #fefefe;
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+
+    // .travel__text
+
+    &__text {
+        font-size: 16px;
+        color: #e8e8e8;
+        margin-bottom: 40px;
+        line-height: 26px;
+    }
+
+    // .travel__btn
+
+    &__btn {
+        padding: 0 76px;
+
+        &::after {
+            width: 120px;
+        }
+
+        &:hover::after {
+            width: 300px;
+        }
+    }
+}
+
+.container {}
+
+.btn {}

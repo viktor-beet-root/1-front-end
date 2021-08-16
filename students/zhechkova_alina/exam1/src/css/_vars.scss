@@ -1,0 +1,44 @@
+/*container*/
+$container-width: 1110px;
+$default-gap: 15px;
+$bg-color:#fff;
+
+/*fonts*/
+$default-font:'Josefin Sans',
+Arial,
+Helvetica,
+sans-serif;
+$default-font-path:'../fonts/josefinsans';
+
+
+$secondary-font: 'Aleo',
+serif;
+$secondary-font-path:'../fonts/aleoregular';
+
+
+/*style for title*/
+$title-color: #fff;
+$title-size: 48px;
+
+/*style for subtitle*/
+$subtitle-color:#fff;
+$subtitle-size:22px;
+
+$content-color:#e8e8e8;
+
+
+/*style for border*/
+$border-color: #04060e;
+$body-border: 15px solid #fff;
+
+/*style for button*/
+$bg-btn:#5474fd;
+$border-btn:1px solid #fff;
+$padding-btn:10px 21px 10px 40px;
+
+
+/*grid mixin*/
+$breack-points: ("xl": 1200px,
+    "lg": 992px,
+    "md": 768px,
+    "sm": 576px);
