@@ -1,0 +1,139 @@
+.reviews {
+    @include bg-cover("../image/quote_bg.png");
+    padding-top: 95px;
+    padding-bottom: 190px;
+    color: $color-white;
+}
+
+.rew-upper-part {
+    &__title {
+        font-size: 36px;
+        font-weight: 400;
+        font-family: $font-secondary-name;
+        text-align: center;
+        margin-bottom: 83px;
+        letter-spacing: 1px;
+    }
+}
+
+.rew-lower-part {
+    background-color: $color-mine-shaft;
+
+    &__img {
+        display: block;
+    }
+
+    &__right {
+        padding-top: 40px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 60px;
+    }
+
+    &__title {
+        font-size: 20px;
+        margin-bottom: 30px;
+        font-weight: 300px;
+        letter-spacing: -1px;
+
+        @media screen and(max-width: 850px) {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__quote {
+        font-family: $font-primary-name;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.65;
+        letter-spacing: -0.987px;
+        padding-right: 30px;
+        text-align: justify;
+
+        @media screen and(max-width: 850px) {
+            font-size: 14px;
+        }
+        &::before {
+            content: "";
+            display: inline-block;
+            background-image: url(../image/quote-left-solid.svg);
+            background-repeat: no-repeat;
+            height: 20px;
+            width: 20px;
+            vertical-align: 11px;
+            margin-right: 6px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .reviews {
+        padding-top: 70px;
+        padding-bottom: 100px;
+    }
+
+    .rew-upper-part {
+        &__title {
+            margin-bottom: 45px;
+        }
+    }
+
+    .rew-lower-part {
+        padding-left: 20px;
+        background-color: transparent;
+
+        &__img {
+            padding-top: 20px;
+            max-width: 445px;
+            width: 100%;
+        }
+
+        &__right {
+            width: calc(100% - 445px);
+            padding-top: 5px;
+            padding-right: 20px;
+        }
+    }
+}
+@include media("md") {
+    .reviews {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .rew-lower-part {
+        &__img {
+            max-width: 100%;
+            padding-right: 20px;
+            margin-bottom: 15px;
+        }
+
+        &__title {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        &__quote {
+            width: 100%;
+            font-size: 20px;
+        }
+    }
+}
+@include media("sm") {
+    .rew-upper-part {
+        &__title {
+            font-size: 26px;
+        }
+    }
+
+    .rew-lower-part {
+        &__title {
+            font-size: 21px;
+        }
+
+        &__quote {
+            font-size: 16px;
+        }
+    }
+}

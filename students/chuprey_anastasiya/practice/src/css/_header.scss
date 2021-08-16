@@ -1,0 +1,376 @@
+.header {
+    @include bg-cover("../image/header-bg.png");
+    min-height: 100vh;
+    color: $color-white;
+    line-height: 26px;
+    position: relative;
+
+    &__container {
+        padding-top: 269px;
+        padding-bottom: 115px;
+
+        @media screen and (max-width: 790px) {
+            padding-bottom: 65px;
+            padding-top: 190px;
+        }
+    }
+
+    &__head {
+        margin: 0 auto;
+    }
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    &__title-text {
+        margin-bottom: 12px;
+    }
+
+    &__title-text-strong {
+        font-size: 48px;
+        letter-spacing: 3px;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 400px) {
+            font-size: 40px;
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        letter-spacing: 8px;
+        margin-bottom: 46px;
+
+        @media screen and (max-width: 450px) {
+            font-size: 18px;
+        }
+        @media screen and (max-width: 400px) {
+            font-size: 13px;
+        }
+    }
+
+    &__scroll-down {
+        margin-bottom: 20px;
+    }
+}
+.search-form-wrapper {
+    display: flex;
+    max-width: 655px;
+    width: 100%;
+    padding-bottom: 115px;
+    justify-content: center;
+
+    @media screen and (max-width: 790px) {
+        padding-bottom: 97px;
+    }
+
+    &__input {
+        width: calc(100% - 150px);
+        outline: none;
+        border: none;
+        color: $dodger-blue2;
+        font-weight: 700;
+        font-size: 10px;
+        padding-left: 30px;
+
+        @media screen and (max-width: 576px) {
+            padding-left: 5px;
+        }
+
+        @include media("sm") {
+            width: calc(100% - 60px);
+        }
+
+        &:focus {
+            outline: rgba(84, 116, 253, 0.9) solid 3px;
+        }
+
+        &::-webkit-input-placeholder {
+            text-align: center;
+            font-size: 12px;
+            letter-spacing: 2px;
+            line-height: 26px;
+            color: $dusty-gray;
+
+            @media screen and (max-width: 480px) {
+                font-size: 9px;
+            }
+        }
+
+        &:-moz-placeholder {
+            text-align: center;
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: 3px;
+            line-height: 26px;
+            color: $dusty-gray;
+        }
+
+        &::-moz-placeholder {
+            text-align: center;
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: 3px;
+            line-height: 26px;
+            color: $dusty-gray;
+        }
+
+        &:-ms-input-placeholder {
+            text-align: center;
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: 3px;
+            line-height: 26px;
+            color: $dusty-gray;
+        }
+    }
+
+    .btn {
+        border: 2px solid $color-white;
+        max-width: 150px;
+        width: 100%;
+        display: inline-block;
+        text-decoration: none;
+        padding: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-white;
+        background-color: $dodger-blue;
+        font-size: 14px;
+        font-family: $font-secondary-name;
+        position: relative;
+        z-index: 20;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+
+        @include media("sm") {
+            font-size: 10px;
+            max-width: 60px;
+            padding: 5px;
+        }
+
+        &__text {
+            z-index: 30;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            @include media("sm") {
+                visibility: hidden;
+                font-size: 5px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+
+        &__icon {
+            fill: $color-white;
+            &:hover {
+                fill: $color-tangaroa;
+            }
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 300px;
+            height: 100px;
+            background-color: $dodger-blue2;
+            top: 0;
+            left: -135%;
+            z-index: -10;
+            position: absolute;
+            transform: skew(50deg);
+            transition: 0.7s ease-in-out;
+        }
+
+        &:hover::after {
+            transform: skew(0);
+            left: -70%;
+        }
+    }
+}
+
+.scroll-down {
+    padding-bottom: 15px;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border-right: 1px solid $color-mystic;
+        border-bottom: 1px solid $color-mystic;
+        left: 50%;
+        transform: translate(-50%) rotate(45deg);
+        bottom: 1px;
+        transition: 0.5s ease-in-out;
+    }
+    &:hover::after {
+        bottom: -30px;
+    }
+
+    &__text {
+        text-decoration: none;
+        font-size: 14px;
+        letter-spacing: 3px;
+        line-height: 26px;
+        color: $porcelain;
+    }
+}
+.nav {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: $dodger-blue;
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+        padding-top: 7px;
+        padding-bottom: 5px;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.navigation-logo-name {
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 26px;
+    color: $color-white;
+    font-weight: 700;
+    text-decoration: none;
+
+    @media screen and (max-width: 768px) {
+        font-size: 20px;
+    }
+}
+.menu {
+    &__nav-list {
+        display: flex;
+
+        @media screen and (max-width: 768px) {
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 68px;
+            background-color: $dodger-blue;
+            display: none;
+        }
+    }
+}
+.nav-list {
+    &__link {
+        font-size: 14px;
+        line-height: 26px;
+        color: $color-white;
+        font-weight: 400;
+        font-family: $font-secondary-name;
+        text-decoration: none;
+        padding-left: 42px;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 790px) {
+            font-size: 13px;
+            padding-left: 15px;
+        }
+        @media screen and (max-width: 768px) {
+            display: block;
+            width: 100%;
+            font-size: 12px;
+            padding-top: 5px;
+            border-bottom: 2px solid $color-tangaroa;
+        }
+    }
+}
+
+.menu {
+    &__burger-btn {
+        visibility: hidden;
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+        @media screen and (max-width: 768px) {
+            visibility: visible;
+        }
+    }
+
+    &__input {
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        clip: rect(0 0 0 0);
+
+        &:checked {
+            & + .menu__burger-btn .burger-btn__line {
+                background-color: transparent;
+
+                &::after,
+                &::before {
+                    top: unset;
+                    bottom: unset;
+                }
+                &::after {
+                    transform: rotate(45deg);
+                }
+
+                &::before {
+                    transform: rotate(-45deg);
+                }
+            }
+            & ~ .nav-list {
+                display: block;
+            }
+        }
+    }
+}
+.burger-btn {
+    border: 2px solid $color-white;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__line {
+        width: 25px;
+        height: 2px;
+        background-color: $color-white;
+        display: block;
+        position: relative;
+
+        &::before,
+        &::after {
+            content: "";
+            width: 25px;
+            height: 2px;
+            background-color: $color-white;
+            display: block;
+            position: absolute;
+        }
+        &::before {
+            top: -8px;
+        }
+        &::after {
+            bottom: -8px;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.footer {
+    color: $color-white;
+    background-color: $color-mine-shaft2;
+    padding-top: 75px;
+    padding-bottom: 15px;
+    text-align: center;
+    line-height: 26px;
+
+    &__title {
+        font-size: 24px;
+        letter-spacing: 5px;
+        color: $color-white;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+
+    &__sub-title {
+        font-size: 16px;
+        letter-spacing: 2px;
+        color: $color-white;
+        margin-bottom: 30px;
+    }
+}
+
+.nav-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__link {
+        padding: 10px;
+    }
+
+    &__link-svg {
+        fill: $color-mercury;
+        &:hover {
+            fill: $dodger-blue;
+        }
+    }
+}
+@include media("lg") {
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+}
