@@ -1,0 +1,28 @@
+import $ from 'jquery';
+function stickyHeader() {
+
+    window.addEventListener("scroll", function () {
+        const header = this.document.querySelector("header");
+
+        header.classList.toggle("sticky", window.scrollY > 0)
+    });
+
+    $(document).ready(function () {
+        $('a[href*="#"]').bind("click", function (e) {
+            var anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(anchor.attr('href')).offset().top
+            }, 1000);
+            e.preventDefault();
+        });
+        return false;
+    });
+
+}
+
+
+
+
+
+
+export default stickyHeader;
