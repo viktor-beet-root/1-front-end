@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "image": "1.jpeg",
+      "name": "raspberry",
+      "price": 90,
+      "article": "T1",
+      "available": true
+    },
+    {
+      "image": "2.jpeg",
+      "name": "berries",
+      "price": 100,
+      "article": "T2",
+      "available": true
+    },
+    {
+      "image": "3.jpeg",
+      "name": "strawberries",
+      "price": 120,
+      "article": "T3",
+      "available": false
+    },
+    {
+      "image": "4.jpeg",
+      "name": "Lime",
+      "price": 130,
+      "article": "T4",
+      "available": true
+    },
+    {
+      "image": "5.jpeg",
+      "name": "Fruits",
+      "price": 100,
+      "article": "T5",
+      "available": false
+    },
+    {
+      "image": "6.jpeg",
+      "name": "choose your taste",
+      "price": 150,
+      "article": "T6",
+      "available": true
+    },
+    {
+      "image": "7.jpeg",
+      "name": "Box of pleasure",
+      "price": 350,
+      "article": "T7",
+      "available": true
+    },
+    {
+      "image": "8.jpeg",
+      "name": "for kids",
+      "price": 100,
+      "article": "T8",
+      "available": true
+    }
+  ]
+}
