@@ -1,6 +1,30 @@
 import $ from 'jquery';
 import headerSlider from './headerSlider';
 
+//Open Burger Menu
+setTimeout(function () {
+    const menuList = document.querySelector(".menu__items"),
+        menuBurgerBtn = document.querySelector(".menu__hidden_btn"),
+        menuBurgerBtnSocial = document.querySelector(".social__items-js"),
+        menuBurgerBtnAnimate = document.querySelector(".menu__hidden_btn-line");
+    menuBurgerBtn.addEventListener("click", (function () {
+        menuList.classList.toggle("menu-open");
+        menuBurgerBtnSocial.classList.toggle("social__items-header-burger-btn-active");
+        menuBurgerBtnAnimate.classList.toggle("active");
+    }));
+}, 0);
+
+// Close Burger Menu after click on link
+$(document).ready(function () {
+    setTimeout(function () {
+        $(".menu__item-link, .social__item-link-header-burger-btn").on('click', function () {
+            $(".menu__items").removeClass('menu-open');
+            $(".social__items-js").removeClass('social__items-header-burger-btn-active');
+            $(".menu__hidden_btn-line").removeClass('active');
+        });
+    }, 0);
+});
+
 //Heder Menu Naviagation
 function headerMenuNavigation() {
     const $header = $('#header');
