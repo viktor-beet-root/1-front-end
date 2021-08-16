@@ -1,0 +1,21 @@
+
+.travel-mountains {
+    background-image: url(../image/bg_spain_2.jpeg);
+    padding-top: 229px;
+    padding-bottom: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (max-width:576px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    &__col {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+
+

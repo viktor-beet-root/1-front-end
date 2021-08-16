@@ -1,0 +1,74 @@
+.quotes {
+    background-image: url(../image/bg_say.jpeg);
+    padding-top: 120px;
+    padding-bottom: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width:576px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    &__title {
+        text-align: center;
+        color: $title-color;
+        font-size: 36px;
+        font-family: $font-aleo;
+        margin-bottom: 94px;
+    }
+}
+
+.quotes-from {
+    display: flex;
+
+    @media screen and (max-width:992px) {
+        flex-direction: column;
+    }
+
+    &__img {
+        display: block;
+    }
+
+    &__wrap {
+        background-color: #333333;
+        padding: 50px 54px 48px 60px;
+
+        @media screen and (max-width:576px) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    &__author {
+        font-family: $font-josefin;
+        color: #fefefe;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 33px;
+    }
+
+    &__box {
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            background-image: url(../image/quote-left-solid.svg);
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: -12px;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        color: #e8e8e8;
+        font-family: $font-josefin;
+        font-weight: 400;
+        line-height: 26px;
+        text-indent: 30px;
+    }
+}

@@ -1,0 +1,241 @@
+.header {
+    background-image: url(../image/bg_header.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 820px;
+
+    &__container {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__greeting {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: $font-josefin;
+        max-width: 650px;
+        width: 100%;
+    }
+
+    &__title {
+        font-family: $font-josefin;
+        color: $title-color;
+        text-transform: uppercase;
+        font-size: 48px;
+        letter-spacing: 4.8px;
+        font-weight: 700;
+        margin-bottom: 15px;
+
+        @media screen and(max-width: 575px) {
+            font-size: 35px;
+        }
+    }
+
+    &__sub-title {
+        color: $title-color;
+        font-family: $font-josefin;
+        font-size: 22px;
+        font-weight: 400;
+        letter-spacing: 5.82px;
+        line-height: normal;
+        margin-bottom: 50px;
+
+        @media screen and(max-width: 575px) {
+            text-align: center;
+        }
+    }
+
+    &__scroll {
+        text-decoration: none;
+    }
+}
+
+.search-form__form {
+    display: flex;
+    max-width: 650px;
+    width: 100%;
+
+    @media screen and (max-width:576px) {
+
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.search-form_btn {
+    width: 150px;
+    height: 60px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: $font-aleo;
+    border: 2px solid white;
+    background: linear-gradient(40deg, rgba(73, 107, 254, 1) 0%, rgba(73, 107, 254, 1) 43%, rgba(84, 116, 253, 1) 43%);
+    color: white;
+    letter-spacing: 1.4px;
+    position: relative;
+    cursor: pointer;
+    background-size: 200% 200%;
+
+    &:hover {
+        animation: gradient 3s ease infinite;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+}
+
+.input::-webkit-input-placeholder {
+    color: #999999;
+    text-align: center;
+    letter-spacing: 2.8px;
+    line-height: 26px;
+}
+
+.search-form__form-group {
+    width: calc(100% - 150px);
+
+    @media screen and(max-width: 575px) {
+        height: 30px;
+        margin-bottom: 5px;
+        width: 100%;
+        height: 53px;
+    }
+}
+
+.header__form {
+    margin-bottom: 150px;
+
+    @media screen and (max-width:576px) {
+        margin-bottom: 100px;
+    }
+}
+
+.search-form {
+    width: 100%;
+}
+
+.search-form_btn::after {
+    display: block;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(../image/svg_search.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 18px;
+    left: 113px;
+    right: 17px;
+    bottom: 19px;
+}
+
+.header {
+    &__scroll {
+        position: relative;
+    }
+}
+
+.scroll {
+    ::after {
+        content: '';
+        display: block;
+        width: 15px;
+        height: 8px;
+        background-image: url(../image/.svg);
+        position: absolute;
+        left: 44px;
+        top: 40px;
+        animation: moveDown 2s ease infinite;
+    }
+
+    @keyframes moveDown {
+        0% {
+            transform: translateY(-40px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        font-family: $font-josefin;
+        color: $title-color;
+        font-size: 14px;
+        letter-spacing: 2.8px;
+    }
+}
+
+.menu {
+    background-color: $btn-color;
+
+    &__col-3 {
+        @media screen and (max-width:768px) {
+
+            text-align: center;
+        }
+    }
+
+    &__logo {
+        color: $title-color;
+        text-decoration: none;
+        font-size: 24px;
+        font-family: $font-josefin;
+        text-transform: uppercase;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: flex-end;
+
+        @media screen and (max-width:768px) {
+            display: none;
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        padding-left: 42px;
+    }
+
+    &__link {
+        color: $title-color;
+        text-decoration: none;
+        font-size: 14px;
+        font-family: $font-aleo;
+        text-transform: uppercase;
+
+    }
+    &__col-9 {
+        @media screen and (max-width:768px) {
+            display: none;
+            
+        }
+    }
+}
+

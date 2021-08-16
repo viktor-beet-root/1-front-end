@@ -1,0 +1,111 @@
+
+.mobile-container {
+    // padding-top: 20px;
+    overflow: hidden;
+
+    @media screen and (min-width:769px) {
+        display: none;
+    }
+}
+
+.header {
+    &__input {
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        clip: rect(0 0 0 0)
+    }
+
+    &__input:checked~.nav-mobile {
+        visibility: visible;
+        left: 50px;
+        transition-duration: .50s;
+
+    }
+
+    &__input:checked~.toggle-container>.button-toggle {
+        transform: rotate(45deg);
+        position: absolute;
+        z-index: 2;
+    }
+
+    &__input:checked~.toggle-container>.button-toggle::before {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    &__input:checked~.toggle-container>.button-toggle::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+}
+
+.toggle-container {
+    &>.button-toggle,
+    &>.button-toggle::before,
+    &>.button-toggle::after {
+        display: block;
+        position: absolute;
+        top: 40px;
+        width: 30px;
+        height: 2px;
+        background-color: $title-color;
+        transition-duration: .25s;
+        opacity: 0.7;
+    }
+
+    &>.button-toggle::before {
+        content: '';
+        top: -8px;
+    }
+
+    &>.button-toggle::after {
+        content: '';
+        top: 8px;
+    }
+}
+
+.button-toggle {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.nav-mobile {
+    visibility: hidden;
+    position: absolute;
+    left: -100%;
+    transition-duration: .50s;
+    height: 100vh;
+    background-color: rgba(35, 35, 35, 0.9);
+    z-index: 1;
+    width: 92%;
+    margin-left: -34px;
+    padding-top: 60px;
+    padding-left: 20px;
+
+    &__list {
+        transition-duration: .25s;
+    }
+
+    &__item {
+        margin-bottom: 20px;
+    }
+
+    &__link {
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $font-aleo;
+        color: $title-color;
+        opacity: 0.7;
+
+    }
+}
